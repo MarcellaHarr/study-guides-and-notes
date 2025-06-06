@@ -1,0 +1,6 @@
+# This is a gitignore file for an R project
+_bookdown_files/
+_book/
+.Rhistory
+.Rproj.user
+*.html
