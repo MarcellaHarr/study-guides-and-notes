@@ -1,0 +1,101 @@
+
+```{r setup, include=FALSE}
+## Global options
+knitr::opts_chunk$set(cache = FALSE, echo = TRUE)
+```
+###### Discrete Mathematics and Its Applications (8th Edition)
+<br>
+
+```{r mathLink, include=FALSE}
+# Mathematical Notations/Symbols for R-markdown
+# https://rpruim.github.io/s341/S19/from-class/MathinRmd.html
+```
+
+<hr>
+
+# Chapter 1The Foundations: Logic and Proofs
+<hr>
+
+## Exercise 1a {.tabset .tabset-fade}
+
+### Step-1
+
+In this exercise, we determine whether the given statement represents a proposition.
+
+**What is a proposition?**
+
+
+
+### Step-2
+
+A **proposition** is a statement that is known to be true or known to be false. If we don't know if a statement is true or false, then the statement is not a proposition.
+
+
+
+### Step-3
+
+**(a)**
+
+The statement is a proposition because we know that the statement is true 
+$T$ *(as Boston is the capital of Massachusetts)*.
+
+
+
+### Step-4
+
+Let us summarize how the results were derived.
+
+To determine whether a statement is a proposition, we determined whether the statement was true or false.
+
+If we were able to derive a truth value, then the statement has to be a proposition.
+If we were unable to assign a truth value to the statement or the truth value was dependent on some variable, then the statement couldn't be a proposition.
+
+
+
+### Results
+
+*(a) Proposition, $T$*
+
+
+
+
+## Exercise 1b {.tabset .tabset-fade}
+
+### Step-1
+
+In this exercise, we determine whether the given statement represents a proposition.
+
+**What is a proposition?**
+
+
+
+### Step-2
+
+A **proposition** is a statement that is known to be true or known to be false. If we don't know if a statement is true or false, then the statement is not a proposition.
+
+
+
+### Step-3
+
+(b)
+
+The statement is a proposition because we know that the statement is false $F$ *(as Tallahassee is the capital of Florida)*.
+
+
+
+### Step-4
+
+Let us summarize how the results were derived.
+
+To determine whether a statement is a proposition, we determined whether the statement was true or false.
+
+  - If we were able to derive a truth value, then the statement has to be a proposition.
+  - If we were unable to assign a truth value to the statement or the truth value was dependent on some variable, then the statement couldn't be a proposition.
+
+<br>
+
+### Results
+
+*(b) Proposition, $F$*
+
+
