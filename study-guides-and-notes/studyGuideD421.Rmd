@@ -1,4 +1,4 @@
-# Course 1: Discrete Math Functions & Applications (D421)
+# Course 1: Discrete Math Functions and Applications (D421)
 
 ```{r tabset-setup, include=FALSE}
 is_html <- knitr::is_html_output(excludes = "markdown")
