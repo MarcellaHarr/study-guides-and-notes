@@ -1,11 +1,11 @@
 ---
 title: "My Study Notes & Guides"
-author: "Marcella"
+author: "Marcella Harris"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 output: 
   bookdown::bs4_book:
-    theme: cosmo
+    theme: lux
     repo: https://github.com/MarcellaHarr/study-guides-and-notes
     config:
       toc:
