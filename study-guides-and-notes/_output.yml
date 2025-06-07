@@ -1,6 +1,5 @@
 bookdown::bs4_book:
-  theme: lux 
-  css: style.css
+  theme: lux
   repo: https://github.com/MarcellaHarr/study-guides-and-notes
   config:
     toc:
