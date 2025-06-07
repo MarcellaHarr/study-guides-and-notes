@@ -1,6 +1,7 @@
 bookdown::bs4_book: 
+  output_dir: "docs"
   theme: 
-    bootswatch: "lux"
+    bootswatch: lux
     base_font: 
       google: Sen
     heading_font:
