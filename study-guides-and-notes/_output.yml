@@ -1,0 +1,9 @@
+bookdown::bs4_book:
+  theme: lux 
+  css: style.css
+  repo: https://github.com/MarcellaHarr/study-guides-and-notes
+  config:
+    toc:
+      collapse: section
+    search: true
+    download: null
