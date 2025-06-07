@@ -1,7 +1,7 @@
 # Course 1: Discrete Math Functions and Applications (D421)
 
 ```{r tabset-setup, include=FALSE}
-is_html <- knitr::is_html_output(excludes = "markdown")
+is_html <- knitr::is_html_output()
 ```
 
 ## Exercise 1a {.tabset .tabset-fade}
