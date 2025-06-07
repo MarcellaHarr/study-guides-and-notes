@@ -1,5 +1,11 @@
-bookdown::bs4_book:
-  theme: lux
+bookdown::bs4_book: 
+  theme: 
+    bootswatch: "lux"
+    base_font: 
+      google: Sen
+    heading_font:
+      google:
+        family: Bitter
   repo: https://github.com/MarcellaHarr/study-guides-and-notes
   config:
     toc:
