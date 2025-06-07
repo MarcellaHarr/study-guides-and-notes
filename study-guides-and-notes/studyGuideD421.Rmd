@@ -16,9 +16,13 @@ knitr::opts_chunk$set(cache = FALSE, echo = TRUE)
 # Chapter 1The Foundations: Logic and Proofs
 <hr>
 
-## Exercise 1a {.tabset .tabset-fade}
+### Exercise 1a {.tabset .tabset-fade}
 
-### Step-1
+::: {.nav nav-tabs}
+
+## Step-1 {.nav-item}
+
+### {.nav-link active}
 
 In this exercise, we determine whether the given statement represents a proposition.
 
@@ -26,13 +30,17 @@ In this exercise, we determine whether the given statement represents a proposit
 
 
 
-### Step-2
+## Step-2 {.nav-item}
+
+### {.nav-link}
 
 A **proposition** is a statement that is known to be true or known to be false. If we don't know if a statement is true or false, then the statement is not a proposition.
 
 
 
-### Step-3
+## Step-3 {.nav-item}
+
+### {.nav-link}
 
 **(a)**
 
@@ -41,7 +49,9 @@ $T$ *(as Boston is the capital of Massachusetts)*.
 
 
 
-### Step-4
+## Step-4 {.nav-item}
+
+### {.nav-link}
 
 Let us summarize how the results were derived.
 
@@ -52,11 +62,13 @@ If we were unable to assign a truth value to the statement or the truth value wa
 
 
 
-### Results
+## Results {.nav-item}
+
+### {.nav-link}
 
 *(a) Proposition, $T$*
 
-
+:::
 
 
 ## Exercise 1b {.tabset .tabset-fade}
