@@ -4,7 +4,21 @@
 is_html <- knitr::is_html_output()
 ```
 
-## Exercise 1a {.tabset .tabset-fade}
+
+::: {.panel-tabset}
+## Exercise 1a {.active}
+
+### Tab A
+
+Content for `Tab A`
+
+### Tab B
+
+Content for `Tab B`
+
+:::
+
+## Exercise 2a {.tabset .tabset-fade}
 
 ### Step-1
 What is a proposition?
