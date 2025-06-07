@@ -2,7 +2,7 @@ welcome
 whats-inside
 getting-started
 contribute-or-feedback
-logic-and-proofs
+course-1-discrete-math-functions-applications-d421
 exercise-1a
 step-1
 step-2
