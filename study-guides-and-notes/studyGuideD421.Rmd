@@ -4,33 +4,19 @@
 is_html <- knitr::is_html_output()
 ```
 
+## Exercise 1a {.tabset}
 
-::: {.panel-tabset}
-## Exercise 1a {.active}
-
-### Tab A
-
-Content for `Tab A`
-
-### Tab B
-
-Content for `Tab B`
-
-:::
-
-## Exercise 2a {.tabset .tabset-fade}
-
-### Step-1
+### Step-1 {-}
 What is a proposition?
 
-### Step-2
+### Step-2 {-}
 A **proposition** is a statement that is either **true** or **false**.
 
-### Step-3
+### Step-3 {-}
 **(a)** Boston is the capital of Massachusetts → **Proposition**: $T$
 
-### Step-4
+### Step-4 {-}
 A statement is a proposition if we can assign a definite truth value.
 
-### Results
+### Results {-}
 **(a)** is a **proposition**, with truth value **$T$**.
