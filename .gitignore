@@ -4,6 +4,6 @@ _book/
 .Rhistory
 .Rproj.user
 
-# Only ignore root-level HTML files — not those in docs/
+# Ignore all HTML except ones in docs/ (recursively)
 *.html
-!docs/*.html
+!docs/**/*.html
