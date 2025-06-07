@@ -1,6 +1,9 @@
-# This is a gitignore file for an R project
+# Ignore generated _bookdown_files and build folders
 _bookdown_files/
 _book/
 .Rhistory
 .Rproj.user
+
+# Only ignore root-level HTML files — not those in docs/
 *.html
+!docs/*.html
