@@ -4,11 +4,3 @@ getting-started
 contribute-or-feedback
 course-1-discrete-math-functions-and-applications-d421
 exercise-1a
-tab-a
-tab-b
-exercise-2a
-step-1
-step-2
-step-3
-step-4
-results
