@@ -1,8 +1,10 @@
 book_filename: "study-notes"
-rmd_files: [
-  "index.Rmd",
-  "studyGuideD421.Rmd"
-]
+
+rmd_files:
+  - index.Rmd
+  - studyGuideD421.Rmd
+
 language:
   ui:
     chapter_name: "Course "
+
