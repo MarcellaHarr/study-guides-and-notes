@@ -1,5 +1,9 @@
 # Logic and Proofs
 
+```{r tabset-setup, include=FALSE}
+is_html <- knitr::is_html_output(excludes = "markdown")
+```
+
 ## Exercise 1a {.tabset .tabset-fade}
 
 ### Step-1

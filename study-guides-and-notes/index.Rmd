@@ -15,6 +15,13 @@ output:
       download: null
 ---
 
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,
+                      cache = FALSE,
+                      message = FALSE,
+                      warning = FALSE)
+```
+
 # Welcome
 
 <img src="https://via.placeholder.com/150" alt="Logo or Banner" style="float: right; margin-left: 20px; width: 150px;">
