@@ -7,3 +7,6 @@ _book/
 # Ignore all HTML except ones in docs/ (recursively)
 *.html
 !docs/**/*.html
+
+# Ignore workspace settings
+.vscode/settings.json
