@@ -1,0 +1,9 @@
+book_filename: "study-notes"
+rmd_files: [
+  "index.Rmd",
+  "studyGuideD421.Rmd",
+  # ...continue up to indexFile-20.Rmd
+]
+language:
+  ui:
+    chapter_name: ""
