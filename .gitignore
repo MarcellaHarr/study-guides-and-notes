@@ -1,12 +1,6 @@
-# Ignore generated _bookdown_files and build folders
-_bookdown_files/
-_book/
+# Ignore generated files and build folders
 .Rhistory
 .Rproj.user
-
-# Ignore all HTML except ones in docs/ (recursively)
-*.html
-!docs/**/*.html
 
 # Ignore workspace settings
 .vscode/settings.json
