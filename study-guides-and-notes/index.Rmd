@@ -19,7 +19,7 @@ bs_global_theme(bs_theme(
   version = 4,
   bootswatch = "lux",
   primary = "#b38962",  # Optional custom
-  code_font = font_google("Raleway"),
+  code_font = font_google("Azeret Mono"),
   heading_font = font_google("Cinzel"),
   base_font = font_google("Gruppo")
 ))
