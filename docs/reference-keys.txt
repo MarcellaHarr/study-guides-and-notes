@@ -1,7 +1,0 @@
-welcome
-whats-inside
-getting-started
-contribute-or-feedback
-part-discrete-math-ii-functions-and-applications
-course-d421-functions-and-applications
-exercise-1a
