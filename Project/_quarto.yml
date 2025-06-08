@@ -1,0 +1,25 @@
+project:
+  type: book
+
+book:
+  title: "My Study Notes & Guides"
+  author: "Marcella Harris"
+  date: "`r Sys.Date()`"
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - summary.qmd
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme:
+      - lux
+      - brand
+  pdf:
+    documentclass: scrreprt
+
+editor: visual
+
