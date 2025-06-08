@@ -1,9 +1,49 @@
 # Preface {.unnumbered}
 
-This is a Quarto book.
+::: {.text-center}
+![Banner or Logo](https://placehold.co/200){.img-fluid style="margin-bottom: 20px;"}
 
-To learn more about Quarto books visit <https://quarto.org/docs/books>.
+# Welcome to My Study Notes & Guides
+:::
 
-```{r}
-1 + 1
+::: {.lead}
+This Quarto book contains notes and study guides I’ve created for my **Western Governors University** courses.
+
+Here I’ve structured all the **notes**, **videos**, and **study guides** to be easily browsed and reviewed, whether you're prepping for an exam or refreshing key concepts.
+:::
+
+---
+
+## ✍️ What's Inside
+
+::: {.card}
+- 📚 Organized course notes and study guides by topic
+- 🎥 Embedded videos and media
+- 🧠 Quick-reference guides
+- 🧪 Code examples and exercises
+- ✅ Practical review checklists
+:::
+
+---
+
+## 🚀 Getting Started
+
+::: {.callout-tip appearance="simple"}
+Start exploring by selecting a course or topic from the sidebar.
+
+Or jump straight into this course here:
+:::
+
+[Begin Here »](courseD421.qmd){.btn .btn-primary .btn-lg}
+
+---
+
+## 🙌 Contribute or Feedback
+
+This project is personal, but feedback is welcome!  
+Feel free to open an issue or follow my GitHub:
+
+[GitHub Repository](https://github.com/MarcellaHarr/study-guides-and-notes){.btn .btn-outline-secondary}
+
+---
 ```
