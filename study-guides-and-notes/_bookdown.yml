@@ -1,9 +1,0 @@
-book_filename: "study-notes"
-new_session: true
-delete_merged_file: true
-language:
-  ui:
-    chapter_name: "Course "
-rmd_files:
-  - index.Rmd
-  - studyGuideD421.Rmd
