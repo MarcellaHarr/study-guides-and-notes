@@ -1,9 +1,24 @@
-# Introduction
+# Discrete Math II Functions and Applications {.unnumbered}
 
-This is a book created from markdown and executable code.
+::: {.panel-tabset}
+## Exercise 1a {.active}
 
-See @knuth84 for additional discussion of literate programming.
+### Step-1 {-}
 
-```{r}
-1 + 1
-```
+What is a proposition?
+
+A **proposition** is a statement that is either **true** or **false**.
+
+### Step-2 {-}
+
+**(a)** Boston is the capital of Massachusetts → **Proposition**: $T$
+
+### Step-3 {-}
+
+A statement is a proposition if we can assign a definite truth value.
+
+### Results {-}
+
+**(a)** is a **proposition**, with truth value **$T$**.
+
+:::
