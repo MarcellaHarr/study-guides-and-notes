@@ -1,4 +1,6 @@
-# Course 1: Discrete Math Functions and Applications (D421)
+# (PART\*) Discrete Math II Functions and Applications
+
+# Course (D421): Functions and Applications
 
 
 

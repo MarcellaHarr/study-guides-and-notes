@@ -2,5 +2,6 @@ welcome
 whats-inside
 getting-started
 contribute-or-feedback
-course-1-discrete-math-functions-and-applications-d421
+part-discrete-math-ii-functions-and-applications
+course-d421-functions-and-applications
 exercise-1a
