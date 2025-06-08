@@ -13,19 +13,6 @@ knitr::opts_chunk$set(echo = TRUE,
                       warning = FALSE)
 ```
 
-```{r theme-setup, echo=FALSE, results='hide', message=FALSE}
-library(bslib)
-
-bs_global_theme(bs_theme(
-  version = 4,
-  bootswatch = "lux",
-  primary = "#b38962",
-  code_font = font_google("Fira Code", collection = FALSE),
-  heading_font = font_google("IBM Plex Sans", collection = FALSE),
-  base_font = font_google("Open Sans", collection = FALSE)
-))
-```
-
 # Welcome
 
 <img src="https://via.placeholder.com/150" alt="Logo or Banner" style="float: right; margin-left: 20px; width: 150px;">
