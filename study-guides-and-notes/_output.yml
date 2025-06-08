@@ -1,12 +1,11 @@
-bookdown::bs4_book: 
+bookdown::html_document2: 
   output_dir: "docs"
-  theme: 
-    bootswatch: lux
-    base_font: 
-      google: Sen
-    heading_font:
-      google:
-        family: Bitter
+  theme: default
+  base_font: 
+    google: Sen
+  heading_font:
+    google:
+      family: Bitter
   repo: https://github.com/MarcellaHarr/study-guides-and-notes
   config:
     toc:
