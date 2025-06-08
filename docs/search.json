@@ -42,11 +42,11 @@
   {
     "objectID": "courseD421.html",
     "href": "courseD421.html",
-    "title": "1  Introduction",
+    "title": "Discrete Math II Functions and Applications",
     "section": "",
-    "text": "This is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
+    "text": "Exercise 1a\n\n\n\nStep-1\nWhat is a proposition?\nA proposition is a statement that is either true or false.\n\n\nStep-2\n(a) Boston is the capital of Massachusetts → Proposition: \\(T\\)\n\n\nStep-3\nA statement is a proposition if we can assign a definite truth value.\n\n\nResults\n(a) is a proposition, with truth value \\(T\\).",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+      "Discrete Math II Functions and Applications"
     ]
   },
   {
