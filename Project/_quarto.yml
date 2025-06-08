@@ -5,7 +5,7 @@ project:
 book:
   title: "My Study Notes & Guides"
   author: "Marcella Harris"
-  date: "`r Sys.Date()`"
+  date: today
   chapters:
     - index.qmd
     - intro.qmd
