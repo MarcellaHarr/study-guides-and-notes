@@ -15,13 +15,14 @@ knitr::opts_chunk$set(echo = TRUE,
 
 ```{r theme-setup, echo=FALSE, results='hide', message=FALSE}
 library(bslib)
+
 bs_global_theme(bs_theme(
   version = 4,
   bootswatch = "lux",
-  primary = "#b38962",  # Optional custom
-  code_font = font_google("Fira Code"),
-  heading_font = font_google("IBM Plex Sans"),
-  base_font = font_google("Open Sans")
+  primary = "#b38962",
+  code_font = font_google("Fira Code", collection = FALSE),
+  heading_font = font_google("IBM Plex Sans", collection = FALSE),
+  base_font = font_google("Open Sans", collection = FALSE)
 ))
 ```
 
