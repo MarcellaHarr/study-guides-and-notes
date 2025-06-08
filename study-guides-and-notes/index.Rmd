@@ -19,9 +19,9 @@ bs_global_theme(bs_theme(
   version = 4,
   bootswatch = "lux",
   primary = "#b38962",  # Optional custom
-  code_font = font_google("Azeret Mono"),
-  heading_font = font_google("Cinzel"),
-  base_font = font_google("Gruppo")
+  code_font = font_google("Fira Code"),
+  heading_font = font_google("IBM Plex Sans"),
+  base_font = font_google("Open Sans")
 ))
 ```
 
