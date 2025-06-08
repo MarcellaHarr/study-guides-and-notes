@@ -1,0 +1,43 @@
+---
+title: "My Study Notes & Guides"
+author: "Marcella Harris"
+date: "2025-06-07"
+site: bookdown::bookdown_site
+---
+
+
+
+# Welcome
+
+<img src="https://via.placeholder.com/150" alt="Logo or Banner" style="float: right; margin-left: 20px; width: 150px;">
+
+Welcome to **Study Notes** — a curated collection of learning resources and guides covering various topics. This site is organized using [**bookdown**](https://bookdown.org) and is hosted on GitHub Pages.
+
+Whether you're here to review, revise, or explore something new, you'll find each section designed to be clear, concise, and practical.
+
+---
+
+## 📘 What's Inside
+
+This collection includes:
+
+- Key concepts & summaries
+- Real-world examples
+- Code snippets (where applicable)
+- Diagrams & visuals
+- Learning tips
+
+> ✍️ *Each topic is organized into its own chapter (see left sidebar).*
+
+
+---
+
+## 🚀 Getting Started
+
+[Start reading »](studyGuideD421.html){.btn .btn-primary}
+
+---
+
+## 🙌 Contribute or Feedback
+
+Feel free to view or contribute on [GitHub](https://github.com/MarcellaHarr/study-guides-and-notes.git), or open an issue if you find something to improve.

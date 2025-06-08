@@ -1,0 +1,20 @@
+# Course 1: Discrete Math Functions and Applications (D421)
+
+
+
+## Exercise 1a {.tabset}
+
+### Step-1 {-}
+What is a proposition?
+
+### Step-2 {-}
+A **proposition** is a statement that is either **true** or **false**.
+
+### Step-3 {-}
+**(a)** Boston is the capital of Massachusetts → **Proposition**: $T$
+
+### Step-4 {-}
+A statement is a proposition if we can assign a definite truth value.
+
+### Results {-}
+**(a)** is a **proposition**, with truth value **$T$**.
