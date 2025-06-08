@@ -3,6 +3,7 @@ title: "My Study Notes & Guides"
 author: "Marcella Harris"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
+documentclass: book
 ---
 
 ```{r setup, include=FALSE}
@@ -10,6 +11,18 @@ knitr::opts_chunk$set(echo = TRUE,
                       cache = FALSE,
                       message = FALSE,
                       warning = FALSE)
+```
+
+```{r theme-setup, echo=FALSE, results='hide', message=FALSE}
+library(bslib)
+bs_global_theme(bs_theme(
+  version = 4,
+  bootswatch = "lux",
+  primary = "#b38962",  # Optional custom
+  code_font = font_google("Raleway"),
+  heading_font = font_google("Cinzel"),
+  base_font = font_google("Gruppo")
+))
 ```
 
 # Welcome
