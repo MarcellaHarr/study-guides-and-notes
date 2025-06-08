@@ -44,7 +44,7 @@
     "href": "courseD421.html",
     "title": "Discrete Math II Functions and Applications",
     "section": "",
-    "text": "Exercise 1a\n\n\n\nStep-1\nWhat is a proposition?\nA proposition is a statement that is either true or false.\n\n\nStep-2\n(a) Boston is the capital of Massachusetts → Proposition: \\(T\\)\n\n\nStep-3\nA statement is a proposition if we can assign a definite truth value.\n\n\nResults\n(a) is a proposition, with truth value \\(T\\).",
+    "text": "Exercise 1a\n\n\nStep-1 {-}Step-2Step-3Results\n\n\nWhat is a proposition?\nA proposition is a statement that is either true or false.\n\n\n(a) Boston is the capital of Massachusetts → Proposition: \\(T\\)\n\n\nA statement is a proposition if we can assign a definite truth value.\n\n\n(a) is a proposition, with truth value \\(T\\).",
     "crumbs": [
       "Discrete Math II Functions and Applications"
     ]

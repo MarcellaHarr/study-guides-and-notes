@@ -1,23 +1,26 @@
 # Discrete Math II Functions and Applications {.unnumbered}
 
-::: {.panel-tabset}
-## Exercise 1a {.active}
+::: {.lead}
+Exercise 1a
+:::
 
-### Step-1 {-}
+::: {.panel-tabset}
+
+## Step-1 {-} {.active}
 
 What is a proposition?
 
 A **proposition** is a statement that is either **true** or **false**.
 
-### Step-2 {-}
+## Step-2 {-}
 
 **(a)** Boston is the capital of Massachusetts → **Proposition**: $T$
 
-### Step-3 {-}
+## Step-3 {-}
 
 A statement is a proposition if we can assign a definite truth value.
 
-### Results {-}
+## Results {-}
 
 **(a)** is a **proposition**, with truth value **$T$**.
 
