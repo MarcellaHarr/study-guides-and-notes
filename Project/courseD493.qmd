@@ -1,3 +1,1 @@
----
-title: "Scripting & Programming - Applications"
----
+# Scripting & Programming - Applications {.unnumbered}

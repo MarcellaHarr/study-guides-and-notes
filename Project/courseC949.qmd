@@ -1,3 +1,1 @@
----
-title: "courseC949"
----
+# Data Structures & Algorithms I {.unnumbered}
