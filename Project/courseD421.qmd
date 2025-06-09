@@ -38,7 +38,7 @@ To determine whether a statement is a proposition, we determined whether the sta
 If we were able to derive a truth value, then the statement has to be a proposition.
 If we were unable to assign a truth value to the statement or the truth value was dependent on some variable, then the statement couldn't be a proposition.
 
-#### Results
+## Results
 
 *(a) Proposition, $T$*
 
@@ -76,7 +76,7 @@ To determine whether a statement is a proposition, we determined whether the sta
   - If we were able to derive a truth value, then the statement has to be a proposition.
   - If we were unable to assign a truth value to the statement or the truth value was dependent on some variable, then the statement couldn't be a proposition.
 
-#### Results
+## Results
 
 *(b) Proposition, $F$*
 
@@ -115,7 +115,7 @@ To determine whether a statement is a proposition, we determined whether the sta
   - If we were able to derive a truth value, then the statement has to be a proposition.
   - If we were unable to assign a truth value to the statement or the truth value was dependent on some variable, then the statement couldn't be a proposition.
 
-#### Results
+## Results
 
 *(c) Proposition, $T$*
 
@@ -154,7 +154,7 @@ To determine whether a statement is a proposition, we determined whether the sta
   - If we were able to derive a truth value, then the statement has to be a proposition.
   - If we were unable to assign a truth value to the statement or the truth value was dependent on some variable, then the statement couldn't be a proposition.
 
-#### Results
+## Results
 
 *(d) Proposition, $F$*
 
@@ -192,7 +192,7 @@ To determine whether a statement is a proposition, we determined whether the sta
   - If we were able to derive a truth value, then the statement has to be a proposition.
   - If we were unable to assign a truth value to the statement or the truth value was dependent on some variable, then the statement couldn't be a proposition.
 
-#### Results
+## Results
 
 *(e) Not a proposition*
 
@@ -230,7 +230,7 @@ To determine whether a statement is a proposition, we determined whether the sta
   - If we were able to derive a truth value, then the statement has to be a proposition.
   - If we were unable to assign a truth value to the statement or the truth value was dependent on some variable, then the statement couldn't be a proposition.
 
-#### Results
+## Results
 
 *(f) Not a proposition*
 
@@ -431,7 +431,7 @@ $\text{ Abby is not richer than Ricardo. }$
 
 *Note: This sentence is also equivalent with: Abby is poorer or equally rich to Ricardo.*
 
-#### Results
+## Results
 
 ::: {.text-center}
 **(a)** Linda is not younger than Sanjay.
