@@ -9,6 +9,9 @@ book:
   chapters:
     - index.qmd
     - courseD421.qmd
+    - courseC949.qmd
+    - courseD493.qmd
+    - courseD495.qmd
     - summary.qmd
     - references.qmd
 
