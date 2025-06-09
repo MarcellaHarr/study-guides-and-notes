@@ -1,27 +1,1014 @@
 # Discrete Math II Functions and Applications {.unnumbered}
 
+- Chapter 1: The Foundations | Logic and Proofs
+
 ::: {.lead}
 Exercise 1a
 :::
 
 ::: {.panel-tabset}
 
-## Step-1 {-} {.active}
+## Step-1
 
-What is a proposition?
+In this exercise, we determine whether the given statement represents a proposition.
 
-A **proposition** is a statement that is either **true** or **false**.
+**What is a proposition?**
 
-## Step-2 {-}
+## Step-2
 
-**(a)** Boston is the capital of Massachusetts → **Proposition**: $T$
+A **proposition** is a statement that is known to be true or known to be false. If we don't know if a statement is true or false, then the statement is not a proposition.
 
-## Step-3 {-}
+## Step-3
 
-A statement is a proposition if we can assign a definite truth value.
+**(a)**
 
-## Results {-}
+The statement is a proposition because we know that the statement is true 
+$T$ *(as Boston is the capital of Massachusetts)*.
 
-**(a)** is a **proposition**, with truth value **$T$**.
+## Step-4
+
+Let us summarize how the results were derived.
+
+To determine whether a statement is a proposition, we determined whether the statement was true or false.
+
+If we were able to derive a truth value, then the statement has to be a proposition.
+If we were unable to assign a truth value to the statement or the truth value was dependent on some variable, then the statement couldn't be a proposition.
+
+#### Results
+
+*(a) Proposition, $T$*
 
 :::
+
+
+
+::: {.lead}
+Exercise 1b {.tabset .tabset-fade}
+:::
+
+::: {.panel-tabset}
+
+## Step-1
+
+In this exercise, we determine whether the given statement represents a proposition.
+
+**What is a proposition?**
+
+## Step-2
+
+A **proposition** is a statement that is known to be true or known to be false. If we don't know if a statement is true or false, then the statement is not a proposition.
+
+## Step-3
+
+(b)
+
+The statement is a proposition because we know that the statement is false $F$ *(as Tallahassee is the capital of Florida)*.
+
+## Step-4
+
+Let us summarize how the results were derived.
+
+To determine whether a statement is a proposition, we determined whether the statement was true or false.
+
+  - If we were able to derive a truth value, then the statement has to be a proposition.
+  - If we were unable to assign a truth value to the statement or the truth value was dependent on some variable, then the statement couldn't be a proposition.
+
+#### Results
+
+*(b) Proposition, $F$*
+
+:::
+
+
+::: {.lead}
+Exercise 1c {.tabset .tabset-fade}
+:::
+
+::: {.panel-tabset}
+
+## Step-1
+
+In this exercise, we determine whether the given statement represents a proposition.
+
+**What is a proposition?**
+
+## Step-2
+
+A **proposition** is a statement that is known to be true or known to be false. If we don't know if a statement is true or false, then the statement is not a proposition.
+
+## Step-3
+
+**(c)**
+
+The statement is a proposition because we know that the statement is true 
+$T$ *(since 2 added to 3 is equal to 5)*.
+
+## Step-4
+
+Let us summarize how the results were derived.
+
+To determine whether a statement is a proposition, we determined whether the statement was true or false.
+
+  - If we were able to derive a truth value, then the statement has to be a proposition.
+  - If we were unable to assign a truth value to the statement or the truth value was dependent on some variable, then the statement couldn't be a proposition.
+
+#### Results
+
+*(c) Proposition, $T$*
+
+:::
+
+
+
+::: {.lead}
+Exercise 1d
+:::
+
+::: {.panel-tabset}
+
+## Step-1
+
+In this exercise, we determine whether the given statement represents a proposition.
+
+**What is a proposition?**
+
+## Step-2
+
+A **proposition** is a statement that is known to be true or known to be false. If we don't know if a statement is true or false, then the statement is not a proposition.
+
+## Step-3
+
+**(d)**
+
+The statement is a proposition because we know that the statement is false $F$ 
+*(since 5 added to 7 is equal to 12, and thus not equal to 10)*.
+
+## Step-4
+
+Let us summarize how the results were derived.
+
+To determine whether a statement is a proposition, we determined whether the statement was true or false.
+
+  - If we were able to derive a truth value, then the statement has to be a proposition.
+  - If we were unable to assign a truth value to the statement or the truth value was dependent on some variable, then the statement couldn't be a proposition.
+
+#### Results
+
+*(d) Proposition, $F$*
+
+:::
+
+
+
+::: {.lead}
+Exercise 1e 
+:::
+
+::: {.panel-tabset}
+
+## Step-1
+
+In this exercise, we determine whether the given statement represents a proposition.
+
+**What is a proposition?**
+
+## Step-2
+
+A **proposition** is a statement that is known to be true or known to be false. If we don't know if a statement is true or false, then the statement is not a proposition.
+
+## Step-3
+
+**(e)**
+
+The statement is not a proposition, because the statement could be true or could be **false** *(but we do not know which case since $x$ is unknown)*.
+
+## Step-4
+
+Let us summarize how the results were derived.
+
+To determine whether a statement is a proposition, we determined whether the statement was true or false.
+
+  - If we were able to derive a truth value, then the statement has to be a proposition.
+  - If we were unable to assign a truth value to the statement or the truth value was dependent on some variable, then the statement couldn't be a proposition.
+
+#### Results
+
+*(e) Not a proposition*
+
+:::
+
+
+
+::: {.lead}
+Exercise 1f
+:::
+
+::: {.panel-tabset}
+
+## Step-1
+
+In this exercise, we determine whether the given statement represents a proposition.
+
+**What is a proposition?**
+
+## Step-2
+
+A **proposition** is a statement that is known to be true or known to be false. If we don't know if a statement is true or false, then the statement is not a proposition.
+
+## Step-3
+
+**(f)**
+
+The statement is not a proposition, because it is not a statement that could be true or false.
+
+## Step-4
+
+Let us summarize how the results were derived.
+
+To determine whether a statement is a proposition, we determined whether the statement was true or false.
+
+  - If we were able to derive a truth value, then the statement has to be a proposition.
+  - If we were unable to assign a truth value to the statement or the truth value was dependent on some variable, then the statement couldn't be a proposition.
+
+#### Results
+
+*(f) Not a proposition*
+
+:::
+
+- Chapter 2:
+
+::: {.lead}
+Exercise 2a
+:::
+
+::: {.panel-tabset}
+
+## Step-1
+
+**PART A:** This sentence is not a proposition because it is not a declarative sentence. 
+
+So it is not possible for this sentence to be true or false.
+
+## Step-2
+
+PART A: not a proposition
+
+:::
+
+
+
+::: {.lead}
+Exercise 2b
+:::
+
+::: {.panel-tabset}
+
+## Step-1
+
+*PART B:* This sentence is not a proposition because it is not a declarative sentence. 
+
+So it is not possible for this sentence to be true or false.
+
+## Step-2
+
+*PART B: not a proposition*
+
+:::
+
+
+
+::: {.lead}
+Exercise 2c
+:::
+
+::: {.panel-tabset}
+
+## Step-1
+
+**PART C:** This sentence is a proposition because it can either be true or false. 
+
+Its truth value is false because black flies exist everywhere.
+
+
+## Step-2
+
+*PART C: proposition, false*
+
+:::
+
+
+
+::: {.lead}
+Exercise 2d
+:::
+
+::: {.panel-tabset}
+
+## Step-1
+
+**PART D:** This sentence is not a proposition because the value of $x$ is not given. 
+
+So it is not possible for this sentence to be true or false.
+
+## Step-2
+
+*PART D: not a proposition*
+
+:::
+
+
+
+::: {.lead}
+Exercise 2e
+:::
+
+::: {.panel-tabset}
+## Step-1
+
+**PART E:** This sentence is a proposition because it can either be true or false. 
+
+Its truth value is false because the moon is not made from green cheese.
+
+
+## Step-2
+
+*PART E: proposition, false*
+
+:::
+
+
+
+::: {.lead}
+Exercise 2f
+:::
+
+::: {.panel-tabset}
+
+## Step-1
+
+PART F: This sentence is not a proposition because the value of $n$ is not given. 
+
+So it is not possible for this sentence to be true or false.
+
+## Step-2
+
+*PART F: not a proposition*
+
+:::
+
+- Chapter 3:
+
+::: {.lead}
+Exercise 3 
+:::
+
+::: {.panel-tabset}
+
+## Step-1
+
+**(a)**
+
+<center>$\text{ Linda is younger than Sanjay. }$</center>
+
+The negation of the proposition adds the word "not" to the sentence:
+
+<center>$\text{ Linda is not younger than Sanjay. }$</center>
+
+*Note: This sentence is also equivalent with: Linda is older or the same age as Sanjay.*
+
+
+## Step-2
+
+**(b)**
+
+<center>$\text{ Mei makes more money than Isabella. }$</center>
+
+The negation of the proposition adds the word "not" to the sentence:
+
+<center>$\text{ Mei does not make more money than Isabella. }$</center>
+
+*Note: This sentence is also equivalent with: Mei makes less money or the same amount of money than Isabella.*
+
+## Step-3
+
+**(c)**
+
+<center>$\text{ Moshe is taller than Monica. }$</center>
+
+The negation of the proposition adds the word "not" to the sentence:
+
+<center>$\text{ Moshe is not taller than Monica. }$</center>
+
+*Note: This sentence is also equivalent with: Moshe is shorter or the same height as Monica.*
+
+## Step-4
+
+**(d)**
+
+<center>$\text{ Abby is richer than Ricardo. }$</center>
+
+The negation of the proposition adds the word "not" to the sentence:
+
+<center>$\text{ Abby is not richer than Ricardo. }$</center>
+
+*Note: This sentence is also equivalent with: Abby is poorer or equally rich to Ricardo.*
+
+#### Results
+
+<center>**(a)** Linda is not younger than Sanjay.</center>
+
+<center>**(b)** Mei does not make more money than Isabella.</center>
+
+<center>**(c)** Moshe is not taller than Monica.</center>
+
+<center>**(d)** Abby is not richer than Ricardo.</center>
+
+:::
+
+- Chapter 4:
+
+::: {.lead}
+Exercise 4
+:::
+
+::: {.panel-tabset}
+
+## Step-1
+
+**(a)**
+
+<center>$\text{ Janice has more Facebook friends than Juan. }$</center>
+
+The negation of the proposition adds the word "not" to the sentence:
+
+<center>$\text{ Janice does not have more Facebook friends than Juan. }$</center>
+
+*Note: This sentence is also equivalent with: Janice has less Facebook friends or the same number of Facebook friends as Juan.*
+
+
+## Step-2
+
+**(b)** 
+
+<center>$\text{ Quincy is smarter than Venkat. }$</center>
+
+The negation of the proposition adds the word "not" to the sentence:
+
+<center>$\text{ Quincy is not smarter than Venkat. }$</center>
+
+*Note: This sentence is also equivalent with: Quincy is dumber or equally intelligent as Venkat.*
+
+## Step-3
+
+**(c)**
+
+<center>$\text{ Zelda drives more miles to school than Paola. }$</center>
+
+The negation of the proposition adds the word "not" to the sentence:
+
+<center>$\text{ Zelda does not drive more miles to school than Paola. }$</center>
+
+*Note: This sentence is also equivalent with: Zelda drives less miles or the same number of miles to school than Paola.*
+
+## Step-4
+
+**(d)**
+
+<center>$\text{ Brianna sleeps longer than Gloria. }$</center>
+
+The negation of the proposition adds the word "not" to the sentence:
+
+<center>$\text{ Brianna does not sleep longer than Gloria. }$</center>
+
+*Note: This sentence is also equivalent with: Brianna sleeps less or the same amount than Gloria.*
+
+#### Results
+
+<center>**(a)** Janice does not have more Facebook friends than Juan.</center>
+
+<center>**(b)** Quincy is not smarter than Venkat.</center>
+
+<center>**(c)** Zelda does not drive more miles to school than Paola.</center>
+
+<center>**(d)** Brianna does not sleep longer than Gloria.</center>
+
+:::
+
+- Chapter 5:
+
+::: {.lead}
+Exercise 5a
+:::
+
+::: {.panel-tabset}
+
+## Step-1
+
+**DEFINITIONS**
+
+The negation of a statement states the opposite of the given statement.
+
+## Step-2
+
+**SOLUTION**
+
+**(a)** The opposite of a statement can be obtained by adding "not" to the given statement. The opposite of Mei having an MP3 player is that Mei does not have an MP3 player.
+
+## Step-3
+
+*(a) Mei does not have an MP3 player.*
+
+:::
+
+
+::: {.lead}
+Exercise 5b
+:::
+
+::: {.panel-tabset}
+
+## Step-1
+
+**DEFINITIONS**
+
+The negation of a statement states the opposite of the given statement.
+
+## Step-2
+
+**SOLUTION**
+
+**(b)** The opposite of no pollution in New Jersey is that there is pollution in New Jersey.
+
+## Step-3
+
+*(b) There is pollution in New Jersey.*
+
+:::
+
+
+::: {.lead}
+Exercise 5c
+:::
+
+::: {.panel-tabset}
+
+## Step-1
+
+**DEFINITIONS**
+
+The negation of a statement states the opposite of the given statement.
+
+## Step-2
+
+**SOLUTION**
+
+**(c)** The opposite of an equality $(=)$ is a difference $\text{(≠)   2+1 ≠ 3 }$
+
+## Step-3
+
+*(c) $2+1 ≠ 3$*
+
+:::
+
+
+::: {.lead}
+Exercise 5d
+:::
+
+::: {.panel-tabset}
+
+## Step-1
+
+**DEFINITIONS**
+
+The negation of a statement states the opposite of the given statement.
+
+## Step-2
+
+**SOLUTION**
+
+**(d)** The opposite of a statement can be obtained by adding *"not"* to the given statement: The summer in Maine is not *(hot and sunny)*.
+
+## Step-3
+
+*(d) The summer in Maine is not (hot and sunny).*
+
+:::
+
+- Chapter 6:
+
+<!-- ::: {.lead} -->
+<!-- Exercise  {.tabset .tabset-fade} -->
+<!-- ::: -->
+
+<!-- ::: {.panel-tabset} -->
+
+<!-- ## Step-1 -->
+
+<!-- - -->
+
+<!-- ## Step-2 -->
+
+<!-- - -->
+
+<!-- ## Step-3 -->
+
+<!-- **(d)** -->
+
+<!-- - -->
+
+<!-- ## Step-4 -->
+
+<!-- - -->
+
+<!-- #### Results -->
+
+<!-- - -->
+
+<!-- ::: -->
+
+- Chapter 7:
+
+::: {.lead}
+Exercise 7a
+:::
+
+::: {.panel-tabset}
+
+## Step-1
+
+**DEFINITION**
+
+The negation of a statement states the opposite of the given statement.
+
+## Step-2
+
+**(a)** The opposite of a statement can be obtained by adding "not" to the given statement 
+
+*(note: adjust the sentence such that it remains proper English):*
+  - Steve does not have more than 100 GB free disk space on his laptop.
+
+## Step-3
+
+*(a) Steve does not have more than 100 GB free disk space on his laptop.*
+
+:::
+
+
+
+::: {.lead}
+Exercise 7b
+:::
+
+::: {.panel-tabset}
+
+## Step-1
+
+**DEFINITION**
+
+The negation of a statement states the opposite of the given statement.
+
+## Step-2
+
+-
+
+## Step-3
+
+-
+
+
+## Step-4
+
+-
+
+#### Results
+
+-
+
+:::
+
+
+::: {.lead}
+Exercise 
+:::
+
+::: {.panel-tabset}
+
+## Step-1
+
+-
+
+## Step-2
+
+-
+
+## Step-3
+
+-
+
+## Step-4
+
+-
+
+#### Results
+
+-
+
+:::
+
+
+::: {.lead}
+Exercise 
+:::
+
+::: {.panel-tabset}
+
+## Step-1
+
+-
+
+## Step-2
+
+-
+
+## Step-3
+
+-
+
+## Step-4
+
+-
+
+#### Results
+
+-
+
+:::
+
+
+::: {.lead}
+Exercise 
+:::
+
+::: {.panel-tabset}
+
+## Step-1
+
+-
+
+## Step-2
+
+-
+
+## Step-3
+
+-
+
+## Step-4
+
+-
+
+#### Results
+
+-
+
+:::
+
+
+::: {.lead}
+Exercise 
+:::
+
+::: {.panel-tabset}
+
+## Step-1
+
+-
+
+## Step-2
+
+-
+
+## Step-3
+
+-
+
+## Step-4
+
+-
+
+#### Results
+
+-
+
+:::
+
+
+::: {.lead}
+Exercise 
+:::
+
+::: {.panel-tabset}
+## Step-1
+
+-
+
+## Step-2
+
+-
+
+## Step-3
+
+-
+
+## Step-4
+
+-
+
+#### Results
+
+-
+
+:::
+
+
+::: {.lead}
+Exercise 
+:::
+
+::: {.panel-tabset}
+
+## Step-1
+
+-
+
+## Step-2
+
+-
+
+## Step-3
+
+-
+
+## Step-4
+
+-
+
+#### Results
+
+-
+
+:::
+
+
+::: {.lead}
+Exercise  {.tabset .tabset-fade}
+:::
+
+::: {.panel-tabset}
+
+## Step-1
+
+-
+
+## Step-2
+
+-
+
+## Step-3
+
+-
+
+## Step-4
+
+-
+
+#### Results
+
+-
+
+:::
+
+
+::: {.lead}
+Exercise
+:::
+
+::: {.panel-tabset}
+
+## Step-1
+
+-
+
+## Step-2
+
+-
+
+## Step-3
+
+**(d)**
+
+-
+
+## Step-4
+
+-
+
+#### Results
+
+-
+
+:::
+
+::: {.lead}
+Exercise 
+:::
+
+::: {.panel-tabset}
+
+## Step-1
+
+-
+
+## Step-2
+
+-
+
+## Step-3
+
+**(d)**
+
+-
+
+## Step-4
+
+-
+
+#### Results
+
+-
+
+:::
+
+
+::: {.panel-tabset}
+Exercise 
+:::
+
+::: {.panel-tabset}
+
+## Step-1
+
+-
+
+## Step-2
+
+-
+
+## Step-3
+
+**(d)**
+
+-
+## Step-4
+
+-
+
+#### Results
+
+-
+
+:::
+
+
+::: {.lead}
+Exercise
+:::
+
+::: {.panel-tabset}
+
+## Step-1 {.active}
+
+-
+
+## Step-2
+
+-
+
+## Step-3
+
+**(d)**
+
+-
+
+## Step-4
+
+-
+
+#### Results
+
+-
+
+:::
+
