@@ -1,8 +1,10 @@
 # Discrete Math II Functions and Applications {.unnumbered}
 
+| The Foundations | Logic and Proofs
+
 <br>
 
-### Chapter 1: The Foundations | Logic and Proofs
+### Chapter 1:
 
 <br>
 
@@ -536,7 +538,11 @@ $\text{ Brianna does not sleep longer than Gloria. }$
 
 :::
 
-## Chapter 5:
+<br>
+
+### Chapter 5:
+
+<br>
 
 ::: {.lead}
 Exercise 5a
@@ -634,5 +640,718 @@ The negation of a statement states the opposite of the given statement.
 ## Step-3
 
 *(d) The summer in Maine is not (hot and sunny).*
+
+:::
+
+<br>
+
+### Chapter 6:
+
+<br>
+
+::: {.lead}
+*coming soon ...*
+:::
+
+<br>
+
+### Chapter 7:
+
+<br>
+
+::: {.lead}
+Exercise 7a
+:::
+
+::: {.panel-tabset}
+
+## Step-1
+
+**DEFINITION**
+
+The negation of a statement states the opposite of the given statement.
+
+## Step-2
+
+**(a)** The opposite of a statement can be obtained by adding "not" to the given statement 
+
+*(note: adjust the sentence such that it remains proper English):*
+  - Steve does not have more than 100 GB free disk space on his laptop.
+
+## Step-3
+
+*(a) Steve does not have more than 100 GB free disk space on his laptop.*
+
+:::
+
+
+
+::: {.lead}
+Exercise 7b
+:::
+
+::: {.panel-tabset}
+
+## Step-1
+
+**DEFINITION**
+
+The negation of a statement states the opposite of the given statement.
+
+## Step-2
+
+**(b)** The opposite of a statement can be obtained by adding "not" to the given statement *(note: adjust the sentence such that it remains proper English):* **Zach does not block e-mails and texts from Jennifer.**
+
+## Results
+
+*(b) Zach does not block e-mails and texts from Jennifer.*
+
+:::
+
+::: {.lead}
+Exercise 7c
+:::
+
+::: {.panel-tabset}
+
+## Step-1
+
+**DEFINITION**
+
+The negation of a statement states the opposite of the given statement.
+
+## Step-2
+
+**(c)** The opposite of an equality $(=)$ is a difference $(≠)$
+
+::: {.text-center}
+$\text{7 ⋅ 11 ⋅ 13 ≠ 999}$
+:::
+
+## Results
+
+::: {.text-center}
+$\text{7 ⋅ 11 ⋅ 13 / 999}$
+:::
+
+:::
+
+
+::: {.lead}
+Exercise 7d
+:::
+
+::: {.panel-tabset}
+
+## Step-1
+
+**DEFINITION**
+
+The negation of a statement states the opposite of the given statement.
+
+## Step-2
+
+**(d)** The opposite of a statement can be obtained by adding "not" to the given statement *(note: adjust the sentence such that it remains proper English):* **Diane did not ride her bicycle 100 miles on Sunday.**
+
+## Results
+
+::: {.text-center}
+*(d) Diane did not ride her bicycle 100 miles on Sunday.*
+:::
+
+<br>
+
+### Chapter 8:
+
+<br>
+
+::: {.lead}
+Exercise 8a
+:::
+
+::: {.panel-tabset}
+
+## Step-1
+
+**A. ** Smartphone B has 288 MB RAM, which is the most out of the other two phones.
+
+## Results
+
+::: {.text-center}
+*A. True*
+:::
+
+:::
+
+
+::: {.lead}
+Exercise 8b
+:::
+
+::: {.panel-tabset}
+
+## Step-1
+
+**B. ** Either the ROM has to be greater or the resolution has to be greater. The resolution is greater in this example so it is true.
+
+## Results
+
+::: {.text-center}
+*B. True*
+:::
+
+:::
+
+
+::: {.lead}
+Exercise 8c
+:::
+
+::: {.panel-tabset}
+
+## Step-1
+
+**C. ** It is false because the resolution is larger in Smartphone A.
+
+## Results
+
+::: {.text-center}
+*C. False*
+:::
+
+:::
+
+
+::: {.lead}
+Exercise 8d
+:::
+
+::: {.panel-tabset}
+
+## Step-1
+
+**D. ** It may have more RAM and ROM, but Smartphone B's resolution is less making the statement false.
+
+## Results
+
+::: {.text-center}
+*D. False*
+:::
+
+:::
+
+
+::: {.lead}
+Exercise 8e
+:::
+
+::: {.panel-tabset}
+## Step-1
+
+**E. ** It is a biconditional statement which is F - T making the statement false.
+
+## Results
+
+::: {.text-center}
+*E. False*
+:::
+
+:::
+
+<br>
+
+### Chapter 9:
+
+<br>
+
+::: {.lead}
+Exercise 9a
+:::
+
+::: {.panel-tabset}
+
+## Step-1
+
+**a.** This proposition is false because Quixote Media had less annual revenue than Acme Computer ($111 billion < $138 billion).
+
+## Results
+
+::: {.text-center}
+*a. False*
+:::
+
+:::
+
+
+::: {.lead}
+Exercise 9b
+:::
+
+::: {.panel-tabset}
+
+## Step-1
+
+**b. ** This proposition is true because both statements are true.
+
+## Results
+
+::: {.text-center}
+*b. True*
+:::
+
+:::
+
+
+::: {.lead}
+Exercise 9c
+:::
+
+::: {.panel-tabset}
+
+## Step-1
+
+**c. ** This proposition is true because Quixote Media had the largest net profit. 
+
+*Note: Since this is an $V$ statement, either statement being true makes the proposition true.*
+
+## Results
+
+::: {.text-center}
+*c. True*
+:::
+
+:::
+
+
+::: {.lead}
+Exercise 9d
+:::
+
+::: {.panel-tabset}
+
+## Step-1
+
+**d. ** This proposition is true because Acme Computer had the largest revenue.
+
+*Note: this is an $⇒$ proposition. Even though Quixote did not have the smallest net profit (hypothesis), the conclusion still holds.*
+
+## Results
+
+::: {.text-center}
+*d. True*
+:::
+
+:::
+
+
+::: {.lead}
+Exercise 9e
+:::
+
+::: {.panel-tabset}
+## Step-1
+
+**e. ** This proposition is true because in both directions the conclusions hold true.
+
+## Results
+
+::: {.text-center}
+*e. True*
+:::
+
+:::
+
+<br>
+
+### Chapter 10
+
+<br>
+
+::: {.lead}
+Exercise 10a
+:::
+
+::: {.panel-tabset}
+
+## Step-1
+
+**Given:**
+
+::: {.text-center}
+*p:* I bought a lottery ticket this weekend.
+
+*q:* I won the million-dollar jackpot.
+:::
+
+**Interpretation Symbols**
+
+::: {.text-center}
+$¬p: \text{not p}$
+
+$p ∨ q: \text{p or q}$
+
+$p ∧ q: \text{p and q}$
+
+$p → q: \text{if p, then q}$
+
+$p ↔ q: \text{p if and only if q}$
+:::
+
+## Step-2
+
+**SOLUTION**
+
+Determine the English sentences by replacing $\text{p and q}$ by their given sentences in the above interpretations *(and adjust the sentence to form a proper English sentence as needed):*
+
+::: {.text-center}
+(a) I did not buy a lottery ticket this week.
+:::
+
+## Results
+
+::: {.text-center}
+*(a) I did not buy a lottery ticket this week.*
+:::
+
+:::
+
+
+::: {.lead}
+Exercise 10b
+:::
+
+::: {.panel-tabset}
+
+## Step-1
+
+**Given:**
+
+::: {.text-center}
+*p:* I bought a lottery ticket this weekend.
+
+*q:* I won the million-dollar jackpot.
+:::
+
+**Interpretation Symbols**
+
+::: {.text-center}
+$¬p: \text{not p}$
+
+$p ∨ q: \text{p or q}$
+
+$p ∧ q: \text{p and q}$
+
+$p → q: \text{if p, then q}$
+
+$p ↔ q: \text{p if and only if q}$
+:::
+
+## Step-2
+
+**SOLUTION**
+
+Determine the English sentences by replacing $\text{p and q}$ by their given sentences in the above interpretations *(and adjust the sentence to form a proper English sentence as needed):*
+
+::: {.text-center}
+(b) I bought a lottery ticket this week or I won the million dollar jackpot.
+:::
+
+## Results
+
+::: {.text-center}
+*(b) I bought a lottery ticket this week or I won the million-dollar jackpot.*
+:::
+
+:::
+
+
+::: {.lead}
+Exercise 10c
+:::
+
+::: {.panel-tabset}
+
+## Step-1
+
+**Given:**
+
+::: {.text-center}
+*p:* I bought a lottery ticket this weekend.
+
+*q:* I won the million-dollar jackpot.
+:::
+
+**Interpretation Symbols**
+
+::: {.text-center}
+$¬p: \text{not p}$
+
+$p ∨ q: \text{p or q}$
+
+$p ∧ q: \text{p and q}$
+
+$p → q: \text{if p, then q}$
+
+$p ↔ q: \text{p if and only if q}$
+:::
+
+## Step-2
+
+**SOLUTION**
+
+Determine the English sentences by replacing $\text{p and q}$ by their given sentences in the above interpretations *(and adjust the sentence to form a proper English sentence as needed):*
+
+::: {.text-center}
+(c) If I bought a lottery ticket this week, then I won the million dollar jackpot.
+:::
+
+## Results
+
+::: {.text-center}
+*(c) If I bought a lottery ticket this week, then I won the million-dollar jackpot.*
+:::
+
+:::
+
+
+::: {.lead}
+Exercise 10d
+:::
+
+::: {.panel-tabset}
+
+## Step-1
+
+**Given:**
+
+::: {.text-center}
+*p:* I bought a lottery ticket this weekend.
+
+*q:* I won the million-dollar jackpot.
+:::
+
+**Interpretation Symbols**
+
+::: {.text-center}
+$¬p: \text{not p}$
+
+$p ∨ q: \text{p or q}$
+
+$p ∧ q: \text{p and q}$
+
+$p → q: \text{if p, then q}$
+
+$p ↔ q: \text{p if and only if q}$
+:::
+
+## Step-2
+
+**SOLUTION**
+
+Determine the English sentences by replacing $\text{p and q}$ by their given sentences in the above interpretations *(and adjust the sentence to form a proper English sentence as needed):*
+
+::: {.text-center}
+(d) I bought a lottery ticket this week and I won the million dollar jackpot.
+:::
+
+## Results
+
+::: {.text-center}
+*(d) I bought a lottery ticket this week and I won the million-dollar jackpot.*
+:::
+
+:::
+
+
+::: {.lead}
+Exercise 10e
+:::
+
+::: {.panel-tabset}
+## Step-1
+
+**Given:**
+
+::: {.text-center}
+*p:* I bought a lottery ticket this weekend.
+
+*q:* I won the million-dollar jackpot.
+:::
+
+**Interpretation Symbols**
+
+::: {.text-center}
+$¬p: \text{not p}$
+
+$p ∨ q: \text{p or q}$
+
+$p ∧ q: \text{p and q}$
+
+$p → q: \text{if p, then q}$
+
+$p ↔ q: \text{p if and only if q}$
+:::
+
+## Step-2
+
+**SOLUTION**
+
+Determine the English sentences by replacing $\text{p and q}$ by their given sentences in the above interpretations *(and adjust the sentence to form a proper English sentence as needed):*
+
+::: {.text-center}
+(e) I bought a lottery ticket this week if and only if I won the million dollar jackpot.
+:::
+
+## Results
+
+::: {.text-center}
+*(e) I bought a lottery ticket this week if and only if I won the million-dollar jackpot.*
+:::
+
+:::
+
+
+::: {.lead}
+Exercise 10f
+:::
+
+::: {.panel-tabset}
+
+## Step-1
+
+**Given:**
+
+::: {.text-center}
+*p:* I bought a lottery ticket this weekend.
+
+*q:* I won the million-dollar jackpot.
+:::
+
+**Interpretation Symbols**
+
+::: {.text-center}
+$¬p: \text{not p}$
+
+$p ∨ q: \text{p or q}$
+
+$p ∧ q: \text{p and q}$
+
+$p → q: \text{if p, then q}$
+
+$p ↔ q: \text{p if and only if q}$
+:::
+
+## Step-2
+
+**SOLUTION**
+
+Determine the English sentences by replacing $\text{p and q}$ by their given sentences in the above interpretations *(and adjust the sentence to form a proper English sentence as needed):*
+
+::: {.text-center}
+(f) If I did not buy a lottery ticket this week, then I did not win the million dollar jackpot.
+:::
+
+## Results
+
+::: {.text-center}
+*(f) If I did not buy a lottery ticket this week, then I did not win the million-dollar jackpot.*
+:::
+
+:::
+
+
+::: {.lead}
+Exercise 10g
+:::
+
+::: {.panel-tabset}
+
+## Step-1
+
+**Given:**
+
+::: {.text-center}
+*p:* I bought a lottery ticket this weekend.
+
+*q:* I won the million-dollar jackpot.
+:::
+
+**Interpretation Symbols**
+
+::: {.text-center}
+$¬p: \text{not p}$
+
+$p ∨ q: \text{p or q}$
+
+$p ∧ q: \text{p and q}$
+
+$p → q: \text{if p, then q}$
+
+$p ↔ q: \text{p if and only if q}$
+:::
+
+## Step-2
+
+**SOLUTION**
+
+Determine the English sentences by replacing $\text{p and q}$ by their given sentences in the above interpretations *(and adjust the sentence to form a proper English sentence as needed):*
+
+::: {.text-center}
+(g) I did not buy a lottery ticket this week and I did not win the million dollar jackpot.
+:::
+
+## Results
+
+::: {.text-center}
+*(g) I did not buy a lottery ticket this week and I did not win the million dollar jackpot.*
+:::
+
+:::
+
+
+::: {.lead}
+Exercise 10h
+:::
+
+::: {.panel-tabset}
+## Step-1
+
+**Given:**
+
+::: {.text-center}
+*p:* I bought a lottery ticket this weekend.
+
+*q:* I won the million-dollar jackpot.
+:::
+
+**Interpretation Symbols**
+
+::: {.text-center}
+$¬p: \text{not p}$
+
+$p ∨ q: \text{p or q}$
+
+$p ∧ q: \text{p and q}$
+
+$p → q: \text{if p, then q}$
+
+$p ↔ q: \text{p if and only if q}$
+:::
+
+## Step-2
+
+**SOLUTION**
+
+Determine the English sentences by replacing $\text{p and q}$ by their given sentences in the above interpretations *(and adjust the sentence to form a proper English sentence as needed):*
+
+::: {.text-center}
+(h) I did not buy a lottery ticket this week and I did not win the million dollar jackpot.
+:::
+
+## Results
+
+::: {.text-center}
+*(h) I did not buy a lottery ticket this week or, I bought a lottery ticket this week and won the million dollar jackpot.*
+:::
 
 :::
