@@ -759,6 +759,8 @@ The negation of a statement states the opposite of the given statement.
 *(d) Diane did not ride her bicycle 100 miles on Sunday.*
 :::
 
+:::
+
 <br>
 
 ### Chapter 8:
@@ -1314,6 +1316,7 @@ Exercise 10h
 :::
 
 ::: {.panel-tabset}
+
 ## Step-1
 
 **Given:**
