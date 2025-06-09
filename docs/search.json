@@ -88,5 +88,25 @@
     "crumbs": [
       "Discrete Math II Functions and Applications"
     ]
+  },
+  {
+    "objectID": "courseC949.html",
+    "href": "courseC949.html",
+    "title": "Data Structures & Algorithms I",
+    "section": "",
+    "text": "Explains Algorithms (29%)",
+    "crumbs": [
+      "Data Structures & Algorithms I"
+    ]
+  },
+  {
+    "objectID": "courseC949.html#explains-algorithms-29",
+    "href": "courseC949.html#explains-algorithms-29",
+    "title": "Data Structures & Algorithms I",
+    "section": "",
+    "text": "Characteristics of Algorithms\nNames\nFiniteness\nAn algorithm must always have a finite number of steps before it ends. When the operation is finished, it must have a defined endpoint or output and not enter an endless loop.\nDefiniteness\nAn algorithm needs to have exact definitions for each step. Clear and straightforward directions ensure that every step is understood and can be taken easily.\nInput\nAn algorithm requires one or more inputs. The values that are first supplied to the algorithm before its processing are known as inputs. These inputs come from a predetermined range of acceptable values.\nOutput\nOne or more outputs must be produced by an algorithm. The output is the outcome of the algorithm after every step has been completed. The relationship between the input and the result should be clear.\nEffectiveness\nAn algorithm’s stages must be sufficiently straightforward to be carried out in a finite time utilizing fundamental operations. With the resources at hand, every operation in the algorithm should be doable and practicable.\nGenerality\nRather than being limited to a single particular case, an algorithm should be able to solve a group of issues. It should offer a generic fix that manages a variety of inputs inside a predetermined range or domain.\n\n\n\nFactors of an Algorithm\nFactors",
+    "crumbs": [
+      "Data Structures & Algorithms I"
+    ]
   }
 ]
