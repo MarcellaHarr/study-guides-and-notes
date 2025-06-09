@@ -4,9 +4,9 @@
     "href": "index.html",
     "title": "My Study Notes & Guides",
     "section": "",
-    "text": "Preface",
+    "text": "Welcome",
     "crumbs": [
-      "Preface"
+      "Welcome"
     ]
   },
   {
@@ -54,9 +54,9 @@
     "href": "index.html#whats-inside",
     "title": "My Study Notes & Guides",
     "section": "✍️ What’s Inside",
-    "text": "✍️ What’s Inside\n\n\n📚 Organized course notes and study guides by topic\n🎥 Embedded videos and media\n🧠 Quick-reference guides\n🧪 Code examples and exercises\n✅ Practical review checklists",
+    "text": "✍️ What’s Inside\n\n\n📚 Organized course notes and study guides\n🎥 Embedded videos and media\n🧠 Quick-reference guides\n🧪 Code examples and exercises\n✅ Practical review checklists",
     "crumbs": [
-      "Preface"
+      "Welcome"
     ]
   },
   {
@@ -66,7 +66,7 @@
     "section": "🚀 Getting Started",
     "text": "🚀 Getting Started\n\n\n\n\n\n\nStart exploring by selecting a course or topic from the sidebar.\nOr jump straight into this course here:\n\n\n\nBegin Here »",
     "crumbs": [
-      "Preface"
+      "Welcome"
     ]
   },
   {
@@ -74,9 +74,9 @@
     "href": "index.html#contribute-or-feedback",
     "title": "My Study Notes & Guides",
     "section": "🙌 Contribute or Feedback",
-    "text": "🙌 Contribute or Feedback\nThis project is personal, but feedback is welcome!\nFeel free to open an issue or follow my GitHub:\nGitHub Repository\n\n```",
+    "text": "🙌 Contribute or Feedback\nThis project is personal, but feedback is welcome!\nFeel free to open an issue or follow my GitHub:\nGitHub Repository",
     "crumbs": [
-      "Preface"
+      "Welcome"
     ]
   },
   {
