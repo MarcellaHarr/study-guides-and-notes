@@ -1,6 +1,8 @@
 # Discrete Math II Functions and Applications {.unnumbered}
 
-- Chapter 1: The Foundations | Logic and Proofs
+<br>
+
+### Chapter 1: The Foundations | Logic and Proofs
 
 ::: {.lead}
 Exercise 1a
@@ -41,9 +43,8 @@ If we were unable to assign a truth value to the statement or the truth value wa
 :::
 
 
-
 ::: {.lead}
-Exercise 1b {.tabset .tabset-fade}
+Exercise 1b
 :::
 
 ::: {.panel-tabset}
@@ -81,7 +82,7 @@ To determine whether a statement is a proposition, we determined whether the sta
 
 
 ::: {.lead}
-Exercise 1c {.tabset .tabset-fade}
+Exercise 1c
 :::
 
 ::: {.panel-tabset}
@@ -117,7 +118,6 @@ To determine whether a statement is a proposition, we determined whether the sta
 *(c) Proposition, $T$*
 
 :::
-
 
 
 ::: {.lead}
@@ -159,7 +159,6 @@ To determine whether a statement is a proposition, we determined whether the sta
 :::
 
 
-
 ::: {.lead}
 Exercise 1e 
 :::
@@ -196,7 +195,6 @@ To determine whether a statement is a proposition, we determined whether the sta
 *(e) Not a proposition*
 
 :::
-
 
 
 ::: {.lead}
@@ -236,7 +234,7 @@ To determine whether a statement is a proposition, we determined whether the sta
 
 :::
 
-- Chapter 2:
+### Chapter 2:
 
 ::: {.lead}
 Exercise 2a
@@ -257,7 +255,6 @@ PART A: not a proposition
 :::
 
 
-
 ::: {.lead}
 Exercise 2b
 :::
@@ -275,7 +272,6 @@ So it is not possible for this sentence to be true or false.
 *PART B: not a proposition*
 
 :::
-
 
 
 ::: {.lead}
@@ -298,7 +294,6 @@ Its truth value is false because black flies exist everywhere.
 :::
 
 
-
 ::: {.lead}
 Exercise 2d
 :::
@@ -316,8 +311,6 @@ So it is not possible for this sentence to be true or false.
 *PART D: not a proposition*
 
 :::
-
-
 
 ::: {.lead}
 Exercise 2e
@@ -337,8 +330,6 @@ Its truth value is false because the moon is not made from green cheese.
 
 :::
 
-
-
 ::: {.lead}
 Exercise 2f
 :::
@@ -356,3 +347,5 @@ So it is not possible for this sentence to be true or false.
 *PART F: not a proposition*
 
 :::
+
+### Chapter 3
