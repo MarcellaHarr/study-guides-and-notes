@@ -444,3 +444,90 @@ $\text{ Abby is not richer than Ricardo. }$
 :::
 
 :::
+
+- Chapter 4:
+
+::: {.lead}
+Exercise 4
+:::
+
+::: {.panel-tabset}
+
+## Step-1
+
+**(a)**
+
+::: {.text-center}
+$\text{ Janice has more Facebook friends than Juan. }$
+:::
+
+The negation of the proposition adds the word "not" to the sentence:
+
+::: {.text-center}
+$\text{ Janice does not have more Facebook friends than Juan. }$
+:::
+
+*Note: This sentence is also equivalent with: Janice has less Facebook friends or the same number of Facebook friends as Juan.*
+
+
+## Step-2
+
+**(b)** 
+
+::: {.text-center}
+$\text{ Quincy is smarter than Venkat. }$
+:::
+
+The negation of the proposition adds the word "not" to the sentence:
+
+::: {.text-center}
+$\text{ Quincy is not smarter than Venkat. }$
+:::
+
+*Note: This sentence is also equivalent with: Quincy is dumber or equally intelligent as Venkat.*
+
+## Step-3
+
+**(c)**
+
+::: {.text-center}
+$\text{ Zelda drives more miles to school than Paola. }$
+:::
+
+The negation of the proposition adds the word "not" to the sentence:
+
+::: {.text-center}
+$\text{ Zelda does not drive more miles to school than Paola. }$
+:::
+
+*Note: This sentence is also equivalent with: Zelda drives less miles or the same number of miles to school than Paola.*
+
+## Step-4
+
+**(d)**
+
+::: {.text-center}
+$\text{ Brianna sleeps longer than Gloria. }$
+:::
+
+The negation of the proposition adds the word "not" to the sentence:
+
+::: {.text-center}
+$\text{ Brianna does not sleep longer than Gloria. }$
+:::
+
+*Note: This sentence is also equivalent with: Brianna sleeps less or the same amount than Gloria.*
+
+#### Results
+
+::: {.text-center}
+**(a)** Janice does not have more Facebook friends than Juan.
+
+**(b)** Quincy is not smarter than Venkat.
+
+**(c)** Zelda does not drive more miles to school than Paola.
+
+**(d)** Brianna does not sleep longer than Gloria.
+:::
+
+:::
