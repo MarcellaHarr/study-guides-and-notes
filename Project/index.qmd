@@ -1,9 +1,7 @@
-# Preface {.unnumbered}
+# Welcome {.unnumbered}
 
 ::: {.text-center}
 ![Banner or Logo](https://placehold.co/200){.img-fluid style="margin-bottom: 20px;"}
-
-# Welcome to My Study Notes & Guides
 :::
 
 ::: {.lead}
@@ -17,7 +15,7 @@ Here I’ve structured all the **notes**, **videos**, and **study guides** to be
 ## ✍️ What's Inside
 
 ::: {.card}
-- 📚 Organized course notes and study guides by topic
+- 📚 Organized course notes and study guides
 - 🎥 Embedded videos and media
 - 🧠 Quick-reference guides
 - 🧪 Code examples and exercises
@@ -46,4 +44,3 @@ Feel free to open an issue or follow my GitHub:
 [GitHub Repository](https://github.com/MarcellaHarr/study-guides-and-notes){.btn .btn-outline-secondary}
 
 ---
-```
