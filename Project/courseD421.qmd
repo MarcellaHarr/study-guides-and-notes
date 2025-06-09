@@ -16,8 +16,6 @@ These exercises are not mines. They are from this [Quizlet »](https://quizlet.c
 
 <br>
 
-::: {.card}
-
 ::: {.lead}
 Exercise 1a
 :::
@@ -245,8 +243,6 @@ To determine whether a statement is a proposition, we determined whether the sta
 ## Results
 
 *(f) Not a proposition*
-
-:::
 
 :::
 
