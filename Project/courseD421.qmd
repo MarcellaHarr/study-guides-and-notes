@@ -2,11 +2,21 @@
 
 | The Foundations | Logic and Proofs
 
+---
+
+::: {.callout-note}
+These exercises are not mines. They are from this [Quizlet »](https://quizlet.com/explanations/textbook-solutions/discrete-mathematics-and-its-applications-8th-edition-9781259676512)
+:::
+
+---
+
 <br>
 
 ### Chapter 1:
 
 <br>
+
+::: {.card}
 
 ::: {.lead}
 Exercise 1a
@@ -235,6 +245,8 @@ To determine whether a statement is a proposition, we determined whether the sta
 ## Results
 
 *(f) Not a proposition*
+
+:::
 
 :::
 
