@@ -1,22 +1,14 @@
 # Data Structures and Algorithms I {.unnumbered}
 
-| Competencies and Topics
+<br>
 
----
-
-::: {.lead}
-Explains Algorithms (29%)
-:::
-
----
+## Explains Algorithms (29%)
 
 <br>
 
 ## Characteristics of Algorithms
 
-[Names]{.underline}
-
-::: {.card collapse="true"}
+::: {.callout-note title="Names" collapse="true" appearance="simple" icon="false"}
 
 **Finiteness**
 
