@@ -1,8 +1,6 @@
-# Data Structures & Algorithms I {.unnumbered}
+# Data Structures and Algorithms I {.unnumbered}
 
-| *Competencies and Topics*
-
-<br>
+| Competencies and Topics
 
 ---
 
@@ -10,7 +8,9 @@
 
 ---
 
-### Characteristics of Algorithms
+<br>
+
+#### Characteristics of Algorithms
 
 [*Names*]{.underline}
 
@@ -52,6 +52,6 @@ variety of inputs inside a predetermined range or domain.
 
 <br>
 
-### Factors of an Algorithm
+#### Factors of an Algorithm
 
 [*Factors*]{.underline}
