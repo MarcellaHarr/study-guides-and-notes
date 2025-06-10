@@ -19,11 +19,9 @@ bibliography: references.bib
 
 format:
   html:
+    theme: lux
     toc: true
-    toc-expand: 3
-    theme:
-      - lux
-      - brand
+    toc-expand: 1
   pdf:
     documentclass: scrreprt
 
