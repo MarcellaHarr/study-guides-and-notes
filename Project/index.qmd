@@ -19,7 +19,6 @@ Here I’ve structured all the **notes**, **videos**, and **study guides** to be
 - 🎥 Embedded videos and media
 - 🧠 Quick-reference guides
 - 🧪 Code examples and exercises
-- ✅ Practical review checklists
 :::
 
 ---
