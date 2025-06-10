@@ -27,5 +27,6 @@ format:
   pdf:
     documentclass: scrreprt
 
-editor: visual
+editor: 
+  render-on-save: true
 
