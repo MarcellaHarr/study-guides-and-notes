@@ -1,5 +1,5 @@
 # Big Data Foundations {.unnumbered}
 
 ::: {.lead}
-coming soon
+*coming soon*
 :::
