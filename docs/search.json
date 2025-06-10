@@ -108,5 +108,15 @@
     "crumbs": [
       "Data Structures & Algorithms I"
     ]
+  },
+  {
+    "objectID": "courseD493.html",
+    "href": "courseD493.html",
+    "title": "Scripting & Programming - Applications",
+    "section": "",
+    "text": "Bool:\nAn integer type whose value can be either true or false.\n\nbool is_even(int x) {\n return x%2 == 0;\n}\nconst bool b = is_even(47); // false",
+    "crumbs": [
+      "Scripting & Programming - Applications"
+    ]
   }
 ]
