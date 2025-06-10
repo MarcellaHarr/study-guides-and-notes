@@ -1,1 +1,16 @@
 # Scripting & Programming - Applications {.unnumbered}
+
+<br>
+
+::: {.lead}
+Bool:
+
+An integer type whose value can be either [true]{.mark} or [false]{.mark}.
+:::
+
+```cpp
+bool is_even(int x) {
+ return x%2 == 0;
+}
+const bool b = is_even(47); // false
+```
