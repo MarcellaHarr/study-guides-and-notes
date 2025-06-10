@@ -10,9 +10,7 @@
 
 #### Characteristics of Algorithms
 
-[*Names*]{.underline}
-
-::: {.callout note collapse="true"}
+::: {.callout note collapse="true" title="Names"}
 **Finiteness**
 
 An algorithm must always have a finite number of steps before it ends. When the 
