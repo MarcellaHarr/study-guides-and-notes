@@ -21,7 +21,8 @@ format:
   html:
     theme: lux
     toc: true
-    toc-expand: 1
+    toc-expand: 2
+    number-depth: 1
   pdf:
     documentclass: scrreprt
 
