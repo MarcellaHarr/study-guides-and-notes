@@ -12,6 +12,7 @@
 
 [*Names*]{.underline}
 
+::: {collapse="true"}
 **Finiteness**
 
 An algorithm must always have a finite number of steps before it ends. When the 
@@ -47,6 +48,7 @@ every operation in the algorithm should be doable and practicable.
 Rather than being limited to a single particular case, an algorithm should be 
 able to solve a group of issues. It should offer a generic fix that manages a 
 variety of inputs inside a predetermined range or domain.
+:::
 
 <br>
 
