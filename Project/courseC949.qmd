@@ -12,7 +12,7 @@
 
 [*Names*]{.underline}
 
-::: {collapse="true"}
+::: {.callout note collapse="true"}
 **Finiteness**
 
 An algorithm must always have a finite number of steps before it ends. When the 
