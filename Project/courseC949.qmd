@@ -4,13 +4,19 @@
 
 ---
 
-## Explains Algorithms (29%)
+::: {.lead}
+Explains Algorithms (29%)
+:::
 
 ---
 
-#### Characteristics of Algorithms
+<br>
 
-::: {.callout-note title="Names" collapse="true"}
+## Characteristics of Algorithms
+
+[Names]{.underline}
+
+::: {.card collapse="true"}
 
 **Finiteness**
 
@@ -52,6 +58,6 @@ variety of inputs inside a predetermined range or domain.
 
 <br>
 
-#### Factors of an Algorithm
+## Factors of an Algorithm
 
 [*Factors*]{.underline}
