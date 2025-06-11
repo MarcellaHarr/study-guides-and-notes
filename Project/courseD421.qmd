@@ -2,7 +2,7 @@
 
 ::: {.lead}
 
-Discrete Math II Functions and Applications
+Discrete Math II Functions and Applications (D421)
 
 :::
 
