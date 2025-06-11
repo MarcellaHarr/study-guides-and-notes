@@ -8,7 +8,7 @@
 
 ## Characteristics of Algorithms
 
-::: {.callout-note title="Names" collapse="true" appearance="simple" icon="false"}
+::: {.callout-none .callout-note title="Names" collapse="true" appearance="simple" icon="false"}
 
 **Finiteness**
 
