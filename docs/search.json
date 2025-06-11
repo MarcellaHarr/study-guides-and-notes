@@ -114,7 +114,7 @@
     "href": "courseD493.html",
     "title": "Scripting & Programming",
     "section": "",
-    "text": "Scripting & Programming - Applications\n\n\n\nBool:\nAn integer type whose value can be either true or false.\n\nbool is_even(int x) {\n return x%2 == 0;\n}\nconst bool b = is_even(47); // false",
+    "text": "Scripting & Programming - Applications (D493)\n\n\n\nBool:\nAn integer type whose value can be either true or false.\n\nbool is_even(int x) {\n return x%2 == 0;\n}\nconst bool b = is_even(47); // false",
     "crumbs": [
       "Scripting & Programming"
     ]
