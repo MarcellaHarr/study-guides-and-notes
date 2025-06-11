@@ -1,4 +1,10 @@
-# Data Structures and Algorithms I {.unnumbered}
+# DSA I {.unnumbered}
+
+::: {.lead}
+
+Data Structures and Algorithms I (C949)
+
+:::
 
 <br>
 
@@ -8,7 +14,7 @@
 
 ### Characteristics of Algorithms
 
-::: {.callout-none .callout-note title="Names" collapse="true" appearance="simple" icon="false"}
+::: {.callout-titled .callout-note title="Names" collapse="true" appearance="simple" icon="false"}
 
 **Finiteness**
 
