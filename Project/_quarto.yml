@@ -23,7 +23,7 @@ format:
       dark: cyborg
       light: lux
     toc: true
-    toc-depth: 3
+    toc-depth: 4
     toc-expand: 5
     toc-title: "Contents"
     smooth-scroll: true
