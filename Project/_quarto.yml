@@ -22,6 +22,7 @@ format:
     theme: lux
     toc: true
     toc-expand: 2
+    toc-title: "Contents"
     number-depth: 1
   pdf:
     documentclass: scrreprt
