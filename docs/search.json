@@ -22,11 +22,11 @@
   {
     "objectID": "summary.html",
     "href": "summary.html",
-    "title": "2  Summary",
+    "title": "1  Summary",
     "section": "",
     "text": "In summary, this book has no content whatsoever.\n\n1 + 1\n\n[1] 2",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Summary</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Summary</span>"
     ]
   },
   {
@@ -112,11 +112,11 @@
   {
     "objectID": "courseD493.html",
     "href": "courseD493.html",
-    "title": "Scripting & Programming - Applications",
+    "title": "Scripting & Programming",
     "section": "",
-    "text": "Bool:\nAn integer type whose value can be either true or false.\n\nbool is_even(int x) {\n return x%2 == 0;\n}\nconst bool b = is_even(47); // false",
+    "text": "Scripting & Programming - Applications\n\n\n\nBool:\nAn integer type whose value can be either true or false.\n\nbool is_even(int x) {\n return x%2 == 0;\n}\nconst bool b = is_even(47); // false",
     "crumbs": [
-      "Scripting & Programming - Applications"
+      "Scripting & Programming"
     ]
   },
   {
