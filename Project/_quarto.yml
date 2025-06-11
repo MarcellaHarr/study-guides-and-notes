@@ -19,13 +19,13 @@ bibliography: references.bib
 
 format:
   html:
-    theme: lux
+    theme: 
+      dark: cyborg
+      light: lux
     toc: true
     toc-depth: 3
     toc-expand: 5
     toc-title: "Contents"
-    number-sections: true
-    number-depth: 3
     smooth-scroll: true
     page-layout: full
   pdf:
