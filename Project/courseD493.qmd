@@ -1,4 +1,10 @@
-# Scripting & Programming - Applications {.unnumbered}
+# Scripting & Programming {.unnumbered}
+
+::: {.lead}
+
+Scripting & Programming - Applications
+
+:::
 
 <br>
 
