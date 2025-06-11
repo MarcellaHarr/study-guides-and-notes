@@ -21,8 +21,8 @@ format:
   html:
     theme: lux
     toc: true
-    toc-depth: 2
-    toc-expand: 2
+    toc-depth: 3
+    toc-expand: 4
     toc-title: "Contents"
     number-sections: true
     number-depth: 3
