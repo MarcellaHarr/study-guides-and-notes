@@ -6,7 +6,7 @@
 
 <br>
 
-## Characteristics of Algorithms
+### Characteristics of Algorithms
 
 ::: {.callout-none .callout-note title="Names" collapse="true" appearance="simple" icon="false"}
 
@@ -50,6 +50,6 @@ variety of inputs inside a predetermined range or domain.
 
 <br>
 
-## Factors of an Algorithm
+### Factors of an Algorithm
 
 [*Factors*]{.underline}
