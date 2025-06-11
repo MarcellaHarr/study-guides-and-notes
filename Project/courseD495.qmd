@@ -1,5 +1,15 @@
-# Big Data Foundations {.unnumbered}
+# Big Data {.unnumbered}
 
 ::: {.lead}
+
+Big Data Foundations (D495)
+
+:::
+
+<br>
+
+::: {.lead .text-center}
+
 *coming soon*
+
 :::
