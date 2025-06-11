@@ -27,6 +27,7 @@ format:
     number-sections: true
     number-depth: 3
     smooth-scroll: true
+    page-layout: full
   pdf:
     documentclass: scrreprt
 
