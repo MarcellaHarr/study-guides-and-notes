@@ -21,9 +21,12 @@ format:
   html:
     theme: lux
     toc: true
+    toc-depth: 2
     toc-expand: 2
     toc-title: "Contents"
-    number-depth: 1
+    number-sections: true
+    number-depth: 3
+    smooth-scroll: true
   pdf:
     documentclass: scrreprt
 
