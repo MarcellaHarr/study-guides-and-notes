@@ -22,7 +22,7 @@ format:
     theme: lux
     toc: true
     toc-depth: 3
-    toc-expand: 4
+    toc-expand: 5
     toc-title: "Contents"
     number-sections: true
     number-depth: 3
