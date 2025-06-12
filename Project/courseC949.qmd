@@ -1,7 +1,6 @@
 # DSA I {.unnumbered}
 
 ```{r include=FALSE}
-install.packages("vembedr")
 library(vembedr)
 ```
 
