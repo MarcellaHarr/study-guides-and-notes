@@ -21,6 +21,8 @@ Data Structures and Algorithms I (C949)
 
 ::: {.callout-note title="Names" collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
 
+<br>
+
 **Finiteness**
 
 An algorithm must always have a finite number of steps before it ends. When the 
@@ -59,11 +61,11 @@ variety of inputs inside a predetermined range or domain.
 
 :::
 
-<br>
-
 #### Factors of an Algorithm
 
 ::: {.callout-note title="Factors" collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
+
+<br>
 
 `**Modularity**`
 
@@ -97,9 +99,9 @@ If an algorithm is simple, it is simple to understand.
 
 Your algorithm should be extensible if another algorithm designer or programmer wants to use it.
 
-:::
-
 <br>
+
+:::
 
 #### Types of Algorithms
 
@@ -485,7 +487,7 @@ significantly in how they approach the search and their efficiency.
   4. If they don't match, move to the next element and repeat the process.
   5. If the target element is not found by the end of the array, return a "not found" indication.
 
-**Time Complexity:** O(n), where n is the number of elements in the array. This is 
+**Time Complexity:** $O(n)$, where n is the number of elements in the array. This is 
 because in the worst case, the algorithm may need to check every element in the array.
 
 ## Usage
@@ -535,7 +537,7 @@ def linear_search(arr, target):
   4. If the interval becomes invalid (low > high), return a "not found" indication.
 
 
-**Time Complexity:** O(log⁡ n), where n is the number of elements in the array. This logarithmic time complexity makes binary search significantly faster than linear search for large data sets.
+**Time Complexity:** $\text{O(log⁡ n)}$, where n is the number of elements in the array. This logarithmic time complexity makes binary search significantly faster than linear search for large data sets.
 
 ## Usage
 
@@ -610,6 +612,575 @@ $\text{ arr = {45, 77, 89, 90, 94, 99, 100} }$ and $\text{key = 100}$
 
   - Repeat the calculation for `mid` with the updated `low` and `high` values.
   - Again, compare `arr[mid]` with the `key` and update `low` or `high` accordingly.
+
+<br>
+
+:::
+
+<br>
+
+#### Searching Algorithms
+
+::: {.lead}
+##### Linear Search
+:::
+
+<br>
+
+::: {.panel-tabset}
+
+## Logic
+
+  - **Concept:** As discussed earlier, linear search involves checking each element in a list or array sequentially until the target element is found or the end of the collection is reached.
+  - **Time Complexity:** $O(n)$, where n is the number of elements.
+
+## Usage
+
+  - **Use Case:** Best used when the list is small or unsorted.
+  
+  - **Distinct Characteristics:**
+  
+      - Simple, sequential search.
+      - Checks each element one by one.
+      - Works on both sorted and unsorted data.
+
+## States
+
+  - **Linear Search Worst, Average and Best**
+  
+      - `**Best Case:** $O(1)$ — The target element is the first element.`
+      - `**Average Case:** $O(n)$ — The target element is somewhere in the middle or not in the array.`
+      - `**Worst Case:** $O(n)$ — The target element is the last element or not present.`
+
+<br>
+
+:::
+
+<br>
+
+::: {.lead}
+##### Binary Search
+:::
+
+<br>
+
+::: {.panel-tabset}
+
+## Logic
+
+  - **Concept:** Binary search operates on a sorted list. It repeatedly divides the search interval in half until the target element is found or the interval is empty.
+  - **Time Complexity:** $\text{O(log⁡ n)}$
+
+## Usage
+
+  - **Use Case:** Ideal for large, sorted datasets.
+
+  - **Distinct Characteristics:**
+
+      - `Requires a sorted array.`
+      - Divides the search interval in half repeatedly.
+      - Efficient, logarithmic time complexity.
+
+## States
+
+  - **Binary Search Worst, Average and Best**
+
+      - **Best Case:** $O(1)$ — The target element is the middle element.
+      - **Average Case:** $\text{O(log⁡ n)}$ — The target element is not immediately found but within the sorted array.
+      - **Worst Case:** $\text{O(log⁡ n)}$ — The target element is at the extreme ends or not present.
+
+<br>
+
+:::
+
+<br>
+
+::: {.lead}
+##### Interpolation Search
+:::
+
+<br>
+
+::: {.panel-tabset}
+
+## Logic
+
+  - **Concept:** Similar to binary search but works on uniformly distributed data. It estimates the position of the target element based on the value.
+  - **Time Complexity:** O(log ⁡log ⁡n) in the best case, $O(n)$ in the worst case.
+
+## Usage
+
+  - **Use Case:** Effective when the data is uniformly distributed.
+
+## States
+
+  - Interpolation Search Worst, Average and Best
+      - **Best Case:** $O(1)$ — The target element is exactly where the interpolation suggests.
+      - **Average Case:** $\text{O(log ⁡log⁡ n)}$ — Uniformly distributed data.
+      - **Worst Case:** $O(n)$ — Highly skewed data distribution or worst interpolation.
+
+<br>
+
+:::
+
+<br>
+
+::: {.lead}
+##### DFS/BFS
+:::
+
+<br>
+
+::: {.panel-tabset}
+
+## Logic
+
+  - **Concept:** Used primarily in graph and tree data structures. **Depth-First Search (DFS)** explores as far as possible along one branch before backtracking, while **Breadth-First Search (BFS)** explores all neighbors at the present depth before moving on to nodes at the next depth level.
+  - **Time Complexity:** $\text{O(V + E)}$, where V is the number of vertices and E is the number of edges.
+
+## Usage
+
+  - **Use Case:** Useful for searching nodes in graphs and trees.
+
+## States
+
+  - **(DFS)**
+
+      - **Best Case:** $O(1)$ — The target node is found immediately.
+      - **Average Case:** $\text{O(V + E)}$— Typically when all nodes and edges must be explored.
+      - **Worst Case:** $\text{O(V + E)}$ — The target node is the last one discovered.
+
+  - **(BFS)**
+
+      - **Best Case:** $O(1)$ — The target node is the root or the first node checked.
+      - **Average Case:** $\text{O(V + E)}$ — All nodes and edges need to be explored.
+      - **Worst Case:** $\text{O(V + E)}$ — The target node is the last one explored.
+
+<br>
+
+:::
+
+<br>
+
+#### Sorting Algorithms
+
+Sorting algorithms organize data in a particular order *(usually ascending or descending)*. 
+This makes searching and other operations more efficient.
+
+<br>
+
+::: {.lead}
+##### Bubble Sort
+:::
+
+<br>
+
+::: {.panel-tabset}
+
+## Usage
+
+  - **Use Case:** Simple but inefficient for large datasets. Best used for educational purposes or small lists.
+
+## Descriptor
+
+  - **Distinct Characteristics:**
+
+      - Repeatedly swaps adjacent elements if they are in the wrong order.
+      - Simple, but inefficient for large datasets.
+      - “Bubbles” the largest element to the end of the list.
+
+## States
+
+  - Bubble Sort Worst, Average and Best
+      - **Best Case:** $O(n)$ — The array is already sorted *(with an optimized version that stops early)*.
+      - **Average Case:** $O(n^2)$ — Average case with random elements.
+      - **Worst Case:** $O(n^2)$ — The array is sorted in reverse order.
+
+## Tips
+
+  - **Bubble:** Look for something that swaps so the result can “bubble” to the top. (Swap, Exchange)
+
+<br>
+
+:::
+
+<br>
+
+::: {.lead}
+##### Selection Sort
+:::
+
+<br>
+
+::: {.panel-tabset}
+
+## Usage
+
+  - **Use Case:** Inefficient for large lists, but useful when memory writes are more expensive than comparisons.
+
+## Descriptor
+
+  - **Distinct Characteristics:**
+
+      - Finds the minimum element and swaps it with the first unsorted element.
+      - Reduces the problem size by one in each iteration.
+      - Always performs $O(n^2)$ comparisons, regardless of input.
+
+## States
+
+  - Selection Sort Worst, Average and Best
+
+      - **Best Case:** $O(n^2)$ — Selection sort does not improve with better input, always $O(n^2)$.
+      - **Average Case:** $O(n^2)$ — Average case with random elements.
+      - **Worst Case:** $O(n^2)$ — Selection sort is insensitive to input order.
+
+## Tips
+
+  - **Selection:** Look for code that repeatedly finds the minimum *(or maximum)* element and moves it to the beginning *(or end)* of the list. *(Select minimum, Swap with start)*
+
+<br>
+
+:::
+
+<br>
+
+::: {.lead}
+##### Insertion Sort
+:::
+
+<br>
+
+::: {.panel-tabset}
+
+## Usage
+
+  - **Use Case:** Good for small or nearly sorted lists.
+
+## Descriptor
+
+  - **Distinct Characteristics:**
+
+      - Builds a sorted list one element at a time.
+      - Efficient for small or nearly sorted datasets.
+      - Shifts elements to make space for the current element.
+
+## States
+
+  - **Insertion Sort Worst, Average and Best**
+
+      - **Best Case:** $O(n)$ — The array is already sorted.
+      - **Average Case:** $O(n^2)$ — Average case with random elements.
+      - **Worst Case:** $O(n^2)$ — The array is sorted in reverse order.
+
+## Tips
+
+  - **Insertion:** Look for code that builds a sorted portion of the list one element at a time by inserting each new element into its correct position within the already-sorted part. *(Insert, Shift Element)*
+
+<br>
+
+:::
+
+<br>
+
+::: {.lead}
+##### Merge Sort
+:::
+
+<br>
+
+::: {.panel-tabset}
+
+## Usage
+
+  - **Use Case:** Efficient and stable; good for large datasets.
+
+## Descriptor
+
+  - **Distinct Characteristics:**
+
+      - Divides the list into halves, sorts each half, and then merges them.
+      - Stable and efficient for large datasets.
+      - Requires additional space for merging.
+
+## States
+
+  - **Merge Sort Worst, Average and Best**
+
+      - **Best Case:** $\text{O(n ⁡log⁡ n)}$ — Merge sort’s time complexity is the same in all cases.
+      - **Average Case:** $\text{O(n ⁡log⁡ n)}$.
+      - **Worst Case:** $\text{O(n ⁡log⁡ n)}$.
+
+## Tips
+
+  - **Merge:** Look for something that continually splits a list in half. *(Merge, Split)*
+
+<br>
+
+:::
+
+<br>
+
+::: {.lead}
+##### Quicksort
+:::
+
+<br>
+
+::: {.panel-tabset}
+
+## Usage
+
+  - **Use Case:** Often faster in practice than merge sort but less stable.
+
+## Descriptor
+
+  - **Distinct Characteristics:**
+
+      - Selects a *“pivot”* element and partitions the array around it.
+      - Recursively sorts the partitions.
+      - Efficient, but can degrade to $O(n^2)$ if poor pivot selection occurs.
+
+## States
+
+  - **Quicksort Worst, Average and Best**
+
+      - **Best Case:** $\text{O(n ⁡log⁡ n)}$ — The pivot splits the array into two nearly equal halves.
+      - **Average Case:** $\text{O(n ⁡log⁡ n)}$ — Average case with random pivots.
+      - **Worst Case:** $O(n^2)$ — The pivot is always the smallest or largest element, leading to unbalanced partitions.
+
+## Tips
+
+  - **Quicksort:** Look for the keywords *“pivot”* and/or *“split”*. *(Pivot, Split)*
+
+<br>
+
+:::
+
+<br>
+
+::: {.lead}
+##### Heap Sort
+:::
+
+<br>
+
+::: {.panel-tabset}
+
+## Usage
+
+  - **Use Case:** Useful when memory usage is a concern as it’s an in-place algorithm.
+
+## Descriptor
+
+  - **Distinct Characteristics:**
+
+      - Utilizes a binary heap data structure.
+      - Builds a max-heap and repeatedly extracts the maximum element.
+      - Efficient and in-place, but not stable.
+
+## States
+
+  - **Heap Sort Worst, Average and Best**
+
+      - **Best Case:** $\text{O(n ⁡log⁡ n)}$ — Heap sort’s time complexity is the same in all cases.
+      - **Average Case:** $\text{O(n ⁡log⁡ n)}$.
+      - **Worst Case:** $\text{O(n ⁡log⁡ n)}$.
+
+## Tips
+
+  - **Heap Sort:** Look for code that uses a heap data structure to repeatedly extract the maximum *(or minimum)* element and rebuilds the heap. *(Heapify, Extract Max, Build Heap)*
+
+<br>
+
+:::
+
+<br>
+
+::: {.lead}
+##### Counting Sort
+:::
+
+<br>
+
+::: {.panel-tabset}
+
+## Usage
+
+  - Use Case: Efficient for sorting integers or other items with a small range of possible values.
+
+## Descriptor
+
+  - **Distinct Characteristics:**
+
+      - Non-comparative sorting.
+      - Counts occurrences of each element and uses this information to place elements.
+      - Efficient for small ranges of integers.
+
+## States
+
+  - **Counting Sort Worst, Average and Best**
+
+      - **Best Case:** $\text{O(n ⁡+ k) - k}$ is the range of the input.
+      - **Average Case:** $\text{O(n ⁡+ k)}$.
+      - **Worst Case:** $\text{O(n ⁡+ k)}$.
+
+<br>
+
+:::
+
+<br>
+
+::: {.lead}
+##### Radix Sort
+:::
+
+<br>
+
+::: {.panel-tabset}
+
+## Usage
+
+  - **Use Case:** Effective for sorting large numbers or strings with a fixed length.
+
+## Descriptor
+
+  - **Distinct Characteristics:**
+
+      - Sorts numbers by processing individual digits.
+      - Non-comparative, stable, and efficient for specific data types.
+      - Often combined with counting sort.
+
+## States
+
+  - **Radix Sort Worst, Average and Best**
+
+      - **Best Case:** $\text{O(n ⁡* k)}$ — k is the number of digits in the largest number.
+      - **Average Case:** $\text{O(n ⁡* k)}$.
+      - **Worst Case:** $\text{O(n ⁡* k)}$.
+
+## Tips
+
+  - **Radix Sort:** Look for code that sorts numbers based on their individual digits, starting from the **least significant digit (LSD)** or the most **significant digit (MSD)**. *(Count, Frequency, Sum)*
+
+<br>
+
+:::
+
+<br>
+
+::: {.lead}
+##### Bucket Sort
+:::
+
+<br>
+
+::: {.panel-tabset}
+
+## Usage
+
+  - **Use Case:** Good for uniformly distributed data.
+
+## Descriptor
+
+  - **Distinct Characteristics:**
+  
+      - Distributes elements into buckets and sorts each bucket individually.
+      - Efficient when the input is uniformly distributed.
+      - Often combined with another sorting algorithm like insertion sort.
+
+## States
+
+  - **Bucket Sort Worst, Average and Best**
+
+      - **Best Case:** $\text{O(n + k)}$ — k is the number of buckets; assumes uniform distribution.
+      - **Average Case:** $\text{O(n + k)}$.
+      - **Worst Case:** $\text{O(n^2)}$ — All elements end up in one bucket *(degenerate case)*.
+
+## Tips
+
+  - **Bucket:** Look for something that distributes the values into “buckets” where they are individually sorted. *(Bucket)*
+
+<br>
+
+:::
+
+<br>
+
+::: {.lead}
+##### Shell Sort
+:::
+
+<br>
+
+::: {.panel-tabset}
+
+## Descriptor
+
+  - **Distinct Characteristics:**
+
+      - Generalization of insertion sort with a gap sequence.
+      - Sorts elements far apart and gradually reduces the gap.
+      - Efficient for medium-sized datasets.
+      - Time Complexity: Depends on the gap sequence; commonly $\text{O(n3/2)}$.
+
+## States
+
+  - **Shell Sort Worst, Average and Best**
+
+      - **Best Case:** $\text{O(n log n)}$ — Occurs when the array is already sorted or nearly sorted, especially when using a good gap sequence like the Knuth sequence.
+      - **Average Case:** $\text{O(n^(3/2))}$ or $\text{O(n^1.5)}$ — Highly dependent on the gap sequence used. With commonly used sequences like the Knuth sequence, the average-case complexity is approximately $\text{O(n^1.5)}$.
+      - **Worst Case:** ${O(n^2)}$ — Can degrade to ${O(n^2)}$, particularly with poorly chosen gap sequences like the original Shell sequence *(where the gaps are halved each time)*
+
+## Tips
+
+  - **Shell Sort:** Look for code that sorts elements at specific intervals and gradually reduces the interval until it performs a final insertion sort. *(Gap, Interval)*
+
+<br>
+
+:::
+
+<br>
+
+---
+
+::: {.lead}
+###### **Summary**
+:::
+
+<br>
+
+::: {.callout-note title="Searching & Sorting Algorithms" collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
+
+  - **Linear Search:** Simple, sequential; $O(n)$.
+  - **Binary Search:** Sorted data, divide and conquer; $\text{O(log n)}$.
+  - **Bubble Sort:** Swaps, bubbles up; $O(n^2)$.
+  - **Selection Sort:** Finds minimum, swaps; $O(n^2)$.
+  - **Insertion Sort:** Builds sorted list, shifts; $O(n^2)$, $O(n)$ best case.
+  - **Merge Sort:** Divide and conquer, merge; $\text{O(n log n)}$.
+  - **Quick Sort:** Pivot, partition; $\text{O(n log n)}$ average, $O(n^2)$ worst case.
+  - **Heap Sort:** Max-heap, extract max; $\text{O(n log n)}$.
+  - **Counting Sort:** Counts occurrences, non-comparative; $\text{O(n + k)}$.
+  - **Radix Sort:** Sorts by digits, non-comparative; $O(nk)$.
+  - **Bucket Sort:** Distributes into buckets, sorts; $\text{O(n + k)}$.
+  - **Shell Sort:** Gap sequence, insertion-like; $\text{O(n^3/2)}$.
+
+:::
+
+::: {.callout-note title="Key Observations" collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
+
+  - **Bubble Sort, Selection Sort, and Insertion Sort:** These are simple but inefficient for large datasets, especially in the worst case.
+  - **Merge Sort and Heap Sort:** Stable and consistent in performance, regardless of the input.
+  - **Quick Sort:** Very efficient on average but can degrade to $O(n^2)$  in the worst case without proper pivot selection.
+  - **Counting Sort, Radix Sort, and Bucket Sort:** Efficient for specific types of data *(e.g., integers within a fixed range)* but less versatile.
+
+:::
+
+::: {.callout-note title="Choosing the Right Algorithm" collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
+
+  - **Small datasets:** Simpler algorithms like bubble sort, selection sort, or insertion sort might suffice.
+  - **Large datasets:** More efficient algorithms like merge sort, quick sort, or heap sort are preferred.
+  - **Sorted data:** Algorithms like insertion sort can be very efficient.
+  - **Special conditions:** Use counting sort, radix sort, or bucket sort if the data is within a certain range or has other specific properties.
 
 <br>
 
