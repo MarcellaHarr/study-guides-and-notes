@@ -20,7 +20,7 @@ bibliography: references.bib
 format:
   html:
     theme: 
-      dark: [lux, _variables.scss]
+      dark: [lux, _bootswatch.scss]
       light: lux
     toc: true
     toc-depth: 5
