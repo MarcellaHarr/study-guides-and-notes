@@ -20,7 +20,7 @@ bibliography: references.bib
 format:
   html:
     theme: 
-      dark: lux-dark
+      dark: darkly
       light: lux
     toc: true
     toc-depth: 5
