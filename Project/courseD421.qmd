@@ -23,7 +23,7 @@ These exercises are not mines. They are from this [Quizlet »](https://quizlet.c
 <br>
 
 ::: {.lead}
-Exercise 1a
+##### Exercise 1a
 :::
 
 ::: {.panel-tabset}
@@ -62,7 +62,7 @@ If we were unable to assign a truth value to the statement or the truth value wa
 
 
 ::: {.lead}
-Exercise 1b
+##### Exercise 1b
 :::
 
 ::: {.panel-tabset}
