@@ -599,7 +599,7 @@ and second iterations of A binary search
 
 $\text{ arr = {45, 77, 89, 90, 94, 99, 100} }$ and $\text{key = 100}$
 
-## Initial Setup
+## Setup
 
   - The array `arr` is `{45, 77, 89, 90, 94, 99, 100}`.
   - The `key` to find is `100`.
@@ -1194,3 +1194,20 @@ This makes searching and other operations more efficient.
 :::
 
 <br>
+
+#### Big O Notation
+
+**What is Big O Notation?**
+
+  - **Big O Notation:** It provides an upper bound on the time or space complexity of an algorithm, representing the worst-case scenario. It’s a way to describe the efficiency of an algorithm as the input size grows towards infinity.
+
+**Why Use Big O Notation?**
+
+  - **Comparing Algorithms:** It allows us to compare the efficiency of different algorithms independently of hardware or other environmental factors.
+  - **Scalability:** It helps us understand how an algorithm will perform as the size of the input data grows.
+
+<br>
+
+::: {.lead}
+##### O Notations
+:::
