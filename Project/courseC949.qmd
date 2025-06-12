@@ -64,6 +64,7 @@ variety of inputs inside a predetermined range or domain.
 #### Factors of an Algorithm
 
 ::: {.callout-note title="Factors" collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
+
 `**Modularity**`
 
 This feature was perfectly designed for the algorithm if you are given a problem and break it down into small-small modules or small-small steps, which is a basic definition of an algorithm.
@@ -95,6 +96,7 @@ If an algorithm is simple, it is simple to understand.
 `**Extensibility**`
 
 Your algorithm should be extensible if another algorithm designer or programmer wants to use it.
+
 :::
 
 <br>
@@ -349,7 +351,7 @@ where an approximate or probabilistic answer suffices.
 
 <br>
 
-::: {.callout-note title="Factors" collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
+##### Algorithms
 
 Recursive algorithms are a fundamental concept in computer science, particularly 
 in the study of data structures and algorithms. A recursive algorithm is one 
@@ -604,27 +606,3 @@ $\text{ arr = {45, 77, 89, 90, 94, 99, 100} }$ and $\text{key = 100}$
 :::
 
 <br>
-
-#### Searching & Sorting Algorithms
-
-::: {.lead}
-##### Linear Search
-:::
-
-<br>
-
-::: {.panel-tabset}
-
-## Logic
-
--
-
-## Usage
-
--
-
-## States
-
--
-
-:::
