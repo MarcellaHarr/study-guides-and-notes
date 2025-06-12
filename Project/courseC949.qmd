@@ -15,7 +15,6 @@ Data Structures and Algorithms I (C949)
 
 ## Explains Algorithms (29%)
 
-<br>
 
 #### Characteristics of Algorithms
 
@@ -107,10 +106,6 @@ Your algorithm should be extensible if another algorithm designer or programmer 
 
 <br>
 
-::: {.lead}
-##### Types
-:::
-
 ::: {.panel-tabset}
 
 ## Type-1
@@ -127,6 +122,8 @@ embed_youtube(
   allowfullscreen = TRUE,
   query = NULL)
 ```
+
+<br>
 
 **Brute Force Algorithm**
 
@@ -147,6 +144,7 @@ embed_youtube(
   query = NULL)
 ```
 
+<br>
 
 **Recursive Algorithm**
 
@@ -167,6 +165,7 @@ embed_youtube(
   query = NULL)
 ```
 
+<br>
 
 **Encryption Algorithm** 
 
@@ -189,6 +188,7 @@ embed_youtube(
   query = NULL)
 ```
 
+<br>
 
 **Backtracking Algorithm**
 
@@ -209,6 +209,7 @@ embed_youtube(
   query = NULL)
 ```
 
+<br>
 
 **Searching Algorithm**
 
@@ -228,6 +229,7 @@ embed_youtube(
   query = NULL)
 ```
 
+<br>
 
 **Sorting Algorithm**
 
@@ -260,6 +262,7 @@ embed_youtube(
   query = NULL)
 ```
 
+<br>
 
 **Hashing Algorithm** 
 
@@ -279,6 +282,7 @@ embed_youtube(
   query = NULL)
 ```
 
+<br>
 
 **Divide & Conquer Algorithm**
 
@@ -298,6 +302,7 @@ embed_youtube(
   query = NULL)
 ```
 
+<br>
 
 **Greedy Algorithm**
 
@@ -320,6 +325,7 @@ embed_youtube(
   query = NULL)
 ```
 
+<br>
 
 **Dynamic Programming Algorithm**
 
@@ -339,6 +345,7 @@ embed_youtube(
   query = NULL)
 ```
 
+<br>
 
 **Randomized Algorithm**
 
@@ -370,7 +377,7 @@ recursion.
 
 ::: {.panel-tabset}
 
-## `Base Case`
+## Base Case
 
 This is the condition under which the recursion stops. It represents the simplest 
 instance of the problem, which can be solved directly without further recursion.
@@ -585,7 +592,7 @@ def binary_search(arr, target):
 
 ::: {.panel-tabset}
 
-## Array Elements
+## Arrays
 
 Figuring out the array elements that correspond to the mid-values in the first 
 and second iterations of A binary search
@@ -648,9 +655,9 @@ $\text{ arr = {45, 77, 89, 90, 94, 99, 100} }$ and $\text{key = 100}$
 
   - **Linear Search Worst, Average and Best**
   
-      - `**Best Case:** $O(1)$ — The target element is the first element.`
-      - `**Average Case:** $O(n)$ — The target element is somewhere in the middle or not in the array.`
-      - `**Worst Case:** $O(n)$ — The target element is the last element or not present.`
+      - `**Best Case:** $O(1)$` — The target element is the first element.
+      - `**Average Case:** $O(n)$` — The target element is somewhere in the middle or not in the array.
+      - `**Worst Case:** $O(n)$` — The target element is the last element or not present.
 
 <br>
 
@@ -1094,7 +1101,7 @@ This makes searching and other operations more efficient.
 
       - **Best Case:** $\text{O(n + k)}$ — k is the number of buckets; assumes uniform distribution.
       - **Average Case:** $\text{O(n + k)}$.
-      - **Worst Case:** $\text{O(n^2)}$ — All elements end up in one bucket *(degenerate case)*.
+      - **Worst Case:** $O(n^2)$ — All elements end up in one bucket *(degenerate case)*.
 
 ## Tips
 
@@ -1128,7 +1135,7 @@ This makes searching and other operations more efficient.
   - **Shell Sort Worst, Average and Best**
 
       - **Best Case:** $\text{O(n log n)}$ — Occurs when the array is already sorted or nearly sorted, especially when using a good gap sequence like the Knuth sequence.
-      - **Average Case:** $\text{O(n^(3/2))}$ or $\text{O(n^1.5)}$ — Highly dependent on the gap sequence used. With commonly used sequences like the Knuth sequence, the average-case complexity is approximately $\text{O(n^1.5)}$.
+      - **Average Case:** $O(n^(3/2))$ or $O(n^1.5)$ — Highly dependent on the gap sequence used. With commonly used sequences like the Knuth sequence, the average-case complexity is approximately $O(n^1.5)$.
       - **Worst Case:** ${O(n^2)}$ — Can degrade to ${O(n^2)}$, particularly with poorly chosen gap sequences like the original Shell sequence *(where the gaps are halved each time)*
 
 ## Tips
@@ -1162,7 +1169,7 @@ This makes searching and other operations more efficient.
   - **Counting Sort:** Counts occurrences, non-comparative; $\text{O(n + k)}$.
   - **Radix Sort:** Sorts by digits, non-comparative; $O(nk)$.
   - **Bucket Sort:** Distributes into buckets, sorts; $\text{O(n + k)}$.
-  - **Shell Sort:** Gap sequence, insertion-like; $\text{O(n^3/2)}$.
+  - **Shell Sort:** Gap sequence, insertion-like; $O(n^3/2)$.
 
 :::
 
