@@ -2,6 +2,7 @@
 
 ```{r include=FALSE}
 library(vembedr)
+library(reticulate)
 ```
 
 ::: {.lead}
