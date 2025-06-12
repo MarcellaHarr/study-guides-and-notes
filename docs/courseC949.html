@@ -405,6 +405,26 @@ window.Quarto = {
   <li><a href="#factorial-calculation" id="toc-factorial-calculation" class="nav-link" data-scroll-target="#factorial-calculation">Factorial Calculation</a></li>
   <li><a href="#linear-binary-search" id="toc-linear-binary-search" class="nav-link" data-scroll-target="#linear-binary-search">Linear &amp; Binary Search</a></li>
   </ul></li>
+  <li><a href="#searching-algorithms" id="toc-searching-algorithms" class="nav-link" data-scroll-target="#searching-algorithms">Searching Algorithms</a>
+  <ul>
+  <li><a href="#linear-search-1" id="toc-linear-search-1" class="nav-link" data-scroll-target="#linear-search-1">Linear Search</a></li>
+  <li><a href="#binary-search-1" id="toc-binary-search-1" class="nav-link" data-scroll-target="#binary-search-1">Binary Search</a></li>
+  <li><a href="#interpolation-search" id="toc-interpolation-search" class="nav-link" data-scroll-target="#interpolation-search">Interpolation Search</a></li>
+  <li><a href="#dfsbfs" id="toc-dfsbfs" class="nav-link" data-scroll-target="#dfsbfs">DFS/BFS</a></li>
+  </ul></li>
+  <li><a href="#sorting-algorithms" id="toc-sorting-algorithms" class="nav-link" data-scroll-target="#sorting-algorithms">Sorting Algorithms</a>
+  <ul>
+  <li><a href="#bubble-sort" id="toc-bubble-sort" class="nav-link" data-scroll-target="#bubble-sort">Bubble Sort</a></li>
+  <li><a href="#selection-sort" id="toc-selection-sort" class="nav-link" data-scroll-target="#selection-sort">Selection Sort</a></li>
+  <li><a href="#insertion-sort" id="toc-insertion-sort" class="nav-link" data-scroll-target="#insertion-sort">Insertion Sort</a></li>
+  <li><a href="#merge-sort" id="toc-merge-sort" class="nav-link" data-scroll-target="#merge-sort">Merge Sort</a></li>
+  <li><a href="#quicksort" id="toc-quicksort" class="nav-link" data-scroll-target="#quicksort">Quicksort</a></li>
+  <li><a href="#heap-sort" id="toc-heap-sort" class="nav-link" data-scroll-target="#heap-sort">Heap Sort</a></li>
+  <li><a href="#counting-sort" id="toc-counting-sort" class="nav-link" data-scroll-target="#counting-sort">Counting Sort</a></li>
+  <li><a href="#radix-sort" id="toc-radix-sort" class="nav-link" data-scroll-target="#radix-sort">Radix Sort</a></li>
+  <li><a href="#bucket-sort" id="toc-bucket-sort" class="nav-link" data-scroll-target="#bucket-sort">Bucket Sort</a></li>
+  <li><a href="#shell-sort" id="toc-shell-sort" class="nav-link" data-scroll-target="#shell-sort">Shell Sort</a></li>
+  </ul></li>
   </ul></li>
   </ul>
 </nav>
@@ -453,6 +473,7 @@ Names
 </div>
 <div id="callout-1" class="callout-1-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
+<p><br></p>
 <p><strong>Finiteness</strong></p>
 <p>An algorithm must always have a finite number of steps before it ends. When the operation is finished, it must have a defined endpoint or output and not enter an endless loop.</p>
 <p><strong>Definiteness</strong></p>
@@ -468,7 +489,6 @@ Names
 </div>
 </div>
 </div>
-<p><br></p>
 </section>
 <section id="factors-of-an-algorithm" class="level4">
 <h4 class="anchored" data-anchor-id="factors-of-an-algorithm">Factors of an Algorithm</h4>
@@ -484,6 +504,7 @@ Factors
 </div>
 <div id="callout-2" class="callout-2-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
+<p><br></p>
 <p><code>**Modularity**</code></p>
 <p>This feature was perfectly designed for the algorithm if you are given a problem and break it down into small-small modules or small-small steps, which is a basic definition of an algorithm.</p>
 <p><strong>Correctness</strong></p>
@@ -500,10 +521,10 @@ Factors
 <p>If an algorithm is simple, it is simple to understand.</p>
 <p><code>**Extensibility**</code></p>
 <p>Your algorithm should be extensible if another algorithm designer or programmer wants to use it.</p>
-</div>
-</div>
-</div>
 <p><br></p>
+</div>
+</div>
+</div>
 </section>
 <section id="types-of-algorithms" class="level4">
 <h4 class="anchored" data-anchor-id="types-of-algorithms">Types of Algorithms</h4>
@@ -689,6 +710,7 @@ Factors
 </div>
 <div id="tabset-2-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-3-tab">
 <p>Each recursive call is placed on the system call stack. When the base case is reached, the stack begins to unwind as each instance of the function returns its result.</p>
+<p><br></p>
 </div>
 </div>
 </div>
@@ -744,6 +766,7 @@ Factors
 </div>
 <div id="tabset-3-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-4-tab">
 <p><strong>When to Use Recursion</strong> - When a problem can naturally be divided into similar sub-problems <em>(e.g., tree traversal, searching algorithms like binary search)</em>. - When the recursive solution is significantly simpler or more intuitive than an iterative one.</p>
+<p><br></p>
 </div>
 </div>
 </div>
@@ -774,7 +797,7 @@ Factors
 <li>If they don’t match, move to the next element and repeat the process.</li>
 <li>If the target element is not found by the end of the array, return a “not found” indication.</li>
 </ol>
-<p><strong>Time Complexity:</strong> O(n), where n is the number of elements in the array. This is because in the worst case, the algorithm may need to check every element in the array.</p>
+<p><strong>Time Complexity:</strong> <span class="math inline">\(O(n)\)</span>, where n is the number of elements in the array. This is because in the worst case, the algorithm may need to check every element in the array.</p>
 </div>
 <div id="tabset-4-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-3-tab">
 <p><strong>When to Use:</strong></p>
@@ -790,6 +813,7 @@ Factors
 <span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span> i</span>
 <span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="op">-</span><span class="dv">1</span>  <span class="co"># Return -1 if the element is not found</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+<p><br></p>
 </div>
 </div>
 </div>
@@ -819,7 +843,7 @@ Factors
 </ul></li>
 <li>If the interval becomes invalid (low &gt; high), return a “not found” indication.</li>
 </ol>
-<p><strong>Time Complexity:</strong> O(log⁡ n), where n is the number of elements in the array. This logarithmic time complexity makes binary search significantly faster than linear search for large data sets.</p>
+<p><strong>Time Complexity:</strong> <span class="math inline">\(\text{O(log⁡ n)}\)</span>, where n is the number of elements in the array. This logarithmic time complexity makes binary search significantly faster than linear search for large data sets.</p>
 </div>
 <div id="tabset-5-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-5-3-tab">
 <p><strong>When to Use:</strong></p>
@@ -855,6 +879,7 @@ Factors
 <li><strong>Binary Search:</strong> Ideal for large, sorted collections where performance is a priority.</li>
 </ul></li>
 </ul>
+<p><br></p>
 </div>
 </div>
 </div>
@@ -863,7 +888,7 @@ Factors
 <h6 class="anchored" data-anchor-id="step-by-step-guide"><em>Step-by-Step Guide</em></h6>
 </section>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-6-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-1" role="tab" aria-controls="tabset-6-1" aria-selected="true">Array Elements</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-6-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-2" role="tab" aria-controls="tabset-6-2" aria-selected="false">Initial Setup</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-6-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-3" role="tab" aria-controls="tabset-6-3" aria-selected="false">First Iteration</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-6-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-4" role="tab" aria-controls="tabset-6-4" aria-selected="false">Second Iteration</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-6-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-1" role="tab" aria-controls="tabset-6-1" aria-selected="true">Array Elements</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-6-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-2" role="tab" aria-controls="tabset-6-2" aria-selected="false">Initial Setup</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-6-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-3" role="tab" aria-controls="tabset-6-3" aria-selected="false">1st Iteration</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-6-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-4" role="tab" aria-controls="tabset-6-4" aria-selected="false">2nd Iteration</a></li></ul>
 <div class="tab-content">
 <div id="tabset-6-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-6-1-tab">
 <p>Figuring out the array elements that correspond to the mid-values in the first and second iterations of A binary search</p>
@@ -893,6 +918,640 @@ Factors
 <li>Repeat the calculation for <code>mid</code> with the updated <code>low</code> and <code>high</code> values.</li>
 <li>Again, compare <code>arr[mid]</code> with the <code>key</code> and update <code>low</code> or <code>high</code> accordingly.</li>
 </ul>
+<p><br></p>
+</div>
+</div>
+</div>
+<p><br></p>
+</section>
+<section id="searching-algorithms" class="level4">
+<h4 class="anchored" data-anchor-id="searching-algorithms">Searching Algorithms</h4>
+<section id="linear-search-1" class="level5 lead">
+<h5 class="anchored" data-anchor-id="linear-search-1">Linear Search</h5>
+</section>
+<p><br></p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-7-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-7-1" role="tab" aria-controls="tabset-7-1" aria-selected="true">Logic</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-7-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-7-2" role="tab" aria-controls="tabset-7-2" aria-selected="false">Usage</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-7-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-7-3" role="tab" aria-controls="tabset-7-3" aria-selected="false">States</a></li></ul>
+<div class="tab-content">
+<div id="tabset-7-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-7-1-tab">
+<ul>
+<li><strong>Concept:</strong> As discussed earlier, linear search involves checking each element in a list or array sequentially until the target element is found or the end of the collection is reached.</li>
+<li><strong>Time Complexity:</strong> <span class="math inline">\(O(n)\)</span>, where n is the number of elements.</li>
+</ul>
+</div>
+<div id="tabset-7-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-7-2-tab">
+<ul>
+<li><p><strong>Use Case:</strong> Best used when the list is small or unsorted.</p></li>
+<li><p><strong>Distinct Characteristics:</strong></p>
+<ul>
+<li>Simple, sequential search.</li>
+<li>Checks each element one by one.</li>
+<li>Works on both sorted and unsorted data.</li>
+</ul></li>
+</ul>
+</div>
+<div id="tabset-7-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-7-3-tab">
+<ul>
+<li><p><strong>Linear Search Worst, Average and Best</strong></p>
+<ul>
+<li><code>**Best Case:** $O(1)$ — The target element is the first element.</code></li>
+<li><code>**Average Case:** $O(n)$ — The target element is somewhere in the middle or not in the array.</code></li>
+<li><code>**Worst Case:** $O(n)$ — The target element is the last element or not present.</code></li>
+</ul></li>
+</ul>
+<p><br></p>
+</div>
+</div>
+</div>
+<p><br></p>
+<section id="binary-search-1" class="level5 lead">
+<h5 class="anchored" data-anchor-id="binary-search-1">Binary Search</h5>
+</section>
+<p><br></p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-8-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-8-1" role="tab" aria-controls="tabset-8-1" aria-selected="true">Logic</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-8-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-8-2" role="tab" aria-controls="tabset-8-2" aria-selected="false">Usage</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-8-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-8-3" role="tab" aria-controls="tabset-8-3" aria-selected="false">States</a></li></ul>
+<div class="tab-content">
+<div id="tabset-8-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-8-1-tab">
+<ul>
+<li><strong>Concept:</strong> Binary search operates on a sorted list. It repeatedly divides the search interval in half until the target element is found or the interval is empty.</li>
+<li><strong>Time Complexity:</strong> <span class="math inline">\(\text{O(log⁡ n)}\)</span></li>
+</ul>
+</div>
+<div id="tabset-8-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-8-2-tab">
+<ul>
+<li><p><strong>Use Case:</strong> Ideal for large, sorted datasets.</p></li>
+<li><p><strong>Distinct Characteristics:</strong></p>
+<ul>
+<li><code>Requires a sorted array.</code></li>
+<li>Divides the search interval in half repeatedly.</li>
+<li>Efficient, logarithmic time complexity.</li>
+</ul></li>
+</ul>
+</div>
+<div id="tabset-8-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-8-3-tab">
+<ul>
+<li><p><strong>Binary Search Worst, Average and Best</strong></p>
+<ul>
+<li><strong>Best Case:</strong> <span class="math inline">\(O(1)\)</span> — The target element is the middle element.</li>
+<li><strong>Average Case:</strong> <span class="math inline">\(\text{O(log⁡ n)}\)</span> — The target element is not immediately found but within the sorted array.</li>
+<li><strong>Worst Case:</strong> <span class="math inline">\(\text{O(log⁡ n)}\)</span> — The target element is at the extreme ends or not present.</li>
+</ul></li>
+</ul>
+<p><br></p>
+</div>
+</div>
+</div>
+<p><br></p>
+<section id="interpolation-search" class="level5 lead">
+<h5 class="anchored" data-anchor-id="interpolation-search">Interpolation Search</h5>
+</section>
+<p><br></p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-9-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-9-1" role="tab" aria-controls="tabset-9-1" aria-selected="true">Logic</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-9-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-9-2" role="tab" aria-controls="tabset-9-2" aria-selected="false">Usage</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-9-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-9-3" role="tab" aria-controls="tabset-9-3" aria-selected="false">States</a></li></ul>
+<div class="tab-content">
+<div id="tabset-9-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-9-1-tab">
+<ul>
+<li><strong>Concept:</strong> Similar to binary search but works on uniformly distributed data. It estimates the position of the target element based on the value.</li>
+<li><strong>Time Complexity:</strong> O(log ⁡log ⁡n) in the best case, <span class="math inline">\(O(n)\)</span> in the worst case.</li>
+</ul>
+</div>
+<div id="tabset-9-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-9-2-tab">
+<ul>
+<li><strong>Use Case:</strong> Effective when the data is uniformly distributed.</li>
+</ul>
+</div>
+<div id="tabset-9-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-9-3-tab">
+<ul>
+<li>Interpolation Search Worst, Average and Best
+<ul>
+<li><strong>Best Case:</strong> <span class="math inline">\(O(1)\)</span> — The target element is exactly where the interpolation suggests.</li>
+<li><strong>Average Case:</strong> <span class="math inline">\(\text{O(log ⁡log⁡ n)}\)</span> — Uniformly distributed data.</li>
+<li><strong>Worst Case:</strong> <span class="math inline">\(O(n)\)</span> — Highly skewed data distribution or worst interpolation.</li>
+</ul></li>
+</ul>
+<p><br></p>
+</div>
+</div>
+</div>
+<p><br></p>
+<section id="dfsbfs" class="level5 lead">
+<h5 class="anchored" data-anchor-id="dfsbfs">DFS/BFS</h5>
+</section>
+<p><br></p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-10-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-10-1" role="tab" aria-controls="tabset-10-1" aria-selected="true">Logic</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-10-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-10-2" role="tab" aria-controls="tabset-10-2" aria-selected="false">Usage</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-10-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-10-3" role="tab" aria-controls="tabset-10-3" aria-selected="false">States</a></li></ul>
+<div class="tab-content">
+<div id="tabset-10-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-10-1-tab">
+<ul>
+<li><strong>Concept:</strong> Used primarily in graph and tree data structures. <strong>Depth-First Search (DFS)</strong> explores as far as possible along one branch before backtracking, while <strong>Breadth-First Search (BFS)</strong> explores all neighbors at the present depth before moving on to nodes at the next depth level.</li>
+<li><strong>Time Complexity:</strong> <span class="math inline">\(\text{O(V + E)}\)</span>, where V is the number of vertices and E is the number of edges.</li>
+</ul>
+</div>
+<div id="tabset-10-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-10-2-tab">
+<ul>
+<li><strong>Use Case:</strong> Useful for searching nodes in graphs and trees.</li>
+</ul>
+</div>
+<div id="tabset-10-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-10-3-tab">
+<ul>
+<li><p><strong>(DFS)</strong></p>
+<ul>
+<li><strong>Best Case:</strong> <span class="math inline">\(O(1)\)</span> — The target node is found immediately.</li>
+<li><strong>Average Case:</strong> <span class="math inline">\(\text{O(V + E)}\)</span>— Typically when all nodes and edges must be explored.</li>
+<li><strong>Worst Case:</strong> <span class="math inline">\(\text{O(V + E)}\)</span> — The target node is the last one discovered.</li>
+</ul></li>
+<li><p><strong>(BFS)</strong></p>
+<ul>
+<li><strong>Best Case:</strong> <span class="math inline">\(O(1)\)</span> — The target node is the root or the first node checked.</li>
+<li><strong>Average Case:</strong> <span class="math inline">\(\text{O(V + E)}\)</span> — All nodes and edges need to be explored.</li>
+<li><strong>Worst Case:</strong> <span class="math inline">\(\text{O(V + E)}\)</span> — The target node is the last one explored.</li>
+</ul></li>
+</ul>
+<p><br></p>
+</div>
+</div>
+</div>
+<p><br></p>
+</section>
+<section id="sorting-algorithms" class="level4">
+<h4 class="anchored" data-anchor-id="sorting-algorithms">Sorting Algorithms</h4>
+<p>Sorting algorithms organize data in a particular order <em>(usually ascending or descending)</em>. This makes searching and other operations more efficient.</p>
+<p><br></p>
+<section id="bubble-sort" class="level5 lead">
+<h5 class="anchored" data-anchor-id="bubble-sort">Bubble Sort</h5>
+</section>
+<p><br></p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-11-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-11-1" role="tab" aria-controls="tabset-11-1" aria-selected="true">Usage</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-11-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-11-2" role="tab" aria-controls="tabset-11-2" aria-selected="false">Descriptor</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-11-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-11-3" role="tab" aria-controls="tabset-11-3" aria-selected="false">States</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-11-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-11-4" role="tab" aria-controls="tabset-11-4" aria-selected="false">Tips</a></li></ul>
+<div class="tab-content">
+<div id="tabset-11-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-11-1-tab">
+<ul>
+<li><strong>Use Case:</strong> Simple but inefficient for large datasets. Best used for educational purposes or small lists.</li>
+</ul>
+</div>
+<div id="tabset-11-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-11-2-tab">
+<ul>
+<li><p><strong>Distinct Characteristics:</strong></p>
+<ul>
+<li>Repeatedly swaps adjacent elements if they are in the wrong order.</li>
+<li>Simple, but inefficient for large datasets.</li>
+<li>“Bubbles” the largest element to the end of the list.</li>
+</ul></li>
+</ul>
+</div>
+<div id="tabset-11-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-11-3-tab">
+<ul>
+<li>Bubble Sort Worst, Average and Best
+<ul>
+<li><strong>Best Case:</strong> <span class="math inline">\(O(n)\)</span> — The array is already sorted <em>(with an optimized version that stops early)</em>.</li>
+<li><strong>Average Case:</strong> <span class="math inline">\(O(n^2)\)</span> — Average case with random elements.</li>
+<li><strong>Worst Case:</strong> <span class="math inline">\(O(n^2)\)</span> — The array is sorted in reverse order.</li>
+</ul></li>
+</ul>
+</div>
+<div id="tabset-11-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-11-4-tab">
+<ul>
+<li><strong>Bubble:</strong> Look for something that swaps so the result can “bubble” to the top. (Swap, Exchange)</li>
+</ul>
+<p><br></p>
+</div>
+</div>
+</div>
+<p><br></p>
+<section id="selection-sort" class="level5 lead">
+<h5 class="anchored" data-anchor-id="selection-sort">Selection Sort</h5>
+</section>
+<p><br></p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-12-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-12-1" role="tab" aria-controls="tabset-12-1" aria-selected="true">Usage</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-12-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-12-2" role="tab" aria-controls="tabset-12-2" aria-selected="false">Descriptor</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-12-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-12-3" role="tab" aria-controls="tabset-12-3" aria-selected="false">States</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-12-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-12-4" role="tab" aria-controls="tabset-12-4" aria-selected="false">Tips</a></li></ul>
+<div class="tab-content">
+<div id="tabset-12-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-12-1-tab">
+<ul>
+<li><strong>Use Case:</strong> Inefficient for large lists, but useful when memory writes are more expensive than comparisons.</li>
+</ul>
+</div>
+<div id="tabset-12-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-12-2-tab">
+<ul>
+<li><p><strong>Distinct Characteristics:</strong></p>
+<ul>
+<li>Finds the minimum element and swaps it with the first unsorted element.</li>
+<li>Reduces the problem size by one in each iteration.</li>
+<li>Always performs <span class="math inline">\(O(n^2)\)</span> comparisons, regardless of input.</li>
+</ul></li>
+</ul>
+</div>
+<div id="tabset-12-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-12-3-tab">
+<ul>
+<li><p>Selection Sort Worst, Average and Best</p>
+<ul>
+<li><strong>Best Case:</strong> <span class="math inline">\(O(n^2)\)</span> — Selection sort does not improve with better input, always <span class="math inline">\(O(n^2)\)</span>.</li>
+<li><strong>Average Case:</strong> <span class="math inline">\(O(n^2)\)</span> — Average case with random elements.</li>
+<li><strong>Worst Case:</strong> <span class="math inline">\(O(n^2)\)</span> — Selection sort is insensitive to input order.</li>
+</ul></li>
+</ul>
+</div>
+<div id="tabset-12-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-12-4-tab">
+<ul>
+<li><strong>Selection:</strong> Look for code that repeatedly finds the minimum <em>(or maximum)</em> element and moves it to the beginning <em>(or end)</em> of the list. <em>(Select minimum, Swap with start)</em></li>
+</ul>
+<p><br></p>
+</div>
+</div>
+</div>
+<p><br></p>
+<section id="insertion-sort" class="level5 lead">
+<h5 class="anchored" data-anchor-id="insertion-sort">Insertion Sort</h5>
+</section>
+<p><br></p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-13-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-13-1" role="tab" aria-controls="tabset-13-1" aria-selected="true">Usage</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-13-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-13-2" role="tab" aria-controls="tabset-13-2" aria-selected="false">Descriptor</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-13-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-13-3" role="tab" aria-controls="tabset-13-3" aria-selected="false">States</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-13-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-13-4" role="tab" aria-controls="tabset-13-4" aria-selected="false">Tips</a></li></ul>
+<div class="tab-content">
+<div id="tabset-13-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-13-1-tab">
+<ul>
+<li><strong>Use Case:</strong> Good for small or nearly sorted lists.</li>
+</ul>
+</div>
+<div id="tabset-13-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-13-2-tab">
+<ul>
+<li><p><strong>Distinct Characteristics:</strong></p>
+<ul>
+<li>Builds a sorted list one element at a time.</li>
+<li>Efficient for small or nearly sorted datasets.</li>
+<li>Shifts elements to make space for the current element.</li>
+</ul></li>
+</ul>
+</div>
+<div id="tabset-13-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-13-3-tab">
+<ul>
+<li><p><strong>Insertion Sort Worst, Average and Best</strong></p>
+<ul>
+<li><strong>Best Case:</strong> <span class="math inline">\(O(n)\)</span> — The array is already sorted.</li>
+<li><strong>Average Case:</strong> <span class="math inline">\(O(n^2)\)</span> — Average case with random elements.</li>
+<li><strong>Worst Case:</strong> <span class="math inline">\(O(n^2)\)</span> — The array is sorted in reverse order.</li>
+</ul></li>
+</ul>
+</div>
+<div id="tabset-13-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-13-4-tab">
+<ul>
+<li><strong>Insertion:</strong> Look for code that builds a sorted portion of the list one element at a time by inserting each new element into its correct position within the already-sorted part. <em>(Insert, Shift Element)</em></li>
+</ul>
+<p><br></p>
+</div>
+</div>
+</div>
+<p><br></p>
+<section id="merge-sort" class="level5 lead">
+<h5 class="anchored" data-anchor-id="merge-sort">Merge Sort</h5>
+</section>
+<p><br></p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-14-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-14-1" role="tab" aria-controls="tabset-14-1" aria-selected="true">Usage</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-14-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-14-2" role="tab" aria-controls="tabset-14-2" aria-selected="false">Descriptor</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-14-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-14-3" role="tab" aria-controls="tabset-14-3" aria-selected="false">States</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-14-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-14-4" role="tab" aria-controls="tabset-14-4" aria-selected="false">Tips</a></li></ul>
+<div class="tab-content">
+<div id="tabset-14-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-14-1-tab">
+<ul>
+<li><strong>Use Case:</strong> Efficient and stable; good for large datasets.</li>
+</ul>
+</div>
+<div id="tabset-14-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-14-2-tab">
+<ul>
+<li><p><strong>Distinct Characteristics:</strong></p>
+<ul>
+<li>Divides the list into halves, sorts each half, and then merges them.</li>
+<li>Stable and efficient for large datasets.</li>
+<li>Requires additional space for merging.</li>
+</ul></li>
+</ul>
+</div>
+<div id="tabset-14-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-14-3-tab">
+<ul>
+<li><p><strong>Merge Sort Worst, Average and Best</strong></p>
+<ul>
+<li><strong>Best Case:</strong> <span class="math inline">\(\text{O(n ⁡log⁡ n)}\)</span> — Merge sort’s time complexity is the same in all cases.</li>
+<li><strong>Average Case:</strong> <span class="math inline">\(\text{O(n ⁡log⁡ n)}\)</span>.</li>
+<li><strong>Worst Case:</strong> <span class="math inline">\(\text{O(n ⁡log⁡ n)}\)</span>.</li>
+</ul></li>
+</ul>
+</div>
+<div id="tabset-14-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-14-4-tab">
+<ul>
+<li><strong>Merge:</strong> Look for something that continually splits a list in half. <em>(Merge, Split)</em></li>
+</ul>
+<p><br></p>
+</div>
+</div>
+</div>
+<p><br></p>
+<section id="quicksort" class="level5 lead">
+<h5 class="anchored" data-anchor-id="quicksort">Quicksort</h5>
+</section>
+<p><br></p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-15-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-15-1" role="tab" aria-controls="tabset-15-1" aria-selected="true">Usage</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-15-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-15-2" role="tab" aria-controls="tabset-15-2" aria-selected="false">Descriptor</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-15-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-15-3" role="tab" aria-controls="tabset-15-3" aria-selected="false">States</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-15-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-15-4" role="tab" aria-controls="tabset-15-4" aria-selected="false">Tips</a></li></ul>
+<div class="tab-content">
+<div id="tabset-15-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-15-1-tab">
+<ul>
+<li><strong>Use Case:</strong> Often faster in practice than merge sort but less stable.</li>
+</ul>
+</div>
+<div id="tabset-15-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-15-2-tab">
+<ul>
+<li><p><strong>Distinct Characteristics:</strong></p>
+<ul>
+<li>Selects a <em>“pivot”</em> element and partitions the array around it.</li>
+<li>Recursively sorts the partitions.</li>
+<li>Efficient, but can degrade to <span class="math inline">\(O(n^2)\)</span> if poor pivot selection occurs.</li>
+</ul></li>
+</ul>
+</div>
+<div id="tabset-15-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-15-3-tab">
+<ul>
+<li><p><strong>Quicksort Worst, Average and Best</strong></p>
+<ul>
+<li><strong>Best Case:</strong> <span class="math inline">\(\text{O(n ⁡log⁡ n)}\)</span> — The pivot splits the array into two nearly equal halves.</li>
+<li><strong>Average Case:</strong> <span class="math inline">\(\text{O(n ⁡log⁡ n)}\)</span> — Average case with random pivots.</li>
+<li><strong>Worst Case:</strong> <span class="math inline">\(O(n^2)\)</span> — The pivot is always the smallest or largest element, leading to unbalanced partitions.</li>
+</ul></li>
+</ul>
+</div>
+<div id="tabset-15-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-15-4-tab">
+<ul>
+<li><strong>Quicksort:</strong> Look for the keywords <em>“pivot”</em> and/or <em>“split”</em>. <em>(Pivot, Split)</em></li>
+</ul>
+<p><br></p>
+</div>
+</div>
+</div>
+<p><br></p>
+<section id="heap-sort" class="level5 lead">
+<h5 class="anchored" data-anchor-id="heap-sort">Heap Sort</h5>
+</section>
+<p><br></p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-16-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-16-1" role="tab" aria-controls="tabset-16-1" aria-selected="true">Usage</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-16-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-16-2" role="tab" aria-controls="tabset-16-2" aria-selected="false">Descriptor</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-16-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-16-3" role="tab" aria-controls="tabset-16-3" aria-selected="false">States</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-16-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-16-4" role="tab" aria-controls="tabset-16-4" aria-selected="false">Tips</a></li></ul>
+<div class="tab-content">
+<div id="tabset-16-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-16-1-tab">
+<ul>
+<li><strong>Use Case:</strong> Useful when memory usage is a concern as it’s an in-place algorithm.</li>
+</ul>
+</div>
+<div id="tabset-16-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-16-2-tab">
+<ul>
+<li><p><strong>Distinct Characteristics:</strong></p>
+<ul>
+<li>Utilizes a binary heap data structure.</li>
+<li>Builds a max-heap and repeatedly extracts the maximum element.</li>
+<li>Efficient and in-place, but not stable.</li>
+</ul></li>
+</ul>
+</div>
+<div id="tabset-16-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-16-3-tab">
+<ul>
+<li><p><strong>Heap Sort Worst, Average and Best</strong></p>
+<ul>
+<li><strong>Best Case:</strong> <span class="math inline">\(\text{O(n ⁡log⁡ n)}\)</span> — Heap sort’s time complexity is the same in all cases.</li>
+<li><strong>Average Case:</strong> <span class="math inline">\(\text{O(n ⁡log⁡ n)}\)</span>.</li>
+<li><strong>Worst Case:</strong> <span class="math inline">\(\text{O(n ⁡log⁡ n)}\)</span>.</li>
+</ul></li>
+</ul>
+</div>
+<div id="tabset-16-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-16-4-tab">
+<ul>
+<li><strong>Heap Sort:</strong> Look for code that uses a heap data structure to repeatedly extract the maximum <em>(or minimum)</em> element and rebuilds the heap. <em>(Heapify, Extract Max, Build Heap)</em></li>
+</ul>
+<p><br></p>
+</div>
+</div>
+</div>
+<p><br></p>
+<section id="counting-sort" class="level5 lead">
+<h5 class="anchored" data-anchor-id="counting-sort">Counting Sort</h5>
+</section>
+<p><br></p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-17-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-17-1" role="tab" aria-controls="tabset-17-1" aria-selected="true">Usage</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-17-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-17-2" role="tab" aria-controls="tabset-17-2" aria-selected="false">Descriptor</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-17-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-17-3" role="tab" aria-controls="tabset-17-3" aria-selected="false">States</a></li></ul>
+<div class="tab-content">
+<div id="tabset-17-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-17-1-tab">
+<ul>
+<li>Use Case: Efficient for sorting integers or other items with a small range of possible values.</li>
+</ul>
+</div>
+<div id="tabset-17-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-17-2-tab">
+<ul>
+<li><p><strong>Distinct Characteristics:</strong></p>
+<ul>
+<li>Non-comparative sorting.</li>
+<li>Counts occurrences of each element and uses this information to place elements.</li>
+<li>Efficient for small ranges of integers.</li>
+</ul></li>
+</ul>
+</div>
+<div id="tabset-17-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-17-3-tab">
+<ul>
+<li><p><strong>Counting Sort Worst, Average and Best</strong></p>
+<ul>
+<li><strong>Best Case:</strong> <span class="math inline">\(\text{O(n ⁡+ k) - k}\)</span> is the range of the input.</li>
+<li><strong>Average Case:</strong> <span class="math inline">\(\text{O(n ⁡+ k)}\)</span>.</li>
+<li><strong>Worst Case:</strong> <span class="math inline">\(\text{O(n ⁡+ k)}\)</span>.</li>
+</ul></li>
+</ul>
+<p><br></p>
+</div>
+</div>
+</div>
+<p><br></p>
+<section id="radix-sort" class="level5 lead">
+<h5 class="anchored" data-anchor-id="radix-sort">Radix Sort</h5>
+</section>
+<p><br></p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-18-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-18-1" role="tab" aria-controls="tabset-18-1" aria-selected="true">Usage</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-18-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-18-2" role="tab" aria-controls="tabset-18-2" aria-selected="false">Descriptor</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-18-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-18-3" role="tab" aria-controls="tabset-18-3" aria-selected="false">States</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-18-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-18-4" role="tab" aria-controls="tabset-18-4" aria-selected="false">Tips</a></li></ul>
+<div class="tab-content">
+<div id="tabset-18-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-18-1-tab">
+<ul>
+<li><strong>Use Case:</strong> Effective for sorting large numbers or strings with a fixed length.</li>
+</ul>
+</div>
+<div id="tabset-18-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-18-2-tab">
+<ul>
+<li><p><strong>Distinct Characteristics:</strong></p>
+<ul>
+<li>Sorts numbers by processing individual digits.</li>
+<li>Non-comparative, stable, and efficient for specific data types.</li>
+<li>Often combined with counting sort.</li>
+</ul></li>
+</ul>
+</div>
+<div id="tabset-18-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-18-3-tab">
+<ul>
+<li><p><strong>Radix Sort Worst, Average and Best</strong></p>
+<ul>
+<li><strong>Best Case:</strong> <span class="math inline">\(\text{O(n ⁡* k)}\)</span> — k is the number of digits in the largest number.</li>
+<li><strong>Average Case:</strong> <span class="math inline">\(\text{O(n ⁡* k)}\)</span>.</li>
+<li><strong>Worst Case:</strong> <span class="math inline">\(\text{O(n ⁡* k)}\)</span>.</li>
+</ul></li>
+</ul>
+</div>
+<div id="tabset-18-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-18-4-tab">
+<ul>
+<li><strong>Radix Sort:</strong> Look for code that sorts numbers based on their individual digits, starting from the <strong>least significant digit (LSD)</strong> or the most <strong>significant digit (MSD)</strong>. <em>(Count, Frequency, Sum)</em></li>
+</ul>
+<p><br></p>
+</div>
+</div>
+</div>
+<p><br></p>
+<section id="bucket-sort" class="level5 lead">
+<h5 class="anchored" data-anchor-id="bucket-sort">Bucket Sort</h5>
+</section>
+<p><br></p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-19-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-19-1" role="tab" aria-controls="tabset-19-1" aria-selected="true">Usage</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-19-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-19-2" role="tab" aria-controls="tabset-19-2" aria-selected="false">Descriptor</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-19-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-19-3" role="tab" aria-controls="tabset-19-3" aria-selected="false">States</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-19-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-19-4" role="tab" aria-controls="tabset-19-4" aria-selected="false">Tips</a></li></ul>
+<div class="tab-content">
+<div id="tabset-19-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-19-1-tab">
+<ul>
+<li><strong>Use Case:</strong> Good for uniformly distributed data.</li>
+</ul>
+</div>
+<div id="tabset-19-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-19-2-tab">
+<ul>
+<li><p><strong>Distinct Characteristics:</strong></p>
+<ul>
+<li>Distributes elements into buckets and sorts each bucket individually.</li>
+<li>Efficient when the input is uniformly distributed.</li>
+<li>Often combined with another sorting algorithm like insertion sort.</li>
+</ul></li>
+</ul>
+</div>
+<div id="tabset-19-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-19-3-tab">
+<ul>
+<li><p><strong>Bucket Sort Worst, Average and Best</strong></p>
+<ul>
+<li><strong>Best Case:</strong> <span class="math inline">\(\text{O(n + k)}\)</span> — k is the number of buckets; assumes uniform distribution.</li>
+<li><strong>Average Case:</strong> <span class="math inline">\(\text{O(n + k)}\)</span>.</li>
+<li><strong>Worst Case:</strong> <span class="math inline">\(\text{O(n^2)}\)</span> — All elements end up in one bucket <em>(degenerate case)</em>.</li>
+</ul></li>
+</ul>
+</div>
+<div id="tabset-19-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-19-4-tab">
+<ul>
+<li><strong>Bucket:</strong> Look for something that distributes the values into “buckets” where they are individually sorted. <em>(Bucket)</em></li>
+</ul>
+<p><br></p>
+</div>
+</div>
+</div>
+<p><br></p>
+<section id="shell-sort" class="level5 lead">
+<h5 class="anchored" data-anchor-id="shell-sort">Shell Sort</h5>
+</section>
+<p><br></p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-20-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-20-1" role="tab" aria-controls="tabset-20-1" aria-selected="true">Descriptor</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-20-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-20-2" role="tab" aria-controls="tabset-20-2" aria-selected="false">States</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-20-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-20-3" role="tab" aria-controls="tabset-20-3" aria-selected="false">Tips</a></li></ul>
+<div class="tab-content">
+<div id="tabset-20-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-20-1-tab">
+<ul>
+<li><p><strong>Distinct Characteristics:</strong></p>
+<ul>
+<li>Generalization of insertion sort with a gap sequence.</li>
+<li>Sorts elements far apart and gradually reduces the gap.</li>
+<li>Efficient for medium-sized datasets.</li>
+<li>Time Complexity: Depends on the gap sequence; commonly <span class="math inline">\(\text{O(n3/2)}\)</span>.</li>
+</ul></li>
+</ul>
+</div>
+<div id="tabset-20-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-20-2-tab">
+<ul>
+<li><p><strong>Shell Sort Worst, Average and Best</strong></p>
+<ul>
+<li><strong>Best Case:</strong> <span class="math inline">\(\text{O(n log n)}\)</span> — Occurs when the array is already sorted or nearly sorted, especially when using a good gap sequence like the Knuth sequence.</li>
+<li><strong>Average Case:</strong> <span class="math inline">\(\text{O(n^(3/2))}\)</span> or <span class="math inline">\(\text{O(n^1.5)}\)</span> — Highly dependent on the gap sequence used. With commonly used sequences like the Knuth sequence, the average-case complexity is approximately <span class="math inline">\(\text{O(n^1.5)}\)</span>.</li>
+<li><strong>Worst Case:</strong> <span class="math inline">\({O(n^2)}\)</span> — Can degrade to <span class="math inline">\({O(n^2)}\)</span>, particularly with poorly chosen gap sequences like the original Shell sequence <em>(where the gaps are halved each time)</em></li>
+</ul></li>
+</ul>
+</div>
+<div id="tabset-20-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-20-3-tab">
+<ul>
+<li><strong>Shell Sort:</strong> Look for code that sorts elements at specific intervals and gradually reduces the interval until it performs a final insertion sort. <em>(Gap, Interval)</em></li>
+</ul>
+<p><br></p>
+</div>
+</div>
+</div>
+<p><br></p>
+<hr>
+<section id="summary" class="level6 lead">
+<h6 class="anchored" data-anchor-id="summary"><strong>Summary</strong></h6>
+</section>
+<p><br></p>
+<div class="callout callout-style-simple callout-note no-icon callout-titled" title="Searching &amp; Sorting Algorithms" style="border-left:none; border-right:none; border-top:none; border-bottom:none;">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Searching &amp; Sorting Algorithms
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li><strong>Linear Search:</strong> Simple, sequential; <span class="math inline">\(O(n)\)</span>.</li>
+<li><strong>Binary Search:</strong> Sorted data, divide and conquer; <span class="math inline">\(\text{O(log n)}\)</span>.</li>
+<li><strong>Bubble Sort:</strong> Swaps, bubbles up; <span class="math inline">\(O(n^2)\)</span>.</li>
+<li><strong>Selection Sort:</strong> Finds minimum, swaps; <span class="math inline">\(O(n^2)\)</span>.</li>
+<li><strong>Insertion Sort:</strong> Builds sorted list, shifts; <span class="math inline">\(O(n^2)\)</span>, <span class="math inline">\(O(n)\)</span> best case.</li>
+<li><strong>Merge Sort:</strong> Divide and conquer, merge; <span class="math inline">\(\text{O(n log n)}\)</span>.</li>
+<li><strong>Quick Sort:</strong> Pivot, partition; <span class="math inline">\(\text{O(n log n)}\)</span> average, <span class="math inline">\(O(n^2)\)</span> worst case.</li>
+<li><strong>Heap Sort:</strong> Max-heap, extract max; <span class="math inline">\(\text{O(n log n)}\)</span>.</li>
+<li><strong>Counting Sort:</strong> Counts occurrences, non-comparative; <span class="math inline">\(\text{O(n + k)}\)</span>.</li>
+<li><strong>Radix Sort:</strong> Sorts by digits, non-comparative; <span class="math inline">\(O(nk)\)</span>.</li>
+<li><strong>Bucket Sort:</strong> Distributes into buckets, sorts; <span class="math inline">\(\text{O(n + k)}\)</span>.</li>
+<li><strong>Shell Sort:</strong> Gap sequence, insertion-like; <span class="math inline">\(\text{O(n^3/2)}\)</span>.</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="callout callout-style-simple callout-note no-icon callout-titled" title="Key Observations" style="border-left:none; border-right:none; border-top:none; border-bottom:none;">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Key Observations
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li><strong>Bubble Sort, Selection Sort, and Insertion Sort:</strong> These are simple but inefficient for large datasets, especially in the worst case.</li>
+<li><strong>Merge Sort and Heap Sort:</strong> Stable and consistent in performance, regardless of the input.</li>
+<li><strong>Quick Sort:</strong> Very efficient on average but can degrade to <span class="math inline">\(O(n^2)\)</span> in the worst case without proper pivot selection.</li>
+<li><strong>Counting Sort, Radix Sort, and Bucket Sort:</strong> Efficient for specific types of data <em>(e.g., integers within a fixed range)</em> but less versatile.</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="callout callout-style-simple callout-note no-icon callout-titled" title="Choosing the Right Algorithm" style="border-left:none; border-right:none; border-top:none; border-bottom:none;">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Choosing the Right Algorithm
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li><strong>Small datasets:</strong> Simpler algorithms like bubble sort, selection sort, or insertion sort might suffice.</li>
+<li><strong>Large datasets:</strong> More efficient algorithms like merge sort, quick sort, or heap sort are preferred.</li>
+<li><strong>Sorted data:</strong> Algorithms like insertion sort can be very efficient.</li>
+<li><strong>Special conditions:</strong> Use counting sort, radix sort, or bucket sort if the data is within a certain range or has other specific properties.</li>
+</ul>
+<p><br></p>
 </div>
 </div>
 </div>
