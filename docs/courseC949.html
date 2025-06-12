@@ -1580,6 +1580,167 @@ Choosing the Right Algorithm
 <section id="o-notations" class="level5 lead">
 <h5 class="anchored" data-anchor-id="o-notations">O Notations</h5>
 </section>
+<div class="callout callout-style-simple callout-note no-icon callout-titled" title="Common Big Os" style="border-left:none; border-right:none; border-top:none; border-bottom:none;">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Common Big Os
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li><strong><code>$O(1)$ - Constant Time</code>:</strong>
+<ul>
+<li><strong>Description:</strong> The algorithm takes the same amount of time to execute regardless of the size of the input.</li>
+<li><strong>Example:</strong> Accessing an element in an array by index.</li>
+<li><strong>Efficiency:</strong> Excellent.</li>
+</ul></li>
+<li><strong><code>$\text{O(log n)}$ - Logarithmic Time</code>:</strong>
+<ul>
+<li><strong>Description:</strong> The runtime increases logarithmically as the input size increases. Typically occurs in algorithms that halve the problem size at each step, like binary search.</li>
+<li><strong>Example:</strong> Binary search.</li>
+<li><strong>Efficiency:</strong> Very good for large inputs.</li>
+</ul></li>
+<li><strong><code>$O(n)$ - Linear Time</code>:</strong>
+<ul>
+<li><strong>Description:</strong> The runtime increases linearly with the size of the input. If you double the input size, the runtime also doubles.</li>
+<li><strong>Example:</strong> Linear search, iterating through a list.</li>
+<li><strong>Efficiency:</strong> Reasonable for moderate to large inputs.</li>
+</ul></li>
+<li><strong><code>$\text{O(n log n)}$ - Log-Linear Time</code>:</strong>
+<ul>
+<li><strong>Description:</strong> The runtime increases more than linearly but less than quadratically. Common in efficient sorting algorithms like merge sort and quicksort.</li>
+<li><strong>Example:</strong> Merge sort, quicksort, heap sort.</li>
+<li><strong>Efficiency:</strong> Efficient for large inputs.</li>
+</ul></li>
+<li><strong><code>$O(n^2)$ - Quadratic Time</code>:</strong>
+<ul>
+<li><strong>Description:</strong> The runtime increases quadratically with the size of the input. If you double the input size, the runtime quadruples.</li>
+<li><strong>Example:</strong> Bubble sort, insertion sort, selection sort <em>(for unsorted arrays)</em>.</li>
+<li><strong>Efficiency:</strong> Poor for large inputs.</li>
+</ul></li>
+<li><strong><code>$O(2n)$ - Exponential Time</code>:</strong>
+<ul>
+<li><strong>Description:</strong> The runtime doubles with each additional element in the input. Common in algorithms that solve problems by brute force or explore all possible solutions.</li>
+<li><strong>Example:</strong> Recursive algorithms for the Fibonacci sequence, certain dynamic programming problems.</li>
+<li><strong>Efficiency:</strong> Very poor, impractical for large inputs.</li>
+</ul></li>
+<li><strong><code>$O(n!)$ - Factorial Time</code>:</strong>
+<ul>
+<li><strong>Description:</strong> The runtime increases factorially with the size of the input. Common in algorithms that generate all permutations of an input set.</li>
+<li><strong>Example:</strong> Traveling salesman problem via brute force.</li>
+<li><strong>Efficiency:</strong> Extremely poor, infeasible for even moderate input sizes.</li>
+</ul></li>
+</ol>
+</div>
+</div>
+</div>
+<div class="callout callout-style-simple callout-note no-icon callout-titled" title="Time Complexity" style="border-left:none; border-right:none; border-top:none; border-bottom:none;">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Time Complexity
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-7" class="callout-7-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Best Case, Worst Case, and Average Case</strong></p>
+<ul>
+<li><strong>Best Case:</strong> The scenario where the algorithm performs the minimum possible number of operations. It’s often less relevant because it’s optimistic.
+<ul>
+<li><strong>Example:</strong> For linear search, the best case is <span class="math inline">\(O(1)\)</span>, where the target element is the first one in the array.</li>
+</ul></li>
+<li><strong>Worst Case:</strong> The scenario where the algorithm performs the maximum possible number of operations. Big O notation typically describes the worst-case complexity.
+<ul>
+<li><strong>Example:</strong> For linear search, the worst case is <span class="math inline">\(O(n)\)</span>, where the target element is the last one in the array or isn’t present at all.</li>
+</ul></li>
+<li><strong>Average Case:</strong> The scenario that represents the expected number of operations for a typical input. It’s more complex to calculate because it depends on the distribution of inputs.
+<ul>
+<li><strong>Example:</strong> For linear search, the average case is <span class="math inline">\(O(n/2)\)</span>, but in Big O notation, we simplify this to <span class="math inline">\(O(n)\)</span>.</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="callout callout-style-simple callout-note no-icon callout-titled" title="Calculation Rules" style="border-left:none; border-right:none; border-top:none; border-bottom:none;">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Calculation Rules
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-8" class="callout-8-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Ignore Constants:</strong></p>
+<ul>
+<li><strong>Rule:</strong> In Big O notation, constant factors are ignored.</li>
+<li><strong>Why:</strong> Big O notation focuses on the growth rate as the input size <span class="math inline">\((n)\)</span> increases, so a constant multiplier doesn’t affect the growth rate.</li>
+<li><strong>Example:</strong> <span class="math inline">\(O(2n)\)</span> simplifies to <span class="math inline">\(O(n)\)</span></li>
+</ul>
+<p><strong>Focus on the Dominant Term:</strong></p>
+<ul>
+<li><strong>Rule:</strong> Only the term with the highest growth rate is considered.</li>
+<li><strong>Why:</strong> As n becomes large, the term with the highest growth rate will dominate the others.</li>
+<li><strong>Example:</strong> <span class="math inline">\(O(n2+n)\)</span> simplifies to <span class="math inline">\(O(n2)\)</span></li>
+</ul>
+<p><strong>Drop Lower Order Terms:</strong></p>
+<ul>
+<li><strong>Rule:</strong> Lower-order terms are ignored because they become insignificant as n grows.</li>
+<li><strong>Why:</strong> Similar to focusing on the dominant term, lower-order terms have a negligible impact on large inputs.</li>
+<li><strong>Example:</strong> <span class="math inline">\(O(n2 + n + log n)\)</span> simplifies to <span class="math inline">\(O(n2)\)</span></li>
+</ul>
+<p><strong>Multiplicative Constants Can Be Ignored:</strong> - <strong>Rule:</strong> Coefficients that multiply variables <em>(e.g., 2n, 3n^2)</em> are ignored. - <strong>Why:</strong> Like constants, they don’t change the growth rate. - <strong>Example:</strong> <span class="math inline">\(O(3n2)\)</span> simplifies to <span class="math inline">\(O(n2)\)</span></p>
+<p><strong>Additive Constants Can Be Ignored:</strong></p>
+<ul>
+<li><strong>Rule:</strong> Constant terms that don’t depend on n are ignored.</li>
+<li><strong>Why:</strong> They don’t affect the overall growth rate as n increases.</li>
+<li><strong>Example:</strong> <span class="math inline">\(O(n+10)\)</span> simplifies to <span class="math inline">\(O(n)\)</span></li>
+</ul>
+<p><strong>Logarithms with Different Bases:</strong></p>
+<ul>
+<li><strong>Rule:</strong> Logarithms with different bases can be considered equivalent in Big O notation.</li>
+<li><strong>Why:</strong> Changing the base of a logarithm only introduces a constant factor, which is ignored in Big O notation.</li>
+<li><strong>Example:</strong> <span class="math inline">\(\text{O(log⁡2 n)}\)</span> simplifies to <span class="math inline">\(\text{O(log⁡ n)}\)</span></li>
+</ul>
+<p><strong>Non-Dominant Polynomial Terms:</strong></p>
+<ul>
+<li><strong>Rule:</strong> In polynomials, only the highest degree term is considered.</li>
+<li><strong>Why:</strong> As n grows large, the highest degree term will dominate.</li>
+<li><strong>Example:</strong> <span class="math inline">\(\text{O(5n3 + 2n2 + 7)}\)</span> simplifies to <span class="math inline">\(O(n3)\)</span></li>
+</ul>
+<p><strong>Exponential Growth:</strong></p>
+<ul>
+<li><strong>Rule:</strong> Exponential growth functions dominate polynomial functions.</li>
+<li><strong>Why:</strong> Exponential functions grow much faster than polynomial functions as n increases.</li>
+<li><strong>Example:</strong> <span class="math inline">\(\text{O(2n + n3)}\)</span> simplifies to <span class="math inline">\(O(2n)\)</span></li>
+</ul>
+<p><strong>Nested Loops:</strong></p>
+<ul>
+<li><strong>Rule:</strong> The time complexity of nested loops is the product of the complexities of each loop.</li>
+<li><strong>Why:</strong> Each loop iterates based on the input size, so their combined effect is multiplicative.</li>
+<li><strong>Example:</strong> A loop inside another loop both running n times results in <span class="math inline">\(\text{O(n * n) = O(n2)}\)</span></li>
+</ul>
+<p><strong>Sequential Statements:</strong></p>
+<ul>
+<li><strong>Rule:</strong> If two independent statements <em>(or loops)</em> are executed sequentially, their time complexities are added.</li>
+<li><strong>Why:</strong> Sequential operations don’t multiply time complexity, but rather add up.</li>
+<li><strong>Example:</strong> Two loops each running n times sequentially result in <span class="math inline">\(\text{O(n + n) = O(n)}\)</span></li>
+</ul>
+<p><br></p>
+</div>
+</div>
+</div>
+<p><br></p>
 
 
 </section>
