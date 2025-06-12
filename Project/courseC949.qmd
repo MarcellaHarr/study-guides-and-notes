@@ -1211,3 +1211,124 @@ This makes searching and other operations more efficient.
 ::: {.lead}
 ##### O Notations
 :::
+
+::: {.callout-note title="Common Big Os" collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
+
+  1. **`$O(1)$ - Constant Time`:**
+      - **Description:** The algorithm takes the same amount of time to execute regardless of the size of the input.
+      - **Example:** Accessing an element in an array by index.
+      - **Efficiency:** Excellent.
+
+  2. **`$\text{O(log n)}$ - Logarithmic Time`:**
+      - **Description:** The runtime increases logarithmically as the input size increases. Typically occurs in algorithms that halve the problem size at each step, like binary search.
+      - **Example:** Binary search.
+      - **Efficiency:** Very good for large inputs.
+
+  3. **`$O(n)$ - Linear Time`:**
+      - **Description:** The runtime increases linearly with the size of the input. If you double the input size, the runtime also doubles.
+      - **Example:** Linear search, iterating through a list.
+      - **Efficiency:** Reasonable for moderate to large inputs.
+
+  4. **`$\text{O(n log n)}$ - Log-Linear Time`:**
+      - **Description:** The runtime increases more than linearly but less than quadratically. Common in efficient sorting algorithms like merge sort and quicksort.
+      - **Example:** Merge sort, quicksort, heap sort.
+      - **Efficiency:** Efficient for large inputs.
+
+  5. **`$O(n^2)$ - Quadratic Time`:**
+      - **Description:** The runtime increases quadratically with the size of the input. If you double the input size, the runtime quadruples.
+      - **Example:** Bubble sort, insertion sort, selection sort *(for unsorted arrays)*.
+      - **Efficiency:** Poor for large inputs.
+
+  6. **`$O(2n)$ - Exponential Time`:**
+      - **Description:** The runtime doubles with each additional element in the input. Common in algorithms that solve problems by brute force or explore all possible solutions.
+      - **Example:** Recursive algorithms for the Fibonacci sequence, certain dynamic programming problems.
+      - **Efficiency:** Very poor, impractical for large inputs.
+
+  7. **`$O(n!)$ - Factorial Time`:**
+      - **Description:** The runtime increases factorially with the size of the input. Common in algorithms that generate all permutations of an input set.
+      - **Example:** Traveling salesman problem via brute force.
+      - **Efficiency:** Extremely poor, infeasible for even moderate input sizes.
+
+:::
+
+::: {.callout-note title="Time Complexity" collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
+
+**Best Case, Worst Case, and Average Case**
+
+  - **Best Case:** The scenario where the algorithm performs the minimum possible number of operations. It’s often less relevant because it’s optimistic.
+      - **Example:** For linear search, the best case is $O(1)$, where the target element is the first one in the array.
+
+  - **Worst Case:** The scenario where the algorithm performs the maximum possible number of operations. Big O notation typically describes the worst-case complexity.
+      - **Example:** For linear search, the worst case is $O(n)$, where the target element is the last one in the array or isn’t present at all.
+
+  - **Average Case:** The scenario that represents the expected number of operations for a typical input. It’s more complex to calculate because it depends on the distribution of inputs.
+      - **Example:** For linear search, the average case is $O(n/2)$, but in Big O notation, we simplify this to $O(n)$.
+
+:::
+
+::: {.callout-note title="Calculation Rules" collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
+
+**Ignore Constants:**
+
+  - **Rule:** In Big O notation, constant factors are ignored.
+  - **Why:** Big O notation focuses on the growth rate as the input size $(n)$ increases, so a constant multiplier doesn't affect the growth rate.
+  - **Example:** $O(2n)$ simplifies to $O(n)$
+
+**Focus on the Dominant Term:**
+
+  - **Rule:** Only the term with the highest growth rate is considered.
+  - **Why:** As n becomes large, the term with the highest growth rate will dominate the others.
+  - **Example:** $O(n2+n)$ simplifies to $O(n2)$
+
+**Drop Lower Order Terms:**
+
+  - **Rule:** Lower-order terms are ignored because they become insignificant as n grows.
+  - **Why:** Similar to focusing on the dominant term, lower-order terms have a negligible impact on large inputs.
+  - **Example:** $O(n2 + n + log n)$  simplifies to $O(n2)$
+
+**Multiplicative Constants Can Be Ignored:**
+  - **Rule:** Coefficients that multiply variables *(e.g., 2n, 3n^2)* are ignored.
+  - **Why:** Like constants, they don't change the growth rate.
+  - **Example:** $O(3n2)$ simplifies to $O(n2)$
+
+**Additive Constants Can Be Ignored:**
+
+  - **Rule:** Constant terms that don't depend on n are ignored.
+  - **Why:** They don't affect the overall growth rate as n increases.
+  - **Example:** $O(n+10)$ simplifies to $O(n)$
+
+**Logarithms with Different Bases:**
+
+  - **Rule:** Logarithms with different bases can be considered equivalent in Big O notation.
+  - **Why:** Changing the base of a logarithm only introduces a constant factor, which is ignored in Big O notation.
+  - **Example:** $\text{O(log⁡2 n)}$ simplifies to $\text{O(log⁡ n)}$
+
+**Non-Dominant Polynomial Terms:**
+
+  - **Rule:** In polynomials, only the highest degree term is considered.
+  - **Why:** As n grows large, the highest degree term will dominate.
+  - **Example:** $\text{O(5n3 + 2n2 + 7)}$ simplifies to $O(n3)$
+
+**Exponential Growth:**
+
+  - **Rule:** Exponential growth functions dominate polynomial functions.
+  - **Why:** Exponential functions grow much faster than polynomial functions as n increases.
+  - **Example:** $\text{O(2n + n3)}$ simplifies to $O(2n)$
+
+**Nested Loops:**
+
+  - **Rule:** The time complexity of nested loops is the product of the complexities of each loop.
+  - **Why:** Each loop iterates based on the input size, so their combined effect is multiplicative.
+  - **Example:** A loop inside another loop both running n times results in $\text{O(n * n) = O(n2)}$
+
+**Sequential Statements:**
+
+  - **Rule:** If two independent statements *(or loops)* are executed sequentially, their time complexities are added.
+  - **Why:** Sequential operations don't multiply time complexity, but rather add up.
+  - **Example:** Two loops each running n times sequentially result in $\text{O(n + n) = O(n)}$
+
+<br>
+
+:::
+
+<br>
