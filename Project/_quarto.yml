@@ -25,6 +25,7 @@ format:
     toc: true
     toc-depth: 5
     toc-expand: 5
+    toc_float: true
     toc-title: "Contents"
     smooth-scroll: true
     page-layout: full
