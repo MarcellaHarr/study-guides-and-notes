@@ -341,3 +341,289 @@ Utilizes randomness in its steps to achieve a solution, often used in situations
 where an approximate or probabilistic answer suffices.
 
 :::
+
+<br>
+
+#### Recursive Algorithms
+
+<br>
+
+::: {.callout-note title="Factors" collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
+
+Recursive algorithms are a fundamental concept in computer science, particularly 
+in the study of data structures and algorithms. A recursive algorithm is one 
+that solves a problem by breaking it down into smaller instances of the same 
+problem, which it then solves in the same way. This process continues until the 
+problem is reduced to a base case, which is solved directly without further 
+recursion.
+
+<br>
+
+::: {.lead}
+##### Key Concepts 
+:::
+
+::: {.panel-tabset}
+
+## `Base Case`
+
+This is the condition under which the recursion stops. It represents the simplest 
+instance of the problem, which can be solved directly without further recursion.
+
+## Recursive Case
+
+This is the part of the algorithm that breaks the problem down into smaller 
+instances of the same problem and then calls the algorithm recursively on these 
+smaller instances.
+
+## Stack
+
+Each recursive call is placed on the system call stack. When the base case is 
+reached, the stack begins to unwind as each instance of the function returns 
+its result.
+
+:::
+
+<br>
+
+::: {.lead}
+##### Factorial Calculation
+:::
+
+The factorial of a number n (denoted as n!) is a classic example of a recursive 
+algorithm. The factorial is defined as:
+
+  - O! = 1 *(Base Case)*
+  - N! = n * (n-1)! For n > O *(Recursive Case)*
+
+::: {.panel-tabset}
+
+## Code
+
+```{python factorialCode}
+def factorial(n):
+    if n == 0:  # Base Case
+        return 1
+    else:  # Recursive Case
+        return n * factorial(n - 1)
+```
+
+## Logic
+
+**How It Works:**
+
+  - Base Case: When n is 0, the function returns 1.
+  - Recursive Case: For any other value of n, the function calls itself with n−1 and multiplies the result by n.
+  
+For example, calling `factorial(3)` would work as follows:
+
+  - `factorial(3)` calls `factorial(2)`
+  - `factorial(2)` calls `factorial(1)`
+  - `factorial(1)` calls `factorial(0)`
+  - `factorial(0)` returns 1, then:
+  - `factorial(1)` returns 1 * 1 = 1
+  - `factorial(2)` returns 2 * 1 = 2
+  - `factorial(3)` returns 3 * 2 = 6
+
+## Pros/Cons
+
+**Advantages of Recursion**
+
+  - **Simplicity:** Recursive solutions are often more elegant and easier to understand than their iterative counterparts.
+  - **Direct Translation:** Some problems are naturally recursive, like tree traversals, making recursion the most straightforward approach.
+
+**Disadvantages of Recursion**
+
+  - **Performance:** Recursive algorithms can be less efficient due to the overhead of multiple function calls and potential stack overflow issues for deep recursion.
+  - **Memory Usage:** Recursion can consume more memory because each function call adds a new frame to the call stack.
+
+## Usage
+
+**When to Use Recursion**
+  - When a problem can naturally be divided into similar sub-problems *(e.g., tree traversal, searching algorithms like binary search)*.
+  - When the recursive solution is significantly simpler or more intuitive than an iterative one.
+
+:::
+
+<br>
+
+::: {.lead}
+##### Linear & Binary Search
+:::
+
+Linear search and binary search are two fundamental algorithms used to search 
+for an element in a collection, like an array or a list. However, they differ 
+significantly in how they approach the search and their efficiency.
+
+<br>
+
+::: {.lead}
+###### *Linear Search*
+:::
+
+::: {.panel-tabset}
+
+## Concept
+
+- Linear search is the simplest search algorithm.
+- It works by sequentially checking each element of the array or list until the target element is found or the end of the collection is reached.
+
+## Steps
+
+**Algorithm:**
+
+  1. Start from the first element of the array.
+  2. Compare the current element with the target element.
+  3. If they match, return the index of the element.
+  4. If they don't match, move to the next element and repeat the process.
+  5. If the target element is not found by the end of the array, return a "not found" indication.
+
+**Time Complexity:** O(n), where n is the number of elements in the array. This is 
+because in the worst case, the algorithm may need to check every element in the array.
+
+## Usage
+
+**When to Use:**
+
+  - When the array or list is small.
+  - When the array is unsorted.
+  - When simplicity is more important than performance.
+  
+
+```{python linearCode}
+def linear_search(arr, target):
+    for i in range(len(arr)):
+        if arr[i] == target:
+            return i
+    return -1  # Return -1 if the element is not found
+```
+
+:::
+
+<br>
+
+::: {.lead}
+###### *Binary Search*
+:::
+
+::: {.panel-tabset}
+
+## Concept
+
+  - Binary search is much more efficient than linear search but requires the array or list to be sorted.
+  - It works by repeatedly dividing the search interval in half. If the target value is less than the middle element, the search continues in the left half, otherwise in the right half.
+
+## Steps
+
+**Algorithm:**
+
+  1. Start with two pointers, one at the beginning (low) and one at the end (high) of the sorted array.
+  2. Find the middle element of the current interval.
+  3. Compare the middle element with the target:
+      - If they match, return the index of the middle element.
+      - If the target is less than the middle element, repeat the search on the left half.
+      - If the target is greater, repeat the search on the right half.
+  4. If the interval becomes invalid (low > high), return a "not found" indication.
+
+
+**Time Complexity:** O(log⁡ n), where n is the number of elements in the array. This logarithmic time complexity makes binary search significantly faster than linear search for large data sets.
+
+## Usage
+
+**When to Use:**
+
+  - When the array or list is sorted.
+  - When the array is large and efficiency is crucial.
+  
+```{python binarySearchCode}
+def binary_search(arr, target):
+    low = 0
+    high = len(arr) - 1
+
+    while low <= high:
+        mid = (low + high) // 2
+        if arr[mid] == target:
+            return mid
+        elif arr[mid] < target:
+            low = mid + 1
+        else:
+            high = mid - 1
+
+    return -1  # Return -1 if the element is not found
+```
+
+## Compare
+
+**Comparison**
+
+  - **Efficiency:** Binary search is faster than linear search, especially for large data sets, but it requires the array to be sorted.
+  - **Simplicity:** Linear search is simpler to implement and doesn't require the array to be sorted, making it more versatile for smaller or unsorted data sets.
+  - **Use Cases:**
+      - **Linear Search:** Suitable for small or unsorted collections where the simplicity of the algorithm outweighs the need for speed.
+      - **Binary Search:** Ideal for large, sorted collections where performance is a priority.
+
+:::
+
+<br>
+
+::: {.lead}
+###### *Step-by-Step Guide*
+:::
+
+::: {.panel-tabset}
+
+## Array Elements
+
+Figuring out the array elements that correspond to the mid-values in the first 
+and second iterations of A binary search
+
+$\text{ arr = {45, 77, 89, 90, 94, 99, 100} }$ and $\text{key = 100}$
+
+## Initial Setup
+
+  - The array `arr` is `{45, 77, 89, 90, 94, 99, 100}`.
+  - The `key` to find is `100`.
+  - Initialize two pointers: `low` (start of the array) and `high` (end of the array).
+
+## First Iteration
+
+  - Calculate the middle index `mid` using the formula: `mid = (low + high) / 2`
+  - Check the value at `arr[mid]`.
+  - Compare `arr[mid]` with the `key`:
+  
+      - If `arr[mid]` is less than `key`, update `low` to `mid` + 1.
+      - If `arr[mid]` is greater than `key`, update `high` to `mid` - 1.
+      - If `arr[mid]` is equal to `key`, you have found the `key` (though you won't need a second iteration in this case).
+
+## Second Iteration
+
+  - Repeat the calculation for `mid` with the updated `low` and `high` values.
+  - Again, compare `arr[mid]` with the `key` and update `low` or `high` accordingly.
+
+:::
+
+<br>
+
+#### Searching & Sorting Algorithms
+
+::: {.lead}
+##### Linear Search
+:::
+
+<br>
+
+::: {.panel-tabset}
+
+## Logic
+
+-
+
+## Usage
+
+-
+
+## States
+
+-
+
+:::
