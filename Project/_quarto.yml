@@ -23,13 +23,12 @@ format:
       dark: cyborg
       light: lux
     toc: true
-    toc_float: true
-    toc-options:
-      collapsed: true
-      smooth_scroll: true
     toc-depth: 5
     toc-expand: 5
     toc-title: "Contents"
+    toc_float: true
+    toc-options:
+      smooth-scroll: true
     page-layout: full
   pdf:
     documentclass: scrreprt
