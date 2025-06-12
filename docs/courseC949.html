@@ -20,6 +20,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -74,6 +109,35 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/vembedr-0.1.5/css/vembedr.css" rel="stylesheet">
 
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -334,6 +398,7 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#types" id="toc-types" class="nav-link" data-scroll-target="#types">Types</a></li>
   </ul></li>
+  <li><a href="#recursive-algorithms" id="toc-recursive-algorithms" class="nav-link" data-scroll-target="#recursive-algorithms">Recursive Algorithms</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -594,8 +659,279 @@ Factors
 </div>
 </div>
 </div>
+<p><br></p>
+</section>
+<section id="recursive-algorithms" class="level4">
+<h4 class="anchored" data-anchor-id="recursive-algorithms">Recursive Algorithms</h4>
+<p><br></p>
+<div class="callout callout-style-simple callout-note no-icon callout-titled" title="Factors" style="border-left:none; border-right:none; border-top:none; border-bottom:none;">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Factors
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Recursive algorithms are a fundamental concept in computer science, particularly in the study of data structures and algorithms. A recursive algorithm is one that solves a problem by breaking it down into smaller instances of the same problem, which it then solves in the same way. This process continues until the problem is reduced to a base case, which is solved directly without further recursion.</p>
+<p><br></p>
+<section id="key-concepts" class="level5 lead">
+<h5 class="anchored" data-anchor-id="key-concepts">Key Concepts</h5>
+</section>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true"><code>Base Case</code></a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false">Recursive Case</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-3" role="tab" aria-controls="tabset-2-3" aria-selected="false">Stack</a></li></ul>
+<div class="tab-content">
+<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
+<p>This is the condition under which the recursion stops. It represents the simplest instance of the problem, which can be solved directly without further recursion.</p>
+</div>
+<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
+<p>This is the part of the algorithm that breaks the problem down into smaller instances of the same problem and then calls the algorithm recursively on these smaller instances.</p>
+</div>
+<div id="tabset-2-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-3-tab">
+<p>Each recursive call is placed on the system call stack. When the base case is reached, the stack begins to unwind as each instance of the function returns its result.</p>
+</div>
+</div>
+</div>
+<p><br></p>
+<section id="factorial-calculation" class="level5 lead">
+<h5 class="anchored" data-anchor-id="factorial-calculation">Factorial Calculation</h5>
+</section>
+<p>The factorial of a number n (denoted as n!) is a classic example of a recursive algorithm. The factorial is defined as:</p>
+<ul>
+<li>O! = 1 <em>(Base Case)</em></li>
+<li>N! = n * (n-1)! For n &gt; O <em>(Recursive Case)</em></li>
+</ul>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true">Code</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false">Logic</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-3" role="tab" aria-controls="tabset-3-3" aria-selected="false">Pros/Cons</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-4" role="tab" aria-controls="tabset-3-4" aria-selected="false">Usage</a></li></ul>
+<div class="tab-content">
+<div id="tabset-3-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-3-1-tab">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> factorial(n):</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> n <span class="op">==</span> <span class="dv">0</span>:  <span class="co"># Base Case</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="dv">1</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span>:  <span class="co"># Recursive Case</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> n <span class="op">*</span> factorial(n <span class="op">-</span> <span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<div id="tabset-3-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-2-tab">
+<p><strong>How It Works:</strong></p>
+<ul>
+<li>Base Case: When n is 0, the function returns 1.</li>
+<li>Recursive Case: For any other value of n, the function calls itself with n−1 and multiplies the result by n.</li>
+</ul>
+<p>For example, calling <code>factorial(3)</code> would work as follows:</p>
+<ul>
+<li><code>factorial(3)</code> calls <code>factorial(2)</code></li>
+<li><code>factorial(2)</code> calls <code>factorial(1)</code></li>
+<li><code>factorial(1)</code> calls <code>factorial(0)</code></li>
+<li><code>factorial(0)</code> returns 1, then:</li>
+<li><code>factorial(1)</code> returns 1 * 1 = 1</li>
+<li><code>factorial(2)</code> returns 2 * 1 = 2</li>
+<li><code>factorial(3)</code> returns 3 * 2 = 6</li>
+</ul>
+</div>
+<div id="tabset-3-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-3-tab">
+<p><strong>Advantages of Recursion</strong></p>
+<ul>
+<li><strong>Simplicity:</strong> Recursive solutions are often more elegant and easier to understand than their iterative counterparts.</li>
+<li><strong>Direct Translation:</strong> Some problems are naturally recursive, like tree traversals, making recursion the most straightforward approach.</li>
+</ul>
+<p><strong>Disadvantages of Recursion</strong></p>
+<ul>
+<li><strong>Performance:</strong> Recursive algorithms can be less efficient due to the overhead of multiple function calls and potential stack overflow issues for deep recursion.</li>
+<li><strong>Memory Usage:</strong> Recursion can consume more memory because each function call adds a new frame to the call stack.</li>
+</ul>
+</div>
+<div id="tabset-3-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-4-tab">
+<p><strong>When to Use Recursion</strong> - When a problem can naturally be divided into similar sub-problems <em>(e.g., tree traversal, searching algorithms like binary search)</em>. - When the recursive solution is significantly simpler or more intuitive than an iterative one.</p>
+</div>
+</div>
+</div>
+<p><br></p>
+<section id="linear-binary-search" class="level5 lead">
+<h5 class="anchored" data-anchor-id="linear-binary-search">Linear &amp; Binary Search</h5>
+</section>
+<p>Linear search and binary search are two fundamental algorithms used to search for an element in a collection, like an array or a list. However, they differ significantly in how they approach the search and their efficiency.</p>
+<p><br></p>
+<section id="linear-search" class="level6 lead">
+<h6 class="anchored" data-anchor-id="linear-search"><em>Linear Search</em></h6>
+</section>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-4-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-1" role="tab" aria-controls="tabset-4-1" aria-selected="true">Concept</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-2" role="tab" aria-controls="tabset-4-2" aria-selected="false">Steps</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-3" role="tab" aria-controls="tabset-4-3" aria-selected="false">Usage</a></li></ul>
+<div class="tab-content">
+<div id="tabset-4-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-4-1-tab">
+<ul>
+<li>Linear search is the simplest search algorithm.</li>
+<li>It works by sequentially checking each element of the array or list until the target element is found or the end of the collection is reached.</li>
+</ul>
+</div>
+<div id="tabset-4-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-2-tab">
+<p><strong>Algorithm:</strong></p>
+<ol type="1">
+<li>Start from the first element of the array.</li>
+<li>Compare the current element with the target element.</li>
+<li>If they match, return the index of the element.</li>
+<li>If they don’t match, move to the next element and repeat the process.</li>
+<li>If the target element is not found by the end of the array, return a “not found” indication.</li>
+</ol>
+<p><strong>Time Complexity:</strong> O(n), where n is the number of elements in the array. This is because in the worst case, the algorithm may need to check every element in the array.</p>
+</div>
+<div id="tabset-4-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-3-tab">
+<p><strong>When to Use:</strong></p>
+<ul>
+<li>When the array or list is small.</li>
+<li>When the array is unsorted.</li>
+<li>When simplicity is more important than performance.</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> linear_search(arr, target):</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(arr)):</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> arr[i] <span class="op">==</span> target:</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span> i</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="op">-</span><span class="dv">1</span>  <span class="co"># Return -1 if the element is not found</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
+</div>
+<p><br></p>
+<section id="binary-search" class="level6 lead">
+<h6 class="anchored" data-anchor-id="binary-search"><em>Binary Search</em></h6>
+</section>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-5-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-1" role="tab" aria-controls="tabset-5-1" aria-selected="true">Concept</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-5-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-2" role="tab" aria-controls="tabset-5-2" aria-selected="false">Steps</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-5-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-3" role="tab" aria-controls="tabset-5-3" aria-selected="false">Usage</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-5-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-4" role="tab" aria-controls="tabset-5-4" aria-selected="false">Compare</a></li></ul>
+<div class="tab-content">
+<div id="tabset-5-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-5-1-tab">
+<ul>
+<li>Binary search is much more efficient than linear search but requires the array or list to be sorted.</li>
+<li>It works by repeatedly dividing the search interval in half. If the target value is less than the middle element, the search continues in the left half, otherwise in the right half.</li>
+</ul>
+</div>
+<div id="tabset-5-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-5-2-tab">
+<p><strong>Algorithm:</strong></p>
+<ol type="1">
+<li>Start with two pointers, one at the beginning (low) and one at the end (high) of the sorted array.</li>
+<li>Find the middle element of the current interval.</li>
+<li>Compare the middle element with the target:
+<ul>
+<li>If they match, return the index of the middle element.</li>
+<li>If the target is less than the middle element, repeat the search on the left half.</li>
+<li>If the target is greater, repeat the search on the right half.</li>
+</ul></li>
+<li>If the interval becomes invalid (low &gt; high), return a “not found” indication.</li>
+</ol>
+<p><strong>Time Complexity:</strong> O(log⁡ n), where n is the number of elements in the array. This logarithmic time complexity makes binary search significantly faster than linear search for large data sets.</p>
+</div>
+<div id="tabset-5-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-5-3-tab">
+<p><strong>When to Use:</strong></p>
+<ul>
+<li>When the array or list is sorted.</li>
+<li>When the array is large and efficiency is crucial.</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> binary_search(arr, target):</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    low <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    high <span class="op">=</span> <span class="bu">len</span>(arr) <span class="op">-</span> <span class="dv">1</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">while</span> low <span class="op">&lt;=</span> high:</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>        mid <span class="op">=</span> (low <span class="op">+</span> high) <span class="op">//</span> <span class="dv">2</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> arr[mid] <span class="op">==</span> target:</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span> mid</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>        <span class="cf">elif</span> arr[mid] <span class="op">&lt;</span> target:</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>            low <span class="op">=</span> mid <span class="op">+</span> <span class="dv">1</span></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>        <span class="cf">else</span>:</span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>            high <span class="op">=</span> mid <span class="op">-</span> <span class="dv">1</span></span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="op">-</span><span class="dv">1</span>  <span class="co"># Return -1 if the element is not found</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<div id="tabset-5-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-5-4-tab">
+<p><strong>Comparison</strong></p>
+<ul>
+<li><strong>Efficiency:</strong> Binary search is faster than linear search, especially for large data sets, but it requires the array to be sorted.</li>
+<li><strong>Simplicity:</strong> Linear search is simpler to implement and doesn’t require the array to be sorted, making it more versatile for smaller or unsorted data sets.</li>
+<li><strong>Use Cases:</strong>
+<ul>
+<li><strong>Linear Search:</strong> Suitable for small or unsorted collections where the simplicity of the algorithm outweighs the need for speed.</li>
+<li><strong>Binary Search:</strong> Ideal for large, sorted collections where performance is a priority.</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+<p><br></p>
+<section id="step-by-step-guide" class="level6 lead">
+<h6 class="anchored" data-anchor-id="step-by-step-guide"><em>Step-by-Step Guide</em></h6>
+</section>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-6-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-1" role="tab" aria-controls="tabset-6-1" aria-selected="true">Array Elements</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-6-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-2" role="tab" aria-controls="tabset-6-2" aria-selected="false">Initial Setup</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-6-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-3" role="tab" aria-controls="tabset-6-3" aria-selected="false">First Iteration</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-6-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-4" role="tab" aria-controls="tabset-6-4" aria-selected="false">Second Iteration</a></li></ul>
+<div class="tab-content">
+<div id="tabset-6-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-6-1-tab">
+<p>Figuring out the array elements that correspond to the mid-values in the first and second iterations of A binary search</p>
+<p><span class="math inline">\(\text{ arr = {45, 77, 89, 90, 94, 99, 100} }\)</span> and <span class="math inline">\(\text{key = 100}\)</span></p>
+</div>
+<div id="tabset-6-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-6-2-tab">
+<ul>
+<li>The array <code>arr</code> is <code>{45, 77, 89, 90, 94, 99, 100}</code>.</li>
+<li>The <code>key</code> to find is <code>100</code>.</li>
+<li>Initialize two pointers: <code>low</code> (start of the array) and <code>high</code> (end of the array).</li>
+</ul>
+</div>
+<div id="tabset-6-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-6-3-tab">
+<ul>
+<li><p>Calculate the middle index <code>mid</code> using the formula: <code>mid = (low + high) / 2</code></p></li>
+<li><p>Check the value at <code>arr[mid]</code>.</p></li>
+<li><p>Compare <code>arr[mid]</code> with the <code>key</code>:</p>
+<ul>
+<li>If <code>arr[mid]</code> is less than <code>key</code>, update <code>low</code> to <code>mid</code> + 1.</li>
+<li>If <code>arr[mid]</code> is greater than <code>key</code>, update <code>high</code> to <code>mid</code> - 1.</li>
+<li>If <code>arr[mid]</code> is equal to <code>key</code>, you have found the <code>key</code> (though you won’t need a second iteration in this case).</li>
+</ul></li>
+</ul>
+</div>
+<div id="tabset-6-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-6-4-tab">
+<ul>
+<li>Repeat the calculation for <code>mid</code> with the updated <code>low</code> and <code>high</code> values.</li>
+<li>Again, compare <code>arr[mid]</code> with the <code>key</code> and update <code>low</code> or <code>high</code> accordingly.</li>
+</ul>
+</div>
+</div>
+</div>
+<p><br></p>
+<section id="searching-sorting-algorithms" class="level4">
+<h4 class="anchored" data-anchor-id="searching-sorting-algorithms">Searching &amp; Sorting Algorithms</h4>
+<section id="linear-search-1" class="level5 lead">
+<h5 class="anchored" data-anchor-id="linear-search-1">Linear Search</h5>
+</section>
+<p><br></p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-7-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-7-1" role="tab" aria-controls="tabset-7-1" aria-selected="true">Logic</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-7-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-7-2" role="tab" aria-controls="tabset-7-2" aria-selected="false">Usage</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-7-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-7-3" role="tab" aria-controls="tabset-7-3" aria-selected="false">States</a></li></ul>
+<div class="tab-content">
+<div id="tabset-7-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-7-1-tab">
+<ul>
+<li></li>
+</ul>
+</div>
+<div id="tabset-7-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-7-2-tab">
+<ul>
+<li></li>
+</ul>
+</div>
+<div id="tabset-7-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-7-3-tab">
+<ul>
+<li></li>
+</ul>
+</div>
+</div>
+</div>
 
 
+</section>
+</div>
+</div>
+</div>
 </section>
 </section>
 
