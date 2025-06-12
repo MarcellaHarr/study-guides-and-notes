@@ -385,6 +385,8 @@ Each recursive call is placed on the system call stack. When the base case is
 reached, the stack begins to unwind as each instance of the function returns 
 its result.
 
+<br>
+
 :::
 
 <br>
@@ -446,6 +448,8 @@ For example, calling `factorial(3)` would work as follows:
   - When a problem can naturally be divided into similar sub-problems *(e.g., tree traversal, searching algorithms like binary search)*.
   - When the recursive solution is significantly simpler or more intuitive than an iterative one.
 
+<br>
+
 :::
 
 <br>
@@ -500,6 +504,8 @@ def linear_search(arr, target):
             return i
     return -1  # Return -1 if the element is not found
 ```
+
+<br>
 
 :::
 
@@ -565,6 +571,8 @@ def binary_search(arr, target):
       - **Linear Search:** Suitable for small or unsorted collections where the simplicity of the algorithm outweighs the need for speed.
       - **Binary Search:** Ideal for large, sorted collections where performance is a priority.
 
+<br>
+
 :::
 
 <br>
@@ -588,7 +596,7 @@ $\text{ arr = {45, 77, 89, 90, 94, 99, 100} }$ and $\text{key = 100}$
   - The `key` to find is `100`.
   - Initialize two pointers: `low` (start of the array) and `high` (end of the array).
 
-## First Iteration
+## 1st Iteration
 
   - Calculate the middle index `mid` using the formula: `mid = (low + high) / 2`
   - Check the value at `arr[mid]`.
@@ -598,10 +606,12 @@ $\text{ arr = {45, 77, 89, 90, 94, 99, 100} }$ and $\text{key = 100}$
       - If `arr[mid]` is greater than `key`, update `high` to `mid` - 1.
       - If `arr[mid]` is equal to `key`, you have found the `key` (though you won't need a second iteration in this case).
 
-## Second Iteration
+## 2nd Iteration
 
   - Repeat the calculation for `mid` with the updated `low` and `high` values.
   - Again, compare `arr[mid]` with the `key` and update `low` or `high` accordingly.
+
+<br>
 
 :::
 
