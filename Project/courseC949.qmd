@@ -1339,6 +1339,8 @@ This makes searching and other operations more efficient.
 
 #### Implementation of Data Structures
 
+<br>
+
 ::: {.lead}
 ##### Data Types
 :::
@@ -2043,6 +2045,8 @@ To determine where the data associated with the last 4 digits of the Social Secu
 
 ::: {.callout-note title="Tree" collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
 
+<br>
+
 ###### Description
 
   - A **tree** is a hierarchical data structure composed of nodes, where each node contains a value and references to child nodes. The top node is called the root, and nodes with no children are called leaves.
@@ -2100,5 +2104,318 @@ To determine where the data associated with the last 4 digits of the Social Secu
 <br>
 
 :::
+
+<br>
+
+::: {.lead}
+##### Adelson-Velsky and Landis Trees
+:::
+
+<br>
+
+::: {.callout-note title="AVL Trees" collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
+
+<br>
+
+###### Properties
+
+  - An AVL tree is a binary search tree in which the height of the two child subtrees of any node differs by at most one.
+  - If at any time during insertion or deletion this condition is violated, the tree is rebalanced through rotations.
+
+<br>
+
+###### Balancing
+
+  - **Single Rotation:** Used when a node is inserted into the left subtree of the **left child** or the `right subtree` of the **right child**.
+  - **Double Rotation:** Used when a node is inserted into the left subtree of the right child or the `right subtree` of the **left child**.
+
+<br>
+
+###### Time
+
+  - **Time Complexity:**
+  
+    - **Search**, **Insertion**, **Deletion:** $\text{O(log n)}$, where n is the number of nodes.
+
+<br>
+
+###### Usage
+
+  - **Use Cases:**
+  
+    - AVL trees are well-suited for applications where frequent insertions and deletions occur, and maintaining strict balance is important.
+
+<br>
+
+:::
+
+<br>
+
+::: {.lead}
+##### Red-Black
+:::
+
+<br>
+
+::: {.callout-note title="Red-Black Trees" collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
+
+<br>
+
+###### Properties
+
+  - A Red-Black tree is a binary search tree with an extra bit of storage per node: its color, which can be either red or black.
+  - The tree satisfies several properties:
+  
+      1. Every node is either red or black.
+      2. The root is always black.
+      3. All leaves (NIL nodes) are black.
+      4. Red nodes cannot have red children *(no two red nodes can be adjacent)*.
+      5. Every path from a node to its descendant NIL nodes must have the same number of black nodes *(black height)*.
+
+<br>
+
+###### Balancing
+
+  - The tree is kept balanced by performing rotations and color changes during insertions and deletions.
+
+<br>
+
+###### Time
+
+  - **Time Complexity:**
+  
+    - **Search**, **Insertion**, **Deletion:** $\text{O(log n)}$.
+
+<br>
+
+###### Usage
+
+  - **Use Cases:**
+  
+    - Red-Black trees are used in many systems, such as the Linux kernel's process scheduling and in standard libraries like C++'s std::map and std::set, due to their relatively simple implementation and good performance.
+
+<br>
+
+:::
+
+<br>
+
+::: {.lead}
+##### Balanced Tree
+:::
+
+<br>
+
+::: {.callout-note title="B-Trees" collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
+
+<br>
+
+###### Properties
+
+  - A B-tree is a self-balancing search tree in which nodes can have more than two children. It's commonly used in databases and file systems.
+  - A B-tree of order `m` can have at most `m-1` keys and `m` children.
+  - All leaf nodes are at the same depth, and internal nodes act as a guide to direct searches.
+
+<br>
+
+###### Balancing
+
+  - Balancing in B-trees is achieved through splitting and merging nodes.
+  - When a node in a B-tree becomes too full *(i.e., has more than m-1 keys)*, it is split into two nodes, and the middle key is pushed up to the parent node.
+  - When a node has too few keys, it may borrow keys from its neighbors or merge with a neighboring node.
+
+<br>
+
+###### Time
+
+  - **Time Complexity:**
+  
+    - **Search**, **Insertion**, **Deletion:** $\text{O(log n)}$.
+
+<br>
+
+###### Usage
+
+  - **Use Cases:**
+  
+    - B-trees are particularly effective for systems that read and write large blocks of data, such as databases and file systems, where minimizing disk I/O operations is critical.
+
+<br>
+
+:::
+
+<br>
+
+---
+
+::: {.lead}
+###### **Wrap-up**
+:::
+
+<br>
+
+::: {.callout-note title="Comparison Summary" collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
+
+  - **AVL Trees:** Strictly balanced, more rotations, better for search-heavy applications.
+  - **Red-Black Trees:** Looser balancing, fewer rotations, generally faster insertions and deletions.
+  - **B-Trees:** Optimized for storage systems, used in databases, and file systems for handling large volumes of data.
+
+:::
+
+::: {.callout-note title="Tree Traversal" collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
+
+  - *Pre-Order Traversal (NLR)* - Node, Left, Right
+  - *In-Order Traversal (LNR)* - Left, Node, Right
+  - *Post-Order Traversal (LRN)* - Left, Right, Node
+
+:::
+
+<br>
+
+---
+
+<br>
+
+::: {.lead}
+##### Pre-Order Traversal (NLR)
+:::
+
+<br>
+
+::: {.panel-tabset}
+
+## Order:
+
+::: {.text-center}
+**N**ode → **L**eft → **R**ight
+:::
+
+## Process:
+
+  - Visit the **Node** first.
+  - Then recursively visit the **Left** subtree.
+  - Finally, visit the **Right** subtree.
+
+## Examples:
+
+If you have a tree like this:
+
+```{r treeNLR}
+    A
+   / \
+  B   C
+ / \
+D   E
+```
+
+  - The Pre-Order traversal would be: **A B D E C**
+
+:::
+
+<br>
+
+::: {.lead}
+##### In-Order Traversal (LNR)
+:::
+
+<br>
+
+::: {.panel-tabset}
+
+## Order:
+
+::: {.text-center}
+**L**eft → **N**ode → **R**ight
+:::
+
+## Process:
+
+  - Recursively visit the **Left** subtree.
+  - Then visit the **Node**.
+  - Finally, visit the **Right** subtree.
+
+## Example:
+
+For the same tree:
+
+```{r treeLNR}
+    A
+   / \
+  B   C
+ / \
+D   E
+```
+
+  - The In-Order traversal would be: **D B E A C**
+
+:::
+
+<br>
+
+::: {.lead}
+##### Post-Order Traversal (LRN)
+:::
+
+<br>
+
+::: {.panel-tabset}
+
+## Order:
+
+::: {.text-center}
+**L**eft → **R**ight → **N**ode
+:::
+
+## Process:
+
+  - Recursively visit the **Left** subtree.
+  - Then visit the **Right** subtree.
+  - Finally, visit the **Node**.
+
+## Examples:
+
+For the same tree:
+
+```{r}
+    A
+   / \
+  B   C
+ / \
+D   E
+```
+
+  - The Post-Order traversal would be: **D E B C A**
+
+:::
+
+<br>
+
+---
+
+::: {.lead}
+###### **Wrap-up**
+:::
+
+<br>
+
+::: {.callout-note title="How to Remember Them:" collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
+
+  - **Pre-Order (NLR):** Think of "Pre" as "before" - you process the Node before anything else.
+  - **In-Order (LNR):** "In" implies "in between" - the Node is processed in between the Left and Right subtrees.
+  - **Post-Order (LRN):** "Post" means "after" - the Node is processed after the subtrees.
+
+:::
+
+::: {.callout-note title="Visual Mnemonic:" collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
+
+  - **Pre-Order:** Imagine starting at the root and touching it first.
+  - **In-Order:** Imagine walking along the edge of the tree, touching the left side first, then the root, and then the right side.
+  - **Post-Order:** Imagine leaving the tree by processing the children before the root.
+
+:::
+
+<br>
+
+---
 
 <br>
