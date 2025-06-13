@@ -2301,10 +2301,11 @@ To determine where the data associated with the last 4 digits of the Social Secu
 If you have a tree like this:
 
 ```{text treeNLR}
-A --> B
-A --> C
-B --> D
-B --> E
+    A
+   / \
+  B   C
+ / \
+D   E
 ```
 
   - The Pre-Order traversal would be: **A B D E C**
@@ -2338,10 +2339,11 @@ B --> E
 For the same tree:
 
 ```{text treeLNR}
-A --> B
-A --> C
-B --> D
-B --> E
+    A
+   / \
+  B   C
+ / \
+D   E
 ```
 
   - The In-Order traversal would be: **D B E A C**
@@ -2375,10 +2377,11 @@ B --> E
 For the same tree:
 
 ```{text treeLRN}
-A --> B
-A --> C
-B --> D
-B --> E
+    A
+   / \
+  B   C
+ / \
+D   E
 ```
 
   - The Post-Order traversal would be: **D E B C A**
