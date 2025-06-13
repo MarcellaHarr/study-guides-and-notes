@@ -2300,12 +2300,11 @@ To determine where the data associated with the last 4 digits of the Social Secu
 
 If you have a tree like this:
 
-```{mermaid treeNLR}
-flowchart TB
-  A --> B
-  A --> C
-  B --> D
-  B --> E
+```{text treeNLR}
+A --> B
+A --> C
+B --> D
+B --> E
 ```
 
   - The Pre-Order traversal would be: **A B D E C**
@@ -2338,12 +2337,11 @@ flowchart TB
 
 For the same tree:
 
-```{mermaid treeLNR}
-flowchart TB
-  A --> B
-  A --> C
-  B --> D
-  B --> E
+```{text treeLNR}
+A --> B
+A --> C
+B --> D
+B --> E
 ```
 
   - The In-Order traversal would be: **D B E A C**
@@ -2376,12 +2374,11 @@ flowchart TB
 
 For the same tree:
 
-```{mermaid treeLRN}
-flowchart TB
-  A --> B
-  A --> C
-  B --> D
-  B --> E
+```{text treeLRN}
+A --> B
+A --> C
+B --> D
+B --> E
 ```
 
   - The Post-Order traversal would be: **D E B C A**
