@@ -2300,12 +2300,12 @@ To determine where the data associated with the last 4 digits of the Social Secu
 
 If you have a tree like this:
 
-```{r treeNLR}
-    A
-   / \
-  B   C
- / \
-D   E
+```{mermaid treeNLR}
+graph TD
+  A["Root A"] --> B["Left B"]
+  A --> C["Right C"]
+  B --> D["Leaf D"]
+  B --> E["Leaf E"]
 ```
 
   - The Pre-Order traversal would be: **A B D E C**
@@ -2338,12 +2338,12 @@ D   E
 
 For the same tree:
 
-```{r treeLNR}
-    A
-   / \
-  B   C
- / \
-D   E
+```{mermaid treeLNR}
+graph TD
+  A["Root A"] --> B["Left B"]
+  A --> C["Right C"]
+  B --> D["Leaf D"]
+  B --> E["Leaf E"]
 ```
 
   - The In-Order traversal would be: **D B E A C**
@@ -2376,12 +2376,12 @@ D   E
 
 For the same tree:
 
-```{r}
-    A
-   / \
-  B   C
- / \
-D   E
+```{mermaid treeLRN}
+graph TD
+  A["Root A"] --> B["Left B"]
+  A --> C["Right C"]
+  B --> D["Leaf D"]
+  B --> E["Leaf E"]
 ```
 
   - The Post-Order traversal would be: **D E B C A**
