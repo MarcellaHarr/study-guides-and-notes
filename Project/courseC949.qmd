@@ -628,6 +628,8 @@ $\text{ arr = {45, 77, 89, 90, 94, 99, 100} }$ and $\text{key = 100}$
 
 #### Searching Algorithms
 
+<br>
+
 ::: {.lead}
 ##### Linear Search
 :::
@@ -655,9 +657,9 @@ $\text{ arr = {45, 77, 89, 90, 94, 99, 100} }$ and $\text{key = 100}$
 
   - **Linear Search Worst, Average and Best**
   
-      - `**Best Case:** $O(1)$` — The target element is the first element.
-      - `**Average Case:** $O(n)$` — The target element is somewhere in the middle or not in the array.
-      - `**Worst Case:** $O(n)$` — The target element is the last element or not present.
+      - `**Best Case:**` $O(1)$ — The target element is the first element.
+      - `**Average Case:**` $O(n)$ — The target element is somewhere in the middle or not in the array.
+      - `**Worst Case:**` $O(n)$ — The target element is the last element or not present.
 
 <br>
 
@@ -1560,25 +1562,25 @@ Enums are useful in scenarios where a variable should only be allowed to take on
 
 ## 2. Operations
 
-  - **Access:** O(1) — Direct access to elements via index. 
+  - **Access:** $O(1)$ — Direct access to elements via index. 
   - **Search:**
   
-      - **Linear Search:** O(n)
-      - **Binary Search:** O(log⁡ n) (only if the array is sorted)
+      - **Linear Search:** $O(n)$
+      - **Binary Search:** $\text{O(log⁡ n)}$ *(only if the array is sorted)*
       
   - Insertion:
   
-      - **At the End:** Append the element to the end of the array. If the array is full (fixed size), you may need to resize it.
-        - **Time Complexity:** O(1) (amortized if resizing is needed).
+      - **At the End:** Append the element to the end of the array. If the array is full *(fixed size)*, you may need to resize it.
+        - **Time Complexity:** $O(1)$ *(amortized if resizing is needed)*.
       - **At a Specific Index:** Shift elements to the right from the index to create space, then insert the new element.
-        - **Time Complexity:** O(n), where n is the number of elements after the insertion point.
+        - **Time Complexity:** $O(n)$, where n is the number of elements after the insertion point.
         
   - Deletion:
   
       - **From the End:** Remove the last element.
-        - **Time Complexity:** O(1).
+        - **Time Complexity:** $O(1)$.
       - **From a Specific Index:** Shift elements to the left to fill the gap left by the removed element.
-        - **Time Complexity:** O(n), where n is the number of elements after the removal point.
+        - **Time Complexity:** $O(n)$, where n is the number of elements after the removal point.
 
 ## 3. Usage
 
@@ -1613,26 +1615,26 @@ Enums are useful in scenarios where a variable should only be allowed to take on
 
 ## Operations
 
-  - **Access:** O(n) — Requires traversal from the head to the desired node.
-  - **Search:** O(n) — Requires traversal to find the target element.
+  - **Access:** $O(n)$ — Requires traversal from the head to the desired node.
+  - **Search:** $O(n)$ — Requires traversal to find the target element.
   
   - **Insertion:**
   
-      - **At the Beginning (Singly/ Doubly Linked List):** Create a new node and adjust the head (and possibly tail in a doubly linked list).
-        - **Time Complexity:** O(1).
+      - **At the Beginning (Singly/ Doubly Linked List):** Create a new node and adjust the head *(and possibly tail in a doubly linked list)*.
+        - **Time Complexity:** $O(1)$.
       - **At the End (Singly Linked List):** Traverse to the last node, then insert the new node.
-        - **Time Complexity:** O(n).
+        - **Time Complexity:** $O(n)$.
       - **At a Specific Position:** Traverse to the position and insert the node, adjusting the pointers.
-        - **Time Complexity:** O(n).
+        - **Time Complexity:** $O(n)$.
         
   - **Deletion:**
   
       - **From the Beginning:** Adjust the head pointer to the next node.
-        - **Time Complexity:** O(1).
+        - **Time Complexity:** $O(1)$.
       - **From the End:** Traverse to the second last node, adjust its pointer to null.
-        - **Time Complexity:** O(n).
+        - **Time Complexity:** $O(n)$.
       - **From a Specific Position:** Traverse to the node before the one to remove, then adjust pointers to bypass the removed node.
-        - **Time Complexity:** O(n).
+        - **Time Complexity:** $O(n)$.
 
 ## Usage
 
@@ -1833,10 +1835,10 @@ print(fruits_copy)  # Output: ['apple', 'banana', 'orange']
 
 ## Operations
 
-  - **Push (Insertion):** O(1) — Add an element to the top of the stack.
-  - **Pop (Deletion):** O(1) — Remove the top element from the stack.
-  - **Peek/Top:** O(1) — View the top element without removing it.
-  - **IsEmpty:** O(1) — Check if the stack is empty.
+  - **Push (Insertion):** $O(1)$ — Add an element to the top of the stack.
+  - **Pop (Deletion):** $O(1)$ — Remove the top element from the stack.
+  - **Peek/Top:** $O(1)$ — View the top element without removing it.
+  - **IsEmpty:** $O(1)$ — Check if the stack is empty.
 
 ## Usage
 
@@ -1903,10 +1905,10 @@ print(fruits_copy)  # Output: ['apple', 'banana', 'orange']
 
 ## Operations
 
-  - **Enqueue (Insertion/Push):** O(1) — Add an element to the end of the queue.
-  - **Dequeue (Deletion/Pop):** O(1) — Remove the front element from the queue.
-  - **Front/Peek:** O(1) — View the front element without removing it.
-  - **IsEmpty:** O(1) — Check if the queue is empty.
+  - **Enqueue (Insertion/Push):** $O(1)$ — Add an element to the end of the queue.
+  - **Dequeue (Deletion/Pop):** $O(1)$ — Remove the front element from the queue.
+  - **Front/Peek:** $O(1)$ — View the front element without removing it.
+  - **IsEmpty:** $O(1)$ — Check if the queue is empty.
 
 ## Usage
 
@@ -1935,13 +1937,13 @@ print(fruits_copy)  # Output: ['apple', 'banana', 'orange']
 
 ## Operations
 
-  - **InsertFront:** O(1) — Add an element to the front.
-  - **InsertLast:** O(1) — Add an element to the end.
-  - **DeleteFront:** O(1) — Remove an element from the front.
-  - **DeleteLast:** O(1) — Remove an element from the end.
-  - **PeekFront:** O(1)— View the front element.
-  - **PeekLast:** O(1) — View the last element.
-  - **IsEmpty:** O(1) — Check if the deque is empty.
+  - **InsertFront:** $O(1)$ — Add an element to the front.
+  - **InsertLast:** $O(1)$ — Add an element to the end.
+  - **DeleteFront:** $O(1)$ — Remove an element from the front.
+  - **DeleteLast:** $O(1)$ — Remove an element from the end.
+  - **PeekFront:** $O(1)$ — View the front element.
+  - **PeekLast:** $O(1)$ — View the last element.
+  - **IsEmpty:** $O(1)$ — Check if the deque is empty.
 
 ## Usage
 
@@ -1966,9 +1968,9 @@ print(fruits_copy)  # Output: ['apple', 'banana', 'orange']
 
 ###### Operations
 
-  - **Insert:** O(1) — Map a key to a value by computing its hash.
-  - **Search:** O(1) — Retrieve the value associated with a given key.
-  - **Delete:** O(1) — Remove the key-value pair from the table.
+  - **Insert:** $O(1)$ — Map a key to a value by computing its hash.
+  - **Search:** $O(1)$ — Retrieve the value associated with a given key.
+  - **Delete:** $O(1)$ — Remove the key-value pair from the table.
 
 <br>
 
@@ -1996,7 +1998,7 @@ print(fruits_copy)  # Output: ['apple', 'banana', 'orange']
     - **Hashing** is the process of mapping keys to indices in an array using a hash function. It ensures efficient data retrieval by minimizing the number of comparisons required.
 
   **Hash Function**
-    - A **hash function** is a function that converts input (key) into a fixed-size value, typically an integer, which serves as an index in the hash table array.
+    - A **hash function** is a function that converts input *(key)* into a fixed-size value, typically an integer, which serves as an index in the hash table array.
      - A good hash function has the following properties:
      
       - **Deterministic:** The same key always produces the same hash value.
@@ -2013,7 +2015,7 @@ print(fruits_copy)  # Output: ['apple', 'banana', 'orange']
 
 ###### **How to perform hash function on calculator**
 
-To determine where the data associated with the last 4 digits of the Social Security number ('2023') will be stored in the array, follow these steps:
+To determine where the data associated with the last 4 digits of the Social Security number *('2023')* will be stored in the array, follow these steps:
 
   **1.** Understand the Hash Function: The problem specifies a hash function given by key % 1009. Here, % denotes the modulus operation. This operation returns the remainder of the division of key by 1009.
 
@@ -2023,9 +2025,9 @@ To determine where the data associated with the last 4 digits of the Social Secu
 
     a. Key / Hash - (whole number in result) * Hash
       i. For this example
-        1. (2023 / 1009) = 2.004955401
-        2. 2.004955401 - 2 = 0.004955401
-        3. 0.004955401 * 1009 = 5
+        1. $(2023 / 1009) = 2.004955401$
+        2. $2.004955401 - 2 = 0.004955401$
+        3. $0.004955401 * 1009 = 5$
 
   **4.** By calculating the remainder, you will find the index in the array soc where the data associated with the key '2023' will be stored.
 
@@ -2075,23 +2077,23 @@ To determine where the data associated with the last 4 digits of the Social Secu
 
 ###### Operations
 
-  - **Insertion:** O(log ⁡n) for balanced trees like AVL or Red-Black Trees; O(n) for unbalanced trees.
+  - **Insertion:** $\text{O(log ⁡n)}$ for balanced trees like AVL or Red-Black Trees; $O(n)$ for unbalanced trees.
 
-  - **Deletion:** O(log ⁡n) for balanced trees; O(n) for unbalanced trees.
+  - **Deletion:** $\text{O(log ⁡n)}$ for balanced trees; $O(n)$ for unbalanced trees.
     - **BST:** Find the node to be removed, then:
         - **No Children:** Just remove the node.
         - **One Child:** Bypass the node and link its parent directly to its child.
-        - **Two Children:** Find the in-order predecessor (or successor), swap values, and remove the predecessor (or successor) node.
-        - **Time Complexity:** O(log n) on average, O(n) in the worst case.
+        - **Two Children:** Find the in-order predecessor *(or successor)*, swap values, and remove the predecessor *(or successor)* node.
+        - **Time Complexity:** $\text{O(log n)}$ on average, $O(n)$ in the worst case.
 
-  - **Search:** O(log ⁡n)  for balanced trees; O(n) for unbalanced trees.
+  - **Search:** $\text{O(log ⁡n)}$  for balanced trees; $O(n)$ for unbalanced trees.
 
   - **Traversal:**
 
-    - **In-order:** O(n) — Left, Root, Right (used in BSTs to get sorted order).
-    - **Pre-order:** O(n) — Root, Left, Right.
-    - **Post-order:** O(n) — Left, Right, Root.
-    - **Level-order:** O(n)— Traverse nodes level by level.
+    - **In-order:** $O(n)$ — Left, Root, Right *(used in BSTs to get sorted order)*.
+    - **Pre-order:** $O(n)$ — Root, Left, Right.
+    - **Post-order:** $O(n)$ — Left, Right, Root.
+    - **Level-order:** $O(n)$— Traverse nodes level by level.
 
 <br>
 
@@ -2099,7 +2101,7 @@ To determine where the data associated with the last 4 digits of the Social Secu
 
   - **Use Cases:**
   
-    - Suitable for hierarchical data (like file systems), database indexing, and scenarios requiring sorted data with dynamic insertion and deletion.
+    - Suitable for hierarchical data *(like file systems)*, database indexing, and scenarios requiring sorted data with dynamic insertion and deletion.
 
 <br>
 
@@ -2192,7 +2194,7 @@ To determine where the data associated with the last 4 digits of the Social Secu
 
   - **Use Cases:**
   
-    - Red-Black trees are used in many systems, such as the Linux kernel's process scheduling and in standard libraries like C++'s std::map and std::set, due to their relatively simple implementation and good performance.
+    - Red-Black trees are used in many systems, such as the Linux kernel's process scheduling and in standard libraries like C++'s **std::map** and **std::set**, due to their relatively simple implementation and good performance.
 
 <br>
 
@@ -2419,3 +2421,528 @@ D   E
 ---
 
 <br>
+
+::: {.lead}
+##### Heap
+:::
+
+<br>
+
+::: {.panel-tabset}
+
+## Description:
+
+  - A **heap** is a specialized tree-based data structure that satisfies the heap property. In a **max-heap**, the parent node is always greater than or equal to its children; in a **min-heap**, the parent node is always less than or equal to its children.
+  - **Python Equivalent:** `heapq` *(min-heap by default)*
+
+## Operations:
+
+  - **Insert:** $\text{O(log ⁡n)}$ — Add a new element and adjust the heap to maintain the heap property.
+    - **Add the Element at the End:**
+      - Insert the new element at the end of the heap *(i.e., the next available leaf node)*.
+    - **Heapify Up (Percolate Up):**
+      - Compare the inserted element with its parent node.
+      - If the heap property *(Min-Heap or Max-Heap)* is violated *(e.g., in a Min-Heap, if the new element is smaller than its parent)*, swap the element with its parent.
+      - Repeat the process until the heap property is restored or the element becomes the root.
+  - **DeleteMax/Min:** $\text{O(log ⁡n)}$ — Remove the root *(max or min)* and adjust the heap.
+    - **Remove the Root Element:**
+      - The root element of the heap *(the smallest element in a Min-Heap or the largest in a Max-Heap)* is removed. This is because the root element has the highest priority.
+    - **Replace the Root with the Last Element:**
+      - Move the last element in the heap *(the rightmost leaf node)* to the root position.
+    - **Heapify Down (Percolate Down):**
+      - Compare the new root element with its children.
+      - If the heap property is violated *(e.g., in a Min-Heap, if the root is greater than any of its children)*, swap the root with the smallest child *(in a Max-Heap, swap with the largest child)*.
+      - Repeat the process down the tree until the heap property is restored.
+  - **PeekMax/Min:** $O(1)$ — Access the root element.
+  - **Heapify:** $O(n)$ — Convert an unsorted array into a heap.
+
+## Use Cases:
+
+  - Often used to implement priority queues, scheduling algorithms, and for efficient sorting *(Heap Sort)*.
+
+:::
+
+<br>
+
+---
+
+::: {.lead}
+###### **Steps To Figure Out The Index Of Child Nodes in Heaps**
+:::
+
+<br>
+
+::: {.callout-note title="The Index Of The Right Child Of An Item In A Heap" collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
+
+**heapList = [22, 33, 44, 55, 66]**
+
+  - Identify the index of the item:
+      - Find the index of the item 22 in the heap list. Let's call this index $i$.
+
+  - Use the formula for the right child:
+      - In a binary heap, if an element is at index $i$, the index of its right child is given by the formula: $2i + 2$.
+
+  - Apply the formula:
+      - Substitute the value of $i$ obtained from step 1 into the formula $2i+2$.
+
+  - Verify the index:
+      - Ensure the calculated index falls within the bounds of the heap list.
+
+:::
+
+::: {.callout-note title="The Index Of The Left Child Of An Item In A Heap" collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
+
+**heapList = [22, 33, 44, 55, 66]**
+
+  - Identify the index of the item:
+      - Find the index of the item in the heap list. Let’s call this index $i$.
+
+  - Use the formula for the left child:
+      - In a binary heap, if an element is at index $i$, the index of its left child is given by the formula: $2i+1$.
+
+  - Apply the formula:
+      - Substitute the value of $iii$ obtained from step 1 into the formula $2i+1$.
+
+  - Verify the index:
+      - Ensure the calculated index falls within the bounds of the heap list.
+
+:::
+
+<br>
+
+---
+
+<br>
+
+::: {.lead}
+##### Set
+:::
+
+<br>
+
+::: {.panel-tabset}
+
+## Description:
+
+  - A **set** is an abstract data structure that stores unique elements, with no specific order. It supports operations that allow the management of unique collections of data.
+  - **Python Equivalent:** `set`
+
+## Operations:
+
+  - **Insert:** $O(1)$ on average — Add a new element if it’s not already present.
+  - **Delete:** $O(1)$ on average — Remove an element if it exists.
+  - **Search:** $O(1)$ on average — Check if an element is present in the set.
+  - **Union:** $O(n)$ — Combine elements from two sets.
+  - **Intersection:** $O(n)$ — Get common elements between two sets.
+  - **Difference:** $O(n)$ — Get elements present in one set but not the other.
+
+## Usage:
+
+  - Useful in situations requiring the management of unique elements, such as maintaining a list of unique IDs, handling membership checks, and performing mathematical set operations.
+
+:::
+
+<br>
+
+::: {.lead}
+##### Graph
+:::
+
+<br>
+
+::: {.panel-tabset}
+
+## Description:
+
+  - A **graph** is a collection of nodes *(vertices)* connected by edges. Graphs can be **directed** *(edges have a direction)* or **undirected** *(edges do not have a direction)*.
+  - **Python Equivalent:** `dict` of lists, `collections.defaultdict`, or custom class
+
+## Types:
+
+  - **Directed Graph (Digraph):** All edges have a direction.
+  - **Undirected Graph:** Edges do not have direction.
+  - **Weighted Graph:** Edges have weights representing costs or distances.
+  - **Unweighted Graph:** Edges have no weights.
+
+## Operations:
+
+  - **Add Vertex:** $O(1)$ — Add a new node.
+    - **Vertex:** Simply add the vertex to the vertex set.
+      - **Time Complexity:** $O(1)$.
+
+  - **Add Edge:** $O(1)$ — Add a connection between two nodes.
+    - **Edge:** Add an edge by connecting two vertices, updating adjacency lists or matrices.
+      - **Time Complexity:** $O(1)$ for adjacency list, $O(1)$ for adjacency matrix.
+
+  - **Remove Vertex:** $O(V+E)$ — Remove a node and its associated edges.
+    - **Vertex:** Remove the vertex and all associated edges.
+      - **Time Complexity:** $\text{O(V + E)}$ in an adjacency list, $O(V^2)$ in an adjacency matrix, where V is the number of vertices and E is the number of edges.
+
+  - **Remove Edge:** $O(1)$ — Remove a connection between two nodes.
+    - **Edge:** Remove the edge between two vertices.
+      - **Time Complexity:** $O(1)$ for adjacency list, $O(1)$ for adjacency matrix.
+
+  - **Search:**
+    - **Depth-First Search (DFS):** $O(V+E)$ — Explore as far as possible along each branch before backtracking.
+    - **Breadth-First Search (BFS):** $O(V+E)$— Explore all neighbors of a node before moving to the next level.
+
+## Usage:
+
+-
+
+:::
+
+<br>
+
+::: {.lead}
+##### Path Algorithms
+:::
+
+<br>
+
+::: {.callout-note title="Dijkstra's Shortest Path Algorithm" collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
+
+  - **Overview:**
+
+    - **Type:** Greedy algorithm.
+    - **Applicability:** Works on graphs with non-negative edge weights.
+    - **Time Complexity:** $O(V2)$ for the simplest implementation, $\text{O(V log V+E)}$ with a priority queue *(using a binary heap)*, where $V$ is the number of vertices and $E$ is the number of edges.
+    - **Functionality:** It finds the shortest path from a single source vertex to all other vertices in a graph by iteratively selecting the vertex with the smallest known distance, updating the distances to its neighbors, and marking it as visited.
+
+:::
+
+::: {.callout-note title="Bellman-Ford Shortest Path Algorithm" collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
+
+  - **Overview:**
+
+    - **Type:** Dynamic programming algorithm.
+    - **Applicability:** Works on graphs with negative edge weights and can detect negative weight cycles.
+    - **Time Complexity:** $O(V*E)$, where $V$ is the number of vertices and $E$ is the number of edges.
+    - **Functionality:** It calculates the shortest path from a single source vertex to all other vertices by relaxing all edges repeatedly over $V−1$ iterations.
+
+:::
+
+::: {.callout-note title="Differences Between Dijkstra and Bellman-Ford" collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
+
+| Feature Dijkstra's       | Algorithm Bellman-Ford               | Algorithm                   |
+| -------------------------|-------------------------------------:|:---------------------------:|
+| Edge Weights             | Non-negative edge weights only       | Handles negative edge weights |
+| Negative Cycle Detection | Cannot detect negative cycles        | Can detect negative cycles |
+| Time Complexity          | $O(V2)$ for the simplest implementation, $\text{O(V log V+E)}$ with a priority queue *(using a binary heap)*, where $V$ is the number of vertices and E is the number of edges. | $O(V*E)$, where $V$ is the number of vertices and $E$ is the number of edges. |
+| Graph Type               | Directed or undirected with non-negative weights| Directed or undirected with any weights, including negative|
+| Algorithm Type           | Greedy                               | Dynamic programming          |
+| Use Case                 | Faster for graphs with non-negative weights   | More general, can be used when negative weights are present    |
+
+: Comparison chart
+
+:::
+
+<br>
+
+---
+
+::: {.lead}
+###### **Summary**
+:::
+
+<br>
+
+::: {.callout-note title="Summary of ADTs" collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
+
+  - **Array:** Fixed-size, contiguous memory; fast access by index.
+  - **Linked List:** Dynamic size; efficient insertions and deletions.
+  - **Stack:** LIFO order; used in recursion, undo operations.
+  - **Queue:** FIFO order; used in scheduling, buffering.
+  - **Deque:** Double-ended queue; flexible insertions/deletions.
+  - **Hash Table:** Key-value pairs; fast lookups and inserts.
+  - **Tree:** Hierarchical structure; efficient searches and sorted data.
+  - **Heap:** Binary tree for priority queues; fast access to max/min.
+  - **Set:** Unique elements; fast membership checks.
+  - **Graph:** Nodes and edges; used in networks and relationship modeling.
+
+:::
+
+<br>
+
+---
+
+<br>
+
+::: {.lead}
+##### Key Operations in a Dictionary/Map
+:::
+
+<br>
+
+A **Dictionary** (in Python) or **Map** (in many other programming languages) is a data 
+structure that stores key-value pairs, where each unique key maps to a specific 
+value. Dictionaries/Maps provide efficient insertion, deletion, and lookup 
+operations, typically in $O(1)$ time on average due to the underlying hash table 
+implementation.
+
+<br>
+
+###### Insertion
+
+Description: Adding a new key-value pair to the dictionary.
+
+Syntax:
+
+```{python insertionSyntax}
+dictionary[key] = value
+```
+
+
+Example:
+
+```{python insertionExample}
+phone_book = {}
+phone_book['Alice'] = '555-1234'
+```
+
+This adds the key `'Alice'` with the value `'555-1234'` to the `phone_book` dictionary.
+
+<br>
+
+###### Lookup (Access)
+
+Description: Retrieving the value associated with a given key.
+
+Syntax:
+```{python lookupValue}
+value = dictionary[key]
+```
+
+
+Example:
+```{python lookupVariable}
+alice_number = phone_book['Alice']
+```
+
+This retrieves the value associated with `'Alice'`, which is `'555-1234'`.
+
+<br>
+
+###### Deletion
+
+Description: Removing a key-value pair from the dictionary.
+
+Syntax:
+```{python deletionKey}
+del dictionary[key]
+```
+
+
+Example:
+```{python deletionCode}
+del phone_book['Alice']
+```
+
+This removes the `'Alice'` entry from the `phone_book` dictionary.
+
+<br>
+
+###### Update
+
+Description: Updating the value associated with a given key.
+
+Syntax:
+```{python updateValue}
+dictionary[key] = new_value
+```
+
+
+Example:
+```{python updateVariable}
+phone_book['Alice'] = '555-5678'
+```
+
+
+This updates `'Alice's` number to `'555-5678'`.
+
+<br>
+
+###### Check Existence
+
+Description: Checking if a key exists in the dictionary.
+
+Syntax:
+```{python checkKey}
+key in dictionary
+```
+
+Example:
+```{python checkLogic}
+if 'Alice' in phone_book:
+    print("Alice is in the phone book")
+```
+
+This checks if `'Alice'` is a key in `phone_book`.
+
+<br>
+
+###### Iteration
+
+Description: Iterating over keys, values, or key-value pairs in the dictionary.
+
+Syntax:
+```{python iterationKey}
+Iterate over keys
+for key in dictionary:
+    print(key)
+```
+
+Iterate over values
+```{python iterationValue}
+for value in dictionary.values():
+    print(value)
+```
+
+Iterate over key-value pairs
+```{python iterationPair}
+for key, value in dictionary.items():
+    print(f"{key}: {value}")
+```
+
+Example:
+```{python iterationName}
+for name, number in phone_book.items():
+    print(f"{name}: {number}")
+```
+
+This prints all key-value pairs in `phone_book`.
+
+<br>
+
+###### Get Method
+
+Description: Retrieving the value associated with a given key, with an optional 
+default if the key doesn’t exist.
+
+Syntax:
+```{python getValue}
+value = dictionary.get(key, default_value)
+```
+
+Example:
+```{python getVariable}
+bob_number = phone_book.get('Bob', 'Not Found')
+```
+
+If `'Bob'` is not in `phone_book`, `bob_number` will be `'Not Found'`.
+
+<br>
+
+###### Length
+
+Description: Getting the number of key-value pairs in the dictionary.
+
+Syntax:
+```{python lengthValue}
+length = len(dictionary)
+```
+
+Example:
+```{python lengthVariable}
+num_contacts = len(phone_book)
+```
+
+This returns the number of entries in `phone_book`.
+
+<br>
+
+###### Clearing
+
+Description: Removing all key-value pairs from the dictionary.
+
+Syntax:
+```{python clearingFunction}
+dictionary.clear()
+```
+
+Example:
+```{python clearingVariable}
+phone_book.clear()
+```
+
+This removes all entries from `phone_book`, making it an empty dictionary.
+
+<br>
+
+###### Copying
+
+Description: Creating a shallow copy of the dictionary.
+
+Syntax:
+```{python copyingValue}
+new_dictionary = dictionary.copy()
+```
+
+Example:
+```{python copyingVariable}
+backup_phone_book = phone_book.copy()
+```
+
+This creates a copy of `phone_book` called `backup_phone_book`.
+
+<br>
+
+###### Pop
+
+Description: Removing a key from the dictionary and returning its value.
+
+Syntax:
+```{python popValue}
+value = dictionary.pop(key, default_value)
+```
+
+Example:
+```{python popFunction}
+removed_number = phone_book.pop('Alice', 'Not Found')
+```
+
+Removes `'Alice'` from `phone_book` and returns her number. If `'Alice'` is not found, it returns `'Not Found'`.
+
+<br>
+
+###### Popitem
+
+Description: Removes and returns an arbitrary key-value pair as a tuple *(key, value)*.
+
+Syntax
+```{python pitemPair}
+key, value = dictionary.popitem()
+```
+
+Example
+```{python pitemVariable}
+last_entry = phone_book.popitem()
+```
+
+Removes and returns the last inserted key-value pair in the dictionary.
+
+<br>
+
+###### Setdefault
+
+Description: Returns the value of a key if it exists; otherwise, inserts the key with a specified value and returns that value.
+
+Syntax:
+```{python defaultValue}
+value = dictionary.setdefault(key, default_value)
+```
+
+Example:
+```{python defaultVariable}
+alice_number = phone_book.setdefault('Alice', '555-0000')
+```
+
+If `'Alice'` is in `phone_book`, it returns her number. Otherwise, it adds `'Alice': '555-0000'` to phone_book and returns `'555-0000'`.
+
+<br>
+
+:::
+
+<br>
+
+## Applies Algorithms - (40%)
