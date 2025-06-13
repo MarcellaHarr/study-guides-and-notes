@@ -2301,11 +2301,11 @@ To determine where the data associated with the last 4 digits of the Social Secu
 If you have a tree like this:
 
 ```{mermaid treeNLR}
-graph TD
-  A["Root A"] --> B["Left B"]
-  A --> C["Right C"]
-  B --> D["Leaf D"]
-  B --> E["Leaf E"]
+flowchart TB
+  A --> B
+  A --> C
+  B --> D
+  B --> E
 ```
 
   - The Pre-Order traversal would be: **A B D E C**
@@ -2339,11 +2339,11 @@ graph TD
 For the same tree:
 
 ```{mermaid treeLNR}
-graph TD
-  A["Root A"] --> B["Left B"]
-  A --> C["Right C"]
-  B --> D["Leaf D"]
-  B --> E["Leaf E"]
+flowchart TB
+  A --> B
+  A --> C
+  B --> D
+  B --> E
 ```
 
   - The In-Order traversal would be: **D B E A C**
@@ -2377,11 +2377,11 @@ graph TD
 For the same tree:
 
 ```{mermaid treeLRN}
-graph TD
-  A["Root A"] --> B["Left B"]
-  A --> C["Right C"]
-  B --> D["Leaf D"]
-  B --> E["Leaf E"]
+flowchart TB
+  A --> B
+  A --> C
+  B --> D
+  B --> E
 ```
 
   - The Post-Order traversal would be: **D E B C A**
