@@ -450,8 +450,14 @@ window.Quarto = {
   <li><a href="#pre-order-traversal-nlr" id="toc-pre-order-traversal-nlr" class="nav-link" data-scroll-target="#pre-order-traversal-nlr">Pre-Order Traversal (NLR)</a></li>
   <li><a href="#in-order-traversal-lnr" id="toc-in-order-traversal-lnr" class="nav-link" data-scroll-target="#in-order-traversal-lnr">In-Order Traversal (LNR)</a></li>
   <li><a href="#post-order-traversal-lrn" id="toc-post-order-traversal-lrn" class="nav-link" data-scroll-target="#post-order-traversal-lrn">Post-Order Traversal (LRN)</a></li>
+  <li><a href="#heap" id="toc-heap" class="nav-link" data-scroll-target="#heap">Heap</a></li>
+  <li><a href="#set" id="toc-set" class="nav-link" data-scroll-target="#set">Set</a></li>
+  <li><a href="#graph" id="toc-graph" class="nav-link" data-scroll-target="#graph">Graph</a></li>
+  <li><a href="#path-algorithms" id="toc-path-algorithms" class="nav-link" data-scroll-target="#path-algorithms">Path Algorithms</a></li>
+  <li><a href="#key-operations-in-a-dictionarymap" id="toc-key-operations-in-a-dictionarymap" class="nav-link" data-scroll-target="#key-operations-in-a-dictionarymap">Key Operations in a Dictionary/Map</a></li>
   </ul></li>
   </ul></li>
+  <li><a href="#applies-algorithms---40" id="toc-applies-algorithms---40" class="nav-link" data-scroll-target="#applies-algorithms---40">Applies Algorithms - (40%)</a></li>
   </ul>
 </nav>
     </div>
@@ -959,6 +965,7 @@ Factors
 </section>
 <section id="searching-algorithms" class="level4">
 <h4 class="anchored" data-anchor-id="searching-algorithms">Searching Algorithms</h4>
+<p><br></p>
 <section id="linear-search-1" class="level5 lead">
 <h5 class="anchored" data-anchor-id="linear-search-1">Linear Search</h5>
 </section>
@@ -987,9 +994,9 @@ Factors
 <ul>
 <li><p><strong>Linear Search Worst, Average and Best</strong></p>
 <ul>
-<li><code>**Best Case:** $O(1)$</code> — The target element is the first element.</li>
-<li><code>**Average Case:** $O(n)$</code> — The target element is somewhere in the middle or not in the array.</li>
-<li><code>**Worst Case:** $O(n)$</code> — The target element is the last element or not present.</li>
+<li><code>**Best Case:**</code> <span class="math inline">\(O(1)\)</span> — The target element is the first element.</li>
+<li><code>**Average Case:**</code> <span class="math inline">\(O(n)\)</span> — The target element is somewhere in the middle or not in the array.</li>
+<li><code>**Worst Case:**</code> <span class="math inline">\(O(n)\)</span> — The target element is the last element or not present.</li>
 </ul></li>
 </ul>
 <p><br></p>
@@ -1967,32 +1974,32 @@ Calculation Rules
 </div>
 <div id="tabset-25-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-25-2-tab">
 <ul>
-<li><p><strong>Access:</strong> O(1) — Direct access to elements via index.</p></li>
+<li><p><strong>Access:</strong> <span class="math inline">\(O(1)\)</span> — Direct access to elements via index.</p></li>
 <li><p><strong>Search:</strong></p>
 <ul>
-<li><strong>Linear Search:</strong> O(n)</li>
-<li><strong>Binary Search:</strong> O(log⁡ n) (only if the array is sorted)</li>
+<li><strong>Linear Search:</strong> <span class="math inline">\(O(n)\)</span></li>
+<li><strong>Binary Search:</strong> <span class="math inline">\(\text{O(log⁡ n)}\)</span> <em>(only if the array is sorted)</em></li>
 </ul></li>
 <li><p>Insertion:</p>
 <ul>
-<li><strong>At the End:</strong> Append the element to the end of the array. If the array is full (fixed size), you may need to resize it.
+<li><strong>At the End:</strong> Append the element to the end of the array. If the array is full <em>(fixed size)</em>, you may need to resize it.
 <ul>
-<li><strong>Time Complexity:</strong> O(1) (amortized if resizing is needed).</li>
+<li><strong>Time Complexity:</strong> <span class="math inline">\(O(1)\)</span> <em>(amortized if resizing is needed)</em>.</li>
 </ul></li>
 <li><strong>At a Specific Index:</strong> Shift elements to the right from the index to create space, then insert the new element.
 <ul>
-<li><strong>Time Complexity:</strong> O(n), where n is the number of elements after the insertion point.</li>
+<li><strong>Time Complexity:</strong> <span class="math inline">\(O(n)\)</span>, where n is the number of elements after the insertion point.</li>
 </ul></li>
 </ul></li>
 <li><p>Deletion:</p>
 <ul>
 <li><strong>From the End:</strong> Remove the last element.
 <ul>
-<li><strong>Time Complexity:</strong> O(1).</li>
+<li><strong>Time Complexity:</strong> <span class="math inline">\(O(1)\)</span>.</li>
 </ul></li>
 <li><strong>From a Specific Index:</strong> Shift elements to the left to fill the gap left by the removed element.
 <ul>
-<li><strong>Time Complexity:</strong> O(n), where n is the number of elements after the removal point.</li>
+<li><strong>Time Complexity:</strong> <span class="math inline">\(O(n)\)</span>, where n is the number of elements after the removal point.</li>
 </ul></li>
 </ul></li>
 </ul>
@@ -2031,36 +2038,36 @@ Calculation Rules
 </div>
 <div id="tabset-26-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-26-3-tab">
 <ul>
-<li><p><strong>Access:</strong> O(n) — Requires traversal from the head to the desired node.</p></li>
-<li><p><strong>Search:</strong> O(n) — Requires traversal to find the target element.</p></li>
+<li><p><strong>Access:</strong> <span class="math inline">\(O(n)\)</span> — Requires traversal from the head to the desired node.</p></li>
+<li><p><strong>Search:</strong> <span class="math inline">\(O(n)\)</span> — Requires traversal to find the target element.</p></li>
 <li><p><strong>Insertion:</strong></p>
 <ul>
-<li><strong>At the Beginning (Singly/ Doubly Linked List):</strong> Create a new node and adjust the head (and possibly tail in a doubly linked list).
+<li><strong>At the Beginning (Singly/ Doubly Linked List):</strong> Create a new node and adjust the head <em>(and possibly tail in a doubly linked list)</em>.
 <ul>
-<li><strong>Time Complexity:</strong> O(1).</li>
+<li><strong>Time Complexity:</strong> <span class="math inline">\(O(1)\)</span>.</li>
 </ul></li>
 <li><strong>At the End (Singly Linked List):</strong> Traverse to the last node, then insert the new node.
 <ul>
-<li><strong>Time Complexity:</strong> O(n).</li>
+<li><strong>Time Complexity:</strong> <span class="math inline">\(O(n)\)</span>.</li>
 </ul></li>
 <li><strong>At a Specific Position:</strong> Traverse to the position and insert the node, adjusting the pointers.
 <ul>
-<li><strong>Time Complexity:</strong> O(n).</li>
+<li><strong>Time Complexity:</strong> <span class="math inline">\(O(n)\)</span>.</li>
 </ul></li>
 </ul></li>
 <li><p><strong>Deletion:</strong></p>
 <ul>
 <li><strong>From the Beginning:</strong> Adjust the head pointer to the next node.
 <ul>
-<li><strong>Time Complexity:</strong> O(1).</li>
+<li><strong>Time Complexity:</strong> <span class="math inline">\(O(1)\)</span>.</li>
 </ul></li>
 <li><strong>From the End:</strong> Traverse to the second last node, adjust its pointer to null.
 <ul>
-<li><strong>Time Complexity:</strong> O(n).</li>
+<li><strong>Time Complexity:</strong> <span class="math inline">\(O(n)\)</span>.</li>
 </ul></li>
 <li><strong>From a Specific Position:</strong> Traverse to the node before the one to remove, then adjust pointers to bypass the removed node.
 <ul>
-<li><strong>Time Complexity:</strong> O(n).</li>
+<li><strong>Time Complexity:</strong> <span class="math inline">\(O(n)\)</span>.</li>
 </ul></li>
 </ul></li>
 </ul>
@@ -2294,10 +2301,10 @@ Calculation Rules
 </div>
 <div id="tabset-28-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-28-2-tab">
 <ul>
-<li><strong>Push (Insertion):</strong> O(1) — Add an element to the top of the stack.</li>
-<li><strong>Pop (Deletion):</strong> O(1) — Remove the top element from the stack.</li>
-<li><strong>Peek/Top:</strong> O(1) — View the top element without removing it.</li>
-<li><strong>IsEmpty:</strong> O(1) — Check if the stack is empty.</li>
+<li><strong>Push (Insertion):</strong> <span class="math inline">\(O(1)\)</span> — Add an element to the top of the stack.</li>
+<li><strong>Pop (Deletion):</strong> <span class="math inline">\(O(1)\)</span> — Remove the top element from the stack.</li>
+<li><strong>Peek/Top:</strong> <span class="math inline">\(O(1)\)</span> — View the top element without removing it.</li>
+<li><strong>IsEmpty:</strong> <span class="math inline">\(O(1)\)</span> — Check if the stack is empty.</li>
 </ul>
 </div>
 <div id="tabset-28-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-28-3-tab">
@@ -2376,10 +2383,10 @@ Calculation Rules
 </div>
 <div id="tabset-30-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-30-2-tab">
 <ul>
-<li><strong>Enqueue (Insertion/Push):</strong> O(1) — Add an element to the end of the queue.</li>
-<li><strong>Dequeue (Deletion/Pop):</strong> O(1) — Remove the front element from the queue.</li>
-<li><strong>Front/Peek:</strong> O(1) — View the front element without removing it.</li>
-<li><strong>IsEmpty:</strong> O(1) — Check if the queue is empty.</li>
+<li><strong>Enqueue (Insertion/Push):</strong> <span class="math inline">\(O(1)\)</span> — Add an element to the end of the queue.</li>
+<li><strong>Dequeue (Deletion/Pop):</strong> <span class="math inline">\(O(1)\)</span> — Remove the front element from the queue.</li>
+<li><strong>Front/Peek:</strong> <span class="math inline">\(O(1)\)</span> — View the front element without removing it.</li>
+<li><strong>IsEmpty:</strong> <span class="math inline">\(O(1)\)</span> — Check if the queue is empty.</li>
 </ul>
 </div>
 <div id="tabset-30-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-30-3-tab">
@@ -2409,13 +2416,13 @@ Calculation Rules
 </div>
 <div id="tabset-31-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-31-2-tab">
 <ul>
-<li><strong>InsertFront:</strong> O(1) — Add an element to the front.</li>
-<li><strong>InsertLast:</strong> O(1) — Add an element to the end.</li>
-<li><strong>DeleteFront:</strong> O(1) — Remove an element from the front.</li>
-<li><strong>DeleteLast:</strong> O(1) — Remove an element from the end.</li>
-<li><strong>PeekFront:</strong> O(1)— View the front element.</li>
-<li><strong>PeekLast:</strong> O(1) — View the last element.</li>
-<li><strong>IsEmpty:</strong> O(1) — Check if the deque is empty.</li>
+<li><strong>InsertFront:</strong> <span class="math inline">\(O(1)\)</span> — Add an element to the front.</li>
+<li><strong>InsertLast:</strong> <span class="math inline">\(O(1)\)</span> — Add an element to the end.</li>
+<li><strong>DeleteFront:</strong> <span class="math inline">\(O(1)\)</span> — Remove an element from the front.</li>
+<li><strong>DeleteLast:</strong> <span class="math inline">\(O(1)\)</span> — Remove an element from the end.</li>
+<li><strong>PeekFront:</strong> <span class="math inline">\(O(1)\)</span> — View the front element.</li>
+<li><strong>PeekLast:</strong> <span class="math inline">\(O(1)\)</span> — View the last element.</li>
+<li><strong>IsEmpty:</strong> <span class="math inline">\(O(1)\)</span> — Check if the deque is empty.</li>
 </ul>
 </div>
 <div id="tabset-31-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-31-3-tab">
@@ -2453,9 +2460,9 @@ Hash Table
 <section id="operations-6" class="level6">
 <h6 class="anchored" data-anchor-id="operations-6">Operations</h6>
 <ul>
-<li><strong>Insert:</strong> O(1) — Map a key to a value by computing its hash.</li>
-<li><strong>Search:</strong> O(1) — Retrieve the value associated with a given key.</li>
-<li><strong>Delete:</strong> O(1) — Remove the key-value pair from the table.</li>
+<li><strong>Insert:</strong> <span class="math inline">\(O(1)\)</span> — Map a key to a value by computing its hash.</li>
+<li><strong>Search:</strong> <span class="math inline">\(O(1)\)</span> — Retrieve the value associated with a given key.</li>
+<li><strong>Delete:</strong> <span class="math inline">\(O(1)\)</span> — Remove the key-value pair from the table.</li>
 </ul>
 <p><br></p>
 </section>
@@ -2488,7 +2495,7 @@ Hash Table
 <li><strong>Hashing</strong> is the process of mapping keys to indices in an array using a hash function. It ensures efficient data retrieval by minimizing the number of comparisons required.</li>
 </ul></li>
 </ul>
-<p><strong>Hash Function</strong> - A <strong>hash function</strong> is a function that converts input (key) into a fixed-size value, typically an integer, which serves as an index in the hash table array. - A good hash function has the following properties:</p>
+<p><strong>Hash Function</strong> - A <strong>hash function</strong> is a function that converts input <em>(key)</em> into a fixed-size value, typically an integer, which serves as an index in the hash table array. - A good hash function has the following properties:</p>
 <pre><code>  - **Deterministic:** The same key always produces the same hash value.
   - **Uniform Distribution:** The hash values should be distributed uniformly across the array to minimize collisions.
   - **Fast Computation:** The function should be quick to compute.</code></pre>
@@ -2503,15 +2510,15 @@ Hash Table
 </section>
 <section id="how-to-perform-hash-function-on-calculator" class="level6">
 <h6 class="anchored" data-anchor-id="how-to-perform-hash-function-on-calculator"><strong>How to perform hash function on calculator</strong></h6>
-<p>To determine where the data associated with the last 4 digits of the Social Security number (‘2023’) will be stored in the array, follow these steps:</p>
+<p>To determine where the data associated with the last 4 digits of the Social Security number <em>(‘2023’)</em> will be stored in the array, follow these steps:</p>
 <p><strong>1.</strong> Understand the Hash Function: The problem specifies a hash function given by key % 1009. Here, % denotes the modulus operation. This operation returns the remainder of the division of key by 1009.</p>
 <p><strong>2.</strong> Determine the Key: The last 4 digits of the Social Security number are ‘2023’. Therefore, the key you’re interested in is 2023.</p>
 <p><strong>3.</strong> Apply the Hash Function: Use the hash function to find the index in the array where the data should be stored. Specifically, you need to compute:</p>
 <pre><code>a. Key / Hash - (whole number in result) * Hash
   i. For this example
-    1. (2023 / 1009) = 2.004955401
-    2. 2.004955401 - 2 = 0.004955401
-    3. 0.004955401 * 1009 = 5</code></pre>
+    1. $(2023 / 1009) = 2.004955401$
+    2. $2.004955401 - 2 = 0.004955401$
+    3. $0.004955401 * 1009 = 5$</code></pre>
 <p><strong>4.</strong> By calculating the remainder, you will find the index in the array soc where the data associated with the key ‘2023’ will be stored.</p>
 <pre><code>a. soc[5]</code></pre>
 <p><br></p>
@@ -2569,24 +2576,24 @@ Tree
 <section id="operations-7" class="level6">
 <h6 class="anchored" data-anchor-id="operations-7">Operations</h6>
 <ul>
-<li><p><strong>Insertion:</strong> O(log ⁡n) for balanced trees like AVL or Red-Black Trees; O(n) for unbalanced trees.</p></li>
-<li><p><strong>Deletion:</strong> O(log ⁡n) for balanced trees; O(n) for unbalanced trees.</p>
+<li><p><strong>Insertion:</strong> <span class="math inline">\(\text{O(log ⁡n)}\)</span> for balanced trees like AVL or Red-Black Trees; <span class="math inline">\(O(n)\)</span> for unbalanced trees.</p></li>
+<li><p><strong>Deletion:</strong> <span class="math inline">\(\text{O(log ⁡n)}\)</span> for balanced trees; <span class="math inline">\(O(n)\)</span> for unbalanced trees.</p>
 <ul>
 <li><strong>BST:</strong> Find the node to be removed, then:
 <ul>
 <li><strong>No Children:</strong> Just remove the node.</li>
 <li><strong>One Child:</strong> Bypass the node and link its parent directly to its child.</li>
-<li><strong>Two Children:</strong> Find the in-order predecessor (or successor), swap values, and remove the predecessor (or successor) node.</li>
-<li><strong>Time Complexity:</strong> O(log n) on average, O(n) in the worst case.</li>
+<li><strong>Two Children:</strong> Find the in-order predecessor <em>(or successor)</em>, swap values, and remove the predecessor <em>(or successor)</em> node.</li>
+<li><strong>Time Complexity:</strong> <span class="math inline">\(\text{O(log n)}\)</span> on average, <span class="math inline">\(O(n)\)</span> in the worst case.</li>
 </ul></li>
 </ul></li>
-<li><p><strong>Search:</strong> O(log ⁡n) for balanced trees; O(n) for unbalanced trees.</p></li>
+<li><p><strong>Search:</strong> <span class="math inline">\(\text{O(log ⁡n)}\)</span> for balanced trees; <span class="math inline">\(O(n)\)</span> for unbalanced trees.</p></li>
 <li><p><strong>Traversal:</strong></p>
 <ul>
-<li><strong>In-order:</strong> O(n) — Left, Root, Right (used in BSTs to get sorted order).</li>
-<li><strong>Pre-order:</strong> O(n) — Root, Left, Right.</li>
-<li><strong>Post-order:</strong> O(n) — Left, Right, Root.</li>
-<li><strong>Level-order:</strong> O(n)— Traverse nodes level by level.</li>
+<li><strong>In-order:</strong> <span class="math inline">\(O(n)\)</span> — Left, Root, Right <em>(used in BSTs to get sorted order)</em>.</li>
+<li><strong>Pre-order:</strong> <span class="math inline">\(O(n)\)</span> — Root, Left, Right.</li>
+<li><strong>Post-order:</strong> <span class="math inline">\(O(n)\)</span> — Left, Right, Root.</li>
+<li><strong>Level-order:</strong> <span class="math inline">\(O(n)\)</span>— Traverse nodes level by level.</li>
 </ul></li>
 </ul>
 <p><br></p>
@@ -2596,7 +2603,7 @@ Tree
 <ul>
 <li><p><strong>Use Cases:</strong></p>
 <ul>
-<li>Suitable for hierarchical data (like file systems), database indexing, and scenarios requiring sorted data with dynamic insertion and deletion.</li>
+<li>Suitable for hierarchical data <em>(like file systems)</em>, database indexing, and scenarios requiring sorted data with dynamic insertion and deletion.</li>
 </ul></li>
 </ul>
 <p><br></p>
@@ -2716,7 +2723,7 @@ Red-Black Trees
 <ul>
 <li><p><strong>Use Cases:</strong></p>
 <ul>
-<li>Red-Black trees are used in many systems, such as the Linux kernel’s process scheduling and in standard libraries like C++’s std::map and std::set, due to their relatively simple implementation and good performance.</li>
+<li>Red-Black trees are used in many systems, such as the Linux kernel’s process scheduling and in standard libraries like C++’s <strong>std::map</strong> and <strong>std::set</strong>, due to their relatively simple implementation and good performance.</li>
 </ul></li>
 </ul>
 <p><br></p>
@@ -2985,9 +2992,597 @@ Visual Mnemonic:
 <p><br></p>
 <hr>
 <p><br></p>
-
-
+<section id="heap" class="level5 lead">
+<h5 class="anchored" data-anchor-id="heap">Heap</h5>
 </section>
+<p><br></p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-35-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-35-1" role="tab" aria-controls="tabset-35-1" aria-selected="true">Description:</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-35-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-35-2" role="tab" aria-controls="tabset-35-2" aria-selected="false">Operations:</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-35-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-35-3" role="tab" aria-controls="tabset-35-3" aria-selected="false">Use Cases:</a></li></ul>
+<div class="tab-content">
+<div id="tabset-35-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-35-1-tab">
+<ul>
+<li>A <strong>heap</strong> is a specialized tree-based data structure that satisfies the heap property. In a <strong>max-heap</strong>, the parent node is always greater than or equal to its children; in a <strong>min-heap</strong>, the parent node is always less than or equal to its children.</li>
+<li><strong>Python Equivalent:</strong> <code>heapq</code> <em>(min-heap by default)</em></li>
+</ul>
+</div>
+<div id="tabset-35-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-35-2-tab">
+<ul>
+<li><strong>Insert:</strong> <span class="math inline">\(\text{O(log ⁡n)}\)</span> — Add a new element and adjust the heap to maintain the heap property.
+<ul>
+<li><strong>Add the Element at the End:</strong>
+<ul>
+<li>Insert the new element at the end of the heap <em>(i.e., the next available leaf node)</em>.</li>
+</ul></li>
+<li><strong>Heapify Up (Percolate Up):</strong>
+<ul>
+<li>Compare the inserted element with its parent node.</li>
+<li>If the heap property <em>(Min-Heap or Max-Heap)</em> is violated <em>(e.g., in a Min-Heap, if the new element is smaller than its parent)</em>, swap the element with its parent.</li>
+<li>Repeat the process until the heap property is restored or the element becomes the root.</li>
+</ul></li>
+</ul></li>
+<li><strong>DeleteMax/Min:</strong> <span class="math inline">\(\text{O(log ⁡n)}\)</span> — Remove the root <em>(max or min)</em> and adjust the heap.
+<ul>
+<li><strong>Remove the Root Element:</strong>
+<ul>
+<li>The root element of the heap <em>(the smallest element in a Min-Heap or the largest in a Max-Heap)</em> is removed. This is because the root element has the highest priority.</li>
+</ul></li>
+<li><strong>Replace the Root with the Last Element:</strong>
+<ul>
+<li>Move the last element in the heap <em>(the rightmost leaf node)</em> to the root position.</li>
+</ul></li>
+<li><strong>Heapify Down (Percolate Down):</strong>
+<ul>
+<li>Compare the new root element with its children.</li>
+<li>If the heap property is violated <em>(e.g., in a Min-Heap, if the root is greater than any of its children)</em>, swap the root with the smallest child <em>(in a Max-Heap, swap with the largest child)</em>.</li>
+<li>Repeat the process down the tree until the heap property is restored.</li>
+</ul></li>
+</ul></li>
+<li><strong>PeekMax/Min:</strong> <span class="math inline">\(O(1)\)</span> — Access the root element.</li>
+<li><strong>Heapify:</strong> <span class="math inline">\(O(n)\)</span> — Convert an unsorted array into a heap.</li>
+</ul>
+</div>
+<div id="tabset-35-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-35-3-tab">
+<ul>
+<li>Often used to implement priority queues, scheduling algorithms, and for efficient sorting <em>(Heap Sort)</em>.</li>
+</ul>
+</div>
+</div>
+</div>
+<p><br></p>
+<hr>
+<section id="steps-to-figure-out-the-index-of-child-nodes-in-heaps" class="level6 lead">
+<h6 class="anchored" data-anchor-id="steps-to-figure-out-the-index-of-child-nodes-in-heaps"><strong>Steps To Figure Out The Index Of Child Nodes in Heaps</strong></h6>
+</section>
+<p><br></p>
+<div class="callout callout-style-simple callout-note no-icon callout-titled" title="The Index Of The Right Child Of An Item In A Heap" style="border-left:none; border-right:none; border-top:none; border-bottom:none;">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-18-contents" aria-controls="callout-18" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+The Index Of The Right Child Of An Item In A Heap
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-18" class="callout-18-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>heapList = [22, 33, 44, 55, 66]</strong></p>
+<ul>
+<li>Identify the index of the item:
+<ul>
+<li>Find the index of the item 22 in the heap list. Let’s call this index <span class="math inline">\(i\)</span>.</li>
+</ul></li>
+<li>Use the formula for the right child:
+<ul>
+<li>In a binary heap, if an element is at index <span class="math inline">\(i\)</span>, the index of its right child is given by the formula: <span class="math inline">\(2i + 2\)</span>.</li>
+</ul></li>
+<li>Apply the formula:
+<ul>
+<li>Substitute the value of <span class="math inline">\(i\)</span> obtained from step 1 into the formula <span class="math inline">\(2i+2\)</span>.</li>
+</ul></li>
+<li>Verify the index:
+<ul>
+<li>Ensure the calculated index falls within the bounds of the heap list.</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="callout callout-style-simple callout-note no-icon callout-titled" title="The Index Of The Left Child Of An Item In A Heap" style="border-left:none; border-right:none; border-top:none; border-bottom:none;">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-19-contents" aria-controls="callout-19" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+The Index Of The Left Child Of An Item In A Heap
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-19" class="callout-19-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>heapList = [22, 33, 44, 55, 66]</strong></p>
+<ul>
+<li>Identify the index of the item:
+<ul>
+<li>Find the index of the item in the heap list. Let’s call this index <span class="math inline">\(i\)</span>.</li>
+</ul></li>
+<li>Use the formula for the left child:
+<ul>
+<li>In a binary heap, if an element is at index <span class="math inline">\(i\)</span>, the index of its left child is given by the formula: <span class="math inline">\(2i+1\)</span>.</li>
+</ul></li>
+<li>Apply the formula:
+<ul>
+<li>Substitute the value of <span class="math inline">\(iii\)</span> obtained from step 1 into the formula <span class="math inline">\(2i+1\)</span>.</li>
+</ul></li>
+<li>Verify the index:
+<ul>
+<li>Ensure the calculated index falls within the bounds of the heap list.</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+<p><br></p>
+<hr>
+<p><br></p>
+<section id="set" class="level5 lead">
+<h5 class="anchored" data-anchor-id="set">Set</h5>
+</section>
+<p><br></p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-36-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-36-1" role="tab" aria-controls="tabset-36-1" aria-selected="true">Description:</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-36-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-36-2" role="tab" aria-controls="tabset-36-2" aria-selected="false">Operations:</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-36-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-36-3" role="tab" aria-controls="tabset-36-3" aria-selected="false">Usage:</a></li></ul>
+<div class="tab-content">
+<div id="tabset-36-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-36-1-tab">
+<ul>
+<li>A <strong>set</strong> is an abstract data structure that stores unique elements, with no specific order. It supports operations that allow the management of unique collections of data.</li>
+<li><strong>Python Equivalent:</strong> <code>set</code></li>
+</ul>
+</div>
+<div id="tabset-36-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-36-2-tab">
+<ul>
+<li><strong>Insert:</strong> <span class="math inline">\(O(1)\)</span> on average — Add a new element if it’s not already present.</li>
+<li><strong>Delete:</strong> <span class="math inline">\(O(1)\)</span> on average — Remove an element if it exists.</li>
+<li><strong>Search:</strong> <span class="math inline">\(O(1)\)</span> on average — Check if an element is present in the set.</li>
+<li><strong>Union:</strong> <span class="math inline">\(O(n)\)</span> — Combine elements from two sets.</li>
+<li><strong>Intersection:</strong> <span class="math inline">\(O(n)\)</span> — Get common elements between two sets.</li>
+<li><strong>Difference:</strong> <span class="math inline">\(O(n)\)</span> — Get elements present in one set but not the other.</li>
+</ul>
+</div>
+<div id="tabset-36-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-36-3-tab">
+<ul>
+<li>Useful in situations requiring the management of unique elements, such as maintaining a list of unique IDs, handling membership checks, and performing mathematical set operations.</li>
+</ul>
+</div>
+</div>
+</div>
+<p><br></p>
+<section id="graph" class="level5 lead">
+<h5 class="anchored" data-anchor-id="graph">Graph</h5>
+</section>
+<p><br></p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-37-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-37-1" role="tab" aria-controls="tabset-37-1" aria-selected="true">Description:</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-37-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-37-2" role="tab" aria-controls="tabset-37-2" aria-selected="false">Types:</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-37-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-37-3" role="tab" aria-controls="tabset-37-3" aria-selected="false">Operations:</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-37-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-37-4" role="tab" aria-controls="tabset-37-4" aria-selected="false">Usage:</a></li></ul>
+<div class="tab-content">
+<div id="tabset-37-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-37-1-tab">
+<ul>
+<li>A <strong>graph</strong> is a collection of nodes <em>(vertices)</em> connected by edges. Graphs can be <strong>directed</strong> <em>(edges have a direction)</em> or <strong>undirected</strong> <em>(edges do not have a direction)</em>.</li>
+<li><strong>Python Equivalent:</strong> <code>dict</code> of lists, <code>collections.defaultdict</code>, or custom class</li>
+</ul>
+</div>
+<div id="tabset-37-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-37-2-tab">
+<ul>
+<li><strong>Directed Graph (Digraph):</strong> All edges have a direction.</li>
+<li><strong>Undirected Graph:</strong> Edges do not have direction.</li>
+<li><strong>Weighted Graph:</strong> Edges have weights representing costs or distances.</li>
+<li><strong>Unweighted Graph:</strong> Edges have no weights.</li>
+</ul>
+</div>
+<div id="tabset-37-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-37-3-tab">
+<ul>
+<li><strong>Add Vertex:</strong> <span class="math inline">\(O(1)\)</span> — Add a new node.
+<ul>
+<li><strong>Vertex:</strong> Simply add the vertex to the vertex set.
+<ul>
+<li><strong>Time Complexity:</strong> <span class="math inline">\(O(1)\)</span>.</li>
+</ul></li>
+</ul></li>
+<li><strong>Add Edge:</strong> <span class="math inline">\(O(1)\)</span> — Add a connection between two nodes.
+<ul>
+<li><strong>Edge:</strong> Add an edge by connecting two vertices, updating adjacency lists or matrices.
+<ul>
+<li><strong>Time Complexity:</strong> <span class="math inline">\(O(1)\)</span> for adjacency list, <span class="math inline">\(O(1)\)</span> for adjacency matrix.</li>
+</ul></li>
+</ul></li>
+<li><strong>Remove Vertex:</strong> <span class="math inline">\(O(V+E)\)</span> — Remove a node and its associated edges.
+<ul>
+<li><strong>Vertex:</strong> Remove the vertex and all associated edges.
+<ul>
+<li><strong>Time Complexity:</strong> <span class="math inline">\(\text{O(V + E)}\)</span> in an adjacency list, <span class="math inline">\(O(V^2)\)</span> in an adjacency matrix, where V is the number of vertices and E is the number of edges.</li>
+</ul></li>
+</ul></li>
+<li><strong>Remove Edge:</strong> <span class="math inline">\(O(1)\)</span> — Remove a connection between two nodes.
+<ul>
+<li><strong>Edge:</strong> Remove the edge between two vertices.
+<ul>
+<li><strong>Time Complexity:</strong> <span class="math inline">\(O(1)\)</span> for adjacency list, <span class="math inline">\(O(1)\)</span> for adjacency matrix.</li>
+</ul></li>
+</ul></li>
+<li><strong>Search:</strong>
+<ul>
+<li><strong>Depth-First Search (DFS):</strong> <span class="math inline">\(O(V+E)\)</span> — Explore as far as possible along each branch before backtracking.</li>
+<li><strong>Breadth-First Search (BFS):</strong> <span class="math inline">\(O(V+E)\)</span>— Explore all neighbors of a node before moving to the next level.</li>
+</ul></li>
+</ul>
+</div>
+<div id="tabset-37-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-37-4-tab">
+<ul>
+<li></li>
+</ul>
+</div>
+</div>
+</div>
+<p><br></p>
+<section id="path-algorithms" class="level5 lead">
+<h5 class="anchored" data-anchor-id="path-algorithms">Path Algorithms</h5>
+</section>
+<p><br></p>
+<div class="callout callout-style-simple callout-note no-icon callout-titled" title="Dijkstra's Shortest Path Algorithm" style="border-left:none; border-right:none; border-top:none; border-bottom:none;">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-20-contents" aria-controls="callout-20" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Dijkstra’s Shortest Path Algorithm
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-20" class="callout-20-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li><p><strong>Overview:</strong></p>
+<ul>
+<li><strong>Type:</strong> Greedy algorithm.</li>
+<li><strong>Applicability:</strong> Works on graphs with non-negative edge weights.</li>
+<li><strong>Time Complexity:</strong> <span class="math inline">\(O(V2)\)</span> for the simplest implementation, <span class="math inline">\(\text{O(V log V+E)}\)</span> with a priority queue <em>(using a binary heap)</em>, where <span class="math inline">\(V\)</span> is the number of vertices and <span class="math inline">\(E\)</span> is the number of edges.</li>
+<li><strong>Functionality:</strong> It finds the shortest path from a single source vertex to all other vertices in a graph by iteratively selecting the vertex with the smallest known distance, updating the distances to its neighbors, and marking it as visited.</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="callout callout-style-simple callout-note no-icon callout-titled" title="Bellman-Ford Shortest Path Algorithm" style="border-left:none; border-right:none; border-top:none; border-bottom:none;">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-21-contents" aria-controls="callout-21" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Bellman-Ford Shortest Path Algorithm
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-21" class="callout-21-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li><p><strong>Overview:</strong></p>
+<ul>
+<li><strong>Type:</strong> Dynamic programming algorithm.</li>
+<li><strong>Applicability:</strong> Works on graphs with negative edge weights and can detect negative weight cycles.</li>
+<li><strong>Time Complexity:</strong> <span class="math inline">\(O(V*E)\)</span>, where <span class="math inline">\(V\)</span> is the number of vertices and <span class="math inline">\(E\)</span> is the number of edges.</li>
+<li><strong>Functionality:</strong> It calculates the shortest path from a single source vertex to all other vertices by relaxing all edges repeatedly over <span class="math inline">\(V−1\)</span> iterations.</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="callout callout-style-simple callout-note no-icon callout-titled" title="Differences Between Dijkstra and Bellman-Ford" style="border-left:none; border-right:none; border-top:none; border-bottom:none;">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-22-contents" aria-controls="callout-22" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Differences Between Dijkstra and Bellman-Ford
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-22" class="callout-22-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<table class="caption-top table">
+<caption>Comparison chart</caption>
+<colgroup>
+<col style="width: 27%">
+<col style="width: 41%">
+<col style="width: 31%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Feature Dijkstra’s</th>
+<th style="text-align: right;">Algorithm Bellman-Ford</th>
+<th style="text-align: center;">Algorithm</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Edge Weights</td>
+<td style="text-align: right;">Non-negative edge weights only</td>
+<td style="text-align: center;">Handles negative edge weights</td>
+</tr>
+<tr class="even">
+<td>Negative Cycle Detection</td>
+<td style="text-align: right;">Cannot detect negative cycles</td>
+<td style="text-align: center;">Can detect negative cycles</td>
+</tr>
+<tr class="odd">
+<td>Time Complexity</td>
+<td style="text-align: right;"><span class="math inline">\(O(V2)\)</span> for the simplest implementation, <span class="math inline">\(\text{O(V log V+E)}\)</span> with a priority queue <em>(using a binary heap)</em>, where <span class="math inline">\(V\)</span> is the number of vertices and E is the number of edges.</td>
+<td style="text-align: center;"><span class="math inline">\(O(V*E)\)</span>, where <span class="math inline">\(V\)</span> is the number of vertices and <span class="math inline">\(E\)</span> is the number of edges.</td>
+</tr>
+<tr class="even">
+<td>Graph Type</td>
+<td style="text-align: right;">Directed or undirected with non-negative weights</td>
+<td style="text-align: center;">Directed or undirected with any weights, including negative</td>
+</tr>
+<tr class="odd">
+<td>Algorithm Type</td>
+<td style="text-align: right;">Greedy</td>
+<td style="text-align: center;">Dynamic programming</td>
+</tr>
+<tr class="even">
+<td>Use Case</td>
+<td style="text-align: right;">Faster for graphs with non-negative weights</td>
+<td style="text-align: center;">More general, can be used when negative weights are present</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<p><br></p>
+<hr>
+<section id="summary-1" class="level6 lead">
+<h6 class="anchored" data-anchor-id="summary-1"><strong>Summary</strong></h6>
+</section>
+<p><br></p>
+<div class="callout callout-style-simple callout-note no-icon callout-titled" title="Summary of ADTs" style="border-left:none; border-right:none; border-top:none; border-bottom:none;">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-23-contents" aria-controls="callout-23" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Summary of ADTs
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-23" class="callout-23-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li><strong>Array:</strong> Fixed-size, contiguous memory; fast access by index.</li>
+<li><strong>Linked List:</strong> Dynamic size; efficient insertions and deletions.</li>
+<li><strong>Stack:</strong> LIFO order; used in recursion, undo operations.</li>
+<li><strong>Queue:</strong> FIFO order; used in scheduling, buffering.</li>
+<li><strong>Deque:</strong> Double-ended queue; flexible insertions/deletions.</li>
+<li><strong>Hash Table:</strong> Key-value pairs; fast lookups and inserts.</li>
+<li><strong>Tree:</strong> Hierarchical structure; efficient searches and sorted data.</li>
+<li><strong>Heap:</strong> Binary tree for priority queues; fast access to max/min.</li>
+<li><strong>Set:</strong> Unique elements; fast membership checks.</li>
+<li><strong>Graph:</strong> Nodes and edges; used in networks and relationship modeling.</li>
+</ul>
+</div>
+</div>
+</div>
+<p><br></p>
+<hr>
+<p><br></p>
+<section id="key-operations-in-a-dictionarymap" class="level5 lead">
+<h5 class="anchored" data-anchor-id="key-operations-in-a-dictionarymap">Key Operations in a Dictionary/Map</h5>
+</section>
+<p><br></p>
+<p>A <strong>Dictionary</strong> (in Python) or <strong>Map</strong> (in many other programming languages) is a data structure that stores key-value pairs, where each unique key maps to a specific value. Dictionaries/Maps provide efficient insertion, deletion, and lookup operations, typically in <span class="math inline">\(O(1)\)</span> time on average due to the underlying hash table implementation.</p>
+<p><br></p>
+<section id="insertion" class="level6">
+<h6 class="anchored" data-anchor-id="insertion">Insertion</h6>
+<p>Description: Adding a new key-value pair to the dictionary.</p>
+<p>Syntax:</p>
+<div class="cell">
+<pre class="text cell-code"><code>dictionary[key] = value</code></pre>
+</div>
+<p>Example:</p>
+<div class="cell">
+<pre class="text cell-code"><code>phone_book = {}
+phone_book['Alice'] = '555-1234'</code></pre>
+</div>
+<p>This adds the key <code>'Alice'</code> with the value <code>'555-1234'</code> to the <code>phone_book</code> dictionary.</p>
+<p><br></p>
+</section>
+<section id="lookup-access" class="level6">
+<h6 class="anchored" data-anchor-id="lookup-access">Lookup (Access)</h6>
+<p>Description: Retrieving the value associated with a given key.</p>
+<p>Syntax:</p>
+<div class="cell">
+<pre class="text cell-code"><code>value = dictionary[key]</code></pre>
+</div>
+<p>Example:</p>
+<div class="cell">
+<pre class="text cell-code"><code>alice_number = phone_book['Alice']</code></pre>
+</div>
+<p>This retrieves the value associated with <code>'Alice'</code>, which is <code>'555-1234'</code>.</p>
+<p><br></p>
+</section>
+<section id="deletion" class="level6">
+<h6 class="anchored" data-anchor-id="deletion">Deletion</h6>
+<p>Description: Removing a key-value pair from the dictionary.</p>
+<p>Syntax:</p>
+<div class="cell">
+<pre class="text cell-code"><code>del dictionary[key]</code></pre>
+</div>
+<p>Example:</p>
+<div class="cell">
+<pre class="text cell-code"><code>del phone_book['Alice']</code></pre>
+</div>
+<p>This removes the <code>'Alice'</code> entry from the <code>phone_book</code> dictionary.</p>
+<p><br></p>
+</section>
+<section id="update" class="level6">
+<h6 class="anchored" data-anchor-id="update">Update</h6>
+<p>Description: Updating the value associated with a given key.</p>
+<p>Syntax:</p>
+<div class="cell">
+<pre class="text cell-code"><code>dictionary[key] = new_value</code></pre>
+</div>
+<p>Example:</p>
+<div class="cell">
+<pre class="text cell-code"><code>phone_book['Alice'] = '555-5678'</code></pre>
+</div>
+<p>This updates <code>'Alice's</code> number to <code>'555-5678'</code>.</p>
+<p><br></p>
+</section>
+<section id="check-existence" class="level6">
+<h6 class="anchored" data-anchor-id="check-existence">Check Existence</h6>
+<p>Description: Checking if a key exists in the dictionary.</p>
+<p>Syntax:</p>
+<div class="cell">
+<pre class="text cell-code"><code>key in dictionary</code></pre>
+</div>
+<p>Example:</p>
+<div class="cell">
+<pre class="text cell-code"><code>if 'Alice' in phone_book:
+    print("Alice is in the phone book")</code></pre>
+</div>
+<p>This checks if <code>'Alice'</code> is a key in <code>phone_book</code>.</p>
+<p><br></p>
+</section>
+<section id="iteration" class="level6">
+<h6 class="anchored" data-anchor-id="iteration">Iteration</h6>
+<p>Description: Iterating over keys, values, or key-value pairs in the dictionary.</p>
+<p>Syntax:</p>
+<div class="cell">
+<pre class="text cell-code"><code>Iterate over keys
+for key in dictionary:
+    print(key)</code></pre>
+</div>
+<p>Iterate over values</p>
+<div class="cell">
+<pre class="text cell-code"><code>for value in dictionary.values():
+    print(value)</code></pre>
+</div>
+<p>Iterate over key-value pairs</p>
+<div class="cell">
+<pre class="text cell-code"><code>for key, value in dictionary.items():
+    print(f"{key}: {value}")</code></pre>
+</div>
+<p>Example:</p>
+<div class="cell">
+<pre class="text cell-code"><code>for name, number in phone_book.items():
+    print(f"{name}: {number}")</code></pre>
+</div>
+<p>This prints all key-value pairs in <code>phone_book</code>.</p>
+<p><br></p>
+</section>
+<section id="get-method" class="level6">
+<h6 class="anchored" data-anchor-id="get-method">Get Method</h6>
+<p>Description: Retrieving the value associated with a given key, with an optional default if the key doesn’t exist.</p>
+<p>Syntax:</p>
+<div class="cell">
+<pre class="text cell-code"><code>value = dictionary.get(key, default_value)</code></pre>
+</div>
+<p>Example:</p>
+<div class="cell">
+<pre class="text cell-code"><code>bob_number = phone_book.get('Bob', 'Not Found')</code></pre>
+</div>
+<p>If <code>'Bob'</code> is not in <code>phone_book</code>, <code>bob_number</code> will be <code>'Not Found'</code>.</p>
+<p><br></p>
+</section>
+<section id="length" class="level6">
+<h6 class="anchored" data-anchor-id="length">Length</h6>
+<p>Description: Getting the number of key-value pairs in the dictionary.</p>
+<p>Syntax:</p>
+<div class="cell">
+<pre class="text cell-code"><code>length = len(dictionary)</code></pre>
+</div>
+<p>Example:</p>
+<div class="cell">
+<pre class="text cell-code"><code>num_contacts = len(phone_book)</code></pre>
+</div>
+<p>This returns the number of entries in <code>phone_book</code>.</p>
+<p><br></p>
+</section>
+<section id="clearing" class="level6">
+<h6 class="anchored" data-anchor-id="clearing">Clearing</h6>
+<p>Description: Removing all key-value pairs from the dictionary.</p>
+<p>Syntax:</p>
+<div class="cell">
+<pre class="text cell-code"><code>dictionary.clear()</code></pre>
+</div>
+<p>Example:</p>
+<div class="cell">
+<pre class="text cell-code"><code>phone_book.clear()</code></pre>
+</div>
+<p>This removes all entries from <code>phone_book</code>, making it an empty dictionary.</p>
+<p><br></p>
+</section>
+<section id="copying" class="level6">
+<h6 class="anchored" data-anchor-id="copying">Copying</h6>
+<p>Description: Creating a shallow copy of the dictionary.</p>
+<p>Syntax:</p>
+<div class="cell">
+<pre class="text cell-code"><code>new_dictionary = dictionary.copy()</code></pre>
+</div>
+<p>Example:</p>
+<div class="cell">
+<pre class="text cell-code"><code>backup_phone_book = phone_book.copy()</code></pre>
+</div>
+<p>This creates a copy of <code>phone_book</code> called <code>backup_phone_book</code>.</p>
+<p><br></p>
+</section>
+<section id="pop" class="level6">
+<h6 class="anchored" data-anchor-id="pop">Pop</h6>
+<p>Description: Removing a key from the dictionary and returning its value.</p>
+<p>Syntax:</p>
+<div class="cell">
+<pre class="text cell-code"><code>value = dictionary.pop(key, default_value)</code></pre>
+</div>
+<p>Example:</p>
+<div class="cell">
+<pre class="text cell-code"><code>removed_number = phone_book.pop('Alice', 'Not Found')</code></pre>
+</div>
+<p>Removes <code>'Alice'</code> from <code>phone_book</code> and returns her number. If <code>'Alice'</code> is not found, it returns <code>'Not Found'</code>.</p>
+<p><br></p>
+</section>
+<section id="popitem" class="level6">
+<h6 class="anchored" data-anchor-id="popitem">Popitem</h6>
+<p>Description: Removes and returns an arbitrary key-value pair as a tuple <em>(key, value)</em>.</p>
+<p>Syntax</p>
+<div class="cell">
+<pre class="text cell-code"><code>key, value = dictionary.popitem()</code></pre>
+</div>
+<p>Example</p>
+<div class="cell">
+<pre class="text cell-code"><code>last_entry = phone_book.popitem()</code></pre>
+</div>
+<p>Removes and returns the last inserted key-value pair in the dictionary.</p>
+<p><br></p>
+</section>
+<section id="setdefault" class="level6">
+<h6 class="anchored" data-anchor-id="setdefault">Setdefault</h6>
+<p>Description: Returns the value of a key if it exists; otherwise, inserts the key with a specified value and returns that value.</p>
+<p>Syntax:</p>
+<div class="cell">
+<pre class="text cell-code"><code>value = dictionary.setdefault(key, default_value)</code></pre>
+</div>
+<p>Example:</p>
+<div class="cell">
+<pre class="text cell-code"><code>alice_number = phone_book.setdefault('Alice', '555-0000')</code></pre>
+</div>
+<p>If <code>'Alice'</code> is in <code>phone_book</code>, it returns her number. Otherwise, it adds <code>'Alice': '555-0000'</code> to phone_book and returns <code>'555-0000'</code>.</p>
+<p><br></p>
+<p>:::</p>
+<p><br></p>
+</section>
+</section>
+</section>
+<section id="applies-algorithms---40" class="level2">
+<h2 class="anchored" data-anchor-id="applies-algorithms---40">Applies Algorithms - (40%)</h2>
+
+
 </section>
 
 </main> <!-- /main -->
