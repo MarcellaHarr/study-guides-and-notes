@@ -2688,14 +2688,14 @@ Description: Adding a new key-value pair to the dictionary.
 
 Syntax:
 
-```{python insertionSyntax}
+```{text insertionSyntax}
 dictionary[key] = value
 ```
 
 
 Example:
 
-```{python insertionExample}
+```{text insertionExample}
 phone_book = {}
 phone_book['Alice'] = '555-1234'
 ```
@@ -2709,13 +2709,13 @@ This adds the key `'Alice'` with the value `'555-1234'` to the `phone_book` dict
 Description: Retrieving the value associated with a given key.
 
 Syntax:
-```{python lookupValue}
+```{text lookupValue}
 value = dictionary[key]
 ```
 
 
 Example:
-```{python lookupVariable}
+```{text lookupVariable}
 alice_number = phone_book['Alice']
 ```
 
@@ -2728,13 +2728,13 @@ This retrieves the value associated with `'Alice'`, which is `'555-1234'`.
 Description: Removing a key-value pair from the dictionary.
 
 Syntax:
-```{python deletionKey}
+```{text deletionKey}
 del dictionary[key]
 ```
 
 
 Example:
-```{python deletionCode}
+```{text deletionCode}
 del phone_book['Alice']
 ```
 
@@ -2747,13 +2747,13 @@ This removes the `'Alice'` entry from the `phone_book` dictionary.
 Description: Updating the value associated with a given key.
 
 Syntax:
-```{python updateValue}
+```{text updateValue}
 dictionary[key] = new_value
 ```
 
 
 Example:
-```{python updateVariable}
+```{text updateVariable}
 phone_book['Alice'] = '555-5678'
 ```
 
@@ -2767,12 +2767,12 @@ This updates `'Alice's` number to `'555-5678'`.
 Description: Checking if a key exists in the dictionary.
 
 Syntax:
-```{python checkKey}
+```{text checkKey}
 key in dictionary
 ```
 
 Example:
-```{python checkLogic}
+```{text checkLogic}
 if 'Alice' in phone_book:
     print("Alice is in the phone book")
 ```
@@ -2786,26 +2786,26 @@ This checks if `'Alice'` is a key in `phone_book`.
 Description: Iterating over keys, values, or key-value pairs in the dictionary.
 
 Syntax:
-```{python iterationKey}
+```{text iterationKey}
 Iterate over keys
 for key in dictionary:
     print(key)
 ```
 
 Iterate over values
-```{python iterationValue}
+```{text iterationValue}
 for value in dictionary.values():
     print(value)
 ```
 
 Iterate over key-value pairs
-```{python iterationPair}
+```{text iterationPair}
 for key, value in dictionary.items():
     print(f"{key}: {value}")
 ```
 
 Example:
-```{python iterationName}
+```{text iterationName}
 for name, number in phone_book.items():
     print(f"{name}: {number}")
 ```
@@ -2820,12 +2820,12 @@ Description: Retrieving the value associated with a given key, with an optional
 default if the key doesn’t exist.
 
 Syntax:
-```{python getValue}
+```{text getValue}
 value = dictionary.get(key, default_value)
 ```
 
 Example:
-```{python getVariable}
+```{text getVariable}
 bob_number = phone_book.get('Bob', 'Not Found')
 ```
 
@@ -2838,12 +2838,12 @@ If `'Bob'` is not in `phone_book`, `bob_number` will be `'Not Found'`.
 Description: Getting the number of key-value pairs in the dictionary.
 
 Syntax:
-```{python lengthValue}
+```{text lengthValue}
 length = len(dictionary)
 ```
 
 Example:
-```{python lengthVariable}
+```{text lengthVariable}
 num_contacts = len(phone_book)
 ```
 
@@ -2856,12 +2856,12 @@ This returns the number of entries in `phone_book`.
 Description: Removing all key-value pairs from the dictionary.
 
 Syntax:
-```{python clearingFunction}
+```{text clearingFunction}
 dictionary.clear()
 ```
 
 Example:
-```{python clearingVariable}
+```{text clearingVariable}
 phone_book.clear()
 ```
 
@@ -2874,12 +2874,12 @@ This removes all entries from `phone_book`, making it an empty dictionary.
 Description: Creating a shallow copy of the dictionary.
 
 Syntax:
-```{python copyingValue}
+```{text copyingValue}
 new_dictionary = dictionary.copy()
 ```
 
 Example:
-```{python copyingVariable}
+```{text copyingVariable}
 backup_phone_book = phone_book.copy()
 ```
 
@@ -2892,12 +2892,12 @@ This creates a copy of `phone_book` called `backup_phone_book`.
 Description: Removing a key from the dictionary and returning its value.
 
 Syntax:
-```{python popValue}
+```{text popValue}
 value = dictionary.pop(key, default_value)
 ```
 
 Example:
-```{python popFunction}
+```{text popFunction}
 removed_number = phone_book.pop('Alice', 'Not Found')
 ```
 
@@ -2910,12 +2910,12 @@ Removes `'Alice'` from `phone_book` and returns her number. If `'Alice'` is not 
 Description: Removes and returns an arbitrary key-value pair as a tuple *(key, value)*.
 
 Syntax
-```{python pitemPair}
+```{text pitemPair}
 key, value = dictionary.popitem()
 ```
 
 Example
-```{python pitemVariable}
+```{text pitemVariable}
 last_entry = phone_book.popitem()
 ```
 
@@ -2928,12 +2928,12 @@ Removes and returns the last inserted key-value pair in the dictionary.
 Description: Returns the value of a key if it exists; otherwise, inserts the key with a specified value and returns that value.
 
 Syntax:
-```{python defaultValue}
+```{text defaultValue}
 value = dictionary.setdefault(key, default_value)
 ```
 
 Example:
-```{python defaultVariable}
+```{text defaultVariable}
 alice_number = phone_book.setdefault('Alice', '555-0000')
 ```
 
