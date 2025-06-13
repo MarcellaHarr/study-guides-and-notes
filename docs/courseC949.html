@@ -106,6 +106,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-label": "Search"
   }
 }</script>
+<script src="site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 <link href="site_libs/vembedr-0.1.5/css/vembedr.css" rel="stylesheet">
 
 
@@ -444,6 +447,12 @@ window.Quarto = {
   <li><a href="#queue" id="toc-queue" class="nav-link" data-scroll-target="#queue">Queue</a></li>
   <li><a href="#deque" id="toc-deque" class="nav-link" data-scroll-target="#deque">Deque</a></li>
   <li><a href="#trees" id="toc-trees" class="nav-link" data-scroll-target="#trees">Trees</a></li>
+  <li><a href="#adelson-velsky-and-landis-trees" id="toc-adelson-velsky-and-landis-trees" class="nav-link" data-scroll-target="#adelson-velsky-and-landis-trees">Adelson-Velsky and Landis Trees</a></li>
+  <li><a href="#red-black" id="toc-red-black" class="nav-link" data-scroll-target="#red-black">Red-Black</a></li>
+  <li><a href="#balanced-tree" id="toc-balanced-tree" class="nav-link" data-scroll-target="#balanced-tree">Balanced Tree</a></li>
+  <li><a href="#pre-order-traversal-nlr" id="toc-pre-order-traversal-nlr" class="nav-link" data-scroll-target="#pre-order-traversal-nlr">Pre-Order Traversal (NLR)</a></li>
+  <li><a href="#in-order-traversal-lnr" id="toc-in-order-traversal-lnr" class="nav-link" data-scroll-target="#in-order-traversal-lnr">In-Order Traversal (LNR)</a></li>
+  <li><a href="#post-order-traversal-lrn" id="toc-post-order-traversal-lrn" class="nav-link" data-scroll-target="#post-order-traversal-lrn">Post-Order Traversal (LRN)</a></li>
   </ul></li>
   </ul></li>
   </ul>
@@ -1767,6 +1776,7 @@ Calculation Rules
 <h2 class="anchored" data-anchor-id="determines-data-structure-impact---31">Determines Data Structure Impact - (31%)</h2>
 <section id="implementation-of-data-structures" class="level4">
 <h4 class="anchored" data-anchor-id="implementation-of-data-structures">Implementation of Data Structures</h4>
+<p><br></p>
 <section id="data-types" class="level5 lead">
 <h5 class="anchored" data-anchor-id="data-types">Data Types</h5>
 </section>
@@ -1814,7 +1824,7 @@ Calculation Rules
 <p><strong>Example in Different Languages:</strong></p>
 <p>C/C++</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="kw">enum</span> Direction <span class="op">{</span></span>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode c code-with-copy"><code class="sourceCode c"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="kw">enum</span> Direction <span class="op">{</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>    NORTH<span class="op">,</span></span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    EAST<span class="op">,</span></span>
 <span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>    SOUTH<span class="op">,</span></span>
@@ -1825,14 +1835,14 @@ Calculation Rules
 </div>
 <p>Java</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode java code-with-copy"><code class="sourceCode java"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="kw">public</span> <span class="kw">enum</span> Direction <span class="op">{</span></span>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="kw">public</span> <span class="kw">enum</span> Direction {</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    NORTH<span class="op">,</span></span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>    EAST<span class="op">,</span></span>
 <span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>    SOUTH<span class="op">,</span></span>
 <span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>    WEST</span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>}</span>
 <span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>Direction dir <span class="op">=</span> Direction<span class="op">.</span><span class="fu">NORTH</span><span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>Direction dir <span class="op">=</span> Direction<span class="op">.</span><span class="at">NORTH</span><span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Python (using enum module)</p>
 <div class="cell">
@@ -2529,6 +2539,7 @@ Tree
 </div>
 <div id="callout-10" class="callout-10-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
+<p><br></p>
 <section id="description-6" class="level6">
 <h6 class="anchored" data-anchor-id="description-6">Description</h6>
 <ul>
@@ -2596,6 +2607,413 @@ Tree
 </div>
 </div>
 </div>
+<p><br></p>
+<section id="adelson-velsky-and-landis-trees" class="level5 lead">
+<h5 class="anchored" data-anchor-id="adelson-velsky-and-landis-trees">Adelson-Velsky and Landis Trees</h5>
+</section>
+<p><br></p>
+<div class="callout callout-style-simple callout-note no-icon callout-titled" title="AVL Trees" style="border-left:none; border-right:none; border-top:none; border-bottom:none;">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-11-contents" aria-controls="callout-11" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+AVL Trees
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-11" class="callout-11-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><br></p>
+<section id="properties" class="level6">
+<h6 class="anchored" data-anchor-id="properties">Properties</h6>
+<ul>
+<li>An AVL tree is a binary search tree in which the height of the two child subtrees of any node differs by at most one.</li>
+<li>If at any time during insertion or deletion this condition is violated, the tree is rebalanced through rotations.</li>
+</ul>
+<p><br></p>
+</section>
+<section id="balancing" class="level6">
+<h6 class="anchored" data-anchor-id="balancing">Balancing</h6>
+<ul>
+<li><strong>Single Rotation:</strong> Used when a node is inserted into the left subtree of the <strong>left child</strong> or the <code>right subtree</code> of the <strong>right child</strong>.</li>
+<li><strong>Double Rotation:</strong> Used when a node is inserted into the left subtree of the right child or the <code>right subtree</code> of the <strong>left child</strong>.</li>
+</ul>
+<p><br></p>
+</section>
+<section id="time" class="level6">
+<h6 class="anchored" data-anchor-id="time">Time</h6>
+<ul>
+<li><p><strong>Time Complexity:</strong></p>
+<ul>
+<li><strong>Search</strong>, <strong>Insertion</strong>, <strong>Deletion:</strong> <span class="math inline">\(\text{O(log n)}\)</span>, where n is the number of nodes.</li>
+</ul></li>
+</ul>
+<p><br></p>
+</section>
+<section id="usage-24" class="level6">
+<h6 class="anchored" data-anchor-id="usage-24">Usage</h6>
+<ul>
+<li><p><strong>Use Cases:</strong></p>
+<ul>
+<li>AVL trees are well-suited for applications where frequent insertions and deletions occur, and maintaining strict balance is important.</li>
+</ul></li>
+</ul>
+<p><br></p>
+</section>
+</div>
+</div>
+</div>
+<p><br></p>
+<section id="red-black" class="level5 lead">
+<h5 class="anchored" data-anchor-id="red-black">Red-Black</h5>
+</section>
+<p><br></p>
+<div class="callout callout-style-simple callout-note no-icon callout-titled" title="Red-Black Trees" style="border-left:none; border-right:none; border-top:none; border-bottom:none;">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-12-contents" aria-controls="callout-12" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Red-Black Trees
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-12" class="callout-12-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><br></p>
+<section id="properties-1" class="level6">
+<h6 class="anchored" data-anchor-id="properties-1">Properties</h6>
+<ul>
+<li><p>A Red-Black tree is a binary search tree with an extra bit of storage per node: its color, which can be either red or black.</p></li>
+<li><p>The tree satisfies several properties:</p>
+<ol type="1">
+<li>Every node is either red or black.</li>
+<li>The root is always black.</li>
+<li>All leaves (NIL nodes) are black.</li>
+<li>Red nodes cannot have red children <em>(no two red nodes can be adjacent)</em>.</li>
+<li>Every path from a node to its descendant NIL nodes must have the same number of black nodes <em>(black height)</em>.</li>
+</ol></li>
+</ul>
+<p><br></p>
+</section>
+<section id="balancing-1" class="level6">
+<h6 class="anchored" data-anchor-id="balancing-1">Balancing</h6>
+<ul>
+<li>The tree is kept balanced by performing rotations and color changes during insertions and deletions.</li>
+</ul>
+<p><br></p>
+</section>
+<section id="time-1" class="level6">
+<h6 class="anchored" data-anchor-id="time-1">Time</h6>
+<ul>
+<li><p><strong>Time Complexity:</strong></p>
+<ul>
+<li><strong>Search</strong>, <strong>Insertion</strong>, <strong>Deletion:</strong> <span class="math inline">\(\text{O(log n)}\)</span>.</li>
+</ul></li>
+</ul>
+<p><br></p>
+</section>
+<section id="usage-25" class="level6">
+<h6 class="anchored" data-anchor-id="usage-25">Usage</h6>
+<ul>
+<li><p><strong>Use Cases:</strong></p>
+<ul>
+<li>Red-Black trees are used in many systems, such as the Linux kernel’s process scheduling and in standard libraries like C++’s std::map and std::set, due to their relatively simple implementation and good performance.</li>
+</ul></li>
+</ul>
+<p><br></p>
+</section>
+</div>
+</div>
+</div>
+<p><br></p>
+<section id="balanced-tree" class="level5 lead">
+<h5 class="anchored" data-anchor-id="balanced-tree">Balanced Tree</h5>
+</section>
+<p><br></p>
+<div class="callout callout-style-simple callout-note no-icon callout-titled" title="B-Trees" style="border-left:none; border-right:none; border-top:none; border-bottom:none;">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-13-contents" aria-controls="callout-13" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+B-Trees
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-13" class="callout-13-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><br></p>
+<section id="properties-2" class="level6">
+<h6 class="anchored" data-anchor-id="properties-2">Properties</h6>
+<ul>
+<li>A B-tree is a self-balancing search tree in which nodes can have more than two children. It’s commonly used in databases and file systems.</li>
+<li>A B-tree of order <code>m</code> can have at most <code>m-1</code> keys and <code>m</code> children.</li>
+<li>All leaf nodes are at the same depth, and internal nodes act as a guide to direct searches.</li>
+</ul>
+<p><br></p>
+</section>
+<section id="balancing-2" class="level6">
+<h6 class="anchored" data-anchor-id="balancing-2">Balancing</h6>
+<ul>
+<li>Balancing in B-trees is achieved through splitting and merging nodes.</li>
+<li>When a node in a B-tree becomes too full <em>(i.e., has more than m-1 keys)</em>, it is split into two nodes, and the middle key is pushed up to the parent node.</li>
+<li>When a node has too few keys, it may borrow keys from its neighbors or merge with a neighboring node.</li>
+</ul>
+<p><br></p>
+</section>
+<section id="time-2" class="level6">
+<h6 class="anchored" data-anchor-id="time-2">Time</h6>
+<ul>
+<li><p><strong>Time Complexity:</strong></p>
+<ul>
+<li><strong>Search</strong>, <strong>Insertion</strong>, <strong>Deletion:</strong> <span class="math inline">\(\text{O(log n)}\)</span>.</li>
+</ul></li>
+</ul>
+<p><br></p>
+</section>
+<section id="usage-26" class="level6">
+<h6 class="anchored" data-anchor-id="usage-26">Usage</h6>
+<ul>
+<li><p><strong>Use Cases:</strong></p>
+<ul>
+<li>B-trees are particularly effective for systems that read and write large blocks of data, such as databases and file systems, where minimizing disk I/O operations is critical.</li>
+</ul></li>
+</ul>
+<p><br></p>
+</section>
+</div>
+</div>
+</div>
+<p><br></p>
+<hr>
+<section id="wrap-up" class="level6 lead">
+<h6 class="anchored" data-anchor-id="wrap-up"><strong>Wrap-up</strong></h6>
+</section>
+<p><br></p>
+<div class="callout callout-style-simple callout-note no-icon callout-titled" title="Comparison Summary" style="border-left:none; border-right:none; border-top:none; border-bottom:none;">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-14-contents" aria-controls="callout-14" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Comparison Summary
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-14" class="callout-14-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li><strong>AVL Trees:</strong> Strictly balanced, more rotations, better for search-heavy applications.</li>
+<li><strong>Red-Black Trees:</strong> Looser balancing, fewer rotations, generally faster insertions and deletions.</li>
+<li><strong>B-Trees:</strong> Optimized for storage systems, used in databases, and file systems for handling large volumes of data.</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="callout callout-style-simple callout-note no-icon callout-titled" title="Tree Traversal" style="border-left:none; border-right:none; border-top:none; border-bottom:none;">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-15-contents" aria-controls="callout-15" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tree Traversal
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-15" class="callout-15-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li><em>Pre-Order Traversal (NLR)</em> - Node, Left, Right</li>
+<li><em>In-Order Traversal (LNR)</em> - Left, Node, Right</li>
+<li><em>Post-Order Traversal (LRN)</em> - Left, Right, Node</li>
+</ul>
+</div>
+</div>
+</div>
+<p><br></p>
+<hr>
+<p><br></p>
+<section id="pre-order-traversal-nlr" class="level5 lead">
+<h5 class="anchored" data-anchor-id="pre-order-traversal-nlr">Pre-Order Traversal (NLR)</h5>
+</section>
+<p><br></p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-32-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-32-1" role="tab" aria-controls="tabset-32-1" aria-selected="true">Order:</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-32-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-32-2" role="tab" aria-controls="tabset-32-2" aria-selected="false">Process:</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-32-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-32-3" role="tab" aria-controls="tabset-32-3" aria-selected="false">Examples:</a></li></ul>
+<div class="tab-content">
+<div id="tabset-32-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-32-1-tab">
+<div class="text-center">
+<p><strong>N</strong>ode → <strong>L</strong>eft → <strong>R</strong>ight</p>
+</div>
+</div>
+<div id="tabset-32-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-32-2-tab">
+<ul>
+<li>Visit the <strong>Node</strong> first.</li>
+<li>Then recursively visit the <strong>Left</strong> subtree.</li>
+<li>Finally, visit the <strong>Right</strong> subtree.</li>
+</ul>
+</div>
+<div id="tabset-32-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-32-3-tab">
+<p>If you have a tree like this:</p>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">graph TD
+  A["Root A"] --&gt; B["Left B"]
+  A --&gt; C["Right C"]
+  B --&gt; D["Leaf D"]
+  B --&gt; E["Leaf E"]
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<ul>
+<li>The Pre-Order traversal would be: <strong>A B D E C</strong></li>
+</ul>
+</div>
+</div>
+</div>
+<p><br></p>
+<section id="in-order-traversal-lnr" class="level5 lead">
+<h5 class="anchored" data-anchor-id="in-order-traversal-lnr">In-Order Traversal (LNR)</h5>
+</section>
+<p><br></p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-33-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-33-1" role="tab" aria-controls="tabset-33-1" aria-selected="true">Order:</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-33-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-33-2" role="tab" aria-controls="tabset-33-2" aria-selected="false">Process:</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-33-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-33-3" role="tab" aria-controls="tabset-33-3" aria-selected="false">Example:</a></li></ul>
+<div class="tab-content">
+<div id="tabset-33-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-33-1-tab">
+<div class="text-center">
+<p><strong>L</strong>eft → <strong>N</strong>ode → <strong>R</strong>ight</p>
+</div>
+</div>
+<div id="tabset-33-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-33-2-tab">
+<ul>
+<li>Recursively visit the <strong>Left</strong> subtree.</li>
+<li>Then visit the <strong>Node</strong>.</li>
+<li>Finally, visit the <strong>Right</strong> subtree.</li>
+</ul>
+</div>
+<div id="tabset-33-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-33-3-tab">
+<p>For the same tree:</p>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">graph TD
+  A["Root A"] --&gt; B["Left B"]
+  A --&gt; C["Right C"]
+  B --&gt; D["Leaf D"]
+  B --&gt; E["Leaf E"]
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<ul>
+<li>The In-Order traversal would be: <strong>D B E A C</strong></li>
+</ul>
+</div>
+</div>
+</div>
+<p><br></p>
+<section id="post-order-traversal-lrn" class="level5 lead">
+<h5 class="anchored" data-anchor-id="post-order-traversal-lrn">Post-Order Traversal (LRN)</h5>
+</section>
+<p><br></p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-34-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-34-1" role="tab" aria-controls="tabset-34-1" aria-selected="true">Order:</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-34-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-34-2" role="tab" aria-controls="tabset-34-2" aria-selected="false">Process:</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-34-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-34-3" role="tab" aria-controls="tabset-34-3" aria-selected="false">Examples:</a></li></ul>
+<div class="tab-content">
+<div id="tabset-34-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-34-1-tab">
+<div class="text-center">
+<p><strong>L</strong>eft → <strong>R</strong>ight → <strong>N</strong>ode</p>
+</div>
+</div>
+<div id="tabset-34-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-34-2-tab">
+<ul>
+<li>Recursively visit the <strong>Left</strong> subtree.</li>
+<li>Then visit the <strong>Right</strong> subtree.</li>
+<li>Finally, visit the <strong>Node</strong>.</li>
+</ul>
+</div>
+<div id="tabset-34-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-34-3-tab">
+<p>For the same tree:</p>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">graph TD
+  A["Root A"] --&gt; B["Left B"]
+  A --&gt; C["Right C"]
+  B --&gt; D["Leaf D"]
+  B --&gt; E["Leaf E"]
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<ul>
+<li>The Post-Order traversal would be: <strong>D E B C A</strong></li>
+</ul>
+</div>
+</div>
+</div>
+<p><br></p>
+<hr>
+<section id="wrap-up-1" class="level6 lead">
+<h6 class="anchored" data-anchor-id="wrap-up-1"><strong>Wrap-up</strong></h6>
+</section>
+<p><br></p>
+<div class="callout callout-style-simple callout-note no-icon callout-titled" title="How to Remember Them:" style="border-left:none; border-right:none; border-top:none; border-bottom:none;">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-16-contents" aria-controls="callout-16" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+How to Remember Them:
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-16" class="callout-16-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li><strong>Pre-Order (NLR):</strong> Think of “Pre” as “before” - you process the Node before anything else.</li>
+<li><strong>In-Order (LNR):</strong> “In” implies “in between” - the Node is processed in between the Left and Right subtrees.</li>
+<li><strong>Post-Order (LRN):</strong> “Post” means “after” - the Node is processed after the subtrees.</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="callout callout-style-simple callout-note no-icon callout-titled" title="Visual Mnemonic:" style="border-left:none; border-right:none; border-top:none; border-bottom:none;">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-17-contents" aria-controls="callout-17" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Visual Mnemonic:
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-17" class="callout-17-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li><strong>Pre-Order:</strong> Imagine starting at the root and touching it first.</li>
+<li><strong>In-Order:</strong> Imagine walking along the edge of the tree, touching the left side first, then the root, and then the right side.</li>
+<li><strong>Post-Order:</strong> Imagine leaving the tree by processing the children before the root.</li>
+</ul>
+</div>
+</div>
+</div>
+<p><br></p>
+<hr>
 <p><br></p>
 
 
