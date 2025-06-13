@@ -1216,37 +1216,37 @@ This makes searching and other operations more efficient.
 
 ::: {.callout-note title="Common Big Os" collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
 
-  1. **`$O(1)$ - Constant Time`:**
+  1. **`O(1) - Constant Time`:**
       - **Description:** The algorithm takes the same amount of time to execute regardless of the size of the input.
       - **Example:** Accessing an element in an array by index.
       - **Efficiency:** Excellent.
 
-  2. **`$\text{O(log n)}$ - Logarithmic Time`:**
+  2. **`O(log n) - Logarithmic Time`:**
       - **Description:** The runtime increases logarithmically as the input size increases. Typically occurs in algorithms that halve the problem size at each step, like binary search.
       - **Example:** Binary search.
       - **Efficiency:** Very good for large inputs.
 
-  3. **`$O(n)$ - Linear Time`:**
+  3. **`O(n) - Linear Time`:**
       - **Description:** The runtime increases linearly with the size of the input. If you double the input size, the runtime also doubles.
       - **Example:** Linear search, iterating through a list.
       - **Efficiency:** Reasonable for moderate to large inputs.
 
-  4. **`$\text{O(n log n)}$ - Log-Linear Time`:**
+  4. **`O(n log n) - Log-Linear Time`:**
       - **Description:** The runtime increases more than linearly but less than quadratically. Common in efficient sorting algorithms like merge sort and quicksort.
       - **Example:** Merge sort, quicksort, heap sort.
       - **Efficiency:** Efficient for large inputs.
 
-  5. **`$O(n^2)$ - Quadratic Time`:**
+  5. **`O(n^2) - Quadratic Time`:**
       - **Description:** The runtime increases quadratically with the size of the input. If you double the input size, the runtime quadruples.
       - **Example:** Bubble sort, insertion sort, selection sort *(for unsorted arrays)*.
       - **Efficiency:** Poor for large inputs.
 
-  6. **`$O(2n)$ - Exponential Time`:**
+  6. **`O(2n) - Exponential Time`:**
       - **Description:** The runtime doubles with each additional element in the input. Common in algorithms that solve problems by brute force or explore all possible solutions.
       - **Example:** Recursive algorithms for the Fibonacci sequence, certain dynamic programming problems.
       - **Efficiency:** Very poor, impractical for large inputs.
 
-  7. **`$O(n!)$ - Factorial Time`:**
+  7. **`O(n!) - Factorial Time`:**
       - **Description:** The runtime increases factorially with the size of the input. Common in algorithms that generate all permutations of an input set.
       - **Example:** Traveling salesman problem via brute force.
       - **Efficiency:** Extremely poor, infeasible for even moderate input sizes.
@@ -1391,7 +1391,7 @@ performed on the data and the way the data is stored in memory.
 
 C/C++
 
-```{cpp cEnum}
+```{r cEnum}
 enum Direction {
     NORTH,
     EAST,
@@ -1404,7 +1404,7 @@ Direction dir = NORTH;
 
 Java
 
-```{java javaEnum}
+```{r javaEnum}
 public enum Direction {
     NORTH,
     EAST,
@@ -1769,7 +1769,7 @@ print(numbers)  # Output: [1, 1, 3, 4, 5, 9]
 
 **Example:**
 
-```{pythonReverse}
+```{python pythonReverse}
 numbers = [1, 2, 3, 4]
 numbers.reverse()
 print(numbers)  # Output: [4, 3, 2, 1]
@@ -1809,6 +1809,8 @@ print(fruits_copy)  # Output: ['apple', 'banana', 'orange']
   - It is commonly used to model entities in databases and programming, allowing for structured and organized data storage. 
   - Records are versatile and can represent complex objects with multiple attributes, making them essential in many applications.
   - In Python, a **Record** is typically implemented as a **class**, a `namedtuple`, or a `dataclass`. Each of these provides a way to group multiple fields *(attributes)* together under one name, similar to how a record in other languages might work.
+
+<br>
 
 ::: {.lead}
 ##### Stack
@@ -1991,9 +1993,9 @@ print(fruits_copy)  # Output: ['apple', 'banana', 'orange']
     - A **hash function** is a function that converts input (key) into a fixed-size value, typically an integer, which serves as an index in the hash table array.
      - A good hash function has the following properties:
      
-        - **Deterministic:** The same key always produces the same hash value.
-        - **Uniform Distribution:** The hash values should be distributed uniformly across the array to minimize collisions.
-        - **Fast Computation:** The function should be quick to compute.
+      - **Deterministic:** The same key always produces the same hash value.
+      - **Uniform Distribution:** The hash values should be distributed uniformly across the array to minimize collisions.
+      - **Fast Computation:** The function should be quick to compute.
 
   - **Hash Keys**
   
@@ -2005,18 +2007,22 @@ print(fruits_copy)  # Output: ['apple', 'banana', 'orange']
 
 ###### **How to perform hash function on calculator**
 
-To determine where the data associated with the last 4 digits of the Social 
-Security number ('2023') will be stored in the array, follow these steps:
+To determine where the data associated with the last 4 digits of the Social Security number ('2023') will be stored in the array, follow these steps:
 
   **1.** Understand the Hash Function: The problem specifies a hash function given by key % 1009. Here, % denotes the modulus operation. This operation returns the remainder of the division of key by 1009.
+
   **2.** Determine the Key: The last 4 digits of the Social Security number are '2023'. Therefore, the key you're interested in is 2023.
+
   **3.** Apply the Hash Function: Use the hash function to find the index in the array where the data should be stored. Specifically, you need to compute:
+
     a. Key / Hash - (whole number in result) * Hash
       i. For this example
         1. (2023 / 1009) = 2.004955401
         2. 2.004955401 - 2 = 0.004955401
         3. 0.004955401 * 1009 = 5
+
   **4.** By calculating the remainder, you will find the index in the array soc where the data associated with the key '2023' will be stored.
+
     a. soc[5]
 
 <br>
