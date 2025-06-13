@@ -106,9 +106,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-label": "Search"
   }
 }</script>
-<script src="site_libs/quarto-diagram/mermaid.min.js"></script>
-<script src="site_libs/quarto-diagram/mermaid-init.js"></script>
-<link href="site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 <link href="site_libs/vembedr-0.1.5/css/vembedr.css" rel="stylesheet">
 
 
@@ -2856,21 +2853,11 @@ Tree Traversal
 </div>
 <div id="tabset-32-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-32-3-tab">
 <p>If you have a tree like this:</p>
-<div class="cell" data-layout-align="default">
-<div class="cell-output-display">
-<div>
-<p></p><figure class="figure"><p></p>
-<div>
-<pre class="mermaid mermaid-js">flowchart TB
-  A --&gt; B
-  A --&gt; C
-  B --&gt; D
-  B --&gt; E
-</pre>
-</div>
-<p></p></figure><p></p>
-</div>
-</div>
+<div class="cell">
+<pre class="text cell-code"><code>A --&gt; B
+A --&gt; C
+B --&gt; D
+B --&gt; E</code></pre>
 </div>
 <ul>
 <li>The Pre-Order traversal would be: <strong>A B D E C</strong></li>
@@ -2900,21 +2887,11 @@ Tree Traversal
 </div>
 <div id="tabset-33-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-33-3-tab">
 <p>For the same tree:</p>
-<div class="cell" data-layout-align="default">
-<div class="cell-output-display">
-<div>
-<p></p><figure class="figure"><p></p>
-<div>
-<pre class="mermaid mermaid-js">flowchart TB
-  A --&gt; B
-  A --&gt; C
-  B --&gt; D
-  B --&gt; E
-</pre>
-</div>
-<p></p></figure><p></p>
-</div>
-</div>
+<div class="cell">
+<pre class="text cell-code"><code>A --&gt; B
+A --&gt; C
+B --&gt; D
+B --&gt; E</code></pre>
 </div>
 <ul>
 <li>The In-Order traversal would be: <strong>D B E A C</strong></li>
@@ -2944,21 +2921,11 @@ Tree Traversal
 </div>
 <div id="tabset-34-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-34-3-tab">
 <p>For the same tree:</p>
-<div class="cell" data-layout-align="default">
-<div class="cell-output-display">
-<div>
-<p></p><figure class="figure"><p></p>
-<div>
-<pre class="mermaid mermaid-js">flowchart TB
-  A --&gt; B
-  A --&gt; C
-  B --&gt; D
-  B --&gt; E
-</pre>
-</div>
-<p></p></figure><p></p>
-</div>
-</div>
+<div class="cell">
+<pre class="text cell-code"><code>A --&gt; B
+A --&gt; C
+B --&gt; D
+B --&gt; E</code></pre>
 </div>
 <ul>
 <li>The Post-Order traversal would be: <strong>D E B C A</strong></li>
