@@ -30,6 +30,8 @@ format:
     toc-options:
       smooth-scroll: true
     page-layout: full
+    grid:
+      body-width: 975px
   pdf:
     documentclass: scrreprt
 
