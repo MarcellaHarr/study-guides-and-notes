@@ -1613,43 +1613,43 @@ Common Big Os
 <div id="callout-6" class="callout-6-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <ol type="1">
-<li><strong><code>$O(1)$ - Constant Time</code>:</strong>
+<li><strong><code>O(1) - Constant Time</code>:</strong>
 <ul>
 <li><strong>Description:</strong> The algorithm takes the same amount of time to execute regardless of the size of the input.</li>
 <li><strong>Example:</strong> Accessing an element in an array by index.</li>
 <li><strong>Efficiency:</strong> Excellent.</li>
 </ul></li>
-<li><strong><code>$\text{O(log n)}$ - Logarithmic Time</code>:</strong>
+<li><strong><code>O(log n) - Logarithmic Time</code>:</strong>
 <ul>
 <li><strong>Description:</strong> The runtime increases logarithmically as the input size increases. Typically occurs in algorithms that halve the problem size at each step, like binary search.</li>
 <li><strong>Example:</strong> Binary search.</li>
 <li><strong>Efficiency:</strong> Very good for large inputs.</li>
 </ul></li>
-<li><strong><code>$O(n)$ - Linear Time</code>:</strong>
+<li><strong><code>O(n) - Linear Time</code>:</strong>
 <ul>
 <li><strong>Description:</strong> The runtime increases linearly with the size of the input. If you double the input size, the runtime also doubles.</li>
 <li><strong>Example:</strong> Linear search, iterating through a list.</li>
 <li><strong>Efficiency:</strong> Reasonable for moderate to large inputs.</li>
 </ul></li>
-<li><strong><code>$\text{O(n log n)}$ - Log-Linear Time</code>:</strong>
+<li><strong><code>O(n log n) - Log-Linear Time</code>:</strong>
 <ul>
 <li><strong>Description:</strong> The runtime increases more than linearly but less than quadratically. Common in efficient sorting algorithms like merge sort and quicksort.</li>
 <li><strong>Example:</strong> Merge sort, quicksort, heap sort.</li>
 <li><strong>Efficiency:</strong> Efficient for large inputs.</li>
 </ul></li>
-<li><strong><code>$O(n^2)$ - Quadratic Time</code>:</strong>
+<li><strong><code>O(n^2) - Quadratic Time</code>:</strong>
 <ul>
 <li><strong>Description:</strong> The runtime increases quadratically with the size of the input. If you double the input size, the runtime quadruples.</li>
 <li><strong>Example:</strong> Bubble sort, insertion sort, selection sort <em>(for unsorted arrays)</em>.</li>
 <li><strong>Efficiency:</strong> Poor for large inputs.</li>
 </ul></li>
-<li><strong><code>$O(2n)$ - Exponential Time</code>:</strong>
+<li><strong><code>O(2n) - Exponential Time</code>:</strong>
 <ul>
 <li><strong>Description:</strong> The runtime doubles with each additional element in the input. Common in algorithms that solve problems by brute force or explore all possible solutions.</li>
 <li><strong>Example:</strong> Recursive algorithms for the Fibonacci sequence, certain dynamic programming problems.</li>
 <li><strong>Efficiency:</strong> Very poor, impractical for large inputs.</li>
 </ul></li>
-<li><strong><code>$O(n!)$ - Factorial Time</code>:</strong>
+<li><strong><code>O(n!) - Factorial Time</code>:</strong>
 <ul>
 <li><strong>Description:</strong> The runtime increases factorially with the size of the input. Common in algorithms that generate all permutations of an input set.</li>
 <li><strong>Example:</strong> Traveling salesman problem via brute force.</li>
@@ -2225,9 +2225,12 @@ Calculation Rules
 </ul>
 <p><strong>Example:</strong></p>
 <div class="cell">
-<pre class="pythonreverse cell-code"><code>numbers = [1, 2, 3, 4]
-numbers.reverse()
-print(numbers)  # Output: [4, 3, 2, 1]</code></pre>
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>numbers <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>]</span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>numbers.reverse()</span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(numbers)  <span class="co"># Output: [4, 3, 2, 1]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[4, 3, 2, 1]</code></pre>
+</div>
 </div>
 <ul>
 <li><strong>copy()</strong>
@@ -2238,9 +2241,9 @@ print(numbers)  # Output: [4, 3, 2, 1]</code></pre>
 </ul>
 <p><strong>Example:</strong></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>fruits <span class="op">=</span> [<span class="st">"apple"</span>, <span class="st">"banana"</span>, <span class="st">"orange"</span>]</span>
-<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>fruits_copy <span class="op">=</span> fruits.copy()</span>
-<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(fruits_copy)  <span class="co"># Output: ['apple', 'banana', 'orange']</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>fruits <span class="op">=</span> [<span class="st">"apple"</span>, <span class="st">"banana"</span>, <span class="st">"orange"</span>]</span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>fruits_copy <span class="op">=</span> fruits.copy()</span>
+<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(fruits_copy)  <span class="co"># Output: ['apple', 'banana', 'orange']</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>['apple', 'banana', 'orange']</code></pre>
 </div>
@@ -2267,6 +2270,7 @@ print(numbers)  # Output: [4, 3, 2, 1]</code></pre>
 <li>Records are versatile and can represent complex objects with multiple attributes, making them essential in many applications.</li>
 <li>In Python, a <strong>Record</strong> is typically implemented as a <strong>class</strong>, a <code>namedtuple</code>, or a <code>dataclass</code>. Each of these provides a way to group multiple fields <em>(attributes)</em> together under one name, similar to how a record in other languages might work.</li>
 </ul>
+<p><br></p>
 </section>
 <section id="stack-1" class="level5 lead">
 <h5 class="anchored" data-anchor-id="stack-1">Stack</h5>
@@ -2478,9 +2482,9 @@ Hash Table
 </ul></li>
 </ul>
 <p><strong>Hash Function</strong> - A <strong>hash function</strong> is a function that converts input (key) into a fixed-size value, typically an integer, which serves as an index in the hash table array. - A good hash function has the following properties:</p>
-<pre><code>    - **Deterministic:** The same key always produces the same hash value.
-    - **Uniform Distribution:** The hash values should be distributed uniformly across the array to minimize collisions.
-    - **Fast Computation:** The function should be quick to compute.</code></pre>
+<pre><code>  - **Deterministic:** The same key always produces the same hash value.
+  - **Uniform Distribution:** The hash values should be distributed uniformly across the array to minimize collisions.
+  - **Fast Computation:** The function should be quick to compute.</code></pre>
 <ul>
 <li><p><strong>Hash Keys</strong></p>
 <ul>
@@ -2493,7 +2497,16 @@ Hash Table
 <section id="how-to-perform-hash-function-on-calculator" class="level6">
 <h6 class="anchored" data-anchor-id="how-to-perform-hash-function-on-calculator"><strong>How to perform hash function on calculator</strong></h6>
 <p>To determine where the data associated with the last 4 digits of the Social Security number (‘2023’) will be stored in the array, follow these steps:</p>
-<p><strong>1.</strong> Understand the Hash Function: The problem specifies a hash function given by key % 1009. Here, % denotes the modulus operation. This operation returns the remainder of the division of key by 1009. <strong>2.</strong> Determine the Key: The last 4 digits of the Social Security number are ‘2023’. Therefore, the key you’re interested in is 2023. <strong>3.</strong> Apply the Hash Function: Use the hash function to find the index in the array where the data should be stored. Specifically, you need to compute: a. Key / Hash - (whole number in result) * Hash i. For this example 1. (2023 / 1009) = 2.004955401 2. 2.004955401 - 2 = 0.004955401 3. 0.004955401 * 1009 = 5 <strong>4.</strong> By calculating the remainder, you will find the index in the array soc where the data associated with the key ‘2023’ will be stored. a. soc[5]</p>
+<p><strong>1.</strong> Understand the Hash Function: The problem specifies a hash function given by key % 1009. Here, % denotes the modulus operation. This operation returns the remainder of the division of key by 1009.</p>
+<p><strong>2.</strong> Determine the Key: The last 4 digits of the Social Security number are ‘2023’. Therefore, the key you’re interested in is 2023.</p>
+<p><strong>3.</strong> Apply the Hash Function: Use the hash function to find the index in the array where the data should be stored. Specifically, you need to compute:</p>
+<pre><code>a. Key / Hash - (whole number in result) * Hash
+  i. For this example
+    1. (2023 / 1009) = 2.004955401
+    2. 2.004955401 - 2 = 0.004955401
+    3. 0.004955401 * 1009 = 5</code></pre>
+<p><strong>4.</strong> By calculating the remainder, you will find the index in the array soc where the data associated with the key ‘2023’ will be stored.</p>
+<pre><code>a. soc[5]</code></pre>
 <p><br></p>
 </section>
 </div>
