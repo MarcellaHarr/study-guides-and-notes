@@ -1391,7 +1391,9 @@ performed on the data and the way the data is stored in memory.
 
 C/C++
 
-```{r cEnum}
+```{cpp cEnum}
+#| eval: false
+
 enum Direction {
     NORTH,
     EAST,
@@ -1404,7 +1406,9 @@ Direction dir = NORTH;
 
 Java
 
-```{r javaEnum}
+```{java javaEnum}
+#| eval: false
+
 public enum Direction {
     NORTH,
     EAST,
