@@ -3566,6 +3566,111 @@ for key in dictionary:
 </section>
 <section id="applies-algorithms---40" class="level2">
 <h2 class="anchored" data-anchor-id="applies-algorithms---40">Applies Algorithms - (40%)</h2>
+<p><br></p>
+<p>Variable declaration (dynamic vs static)</p>
+<p>The way variables are declared and managed in programming languages can be broadly categorized into <strong>static</strong> and <strong>dynamic</strong> types. This classification impacts how and when variables are allocated and accessed in memory.</p>
+<p><br></p>
+<div class="callout callout-style-simple callout-note no-icon callout-titled" title="Static Variable Declaration" style="border-left:none; border-right:none; border-top:none; border-bottom:none;">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-24-contents" aria-controls="callout-24" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Static Variable Declaration
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-24" class="callout-24-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><br></p>
+<section id="description-10" class="level6">
+<h6 class="anchored" data-anchor-id="description-10">Description</h6>
+<ul>
+<li><strong>Static</strong> variables are allocated memory at compile time, and their type and size are known before the program runs. The memory for static variables is typically allocated on the stack or in the data segment of memory.</li>
+</ul>
+<p><br></p>
+</section>
+<section id="characteristics" class="level6">
+<h6 class="anchored" data-anchor-id="characteristics">Characteristics</h6>
+<ol type="1">
+<li><strong>Fixed Size:</strong> The size and type of the variable are determined at compile time.</li>
+<li><strong>Memory Allocation:</strong> Memory is allocated during compilation and deallocated when the program exits or the variable goes out of scope.</li>
+<li><strong>Scope and Lifetime:</strong> - <strong>Scope:</strong> The scope <em>(visibility)</em> of static variables is determined by where they are declared <em>(e.g., within a function or globally)</em>. - <strong>Lifetime:</strong> The variable’s lifetime extends for the duration of the program or the block in which it is declared.</li>
+</ol>
+<p><br></p>
+</section>
+<section id="examples-6" class="level6">
+<h6 class="anchored" data-anchor-id="examples-6">Examples</h6>
+<p><strong>C/C++:</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb63"><pre class="sourceCode c code-with-copy"><code class="sourceCode c"><span id="cb63-1"><a href="#cb63-1" aria-hidden="true" tabindex="-1"></a><span class="dt">int</span> main<span class="op">()</span> <span class="op">{</span></span>
+<span id="cb63-2"><a href="#cb63-2" aria-hidden="true" tabindex="-1"></a>    <span class="dt">int</span> x <span class="op">=</span> <span class="dv">10</span><span class="op">;</span> <span class="co">// Static variable</span></span>
+<span id="cb63-3"><a href="#cb63-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="dv">0</span><span class="op">;</span></span>
+<span id="cb63-4"><a href="#cb63-4" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Here, <code>x</code> is a static variable with a fixed size and type, determined at compile time.</p>
+<p><strong>Java:</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb64"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript"><span id="cb64-1"><a href="#cb64-1" aria-hidden="true" tabindex="-1"></a><span class="kw">public</span> <span class="kw">class</span> Example {</span>
+<span id="cb64-2"><a href="#cb64-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">static</span> int x <span class="op">=</span> <span class="dv">10</span><span class="op">;</span> <span class="co">// Static class variable</span></span>
+<span id="cb64-3"><a href="#cb64-3" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>In Java, <code>x</code> is a static variable of the class <code>Example</code>, meaning it belongs to the class rather than any specific instance.</p>
+<p><br></p>
+</section>
+</div>
+</div>
+</div>
+<p><br></p>
+<div class="callout callout-style-simple callout-note no-icon callout-titled" title="Dynamic Variable Declaration" style="border-left:none; border-right:none; border-top:none; border-bottom:none;">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-25-contents" aria-controls="callout-25" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Dynamic Variable Declaration
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-25" class="callout-25-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><br></p>
+<section id="description-11" class="level6">
+<h6 class="anchored" data-anchor-id="description-11">Description</h6>
+<ul>
+<li><strong>Dynamic</strong> variables are allocated memory at runtime. Their type and size are determined while the program is executing, and they are often managed using dynamic memory allocation functions or constructs.</li>
+</ul>
+<p><br></p>
+</section>
+<section id="characteristics-1" class="level6">
+<h6 class="anchored" data-anchor-id="characteristics-1">Characteristics</h6>
+<ol type="1">
+<li><strong>Flexible Size:</strong> The size and type of the variable can be determined and adjusted at runtime.</li>
+<li><strong>Memory Allocation:</strong> Memory is allocated on the heap or through dynamic memory management constructs, and deallocated when no longer needed.</li>
+<li><strong>Scope and Lifetime:</strong> - <strong>Scope:</strong> The scope of dynamic variables is determined by how they are referenced in the code. - <strong>Lifetime:</strong> The lifetime of a dynamic variable extends from the point of allocation to the point of deallocation.</li>
+</ol>
+<p><br></p>
+</section>
+<section id="examples-7" class="level6">
+<h6 class="anchored" data-anchor-id="examples-7">Examples</h6>
+<p><strong>C/C++:</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb65"><pre class="sourceCode c code-with-copy"><code class="sourceCode c"><span id="cb65-1"><a href="#cb65-1" aria-hidden="true" tabindex="-1"></a><span class="dt">int</span><span class="op">*</span> ptr <span class="op">=</span> <span class="op">(</span><span class="dt">int</span><span class="op">*)</span> malloc<span class="op">(</span><span class="kw">sizeof</span><span class="op">(</span><span class="dt">int</span><span class="op">));</span> <span class="co">// Dynamic memory allocation</span></span>
+<span id="cb65-2"><a href="#cb65-2" aria-hidden="true" tabindex="-1"></a><span class="op">*</span>ptr <span class="op">=</span> <span class="dv">10</span><span class="op">;</span></span>
+<span id="cb65-3"><a href="#cb65-3" aria-hidden="true" tabindex="-1"></a>free<span class="op">(</span>ptr<span class="op">);</span> <span class="co">// Deallocate memory</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><strong>Python:</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb66"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb66-1"><a href="#cb66-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">=</span> [<span class="dv">10</span>]  <span class="co"># Dynamic variable (list with one element)</span></span>
+<span id="cb66-2"><a href="#cb66-2" aria-hidden="true" tabindex="-1"></a><span class="fu">x.append</span>(<span class="dv">20</span>)  <span class="co"># Modify the list</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>In Python, <code>x</code> can dynamically grow in size as new elements are added to the list.</p>
+<p><br></p>
+</section>
+</div>
+</div>
+</div>
+<p><br></p>
 
 
 </section>
