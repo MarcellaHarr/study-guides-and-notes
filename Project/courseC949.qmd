@@ -2588,7 +2588,7 @@ D   E
 
 ## Usage:
 
--
+  - Ideal for modeling relationships and connections, such as social networks, transportation networks, and dependency graphs in project management.
 
 :::
 
@@ -2938,10 +2938,6 @@ alice_number = phone_book.setdefault('Alice', '555-0000')
 ```
 
 If `'Alice'` is in `phone_book`, it returns her number. Otherwise, it adds `'Alice': '555-0000'` to phone_book and returns `'555-0000'`.
-
-<br>
-
-:::
 
 <br>
 
