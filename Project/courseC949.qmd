@@ -2980,8 +2980,7 @@ when variables are allocated and accessed in memory.
 ###### Examples
 
 **C/C++:**
-```{r staticCPP}
-| eval: FALSE
+```{r staticCPP, engine="c", eval=FALSE}
 int main() {
     int x = 10; // Static variable
     return 0;
@@ -2991,8 +2990,7 @@ int main() {
 Here, `x` is a static variable with a fixed size and type, determined at compile time.
 
 **Java:**
-```{r staticJava}
-| eval: FALSE
+```{r staticJava, engine="js", eval=FALSE}
 public class Example {
     static int x = 10; // Static class variable
 }
@@ -3030,16 +3028,14 @@ the class rather than any specific instance.
 ###### Examples
 
 **C/C++:**
-```{r dynamicCPP}
-| eval: FALSE
+```{r dynamicCPP, engine="c", eval=FALSE}
 int* ptr = (int*) malloc(sizeof(int)); // Dynamic memory allocation
 *ptr = 10;
 free(ptr); // Deallocate memory
 ```
 
 **Python:**
-```{r dynamicPython}
-| eval: FALSE
+```{r dynamicPython, eval=FALSE}
 x = [10]  # Dynamic variable (list with one element)
 x.append(20)  # Modify the list
 ```
