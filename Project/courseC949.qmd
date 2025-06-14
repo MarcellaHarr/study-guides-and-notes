@@ -2946,3 +2946,108 @@ If `'Alice'` is in `phone_book`, it returns her number. Otherwise, it adds `'Ali
 <br>
 
 ## Applies Algorithms - (40%)
+
+<br>
+
+Variable declaration (dynamic vs static)
+
+The way variables are declared and managed in programming languages can be broadly 
+categorized into **static** and **dynamic** types. This classification impacts how and 
+when variables are allocated and accessed in memory.
+
+<br>
+
+::: {.callout-note title="Static Variable Declaration" collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
+
+<br>
+
+###### Description
+
+  - **Static** variables are allocated memory at compile time, and their type and size are known before the program runs. The memory for static variables is typically allocated on the stack or in the data segment of memory.
+
+<br>
+
+###### Characteristics
+
+  1. **Fixed Size:** The size and type of the variable are determined at compile time.
+  2. **Memory Allocation:** Memory is allocated during compilation and deallocated when the program exits or the variable goes out of scope.
+  3. **Scope and Lifetime:**
+    - **Scope:** The scope *(visibility)* of static variables is determined by where they are declared *(e.g., within a function or globally)*.
+    - **Lifetime:** The variable's lifetime extends for the duration of the program or the block in which it is declared.
+
+<br>
+
+###### Examples
+
+**C/C++:**
+```{r staticCPP}
+| eval: FALSE
+int main() {
+    int x = 10; // Static variable
+    return 0;
+}
+```
+
+Here, `x` is a static variable with a fixed size and type, determined at compile time.
+
+**Java:**
+```{r staticJava}
+| eval: FALSE
+public class Example {
+    static int x = 10; // Static class variable
+}
+```
+
+In Java, `x` is a static variable of the class `Example`, meaning it belongs to 
+the class rather than any specific instance.
+
+<br>
+
+:::
+
+<br>
+
+::: {.callout-note title="Dynamic Variable Declaration" collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
+
+<br>
+
+###### Description
+
+  - **Dynamic** variables are allocated memory at runtime. Their type and size are determined while the program is executing, and they are often managed using dynamic memory allocation functions or constructs.
+
+<br>
+
+###### Characteristics
+
+  1. **Flexible Size:** The size and type of the variable can be determined and adjusted at runtime.
+  2. **Memory Allocation:** Memory is allocated on the heap or through dynamic memory management constructs, and deallocated when no longer needed.
+  3. **Scope and Lifetime:**
+    - **Scope:** The scope of dynamic variables is determined by how they are referenced in the code.
+    - **Lifetime:** The lifetime of a dynamic variable extends from the point of allocation to the point of deallocation.
+
+<br>
+
+###### Examples
+
+**C/C++:**
+```{r dynamicCPP}
+| eval: FALSE
+int* ptr = (int*) malloc(sizeof(int)); // Dynamic memory allocation
+*ptr = 10;
+free(ptr); // Deallocate memory
+```
+
+**Python:**
+```{r dynamicPython}
+| eval: FALSE
+x = [10]  # Dynamic variable (list with one element)
+x.append(20)  # Modify the list
+```
+
+In Python, `x` can dynamically grow in size as new elements are added to the list.
+
+<br>
+
+:::
+
+<br>
