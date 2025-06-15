@@ -442,7 +442,25 @@ window.Quarto = {
   <li><a href="#key-operations-in-a-dictionarymap" id="toc-key-operations-in-a-dictionarymap" class="nav-link" data-scroll-target="#key-operations-in-a-dictionarymap">Key Operations in a Dictionary/Map</a></li>
   </ul></li>
   </ul></li>
-  <li><a href="#applies-algorithms---40" id="toc-applies-algorithms---40" class="nav-link" data-scroll-target="#applies-algorithms---40">Applies Algorithms - (40%)</a></li>
+  <li><a href="#applies-algorithms---40" id="toc-applies-algorithms---40" class="nav-link" data-scroll-target="#applies-algorithms---40">Applies Algorithms - (40%)</a>
+  <ul>
+  <li><a href="#strongly-typed-vs-weakly-typed" id="toc-strongly-typed-vs-weakly-typed" class="nav-link" data-scroll-target="#strongly-typed-vs-weakly-typed">Strongly-typed vs Weakly-typed</a>
+  <ul>
+  <li><a href="#strongly-typed-languages" id="toc-strongly-typed-languages" class="nav-link" data-scroll-target="#strongly-typed-languages">Strongly-Typed Languages</a></li>
+  <li><a href="#weakly-typed-languages" id="toc-weakly-typed-languages" class="nav-link" data-scroll-target="#weakly-typed-languages">Weakly-typed Languages</a></li>
+  </ul></li>
+  <li><a href="#assignment-operators" id="toc-assignment-operators" class="nav-link" data-scroll-target="#assignment-operators">Assignment operators</a>
+  <ul>
+  <li><a href="#order-of-operations-precedence-rules" id="toc-order-of-operations-precedence-rules" class="nav-link" data-scroll-target="#order-of-operations-precedence-rules">Order of operations / precedence rules</a></li>
+  <li><a href="#loops" id="toc-loops" class="nav-link" data-scroll-target="#loops">Loops</a></li>
+  <li><a href="#conditional-statements-branching" id="toc-conditional-statements-branching" class="nav-link" data-scroll-target="#conditional-statements-branching">Conditional statements / branching</a></li>
+  <li><a href="#classes" id="toc-classes" class="nav-link" data-scroll-target="#classes">Classes</a></li>
+  <li><a href="#components-of-a-class" id="toc-components-of-a-class" class="nav-link" data-scroll-target="#components-of-a-class">Components of a Class</a></li>
+  <li><a href="#inheritance" id="toc-inheritance" class="nav-link" data-scroll-target="#inheritance">Inheritance</a></li>
+  <li><a href="#encapsulation" id="toc-encapsulation" class="nav-link" data-scroll-target="#encapsulation">Encapsulation</a></li>
+  <li><a href="#polymorphism" id="toc-polymorphism" class="nav-link" data-scroll-target="#polymorphism">Polymorphism</a></li>
+  </ul></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -3567,7 +3585,7 @@ for key in dictionary:
 <section id="applies-algorithms---40" class="level2">
 <h2 class="anchored" data-anchor-id="applies-algorithms---40">Applies Algorithms - (40%)</h2>
 <p><br></p>
-<p>Variable declaration (dynamic vs static)</p>
+<p>Variable declaration <strong>(dynamic vs static)</strong></p>
 <p>The way variables are declared and managed in programming languages can be broadly categorized into <strong>static</strong> and <strong>dynamic</strong> types. This classification impacts how and when variables are allocated and accessed in memory.</p>
 <p><br></p>
 <div class="callout callout-style-simple callout-note no-icon callout-titled" title="Static Variable Declaration" style="border-left:none; border-right:none; border-top:none; border-bottom:none;">
@@ -3671,8 +3689,636 @@ Dynamic Variable Declaration
 </div>
 </div>
 <p><br></p>
+<section id="strongly-typed-vs-weakly-typed" class="level4">
+<h4 class="anchored" data-anchor-id="strongly-typed-vs-weakly-typed">Strongly-typed vs Weakly-typed</h4>
+<section id="strongly-typed-languages" class="level5 lead">
+<h5 class="anchored" data-anchor-id="strongly-typed-languages">Strongly-Typed Languages</h5>
+</section>
+<p><br></p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-38-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-38-1" role="tab" aria-controls="tabset-38-1" aria-selected="true">Definition:</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-38-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-38-2" role="tab" aria-controls="tabset-38-2" aria-selected="false">Key Characteristics:</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-38-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-38-3" role="tab" aria-controls="tabset-38-3" aria-selected="false">Examples:</a></li></ul>
+<div class="tab-content">
+<div id="tabset-38-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-38-1-tab">
+<p>In strongly-typed languages, the type of a variable is strictly enforced. This means that once a variable is assigned a specific type, it cannot be implicitly converted to another type without explicit conversion.</p>
+</div>
+<div id="tabset-38-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-38-2-tab">
+<ul>
+<li><strong>Strict Type Enforcement:</strong> Operations between incompatible types will result in a compile-time or runtime error. For example, you cannot add a string to an integer without explicitly converting one of them.</li>
+<li><strong>Fewer Implicit Conversions:</strong> Strongly-typed languages avoid automatic type coercion, where one type is automatically converted to another.</li>
+<li><strong>Type Safety:</strong> The language provides more safety by catching type-related errors early, often at compile time.</li>
+</ul>
+</div>
+<div id="tabset-38-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-38-3-tab">
+<ul>
+<li><strong>Java:</strong> You cannot assign a string to an integer variable without explicit conversion.</li>
+</ul>
+<div class="text-center">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb67"><pre class="sourceCode java code-with-copy"><code class="sourceCode java"><span id="cb67-1"><a href="#cb67-1" aria-hidden="true" tabindex="-1"></a><span class="dt">int</span> x <span class="op">=</span> <span class="st">"5"</span><span class="op">;</span> <span class="co">// Compile-time error</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<ul>
+<li><strong>C#:</strong> You must explicitly cast types when necessary.</li>
+</ul>
+<div class="text-center">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb68"><pre class="sourceCode c code-with-copy"><code class="sourceCode c"><span id="cb68-1"><a href="#cb68-1" aria-hidden="true" tabindex="-1"></a><span class="dt">int</span> x <span class="op">=</span> <span class="dv">10</span><span class="op">;</span></span>
+<span id="cb68-2"><a href="#cb68-2" aria-hidden="true" tabindex="-1"></a>string y <span class="op">=</span> <span class="st">"5"</span><span class="op">;</span></span>
+<span id="cb68-3"><a href="#cb68-3" aria-hidden="true" tabindex="-1"></a><span class="dt">int</span> result <span class="op">=</span> x <span class="op">+</span> <span class="dt">int</span><span class="op">.</span>Parse<span class="op">(</span>y<span class="op">);</span> <span class="co">// Correct</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<ul>
+<li><strong>Python:</strong> While dynamically typed, Python is strongly-typed as it does not allow implicit conversion between incompatible types.</li>
+</ul>
+<div class="text-center">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb69"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb69-1"><a href="#cb69-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="dv">10</span></span>
+<span id="cb69-2"><a href="#cb69-2" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> <span class="st">"5"</span></span>
+<span id="cb69-3"><a href="#cb69-3" aria-hidden="true" tabindex="-1"></a>result <span class="op">=</span> x <span class="op">+</span> y  <span class="co"># Runtime error</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p><br></p>
+<section id="weakly-typed-languages" class="level5 lead">
+<h5 class="anchored" data-anchor-id="weakly-typed-languages">Weakly-typed Languages</h5>
+</section>
+<p><br></p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-39-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-39-1" role="tab" aria-controls="tabset-39-1" aria-selected="true">Definition:</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-39-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-39-2" role="tab" aria-controls="tabset-39-2" aria-selected="false">Key Characteristics:</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-39-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-39-3" role="tab" aria-controls="tabset-39-3" aria-selected="false">Examples:</a></li></ul>
+<div class="tab-content">
+<div id="tabset-39-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-39-1-tab">
+<p>In weakly-typed languages, the type system is more flexible, allowing implicit conversions between types. The language may automatically convert one type to another as needed, often during runtime.</p>
+</div>
+<div id="tabset-39-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-39-2-tab">
+<ul>
+<li><strong>Implicit Type Coercion:</strong> The language can automatically convert types in certain situations, such as adding a number to a string by converting the number to a string.</li>
+<li><strong>Less Type Safety:</strong> While more flexible, weakly-typed languages may introduce subtle bugs due to unintended type coercions that go unnoticed.</li>
+<li><strong>Ease of Use:</strong> In some scenarios, weak typing can make code easier to write and understand, especially for quick scripting tasks.</li>
+</ul>
+</div>
+<div id="tabset-39-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-39-3-tab">
+<ul>
+<li><strong>JavaScript:</strong> Automatically converts types when needed.</li>
+</ul>
+<div class="text-center">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb70"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript"><span id="cb70-1"><a href="#cb70-1" aria-hidden="true" tabindex="-1"></a><span class="kw">let</span> x <span class="op">=</span> <span class="dv">10</span><span class="op">;</span></span>
+<span id="cb70-2"><a href="#cb70-2" aria-hidden="true" tabindex="-1"></a><span class="kw">let</span> y <span class="op">=</span> <span class="st">"5"</span><span class="op">;</span></span>
+<span id="cb70-3"><a href="#cb70-3" aria-hidden="true" tabindex="-1"></a><span class="kw">let</span> result <span class="op">=</span> x <span class="op">+</span> y<span class="op">;</span> <span class="co">// "105" (y is converted to a string)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<ul>
+<li><strong>PHP:</strong> Also allows implicit type conversion.</li>
+</ul>
+<div class="text-center">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb71"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb71-1"><a href="#cb71-1" aria-hidden="true" tabindex="-1"></a><span class="va">$x</span> = 10<span class="kw">;</span></span>
+<span id="cb71-2"><a href="#cb71-2" aria-hidden="true" tabindex="-1"></a><span class="va">$y</span> = <span class="st">"5"</span><span class="kw">;</span></span>
+<span id="cb71-3"><a href="#cb71-3" aria-hidden="true" tabindex="-1"></a><span class="va">$result</span> = <span class="va">$x</span> + <span class="va">$y</span><span class="kw">;</span> <span class="ex">//</span> 15 <span class="er">(</span><span class="ex">y</span> is converted to a number<span class="kw">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p><br></p>
+<hr>
+<section id="comparison-between-types" class="level6 lead">
+<h6 class="anchored" data-anchor-id="comparison-between-types"><strong>Comparison between Types</strong></h6>
+</section>
+<p><br></p>
+<div class="callout callout-style-simple callout-note no-icon callout-titled" title="Comparison: Strongly-Typed vs. Weakly-Typed" style="border-left:none; border-right:none; border-top:none; border-bottom:none;">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-26-contents" aria-controls="callout-26" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Comparison: Strongly-Typed vs.&nbsp;Weakly-Typed
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-26" class="callout-26-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li><strong>Type Safety:</strong> Strongly-typed languages provide more safety by enforcing type rules, reducing errors due to unintended type conversions. Weakly-typed languages sacrifice some of this safety for flexibility.</li>
+<li><strong>Flexibility:</strong> Weakly-typed languages allow for more flexible and often shorter code, especially in cases where automatic type conversion is beneficial.</li>
+<li><strong>Error Handling:</strong> Strongly-typed languages catch type-related errors early, often at compile time, while weakly-typed languages may only reveal such errors at runtime, if at all.</li>
+</ul>
+</div>
+</div>
+</div>
+<p><br></p>
+<hr>
+<p><br></p>
+</section>
+<section id="assignment-operators" class="level4">
+<h4 class="anchored" data-anchor-id="assignment-operators">Assignment operators</h4>
+<ul>
+<li><strong>Simple Assignment (</strong><code>=</code><strong>):</strong> Assigns a value to a variable.</li>
+<li><strong>Compound Assignment:</strong>
+<ul>
+<li><code>+=</code>: Addition</li>
+<li><code>-=</code>: Subtraction</li>
+<li><code>*=</code>: Multiplication</li>
+<li><code>/=</code>: Division</li>
+<li><code>//=</code>: Floor Division</li>
+<li><code>%=</code>: Modulus</li>
+<li><code>**=</code>: Exponentiation</li>
+<li><strong>Bitwise Operators:</strong> <code>&amp;=</code>, <code>|=</code>, <code>^=</code>, <code>&lt;&lt;=</code>, <code>&gt;&gt;=</code></li>
+</ul></li>
+</ul>
+<p>Assignment operators streamline code by combining operations and assignments into a single step, making code more concise and often more readable.</p>
+<p><br></p>
+<section id="order-of-operations-precedence-rules" class="level5 lead">
+<h5 class="anchored" data-anchor-id="order-of-operations-precedence-rules">Order of operations / precedence rules</h5>
+</section>
+<p><br></p>
+<div class="callout callout-style-simple callout-note no-icon callout-titled" title="Operations &amp; Rules" style="border-left:none; border-right:none; border-top:none; border-bottom:none;">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-27-contents" aria-controls="callout-27" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Operations &amp; Rules
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-27" class="callout-27-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><br></p>
+<section id="arithmetic-operations" class="level6">
+<h6 class="anchored" data-anchor-id="arithmetic-operations">1. Arithmetic Operations</h6>
+<ol type="1">
+<li><p><strong>Parentheses:</strong> <code>()</code> - Expressions inside parentheses are evaluated first. - Example: <span class="math inline">\(\text{(2 + 3) * 4}\)</span> evaluates to <code>20</code>.</p></li>
+<li><p><strong>Exponentiation:</strong> ** (or ^ in some languages like Excel) - Raises a number to the power of another number. - Example: <span class="math inline">\(\text{2 ** 3}\)</span> evaluates to <code>8</code>.</p></li>
+<li><p><strong>Unary Plus and Minus:</strong> <code>+</code>, <code>-</code> <em>(unary)</em> - Unary plus and minus are applied next. - Example: <span class="math inline">\(\text{-5 + 3}\)</span> evaluates to <code>-2</code>.</p></li>
+<li><p><strong>Multiplication and Division:</strong> <code>*</code>, <code>/</code>, <code>//</code> <em>(floor division)</em>, <code>%</code> <em>(modulus)</em> - Multiplication and division have the same precedence, evaluated from left to right. - Example: <span class="math inline">\(\text{6 / 2 * 3}\)</span> evaluates to <code>9</code>.</p></li>
+<li><p><strong>Addition and Subtraction:</strong> <code>+</code>, <code>-</code> - Addition and subtraction have the same precedence, evaluated from left to right. - Example: <span class="math inline">\(\text{5 + 3 - 2}\)</span> evaluates to <code>6</code>.</p></li>
+</ol>
+<p><br></p>
+</section>
+<section id="comparison-operations" class="level6">
+<h6 class="anchored" data-anchor-id="comparison-operations">2. Comparison Operations</h6>
+<ol type="1">
+<li><p><strong>Equality and Inequality:</strong> <span class="math inline">\(==\)</span>, <span class="math inline">\(!=\)</span> - Checks if two values are equal or not equal.</p></li>
+<li><p><strong>Relational Operators:</strong> <span class="math inline">\(&gt;\)</span>, <span class="math inline">\(&lt;\)</span>, <span class="math inline">\(&gt;=\)</span>, <span class="math inline">\(&lt;=\)</span> - Compares two values to determine the relationship between them.</p></li>
+</ol>
+<p><br></p>
+</section>
+<section id="logical-operations" class="level6">
+<h6 class="anchored" data-anchor-id="logical-operations">3. Logical Operations</h6>
+<ol type="1">
+<li><p><strong>Negation:</strong> <code>not</code> - Evaluates to the opposite Boolean value.</p></li>
+<li><p><strong>And:</strong> <code>and</code> - Evaluates to <code>True</code> if both operands are <code>True</code>.</p></li>
+<li><p><strong>Or:</strong> <code>or</code> - Evaluates to <code>True</code> if at least one operand is <code>True</code>.</p></li>
+</ol>
+<p><br></p>
+</section>
+<section id="assignment-operators-1" class="level6">
+<h6 class="anchored" data-anchor-id="assignment-operators-1">4. Assignment Operators</h6>
+<ol type="1">
+<li><p><strong>Simple Assignment:</strong> <span class="math inline">\(=\)</span> - Assigns a value to a variable.</p></li>
+<li><p><strong>Compound Assignment:</strong> <span class="math inline">\(+=\)</span>, <span class="math inline">\(-=\)</span>, <span class="math inline">\(*=\)</span>, <span class="math inline">\(/=\)</span>, etc. - Performs an operation and assigns the result to a variable.</p></li>
+</ol>
+<p><br></p>
+</section>
+<section id="bitwise-operations" class="level6">
+<h6 class="anchored" data-anchor-id="bitwise-operations">5. Bitwise Operations</h6>
+<ol type="1">
+<li><p><strong>Bitwise Not:</strong> <span class="math inline">\(\text{~}\)</span> - Inverts all bits of the operand.</p></li>
+<li><p><strong>Bitwise And:</strong> <span class="math inline">\(\text{&amp;}\)</span> - Performs a bitwise AND operation.</p></li>
+<li><p><strong>Bitwise Or:</strong> <span class="math inline">\(|\)</span> - Performs a bitwise OR operation.</p></li>
+<li><p><strong>Bitwise XOR:</strong> <span class="math inline">\(\text{^}\)</span> - Performs a bitwise XOR operation.</p></li>
+<li><p><strong>Bitwise Shift:</strong> <span class="math inline">\(&lt;&lt;\)</span>, <span class="math inline">\(&gt;&gt;\)</span> - Shifts bits to the left or right.</p></li>
+</ol>
+<p><br></p>
+</section>
+<section id="miscellaneous" class="level6">
+<h6 class="anchored" data-anchor-id="miscellaneous">6. Miscellaneous</h6>
+<ol type="1">
+<li><strong>Function Calls</strong> - Functions are evaluated first, from innermost to outermost.</li>
+<li><strong>Member Access:</strong> <span class="math inline">\(.\)</span> <em>(dot operator)</em> - Accesses properties or methods of an object.</li>
+<li><strong>Indexing and Slicing:</strong> <span class="math inline">\(\text{[ ]}\)</span> - Retrieves or modifies elements from collections like lists or arrays.</li>
+</ol>
+<p><br></p>
+</section>
+</div>
+</div>
+</div>
+<p><br></p>
+<section id="loops" class="level5 lead">
+<h5 class="anchored" data-anchor-id="loops">Loops</h5>
+</section>
+<p><br></p>
+<div class="callout callout-style-simple callout-note no-icon callout-titled" title="Types of Loops" style="border-left:none; border-right:none; border-top:none; border-bottom:none;">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-28-contents" aria-controls="callout-28" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Types of Loops
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-28" class="callout-28-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><br></p>
+<section id="topic" class="level6">
+<h6 class="anchored" data-anchor-id="topic">Topic</h6>
+<p><strong>For Loop</strong></p>
+<ul>
+<li><strong>Description:</strong> The for loop iterates over a sequence <em>(such as a list, tuple, or string)</em> or a range of numbers, executing a block of code for each item.</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb72"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb72-1"><a href="#cb72-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Iterating over a list</span></span>
+<span id="cb72-2"><a href="#cb72-2" aria-hidden="true" tabindex="-1"></a>numbers <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>]</span>
+<span id="cb72-3"><a href="#cb72-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> number <span class="kw">in</span> numbers:</span>
+<span id="cb72-4"><a href="#cb72-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(number)</span>
+<span id="cb72-5"><a href="#cb72-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb72-6"><a href="#cb72-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Iterating over a range</span></span>
+<span id="cb72-7"><a href="#cb72-7" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">5</span>):</span>
+<span id="cb72-8"><a href="#cb72-8" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(i)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><strong>While Loop</strong></p>
+<ul>
+<li><strong>Description:</strong> The while loop repeatedly executes a block of code as long as a specified condition remains True.</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb73"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb73-1"><a href="#cb73-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Looping while a condition is True</span></span>
+<span id="cb73-2"><a href="#cb73-2" aria-hidden="true" tabindex="-1"></a>count <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb73-3"><a href="#cb73-3" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> count <span class="op">&lt;</span> <span class="dv">5</span>:</span>
+<span id="cb73-4"><a href="#cb73-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(count)</span>
+<span id="cb73-5"><a href="#cb73-5" aria-hidden="true" tabindex="-1"></a>    count <span class="op">+=</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><strong>Do-While Loop</strong></p>
+<ul>
+<li>Description: The <code>do-while</code> loop <em>(available in C/C++ but not in Python)</em> executes a block of code at least once and then repeatedly executes it as long as a condition remains <code>True</code>.</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb74"><pre class="sourceCode c code-with-copy"><code class="sourceCode c"><span id="cb74-1"><a href="#cb74-1" aria-hidden="true" tabindex="-1"></a><span class="co">// Looping at least once and then while a condition is True</span></span>
+<span id="cb74-2"><a href="#cb74-2" aria-hidden="true" tabindex="-1"></a><span class="dt">int</span> count <span class="op">=</span> <span class="dv">0</span><span class="op">;</span></span>
+<span id="cb74-3"><a href="#cb74-3" aria-hidden="true" tabindex="-1"></a><span class="cf">do</span> <span class="op">{</span></span>
+<span id="cb74-4"><a href="#cb74-4" aria-hidden="true" tabindex="-1"></a>    std<span class="op">::</span>cout <span class="op">&lt;&lt;</span> count <span class="op">&lt;&lt;</span> std<span class="op">::</span>endl<span class="op">;</span></span>
+<span id="cb74-5"><a href="#cb74-5" aria-hidden="true" tabindex="-1"></a>    count<span class="op">++;</span></span>
+<span id="cb74-6"><a href="#cb74-6" aria-hidden="true" tabindex="-1"></a><span class="op">}</span> <span class="cf">while</span> <span class="op">(</span>count <span class="op">&lt;</span> <span class="dv">5</span><span class="op">);</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><strong>Break</strong></p>
+<ul>
+<li><strong>Description:</strong> Exits the loop immediately, regardless of the loop’s condition.</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb75"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb75-1"><a href="#cb75-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">10</span>):</span>
+<span id="cb75-2"><a href="#cb75-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> i <span class="op">==</span> <span class="dv">5</span>:</span>
+<span id="cb75-3"><a href="#cb75-3" aria-hidden="true" tabindex="-1"></a>        <span class="cf">break</span></span>
+<span id="cb75-4"><a href="#cb75-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(i)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><strong>Continue</strong></p>
+<ul>
+<li><strong>Description:</strong> Skips the rest of the code inside the current iteration of the loop and proceeds to the next iteration.</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb76"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb76-1"><a href="#cb76-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">10</span>):</span>
+<span id="cb76-2"><a href="#cb76-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> i <span class="op">%</span> <span class="dv">2</span> <span class="op">==</span> <span class="dv">0</span>:</span>
+<span id="cb76-3"><a href="#cb76-3" aria-hidden="true" tabindex="-1"></a>        <span class="cf">continue</span></span>
+<span id="cb76-4"><a href="#cb76-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(i)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><strong>Pass</strong></p>
+<ul>
+<li><strong>Description:</strong> In Python, pass is a placeholder statement used when a statement is syntactically required but you do not want to execute any code.</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb77"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb77-1"><a href="#cb77-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">10</span>):</span>
+<span id="cb77-2"><a href="#cb77-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> i <span class="op">%</span> <span class="dv">2</span> <span class="op">==</span> <span class="dv">0</span>:</span>
+<span id="cb77-3"><a href="#cb77-3" aria-hidden="true" tabindex="-1"></a>        <span class="cf">pass</span>  <span class="co"># Do nothing</span></span>
+<span id="cb77-4"><a href="#cb77-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span>:</span>
+<span id="cb77-5"><a href="#cb77-5" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(i)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><strong>Nested Loops</strong></p>
+<ul>
+<li><strong>Description:</strong> You can nest loops inside other loops to perform more complex iterations.</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb78"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb78-1"><a href="#cb78-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">3</span>):</span>
+<span id="cb78-2"><a href="#cb78-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> j <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">2</span>):</span>
+<span id="cb78-3"><a href="#cb78-3" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"i=</span><span class="sc">{</span>i<span class="sc">}</span><span class="ss">, j=</span><span class="sc">{</span>j<span class="sc">}</span><span class="ss">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><br></p>
+</section>
+</div>
+</div>
+</div>
+<p><br></p>
+<section id="conditional-statements-branching" class="level5 lead">
+<h5 class="anchored" data-anchor-id="conditional-statements-branching">Conditional statements / branching</h5>
+</section>
+<p><br></p>
+<div class="callout callout-style-simple callout-note no-icon callout-titled" title="Types of Statements" style="border-left:none; border-right:none; border-top:none; border-bottom:none;">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-29-contents" aria-controls="callout-29" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Types of Statements
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-29" class="callout-29-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><br></p>
+<section id="topic-1" class="level6">
+<h6 class="anchored" data-anchor-id="topic-1">Topic</h6>
+<ul>
+<li><p><strong>If Statement</strong></p>
+<ul>
+<li><strong>Description:</strong> The <code>if</code> statement executes a block of code if its condition is <code>True</code>.</li>
+</ul></li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb79"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb79-1"><a href="#cb79-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="dv">10</span></span>
+<span id="cb79-2"><a href="#cb79-2" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> x <span class="op">&gt;</span> <span class="dv">5</span>:</span>
+<span id="cb79-3"><a href="#cb79-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"x is greater than 5"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ul>
+<li><p><strong>If-Else Statement</strong></p>
+<ul>
+<li><strong>Description:</strong> The <code>if-else</code> statement executes one block of code if the condition is <code>True</code>, and another block if it is <code>False</code>.</li>
+</ul></li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb80"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb80-1"><a href="#cb80-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="dv">3</span></span>
+<span id="cb80-2"><a href="#cb80-2" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> x <span class="op">&gt;</span> <span class="dv">5</span>:</span>
+<span id="cb80-3"><a href="#cb80-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"x is greater than 5"</span>)</span>
+<span id="cb80-4"><a href="#cb80-4" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
+<span id="cb80-5"><a href="#cb80-5" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"x is 5 or less"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>x is 5 or less</code></pre>
+</div>
+</div>
+<ul>
+<li><p><strong>If-Elif-Else Statement</strong></p>
+<ul>
+<li><strong>Description:</strong> The <code>if-elif-else</code> statement allows for multiple conditions to be checked in sequence. If the if condition is <code>False</code>, it checks <code>elif</code> <em>(else if)</em> conditions in order, and finally executes the <code>else</code> block if none of the conditions are <code>True</code>.</li>
+</ul></li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb82"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb82-1"><a href="#cb82-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="dv">7</span></span>
+<span id="cb82-2"><a href="#cb82-2" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> x <span class="op">&gt;</span> <span class="dv">10</span>:</span>
+<span id="cb82-3"><a href="#cb82-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"x is greater than 10"</span>)</span>
+<span id="cb82-4"><a href="#cb82-4" aria-hidden="true" tabindex="-1"></a><span class="cf">elif</span> x <span class="op">==</span> <span class="dv">7</span>:</span>
+<span id="cb82-5"><a href="#cb82-5" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"x is 7"</span>)</span>
+<span id="cb82-6"><a href="#cb82-6" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
+<span id="cb82-7"><a href="#cb82-7" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"x is less than 10 and not 7"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ul>
+<li><p><strong>Switch-Case Statement</strong></p>
+<ul>
+<li><strong>Description:</strong> The <code>switch-case</code> statement <em>(used in C/C++ and some other languages but not Python)</em> provides a way to dispatch execution to different parts of code based on the value of an expression.</li>
+</ul></li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb83"><pre class="sourceCode c code-with-copy"><code class="sourceCode c"><span id="cb83-1"><a href="#cb83-1" aria-hidden="true" tabindex="-1"></a><span class="dt">int</span> day <span class="op">=</span> <span class="dv">3</span><span class="op">;</span></span>
+<span id="cb83-2"><a href="#cb83-2" aria-hidden="true" tabindex="-1"></a><span class="cf">switch</span> <span class="op">(</span>day<span class="op">)</span> <span class="op">{</span></span>
+<span id="cb83-3"><a href="#cb83-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">case</span> <span class="dv">1</span><span class="op">:</span></span>
+<span id="cb83-4"><a href="#cb83-4" aria-hidden="true" tabindex="-1"></a>        std<span class="op">::</span>cout <span class="op">&lt;&lt;</span> <span class="st">"Monday"</span> <span class="op">&lt;&lt;</span> std<span class="op">::</span>endl<span class="op">;</span></span>
+<span id="cb83-5"><a href="#cb83-5" aria-hidden="true" tabindex="-1"></a>        <span class="cf">break</span><span class="op">;</span></span>
+<span id="cb83-6"><a href="#cb83-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">case</span> <span class="dv">2</span><span class="op">:</span></span>
+<span id="cb83-7"><a href="#cb83-7" aria-hidden="true" tabindex="-1"></a>        std<span class="op">::</span>cout <span class="op">&lt;&lt;</span> <span class="st">"Tuesday"</span> <span class="op">&lt;&lt;</span> std<span class="op">::</span>endl<span class="op">;</span></span>
+<span id="cb83-8"><a href="#cb83-8" aria-hidden="true" tabindex="-1"></a>        <span class="cf">break</span><span class="op">;</span></span>
+<span id="cb83-9"><a href="#cb83-9" aria-hidden="true" tabindex="-1"></a>    <span class="cf">case</span> <span class="dv">3</span><span class="op">:</span></span>
+<span id="cb83-10"><a href="#cb83-10" aria-hidden="true" tabindex="-1"></a>        std<span class="op">::</span>cout <span class="op">&lt;&lt;</span> <span class="st">"Wednesday"</span> <span class="op">&lt;&lt;</span> std<span class="op">::</span>endl<span class="op">;</span></span>
+<span id="cb83-11"><a href="#cb83-11" aria-hidden="true" tabindex="-1"></a>        <span class="cf">break</span><span class="op">;</span></span>
+<span id="cb83-12"><a href="#cb83-12" aria-hidden="true" tabindex="-1"></a>    <span class="cf">default</span><span class="op">:</span></span>
+<span id="cb83-13"><a href="#cb83-13" aria-hidden="true" tabindex="-1"></a>        std<span class="op">::</span>cout <span class="op">&lt;&lt;</span> <span class="st">"Other day"</span> <span class="op">&lt;&lt;</span> std<span class="op">::</span>endl<span class="op">;</span></span>
+<span id="cb83-14"><a href="#cb83-14" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ul>
+<li><p><strong>AND Operator</strong></p>
+<ul>
+<li><p><strong>Description:</strong> Returns <code>True</code> if both conditions are <code>True</code>.</p></li>
+<li><p><strong>Syntax:</strong></p>
+<ul>
+<li><strong>Python/C/C++:</strong> <code>condition1 and condition2</code></li>
+</ul></li>
+<li><p><strong>Example:</strong></p>
+<ul>
+<li><strong>Python:</strong> <code>if x &gt; 0 and x &lt; 10</code> <strong>:</strong></li>
+<li><strong>C++:</strong> <code>if (x &gt; 0 &amp;&amp; x &lt; 10)</code></li>
+</ul></li>
+</ul></li>
+<li><p><strong>OR Operator</strong></p>
+<ul>
+<li><p><strong>Description:</strong> Returns <code>True</code> if at least one of the conditions is <code>True</code>.</p></li>
+<li><p><strong>Syntax:</strong></p>
+<ul>
+<li><strong>Python/C/C++:</strong> <code>condition1</code> or <code>condition2</code></li>
+</ul></li>
+<li><p><strong>Example:</strong></p>
+<ul>
+<li><strong>Python:</strong> <code>if x &lt; 0 or x &gt; 10</code> <strong>:</strong></li>
+<li><strong>C++:</strong> <code>if (x &lt; 0 || x &gt; 10)</code></li>
+</ul></li>
+</ul></li>
+<li><p><strong>NOT Operator</strong></p>
+<ul>
+<li><p><strong>Description:</strong> Returns the opposite Boolean value of the condition.</p></li>
+<li><p><strong>Syntax:</strong></p>
+<ul>
+<li><strong>Python/C/C++:</strong> <code>not condition</code></li>
+</ul></li>
+<li><p><strong>Example:</strong></p>
+<ul>
+<li><strong>Python:</strong> <code>if not x &gt; 5</code> <strong>:</strong></li>
+<li><strong>C++:</strong> <code>if (!(x &gt; 5))</code></li>
+</ul></li>
+</ul></li>
+</ul>
+<p><br></p>
+</section>
+</div>
+</div>
+</div>
+<p><br></p>
+<section id="classes" class="level5 lead">
+<h5 class="anchored" data-anchor-id="classes">Classes</h5>
+</section>
+<p><br></p>
+<p><strong>Definition</strong></p>
+<p>A class is essentially a template for creating objects. It encapsulates data for the object and methods to operate on that data.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb84"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb84-1"><a href="#cb84-1" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> ClassName:</span>
+<span id="cb84-2"><a href="#cb84-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, attribute1, attribute2):</span>
+<span id="cb84-3"><a href="#cb84-3" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.attribute1 <span class="op">=</span> attribute1</span>
+<span id="cb84-4"><a href="#cb84-4" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.attribute2 <span class="op">=</span> attribute2</span>
+<span id="cb84-5"><a href="#cb84-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb84-6"><a href="#cb84-6" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> method_name(<span class="va">self</span>):</span>
+<span id="cb84-7"><a href="#cb84-7" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Method code</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><br></p>
+<section id="components-of-a-class" class="level5 lead">
+<h5 class="anchored" data-anchor-id="components-of-a-class">Components of a Class</h5>
+</section>
+<p><br></p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-40-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-40-1" role="tab" aria-controls="tabset-40-1" aria-selected="true">1. Attributes:</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-40-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-40-2" role="tab" aria-controls="tabset-40-2" aria-selected="false">2. Methods:</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-40-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-40-3" role="tab" aria-controls="tabset-40-3" aria-selected="false">3. Constructor:</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-40-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-40-4" role="tab" aria-controls="tabset-40-4" aria-selected="false">4. Destructor:</a></li></ul>
+<div class="tab-content">
+<div id="tabset-40-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-40-1-tab">
+<p>Variables that hold data related to the class. They define the state of an object.</p>
+<ul>
+<li><strong>Python:</strong> Defined within the <code>__init__</code> method using <code>self</code>.</li>
+<li><strong>C++:</strong> Defined within the class, often with private access and initialized via a constructor.</li>
+</ul>
+</div>
+<div id="tabset-40-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-40-2-tab">
+<p>Functions defined within a class that operate on its attributes or perform actions.</p>
+<ul>
+<li><strong>Python:</strong> Defined with def keyword within the class.</li>
+<li><strong>C++:</strong> Defined with the function signature inside the class and implemented outside the class body.</li>
+</ul>
+</div>
+<div id="tabset-40-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-40-3-tab">
+<p>A special method that initializes objects of the class. It is called when an object is created.</p>
+<ul>
+<li><strong>Python:</strong> <code>__init__</code> method.</li>
+<li><strong>C++:</strong> Defined with the class name and no return type.</li>
+</ul>
+</div>
+<div id="tabset-40-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-40-4-tab">
+<p>A method that cleans up when an object is destroyed (in C++). Python manages memory automatically, so a destructor is less commonly used.</p>
+<ul>
+<li><strong>Python:</strong> <code>__del__</code> method <em>(optional)</em>.</li>
+<li><strong>C++:</strong> Destructor defined with <code>~ClassName()</code>.</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb85"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb85-1"><a href="#cb85-1" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> Car:</span>
+<span id="cb85-2"><a href="#cb85-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, make, model, year):</span>
+<span id="cb85-3"><a href="#cb85-3" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.make <span class="op">=</span> make</span>
+<span id="cb85-4"><a href="#cb85-4" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.model <span class="op">=</span> model</span>
+<span id="cb85-5"><a href="#cb85-5" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.year <span class="op">=</span> year</span>
+<span id="cb85-6"><a href="#cb85-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb85-7"><a href="#cb85-7" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> display_info(<span class="va">self</span>):</span>
+<span id="cb85-8"><a href="#cb85-8" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span><span class="va">self</span><span class="sc">.</span>year<span class="sc">}</span><span class="ss"> </span><span class="sc">{</span><span class="va">self</span><span class="sc">.</span>make<span class="sc">}</span><span class="ss"> </span><span class="sc">{</span><span class="va">self</span><span class="sc">.</span>model<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb85-9"><a href="#cb85-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb85-10"><a href="#cb85-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Creating an object of the class</span></span>
+<span id="cb85-11"><a href="#cb85-11" aria-hidden="true" tabindex="-1"></a>my_car <span class="op">=</span> Car(<span class="st">"Toyota"</span>, <span class="st">"Corolla"</span>, <span class="dv">2022</span>)</span>
+<span id="cb85-12"><a href="#cb85-12" aria-hidden="true" tabindex="-1"></a>my_car.display_info()  <span class="co"># Output: 2022 Toyota Corolla</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><br></p>
+</div>
+</div>
+</div>
+<p><br></p>
+<section id="inheritance" class="level5 lead">
+<h5 class="anchored" data-anchor-id="inheritance">Inheritance</h5>
+</section>
+<p><br></p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-41-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-41-1" role="tab" aria-controls="tabset-41-1" aria-selected="true">Definition:</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-41-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-41-2" role="tab" aria-controls="tabset-41-2" aria-selected="false">Example:</a></li></ul>
+<div class="tab-content">
+<div id="tabset-41-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-41-1-tab">
+<p>Inheritance allows you to create a new class that is based on an existing class, inheriting its attributes and methods.</p>
+</div>
+<div id="tabset-41-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-41-2-tab">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb86"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb86-1"><a href="#cb86-1" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> ParentClass:</span>
+<span id="cb86-2"><a href="#cb86-2" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Parent class code</span></span>
+<span id="cb86-3"><a href="#cb86-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb86-4"><a href="#cb86-4" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> ChildClass(ParentClass):</span>
+<span id="cb86-5"><a href="#cb86-5" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Child class code</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><br></p>
+</div>
+</div>
+</div>
+<p><br></p>
+<section id="encapsulation" class="level5 lead">
+<h5 class="anchored" data-anchor-id="encapsulation">Encapsulation</h5>
+</section>
+<p><br></p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-42-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-42-1" role="tab" aria-controls="tabset-42-1" aria-selected="true">Definition:</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-42-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-42-2" role="tab" aria-controls="tabset-42-2" aria-selected="false">Access Specifiers:</a></li></ul>
+<div class="tab-content">
+<div id="tabset-42-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-42-1-tab">
+<p>Encapsulation is the concept of restricting access to certain details of an object’s implementation. It involves using access specifiers to control the visibility of attributes and methods.</p>
+</div>
+<div id="tabset-42-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-42-2-tab">
+<ul>
+<li><p><strong>Python:</strong> Uses naming conventions <em>(e.g., <code>_private</code> or <code>__private</code>)</em> rather than strict access specifiers.</p></li>
+<li><p><strong>C++:</strong> Uses <code>public</code>, <code>protected</code>, and <code>private</code> keywords to control access.</p></li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb87"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb87-1"><a href="#cb87-1" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> BankAccount: </span>
+<span id="cb87-2"><a href="#cb87-2" aria-hidden="true" tabindex="-1"></a>  <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, balance):</span>
+<span id="cb87-3"><a href="#cb87-3" aria-hidden="true" tabindex="-1"></a>  <span class="va">self</span>.__balance <span class="op">=</span> balance</span>
+<span id="cb87-4"><a href="#cb87-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb87-5"><a href="#cb87-5" aria-hidden="true" tabindex="-1"></a>  <span class="kw">def</span> deposit(<span class="va">self</span>, amount):</span>
+<span id="cb87-6"><a href="#cb87-6" aria-hidden="true" tabindex="-1"></a>      <span class="cf">if</span> amount <span class="op">&gt;</span> <span class="dv">0</span>:</span>
+<span id="cb87-7"><a href="#cb87-7" aria-hidden="true" tabindex="-1"></a>          <span class="va">self</span>.__balance <span class="op">+=</span> amount</span>
+<span id="cb87-8"><a href="#cb87-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb87-9"><a href="#cb87-9" aria-hidden="true" tabindex="-1"></a>  <span class="kw">def</span> get_balance(<span class="va">self</span>):</span>
+<span id="cb87-10"><a href="#cb87-10" aria-hidden="true" tabindex="-1"></a>      <span class="cf">return</span> <span class="va">self</span>.__balance</span>
+<span id="cb87-11"><a href="#cb87-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb87-12"><a href="#cb87-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Creating an object of the class</span></span>
+<span id="cb87-13"><a href="#cb87-13" aria-hidden="true" tabindex="-1"></a>account <span class="op">=</span> BankAccount(<span class="dv">1000</span>)</span>
+<span id="cb87-14"><a href="#cb87-14" aria-hidden="true" tabindex="-1"></a>account.deposit(<span class="dv">500</span>)</span>
+<span id="cb87-15"><a href="#cb87-15" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(account.get_balance())  <span class="co"># Output: 1500</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><br></p>
+</div>
+</div>
+</div>
+<p><br></p>
+<section id="polymorphism" class="level5 lead">
+<h5 class="anchored" data-anchor-id="polymorphism">Polymorphism</h5>
+</section>
+<p><br></p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-43-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-43-1" role="tab" aria-controls="tabset-43-1" aria-selected="true">Definition:</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-43-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-43-2" role="tab" aria-controls="tabset-43-2" aria-selected="false">Example:</a></li></ul>
+<div class="tab-content">
+<div id="tabset-43-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-43-1-tab">
+<p>Polymorphism allows objects of different classes to be treated as objects of a common base class, typically through method overriding.</p>
+</div>
+<div id="tabset-43-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-43-2-tab">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb88"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb88-1"><a href="#cb88-1" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> Animal:</span>
+<span id="cb88-2"><a href="#cb88-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> speak(<span class="va">self</span>):</span>
+<span id="cb88-3"><a href="#cb88-3" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">"Animal speaks"</span>)</span>
+<span id="cb88-4"><a href="#cb88-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb88-5"><a href="#cb88-5" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> Dog(Animal):</span>
+<span id="cb88-6"><a href="#cb88-6" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> speak(<span class="va">self</span>):</span>
+<span id="cb88-7"><a href="#cb88-7" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">"Dog barks"</span>)</span>
+<span id="cb88-8"><a href="#cb88-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb88-9"><a href="#cb88-9" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> make_animal_speak(animal):</span>
+<span id="cb88-10"><a href="#cb88-10" aria-hidden="true" tabindex="-1"></a>    animal.speak()</span>
+<span id="cb88-11"><a href="#cb88-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb88-12"><a href="#cb88-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Creating objects</span></span>
+<span id="cb88-13"><a href="#cb88-13" aria-hidden="true" tabindex="-1"></a>animal <span class="op">=</span> Animal()</span>
+<span id="cb88-14"><a href="#cb88-14" aria-hidden="true" tabindex="-1"></a>dog <span class="op">=</span> Dog()</span>
+<span id="cb88-15"><a href="#cb88-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb88-16"><a href="#cb88-16" aria-hidden="true" tabindex="-1"></a>make_animal_speak(animal)  <span class="co"># Output: Animal speaks</span></span>
+<span id="cb88-17"><a href="#cb88-17" aria-hidden="true" tabindex="-1"></a>make_animal_speak(dog)     <span class="co"># Output: Dog barks</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><br></p>
+</div>
+</div>
+</div>
+<p><br></p>
+<hr>
+<section id="summary-2" class="level6 lead">
+<h6 class="anchored" data-anchor-id="summary-2"><strong>Summary</strong></h6>
+</section>
+<ul>
+<li><strong>Classes:</strong> Define custom data types with attributes and methods.</li>
+<li><strong>Inheritance:</strong> Create new classes based on existing ones, inheriting their properties and methods.</li>
+<li><strong>Encapsulation:</strong> Restrict access to certain parts of an object’s implementation.</li>
+<li><strong>Polymorphism:</strong> Allow different classes to be treated as objects of a common base class, often through method overriding.</li>
+</ul>
+<p><br></p>
+<hr>
+<p><br></p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
