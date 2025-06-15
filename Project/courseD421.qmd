@@ -272,8 +272,6 @@ To determine whether a statement is a proposition, we determined whether the sta
 
 :::
 
-<br>
-
 ::: {.callout-note title="Exercise 2" collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
 
 ::: {.lead}
@@ -390,8 +388,6 @@ So it is not possible for this sentence to be true or false.
 
 :::
 
-<br>
-
 ::: {.callout-note title="Exercise 3" collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
 
 ::: {.lead}
@@ -481,8 +477,6 @@ $\text{ Abby is not richer than Ricardo. }$
 
 :::
 
-<br>
-
 ::: {.callout-note title="Exercise 4" collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
 
 ::: {.lead}
@@ -571,8 +565,6 @@ $\text{ Brianna does not sleep longer than Gloria. }$
 :::
 
 :::
-
-<br>
 
 ::: {.callout-note title="Exercise 5" collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
 
@@ -677,8 +669,6 @@ The negation of a statement states the opposite of the given statement.
 
 :::
 
-<br>
-
 ::: {.callout-note title="Exercise 6" collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
 
 ::: {.lead}
@@ -686,8 +676,6 @@ The negation of a statement states the opposite of the given statement.
 :::
 
 :::
-
-<br>
 
 ::: {.callout-note title="Exercise 7" collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
 
@@ -795,8 +783,6 @@ The negation of a statement states the opposite of the given statement.
 
 :::
 
-<br>
-
 ::: {.callout-note title="Exercise 8" collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
 
 ::: {.lead}
@@ -893,8 +879,6 @@ The negation of a statement states the opposite of the given statement.
 :::
 
 :::
-
-<br>
 
 ::: {.callout-note title="Exercise 9" collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
 
@@ -996,8 +980,6 @@ The negation of a statement states the opposite of the given statement.
 :::
 
 :::
-
-<br>
 
 ::: {.callout-note title="Exercise 10" collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
 
@@ -1392,8 +1374,6 @@ Determine the English sentences by replacing $\text{p and q}$ by their given sen
 :::
 
 :::
-
-<br>
 
 ::: {.callout-note title="Exercise 11" collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
 
@@ -1806,8 +1786,6 @@ in the above interpretations *(and adjust the sentence to form a proper English 
 :::
 
 :::
-
-<br>
 
 ::: {.callout-note title="Exercise 12" collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
 
