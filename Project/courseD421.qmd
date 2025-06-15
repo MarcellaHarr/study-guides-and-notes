@@ -25,7 +25,7 @@ These exercises are not mines. They are from this [Quizlet »](https://quizlet.c
 <br>
 
 ::: {.lead}
-##### Exercise 1a
+###### Exercise 1a
 :::
 
 ::: {.panel-tabset}
@@ -64,7 +64,7 @@ If we were unable to assign a truth value to the statement or the truth value wa
 
 
 ::: {.lead}
-##### Exercise 1b
+###### Exercise 1b
 :::
 
 ::: {.panel-tabset}
@@ -102,7 +102,7 @@ To determine whether a statement is a proposition, we determined whether the sta
 
 
 ::: {.lead}
-##### Exercise 1c
+###### Exercise 1c
 :::
 
 ::: {.panel-tabset}
@@ -141,7 +141,7 @@ To determine whether a statement is a proposition, we determined whether the sta
 
 
 ::: {.lead}
-##### Exercise 1d
+###### Exercise 1d
 :::
 
 ::: {.panel-tabset}
@@ -180,7 +180,7 @@ To determine whether a statement is a proposition, we determined whether the sta
 
 
 ::: {.lead}
-##### Exercise 1e 
+###### Exercise 1e 
 :::
 
 ::: {.panel-tabset}
@@ -218,7 +218,7 @@ To determine whether a statement is a proposition, we determined whether the sta
 
 
 ::: {.lead}
-##### Exercise 1f
+###### Exercise 1f
 :::
 
 ::: {.panel-tabset}
@@ -257,7 +257,7 @@ To determine whether a statement is a proposition, we determined whether the sta
 <br>
 
 ::: {.lead}
-##### Exercise 2a
+###### Exercise 2a
 :::
 
 ::: {.panel-tabset}
@@ -276,7 +276,7 @@ PART A: not a proposition
 
 
 ::: {.lead}
-##### Exercise 2b
+###### Exercise 2b
 :::
 
 ::: {.panel-tabset}
@@ -295,7 +295,7 @@ So it is not possible for this sentence to be true or false.
 
 
 ::: {.lead}
-##### Exercise 2c
+###### Exercise 2c
 :::
 
 ::: {.panel-tabset}
@@ -315,7 +315,7 @@ Its truth value is false because black flies exist everywhere.
 
 
 ::: {.lead}
-##### Exercise 2d
+###### Exercise 2d
 :::
 
 ::: {.panel-tabset}
@@ -333,7 +333,7 @@ So it is not possible for this sentence to be true or false.
 :::
 
 ::: {.lead}
-##### Exercise 2e
+###### Exercise 2e
 :::
 
 ::: {.panel-tabset}
@@ -351,7 +351,7 @@ Its truth value is false because the moon is not made from green cheese.
 :::
 
 ::: {.lead}
-##### Exercise 2f
+###### Exercise 2f
 :::
 
 ::: {.panel-tabset}
@@ -371,7 +371,7 @@ So it is not possible for this sentence to be true or false.
 <br>
 
 ::: {.lead}
-##### Exercise 3 
+###### Exercise 3 
 :::
 
 ::: {.panel-tabset}
@@ -458,7 +458,7 @@ $\text{ Abby is not richer than Ricardo. }$
 <br>
 
 ::: {.lead}
-##### Exercise 4
+###### Exercise 4
 :::
 
 ::: {.panel-tabset}
@@ -545,7 +545,7 @@ $\text{ Brianna does not sleep longer than Gloria. }$
 <br>
 
 ::: {.lead}
-##### Exercise 5a
+###### Exercise 5a
 :::
 
 ::: {.panel-tabset}
@@ -570,7 +570,7 @@ The negation of a statement states the opposite of the given statement.
 
 
 ::: {.lead}
-##### Exercise 5b
+###### Exercise 5b
 :::
 
 ::: {.panel-tabset}
@@ -595,7 +595,7 @@ The negation of a statement states the opposite of the given statement.
 
 
 ::: {.lead}
-##### Exercise 5c
+###### Exercise 5c
 :::
 
 ::: {.panel-tabset}
@@ -620,7 +620,7 @@ The negation of a statement states the opposite of the given statement.
 
 
 ::: {.lead}
-##### Exercise 5d
+###### Exercise 5d
 :::
 
 ::: {.panel-tabset}
@@ -646,13 +646,13 @@ The negation of a statement states the opposite of the given statement.
 <br>
 
 ::: {.lead}
-##### *coming soon ...*
+###### *coming soon ...*
 :::
 
 <br>
 
 ::: {.lead}
-##### Exercise 7a
+###### Exercise 7a
 :::
 
 ::: {.panel-tabset}
@@ -679,7 +679,7 @@ The negation of a statement states the opposite of the given statement.
 
 
 ::: {.lead}
-##### Exercise 7b
+###### Exercise 7b
 :::
 
 ::: {.panel-tabset}
@@ -701,7 +701,7 @@ The negation of a statement states the opposite of the given statement.
 :::
 
 ::: {.lead}
-##### Exercise 7c
+###### Exercise 7c
 :::
 
 ::: {.panel-tabset}
@@ -730,7 +730,7 @@ $\text{7 ⋅ 11 ⋅ 13 / 999}$
 
 
 ::: {.lead}
-##### Exercise 7d
+###### Exercise 7d
 :::
 
 ::: {.panel-tabset}
@@ -756,7 +756,7 @@ The negation of a statement states the opposite of the given statement.
 <br>
 
 ::: {.lead}
-##### Exercise 8a
+###### Exercise 8a
 :::
 
 ::: {.panel-tabset}
@@ -775,7 +775,7 @@ The negation of a statement states the opposite of the given statement.
 
 
 ::: {.lead}
-##### Exercise 8b
+###### Exercise 8b
 :::
 
 ::: {.panel-tabset}
@@ -794,7 +794,7 @@ The negation of a statement states the opposite of the given statement.
 
 
 ::: {.lead}
-##### Exercise 8c
+###### Exercise 8c
 :::
 
 ::: {.panel-tabset}
@@ -813,7 +813,7 @@ The negation of a statement states the opposite of the given statement.
 
 
 ::: {.lead}
-##### Exercise 8d
+###### Exercise 8d
 :::
 
 ::: {.panel-tabset}
@@ -832,7 +832,7 @@ The negation of a statement states the opposite of the given statement.
 
 
 ::: {.lead}
-##### Exercise 8e
+###### Exercise 8e
 :::
 
 ::: {.panel-tabset}
@@ -851,7 +851,7 @@ The negation of a statement states the opposite of the given statement.
 <br>
 
 ::: {.lead}
-##### Exercise 9a
+###### Exercise 9a
 :::
 
 ::: {.panel-tabset}
@@ -870,7 +870,7 @@ The negation of a statement states the opposite of the given statement.
 
 
 ::: {.lead}
-##### Exercise 9b
+###### Exercise 9b
 :::
 
 ::: {.panel-tabset}
@@ -889,7 +889,7 @@ The negation of a statement states the opposite of the given statement.
 
 
 ::: {.lead}
-##### Exercise 9c
+###### Exercise 9c
 :::
 
 ::: {.panel-tabset}
@@ -910,7 +910,7 @@ The negation of a statement states the opposite of the given statement.
 
 
 ::: {.lead}
-##### Exercise 9d
+###### Exercise 9d
 :::
 
 ::: {.panel-tabset}
@@ -931,7 +931,7 @@ The negation of a statement states the opposite of the given statement.
 
 
 ::: {.lead}
-##### Exercise 9e
+###### Exercise 9e
 :::
 
 ::: {.panel-tabset}
@@ -950,7 +950,7 @@ The negation of a statement states the opposite of the given statement.
 <br>
 
 ::: {.lead}
-##### Exercise 10a
+###### Exercise 10a
 :::
 
 ::: {.panel-tabset}
@@ -999,7 +999,7 @@ Determine the English sentences by replacing $\text{p and q}$ by their given sen
 
 
 ::: {.lead}
-##### Exercise 10b
+###### Exercise 10b
 :::
 
 ::: {.panel-tabset}
@@ -1048,7 +1048,7 @@ Determine the English sentences by replacing $\text{p and q}$ by their given sen
 
 
 ::: {.lead}
-##### Exercise 10c
+###### Exercise 10c
 :::
 
 ::: {.panel-tabset}
@@ -1097,7 +1097,7 @@ Determine the English sentences by replacing $\text{p and q}$ by their given sen
 
 
 ::: {.lead}
-##### Exercise 10d
+###### Exercise 10d
 :::
 
 ::: {.panel-tabset}
@@ -1146,7 +1146,7 @@ Determine the English sentences by replacing $\text{p and q}$ by their given sen
 
 
 ::: {.lead}
-##### Exercise 10e
+###### Exercise 10e
 :::
 
 ::: {.panel-tabset}
@@ -1194,7 +1194,7 @@ Determine the English sentences by replacing $\text{p and q}$ by their given sen
 
 
 ::: {.lead}
-##### Exercise 10f
+###### Exercise 10f
 :::
 
 ::: {.panel-tabset}
@@ -1243,7 +1243,7 @@ Determine the English sentences by replacing $\text{p and q}$ by their given sen
 
 
 ::: {.lead}
-##### Exercise 10g
+###### Exercise 10g
 :::
 
 ::: {.panel-tabset}
@@ -1292,7 +1292,7 @@ Determine the English sentences by replacing $\text{p and q}$ by their given sen
 
 
 ::: {.lead}
-##### Exercise 10h
+###### Exercise 10h
 :::
 
 ::: {.panel-tabset}
