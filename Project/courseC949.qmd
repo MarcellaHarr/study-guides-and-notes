@@ -3410,59 +3410,59 @@ for i in range(3):
 
     - **Description:** The `if` statement executes a block of code if its condition is `True`.
 
-    ```{python ifStatement, eval=FALSE}
-        x = 10
-        if x > 5:
-            print("x is greater than 5")
-    ```
+```{python ifStatement, eval=FALSE}
+x = 10
+if x > 5:
+    print("x is greater than 5")
+```
 
   - **If-Else Statement**
 
     - **Description:** The `if-else` statement executes one block of code if the condition is `True`, and another block if it is `False`.
 
-    ```{python ifelseStatement}
-        x = 3
-        if x > 5:
-            print("x is greater than 5")
-        else:
-            print("x is 5 or less")
-    ```
+```{python ifelseStatement}
+x = 3
+if x > 5:
+    print("x is greater than 5")
+else:
+    print("x is 5 or less")
+```
 
   - **If-Elif-Else Statement**
 
     - **Description:** The `if-elif-else` statement allows for multiple conditions to be checked in sequence. If the if condition is `False`, it checks `elif` *(else if)* conditions in order, and finally executes the `else` block if none of the conditions are `True`.
   
-    ```{python ifelifStatement, eval=FALSE}
-        x = 7
-        if x > 10:
-            print("x is greater than 10")
-        elif x == 7:
-            print("x is 7")
-        else:
-            print("x is less than 10 and not 7")
-    ```
+```{python ifelifStatement, eval=FALSE}
+x = 7
+if x > 10:
+    print("x is greater than 10")
+elif x == 7:
+    print("x is 7")
+else:
+    print("x is less than 10 and not 7")
+```
 
 
   - **Switch-Case Statement**
 
     - **Description:** The `switch-case` statement *(used in C/C++ and some other languages but not Python)* provides a way to dispatch execution to different parts of code based on the value of an expression.
 
-    ```{c switchStatement, eval=FALSE}
-        int day = 3;
-        switch (day) {
-            case 1:
-                std::cout << "Monday" << std::endl;
-                break;
-            case 2:
-                std::cout << "Tuesday" << std::endl;
-                break;
-            case 3:
-                std::cout << "Wednesday" << std::endl;
-                break;
-            default:
-                std::cout << "Other day" << std::endl;
-        }
-    ```
+```{c switchStatement, eval=FALSE}
+int day = 3;
+switch (day) {
+    case 1:
+        std::cout << "Monday" << std::endl;
+        break;
+    case 2:
+        std::cout << "Tuesday" << std::endl;
+        break;
+    case 3:
+        std::cout << "Wednesday" << std::endl;
+        break;
+    default:
+        std::cout << "Other day" << std::endl;
+}
+```
 
   - **AND Operator**
 
@@ -3633,23 +3633,23 @@ visibility of attributes and methods.
 
   - **C++:** Uses `public`, `protected`, and `private` keywords to control access.
 
-  ```{python accessCode, eval=FALSE}
-      class BankAccount: 
-        def __init__(self, balance):
-        self.__balance = balance
+```{python accessCode, eval=FALSE}
+class BankAccount: 
+  def __init__(self, balance):
+  self.__balance = balance
 
-        def deposit(self, amount):
-            if amount > 0:
-                self.__balance += amount
+  def deposit(self, amount):
+      if amount > 0:
+          self.__balance += amount
 
-        def get_balance(self):
-            return self.__balance
+  def get_balance(self):
+      return self.__balance
 
-      # Creating an object of the class
-      account = BankAccount(1000)
-      account.deposit(500)
-      print(account.get_balance())  # Output: 1500
-  ```
+# Creating an object of the class
+account = BankAccount(1000)
+account.deposit(500)
+print(account.get_balance())  # Output: 1500
+```
 
 <br>
 
