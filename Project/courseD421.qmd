@@ -16,9 +16,11 @@ These exercises are not mines. They are from this [Quizlet »](https://quizlet.c
 
 <br>
 
-### The Foundations | Logic and Proofs
+### Chapter 1: The Foundations
 
+::: {.lead}
 #### Section 1:
+:::
 
 <br>
 
@@ -254,10 +256,6 @@ To determine whether a statement is a proposition, we determined whether the sta
 
 <br>
 
-#### Section 2:
-
-<br>
-
 ::: {.lead}
 ##### Exercise 2a
 :::
@@ -372,10 +370,6 @@ So it is not possible for this sentence to be true or false.
 
 <br>
 
-#### Section 3
-
-<br>
-
 ::: {.lead}
 ##### Exercise 3 
 :::
@@ -463,10 +457,6 @@ $\text{ Abby is not richer than Ricardo. }$
 
 <br>
 
-#### Section 4:
-
-<br>
-
 ::: {.lead}
 ##### Exercise 4
 :::
@@ -551,10 +541,6 @@ $\text{ Brianna does not sleep longer than Gloria. }$
 :::
 
 :::
-
-<br>
-
-#### Section 5:
 
 <br>
 
@@ -659,17 +645,9 @@ The negation of a statement states the opposite of the given statement.
 
 <br>
 
-#### Section 6:
-
-<br>
-
 ::: {.lead}
 ##### *coming soon ...*
 :::
-
-<br>
-
-#### Section 7:
 
 <br>
 
@@ -777,10 +755,6 @@ The negation of a statement states the opposite of the given statement.
 
 <br>
 
-#### Section 8:
-
-<br>
-
 ::: {.lead}
 ##### Exercise 8a
 :::
@@ -873,10 +847,6 @@ The negation of a statement states the opposite of the given statement.
 :::
 
 :::
-
-<br>
-
-#### Section 9:
 
 <br>
 
@@ -976,10 +946,6 @@ The negation of a statement states the opposite of the given statement.
 :::
 
 :::
-
-<br>
-
-#### Section 10
 
 <br>
 
@@ -1372,3 +1338,839 @@ Determine the English sentences by replacing $\text{p and q}$ by their given sen
 :::
 
 :::
+
+<br>
+
+::: {.lead}
+###### Exercise 11a
+:::
+
+::: {.panel-tabset}
+
+## Step-1
+
+**Given:**
+
+::: {.text-center}
+*p: Swimming at the New Jersey shore is allowed.*
+
+*q: Sharks have been spotted near the shore.*
+:::
+
+**Interpretation Symbols**
+
+::: {.text-center}
+$\text{¬p: not p}$
+
+$\text{p∨q: p or q}$
+
+$\text{p∧q: p and q}$
+
+$\text{p→q: if p, then}$ 
+
+$\text{p↔q: if and only if}$
+:::
+
+## Step-2
+
+**SOLUTION**
+
+Determine the English sentences by replacing $\text{p and q}$ by their given sentences 
+in the above interpretations *(and adjust the sentence to form a proper English sentence as needed):*
+
+::: {.text-center}
+(a) Sharks have not been spotted near the shore.
+:::
+
+## Result
+
+::: {.text-center}
+*(a) Sharks have not been spotted near the shore.*
+:::
+
+:::
+
+<br>
+
+::: {.lead}
+###### Exercise 11b
+:::
+
+::: {.panel-tabset}
+
+## Step-1
+
+**Given:**
+
+::: {.text-center}
+*p: Swimming at the New Jersey shore is allowed.*
+
+*q: Sharks have been spotted near the shore.*
+:::
+
+**Interpretation Symbols**
+
+::: {.text-center}
+$\text{¬p: not p}$
+
+$\text{p∨q: p or q}$
+
+$\text{p∧q: p and q}$
+
+$\text{p→q: if p, then}$ 
+
+$\text{p↔q: if and only if}$
+:::
+
+## Step-2
+
+**SOLUTION**
+
+Determine the English sentences by replacing $\text{p and q}$ by their given sentences 
+in the above interpretations *(and adjust the sentence to form a proper English sentence as needed):*
+
+::: {.text-center}
+(b) Swimming at the New Jersey shore is allowed and sharks have been spotted near the shore.
+:::
+
+## Result
+
+::: {.text-center}
+*(b) Swimming at the New Jersey shore is allowed and sharks have not been spotted near the shore.*
+:::
+
+:::
+
+<br>
+
+::: {.lead}
+###### Exercise 11c
+:::
+
+::: {.panel-tabset}
+
+## Step-1
+
+**Given:**
+
+::: {.text-center}
+*p: Swimming at the New Jersey shore is allowed.*
+
+*q: Sharks have been spotted near the shore.*
+:::
+
+**Interpretation Symbols**
+
+::: {.text-center}
+$\text{¬p: not p}$
+
+$\text{p∨q: p or q}$
+
+$\text{p∧q: p and q}$
+
+$\text{p→q: if p, then}$ 
+
+$\text{p↔q: if and only if}$
+:::
+
+## Step-2
+
+**SOLUTION**
+
+Determine the English sentences by replacing $\text{p and q}$ by their given sentences 
+in the above interpretations *(and adjust the sentence to form a proper English sentence as needed):*
+
+::: {.text-center}
+(c) Swimming at the New Jersey shore is not allowed or sharks have been spotted near the shore.
+:::
+
+## Result
+
+::: {.text-center}
+*(c) Swimming at the New Jersey shore is not allowed or sharks have been spotted near the shore.*
+:::
+
+:::
+
+<br>
+
+::: {.lead}
+###### Exercise 11a
+:::
+
+::: {.panel-tabset}
+
+## Step-1
+
+**Given:**
+
+::: {.text-center}
+*p: Swimming at the New Jersey shore is allowed.*
+
+*q: Sharks have been spotted near the shore.*
+:::
+
+**Interpretation Symbols**
+
+::: {.text-center}
+$\text{¬p: not p}$
+
+$\text{p∨q: p or q}$
+
+$\text{p∧q: p and q}$
+
+$\text{p→q: if p, then}$ 
+
+$\text{p↔q: if and only if}$
+:::
+
+## Step-2
+
+**SOLUTION**
+
+Determine the English sentences by replacing $\text{p and q}$ by their given sentences 
+in the above interpretations *(and adjust the sentence to form a proper English sentence as needed):*
+
+::: {.text-center}
+(d) If swimming at the New Jersey shore is allowed, then sharks have not been spotted near the shore.
+:::
+
+## Result
+
+::: {.text-center}
+*(d) If swimming at the New Jersey shore is allowed, then sharks have not been spotted near the shore.*
+:::
+
+:::
+
+<br>
+
+::: {.lead}
+###### Exercise 11e
+:::
+
+::: {.panel-tabset}
+
+## Step-1
+
+**Given:**
+
+::: {.text-center}
+*p: Swimming at the New Jersey shore is allowed.*
+
+*q: Sharks have been spotted near the shore.*
+:::
+
+**Interpretation Symbols**
+
+::: {.text-center}
+$\text{¬p: not p}$
+
+$\text{p∨q: p or q}$
+
+$\text{p∧q: p and q}$
+
+$\text{p→q: if p, then}$ 
+
+$\text{p↔q: if and only if}$
+:::
+
+## Step-2
+
+**SOLUTION**
+
+Determine the English sentences by replacing $\text{p and q}$ by their given sentences 
+in the above interpretations *(and adjust the sentence to form a proper English sentence as needed):*
+
+::: {.text-center}
+(e) If sharks have not been spotted near the shore, then swimming at the New Jersey Shore is allowed.
+:::
+
+## Result
+
+::: {.text-center}
+*(e) If sharks have not been spotted near the shore, then swimming at the New Jersey Shore is allowed.*
+:::
+
+:::
+
+<br>
+
+::: {.lead}
+###### Exercise 11f
+:::
+
+::: {.panel-tabset}
+
+## Step-1
+
+**Given:**
+
+::: {.text-center}
+*p: Swimming at the New Jersey shore is allowed.*
+
+*q: Sharks have been spotted near the shore.*
+:::
+
+**Interpretation Symbols**
+
+::: {.text-center}
+$\text{¬p: not p}$
+
+$\text{p∨q: p or q}$
+
+$\text{p∧q: p and q}$
+
+$\text{p→q: if p, then}$ 
+
+$\text{p↔q: if and only if}$
+:::
+
+## Step-2
+
+**SOLUTION**
+
+Determine the English sentences by replacing $\text{p and q}$ by their given sentences 
+in the above interpretations *(and adjust the sentence to form a proper English sentence as needed):*
+
+::: {.text-center}
+(f) If swimming at the New Jersey shore is not allowed, then sharks have not been spotted near the shore.
+:::
+
+## Result
+
+::: {.text-center}
+*(f) If swimming at the New Jersey shore is not allowed, then sharks have not been spotted near the shore.*
+:::
+
+:::
+
+<br>
+
+::: {.lead}
+###### Exercise 11g
+:::
+
+::: {.panel-tabset}
+
+## Step-1
+
+**Given:**
+
+::: {.text-center}
+*p: Swimming at the New Jersey shore is allowed.*
+
+*q: Sharks have been spotted near the shore.*
+:::
+
+**Interpretation Symbols**
+
+::: {.text-center}
+$\text{¬p: not p}$
+
+$\text{p∨q: p or q}$
+
+$\text{p∧q: p and q}$
+
+$\text{p→q: if p, then}$ 
+
+$\text{p↔q: if and only if}$
+:::
+
+## Step-2
+
+**SOLUTION**
+
+Determine the English sentences by replacing $\text{p and q}$ by their given sentences 
+in the above interpretations *(and adjust the sentence to form a proper English sentence as needed):*
+
+::: {.text-center}
+(g) Swimming at the New Jersey shore is allowed if and only if sharks have not been spotted near the shore.
+:::
+
+## Result
+
+::: {.text-center}
+*(g) Swimming at the New Jersey shore is allowed if and only if sharks have not been spotted near the shore.*
+:::
+
+:::
+
+<br>
+
+::: {.lead}
+###### Exercise 11h
+:::
+
+::: {.panel-tabset}
+
+## Step-1
+
+**Given:**
+
+::: {.text-center}
+*p: Swimming at the New Jersey shore is allowed.*
+
+*q: Sharks have been spotted near the shore.*
+:::
+
+**Interpretation Symbols**
+
+::: {.text-center}
+$\text{¬p: not p}$
+
+$\text{p∨q: p or q}$
+
+$\text{p∧q: p and q}$
+
+$\text{p→q: if p, then}$ 
+
+$\text{p↔q: if and only if}$
+:::
+
+## Step-2
+
+**SOLUTION**
+
+Determine the English sentences by replacing $\text{p and q}$ by their given sentences 
+in the above interpretations *(and adjust the sentence to form a proper English sentence as needed):*
+
+::: {.text-center}
+(h) Swimming at the New Jersey shore is not allowed and, swimming at the New Jersey shore is either allowed or sharks have not been spotted near the shore.
+:::
+
+*Note: The word "either" replaced the parentheses in the given proposition.*
+
+## Result
+
+::: {.text-center}
+*(h) Swimming at the New Jersey shore is not allowed and, either swimming at the New Jersey shore is allowed or sharks have not been spotted near the shore.*
+:::
+
+:::
+
+<br>
+
+::: {.lead}
+###### Exercise 12a
+:::
+
+::: {.panel-tabset}
+
+## Step-1
+
+**Given:**
+
+::: {.text-center}
+*p: The election is decided.*
+
+*q: The votes have been counted.*
+:::
+
+**Interpretation Symbols**
+
+::: {.text-center}
+$\text{¬p: not p}$
+
+$\text{p∨q: p or q}$
+
+$\text{p∧q: p and q}$
+
+$\text{p→q: if p, then}$ 
+
+$\text{p↔q: if and only if}$
+:::
+
+## Step-2
+
+**SOLUTION**
+
+Determine the English sentences by replacing $\text{p and q}$ by their given sentences 
+in the above interpretations *(and adjust the sentence to form a proper English sentence as needed):*
+
+::: {.text-center}
+(a) The election is not decided.
+:::
+
+## Result
+
+::: {.text-center}
+*(a) The election is not decided.*
+:::
+
+:::
+
+<br>
+
+::: {.lead}
+###### Exercise 12b
+:::
+
+::: {.panel-tabset}
+
+## Step-1
+
+**Given:**
+
+::: {.text-center}
+**
+p: The election is decided.
+
+q: The votes have been counted.
+**
+:::
+
+**Interpretation Symbols**
+
+::: {.text-center}
+$\text{¬p: not p}$
+
+$\text{p∨q: p or q}$
+
+$\text{p∧q: p and q}$
+
+$\text{p→q: if p, then}$ 
+
+$\text{p↔q: if and only if}$
+:::
+
+## Step-2
+
+**SOLUTION**
+
+Determine the English sentences by replacing $\text{p and q}$ by their given sentences 
+in the above interpretations *(and adjust the sentence to form a proper English sentence as needed):*
+
+::: {.text-center}
+(b) The election is decided or the votes have been counted.
+:::
+
+## Result
+
+::: {.text-center}
+*(b) The election is decided or the votes have been counted.*
+:::
+
+:::
+
+<br>
+
+::: {.lead}
+###### Exercise 12c
+:::
+
+::: {.panel-tabset}
+
+## Step-1
+
+**Given:**
+
+::: {.text-center}
+**
+p: The election is decided.
+
+q: The votes have been counted.
+**
+:::
+
+**Interpretation Symbols**
+
+::: {.text-center}
+$\text{¬p: not p}$
+
+$\text{p∨q: p or q}$
+
+$\text{p∧q: p and q}$
+
+$\text{p→q: if p, then}$ 
+
+$\text{p↔q: if and only if}$
+:::
+
+## Step-2
+
+**SOLUTION**
+
+Determine the English sentences by replacing $\text{p and q}$ by their given sentences 
+in the above interpretations *(and adjust the sentence to form a proper English sentence as needed):*
+
+::: {.text-center}
+(c) The election is not decided and the votes have been counted.
+:::
+
+## Result
+
+::: {.text-center}
+*(c) The election is not decided and the votes have been counted.*
+:::
+
+:::
+
+<br>
+
+::: {.lead}
+###### Exercise 12d
+:::
+
+::: {.panel-tabset}
+
+## Step-1
+
+**Given:**
+
+::: {.text-center}
+**
+p: The election is decided.
+
+q: The votes have been counted.
+**
+:::
+
+**Interpretation Symbols**
+
+::: {.text-center}
+$\text{¬p: not p}$
+
+$\text{p∨q: p or q}$
+
+$\text{p∧q: p and q}$
+
+$\text{p→q: if p, then}$ 
+
+$\text{p↔q: if and only if}$
+:::
+
+## Step-2
+
+**SOLUTION**
+
+Determine the English sentences by replacing $\text{p and q}$ by their given sentences 
+in the above interpretations *(and adjust the sentence to form a proper English sentence as needed):*
+
+::: {.text-center}
+(d) If the votes have been counted, then the election is decided.
+:::
+
+## Result
+
+::: {.text-center}
+*(d) If the votes have been counted, then the election is decided.*
+:::
+
+:::
+
+<br>
+
+::: {.lead}
+###### Sub-Title
+:::
+
+::: {.panel-tabset}
+
+## Step-1
+
+**Given:**
+
+::: {.text-center}
+**
+p: The election is decided.
+
+q: The votes have been counted.
+**
+:::
+
+**Interpretation Symbols**
+
+::: {.text-center}
+$\text{¬p: not p}$
+
+$\text{p∨q: p or q}$
+
+$\text{p∧q: p and q}$
+
+$\text{p→q: if p, then}$ 
+
+$\text{p↔q: if and only if}$
+:::
+
+## Step-2
+
+**SOLUTION**
+
+Determine the English sentences by replacing $\text{p and q}$ by their given sentences 
+in the above interpretations *(and adjust the sentence to form a proper English sentence as needed):*
+
+::: {.text-center}
+(e) If the votes have not been counted, then the election is not decided.
+:::
+
+## Result
+
+::: {.text-center}
+*(e) If the votes have not been counted, then the election is not decided.*
+:::
+
+:::
+
+<br>
+
+::: {.lead}
+###### Exercise 12f
+:::
+
+::: {.panel-tabset}
+
+## Step-1
+
+**Given:**
+
+::: {.text-center}
+**
+p: The election is decided.
+
+q: The votes have been counted.
+**
+:::
+
+**Interpretation Symbols**
+
+::: {.text-center}
+$\text{¬p: not p}$
+
+$\text{p∨q: p or q}$
+
+$\text{p∧q: p and q}$
+
+$\text{p→q: if p, then}$ 
+
+$\text{p↔q: if and only if}$
+:::
+
+## Step-2
+
+**SOLUTION**
+
+Determine the English sentences by replacing $\text{p and q}$ by their given sentences 
+in the above interpretations *(and adjust the sentence to form a proper English sentence as needed):*
+
+::: {.text-center}
+(f) If the election is not decided, then the votes have not been counted.
+:::
+
+## Result
+
+::: {.text-center}
+*(f) If the election is not decided, then the votes have not been counted.*
+:::
+
+:::
+
+<br>
+
+::: {.lead}
+###### Exercise 12g
+:::
+
+::: {.panel-tabset}
+
+## Step-1
+
+**Given:**
+
+::: {.text-center}
+**
+p: The election is decided.
+
+q: The votes have been counted.
+**
+:::
+
+**Interpretation Symbols**
+
+::: {.text-center}
+$\text{¬p: not p}$
+
+$\text{p∨q: p or q}$
+
+$\text{p∧q: p and q}$
+
+$\text{p→q: if p, then}$ 
+
+$\text{p↔q: if and only if}$
+:::
+
+## Step-2
+
+**SOLUTION**
+
+Determine the English sentences by replacing $\text{p and q}$ by their given sentences 
+in the above interpretations *(and adjust the sentence to form a proper English sentence as needed):*
+
+::: {.text-center}
+(g) The election is decided if and only if the votes have been counted.
+:::
+
+## Result
+
+::: {.text-center}
+*(g) The election is decided if and only if the votes have been counted.*
+:::
+
+:::
+
+<br>
+
+::: {.lead}
+###### Exercise 12h
+:::
+
+::: {.panel-tabset}
+
+## Step-1
+
+**Given:**
+
+::: {.text-center}
+**
+p: The election is decided.
+
+q: The votes have been counted.
+**
+:::
+
+**Interpretation Symbols**
+
+::: {.text-center}
+$\text{¬p: not p}$
+
+$\text{p∨q: p or q}$
+
+$\text{p∧q: p and q}$
+
+$\text{p→q: if p, then}$ 
+
+$\text{p↔q: if and only if}$
+:::
+
+## Step-2
+
+**SOLUTION**
+
+Determine the English sentences by replacing $\text{p and q}$ by their given sentences 
+in the above interpretations *(and adjust the sentence to form a proper English sentence as needed):*
+
+::: {.text-center}
+(h) The votes have not been counted or, the election is not decided and the votes have been counted.
+:::
+
+*Note: We replace the brackets by a comma "," in between the statement (to represent the brackets).*
+
+## Result
+
+::: {.text-center}
+*(h) The votes have not been counted or, the election is not decided and the votes have been counted.*
+:::
+
+:::
+
+<br>
