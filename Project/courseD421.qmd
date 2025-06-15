@@ -2213,7 +2213,522 @@ in the above interpretations *(and adjust the sentence to form a proper English 
 
 :::
 
-::: {.callout-note title="Title" collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
+::: {.callout-note title="Exercise 13" collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
+
+::: {.lead}
+###### Exercise 13 a
 :::
 
-<br>
+::: {.panel-tabset}
+
+## Step-1
+
+**Given:**
+
+::: {.text-center}
+**
+p: It is below freezing.
+
+q: It is snowing.
+**
+:::
+
+**Interpretation Symbols**
+
+::: {.text-center}
+$\text{¬p: not p}$
+
+$\text{p∨q: p or q}$
+
+$\text{p∧q: p and q}$
+
+$\text{p→q: if p, then}$ 
+
+$\text{p↔q: if and only if}$
+:::
+
+## Step-2
+
+**SOLUTION**
+
+Determine the English sentences by replacing $\text{p and q}$ by their given sentences 
+in the above interpretations *(and adjust the sentence to form a proper English sentence as needed):*
+
+::: {.text-center}
+(a) The given proposition states: $\text{p and q}$, or equivalently $p∧q$.
+:::
+
+## Result
+
+::: {.text-center}
+*(a) $p∧q$ *
+:::
+
+:::
+
+::: {.lead}
+###### Exercise 13b
+:::
+
+::: {.panel-tabset}
+
+## Step-1
+
+**Given:**
+
+::: {.text-center}
+**
+p: It is below freezing.
+
+q: It is snowing.
+**
+:::
+
+**Interpretation Symbols**
+
+::: {.text-center}
+$\text{¬p: not p}$
+
+$\text{p∨q: p or q}$
+
+$\text{p∧q: p and q}$
+
+$\text{p→q: if p, then}$ 
+
+$\text{p↔q: if and only if}$
+:::
+
+## Step-2
+
+**SOLUTION**
+
+Determine the English sentences by replacing $\text{p and q}$ by their given sentences 
+in the above interpretations *(and adjust the sentence to form a proper English sentence as needed):*
+
+::: {.text-center}
+(b) The given proposition states: $\text{p and not q}$, or equivalently $p∧¬q$.
+:::
+
+## Result
+
+::: {.text-center}
+*(b) $p∧¬q$*
+:::
+
+:::
+
+::: {.lead}
+###### Exercise 13c
+:::
+
+::: {.panel-tabset}
+
+## Step-1
+
+**Given:**
+
+::: {.text-center}
+**
+p: It is below freezing.
+
+q: It is snowing.
+**
+:::
+
+**Interpretation Symbols**
+
+::: {.text-center}
+$\text{¬p: not p}$
+
+$\text{p∨q: p or q}$
+
+$\text{p∧q: p and q}$
+
+$\text{p→q: if p, then}$ 
+
+$\text{p↔q: if and only if}$
+:::
+
+## Step-2
+
+**SOLUTION**
+
+Determine the English sentences by replacing $\text{p and q}$ by their given sentences 
+in the above interpretations *(and adjust the sentence to form a proper English sentence as needed):*
+
+::: {.text-center}
+(c) The given proposition states: $\text{not p and not q}$, or equivalently $¬p∧¬q$.
+:::
+
+## Result
+
+::: {.text-center}
+*(c) $¬p∧¬q$*
+:::
+
+:::
+
+::: {.lead}
+###### Exercise 13d
+:::
+
+::: {.panel-tabset}
+
+## Step-1
+
+**Given:**
+
+::: {.text-center}
+**
+p: It is below freezing.
+
+q: It is snowing.
+**
+:::
+
+**Interpretation Symbols**
+
+::: {.text-center}
+$\text{¬p: not p}$
+
+$\text{p∨q: p or q}$
+
+$\text{p∧q: p and q}$
+
+$\text{p→q: if p, then}$ 
+
+$\text{p↔q: if and only if}$
+:::
+
+## Step-2
+
+**SOLUTION**
+
+Determine the English sentences by replacing $\text{p and q}$ by their given sentences 
+in the above interpretations *(and adjust the sentence to form a proper English sentence as needed):*
+
+::: {.text-center}
+(d) The given proposition states: $\text{p or q}$, or equivalently $p∨q$.
+:::
+
+## Result
+
+::: {.text-center}
+*(d) $p∨q$*
+:::
+
+:::
+
+::: {.lead}
+###### Exercise 13e
+:::
+
+::: {.panel-tabset}
+
+## Step-1
+
+**Given:**
+
+::: {.text-center}
+**
+p: It is below freezing.
+
+q: It is snowing.
+**
+:::
+
+**Interpretation Symbols**
+
+::: {.text-center}
+$\text{¬p: not p}$
+
+$\text{p∨q: p or q}$
+
+$\text{p∧q: p and q}$
+
+$\text{p→q: if p, then}$ 
+
+$\text{p↔q: if and only if}$
+:::
+
+## Step-2
+
+**SOLUTION**
+
+Determine the English sentences by replacing $\text{p and q}$ by their given sentences 
+in the above interpretations *(and adjust the sentence to form a proper English sentence as needed):*
+
+::: {.text-center}
+(e) The given proposition states: $\text{if p, then q}$, or equivalently $p→q$.
+:::
+
+## Result
+
+::: {.text-center}
+*(e) $p→q$*
+:::
+
+:::
+
+::: {.lead}
+###### Exercise 13f
+:::
+
+::: {.panel-tabset}
+
+## Step-1
+
+**Given:**
+
+::: {.text-center}
+**
+p: It is below freezing.
+
+q: It is snowing.
+**
+:::
+
+**Interpretation Symbols**
+
+::: {.text-center}
+$\text{¬p: not p}$
+
+$\text{p∨q: p or q}$
+
+$\text{p∧q: p and q}$
+
+$\text{p→q: if p, then}$ 
+
+$\text{p↔q: if and only if}$
+:::
+
+## Step-2
+
+**SOLUTION**
+
+Determine the English sentences by replacing $\text{p and q}$ by their given sentences 
+in the above interpretations *(and adjust the sentence to form a proper English sentence as needed):*
+
+::: {.text-center}
+(f) The given proposition states: $\text{p or q, and if p then not q}$, or equivalently $(p∨q)∧(p→¬q)$.
+:::
+
+## Result
+
+::: {.text-center}
+*(f) $(p∨q)∧(p→¬q)$*
+:::
+
+:::
+
+::: {.lead}
+###### Exercise 13g
+:::
+
+::: {.panel-tabset}
+
+## Step-1
+
+**Given:**
+
+::: {.text-center}
+**
+p: It is below freezing.
+
+q: It is snowing.
+**
+:::
+
+**Interpretation Symbols**
+
+::: {.text-center}
+$\text{¬p: not p}$
+
+$\text{p∨q: p or q}$
+
+$\text{p∧q: p and q}$
+
+$\text{p→q: if p, then}$ 
+
+$\text{p↔q: if and only if}$
+:::
+
+## Step-2
+
+**SOLUTION**
+
+Determine the English sentences by replacing $\text{p and q}$ by their given sentences 
+in the above interpretations *(and adjust the sentence to form a proper English sentence as needed):*
+
+::: {.text-center}
+(g) *"Necessary and sufficient"* means the same as *"if and only if"*. 
+The given proposition then states: $\text{p if and only if q}$, or equivalently $p↔q$.
+:::
+
+## Result
+
+::: {.text-center}
+*(g) $p↔q$*
+:::
+
+:::
+
+<!-- end of collapse -->
+::: 
+
+::: {.callout-note title="Exercise 14" collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
+
+::: {.lead}
+Exercise 14a
+:::
+
+::: {.panel-tabset}
+
+## Example A
+
+(A.) If you have the flu, then you will miss the final examination.
+
+::: {.text-center}
+Conditional Statement
+:::
+
+## Example B
+
+(B.) If you won’t miss the final examination, then you’ll pass the course, 
+and conversely.
+
+::: {.text-center}
+Biconditional Statement.
+:::
+
+## Example C
+
+(C.) If you miss the final examination, then you will not pass the course
+
+::: {.text-center}
+Conditional Statement and negate r
+:::
+
+## Example D
+
+(D.) You have the flu, or you miss the final examination, or you pass the course.
+
+::: {.text-center}
+All are disjunctions so use or
+:::
+
+## Example E
+
+(E.) If you have the flu, then you will not pass the course or if you miss the 
+final examination, you will not pass the course.
+
+::: {.text-center}
+*(Conditional statement of p and negation of r)* Disjunction *(Conditional Statement of q and negation of r)*
+:::
+
+## Example F
+
+(F.) You have the flu and you miss the final examination or you don’t miss the 
+final examination and you pass the course.
+
+::: {.text-center}
+(P conjunction of Q) Disjunction (negation of Q conjunction of R)
+:::
+
+:::
+
+
+::: {.lead}
+Exercise 14b
+:::
+
+::: {.panel-tabset}
+
+## Example A
+
+(B)> You won't miss the final examination if and only if you pass the course.
+
+::: {.text-center}
+Bi-conditional statement
+:::
+
+## Result
+
+::: {.text-center}
+(B) You won't miss the final examination if and only if you pass the course.
+:::
+
+:::
+
+
+::: {.lead}
+Exercise 14c
+:::
+
+::: {.panel-tabset}
+
+## Example A
+
+(C) If you miss the examination then you will be failing the course
+
+::: {.text-center}
+Implication Statement
+:::
+
+:::
+
+
+::: {.lead}
+Exercise 14d
+:::
+
+::: {.panel-tabset}
+
+## Example A
+
+(D) You have the flu OR you miss the final examination OR you pass the course.
+
+::: {.text-center}
+Disjunction Proposition
+:::
+
+:::
+
+
+::: {.lead}
+Exercise 14e
+:::
+
+::: {.panel-tabset}
+
+## Example A
+
+(E) If you have the flu then you'll not pass the course OR If you miss the final 
+examination then you'll fail the course
+
+::: {.text-center}
+(P implies not R) OR (Q implies not R)
+:::
+
+:::
+
+
+::: {.lead}
+Exercise 14f
+:::
+
+::: {.panel-tabset}
+
+## Example A
+
+(F) You have the flu and you miss the examination OR You will not miss the 
+final examination and you pass the course
+
+::: {.text-center}
+(P and Q) OR (not Q and R)
+:::
+
+:::
+
+<!-- end of collapse -->
+:::
