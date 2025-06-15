@@ -18,7 +18,7 @@ These exercises are not mines. They are from this [Quizlet »](https://quizlet.c
 
 ### The Foundations | Logic and Proofs
 
-#### Chapter 1:
+#### Section 1:
 
 <br>
 
@@ -254,7 +254,7 @@ To determine whether a statement is a proposition, we determined whether the sta
 
 <br>
 
-#### Chapter 2:
+#### Section 2:
 
 <br>
 
@@ -372,7 +372,7 @@ So it is not possible for this sentence to be true or false.
 
 <br>
 
-#### Chapter 3
+#### Section 3
 
 <br>
 
@@ -463,7 +463,7 @@ $\text{ Abby is not richer than Ricardo. }$
 
 <br>
 
-#### Chapter 4:
+#### Section 4:
 
 <br>
 
@@ -554,7 +554,7 @@ $\text{ Brianna does not sleep longer than Gloria. }$
 
 <br>
 
-#### Chapter 5:
+#### Section 5:
 
 <br>
 
@@ -659,7 +659,7 @@ The negation of a statement states the opposite of the given statement.
 
 <br>
 
-#### Chapter 6:
+#### Section 6:
 
 <br>
 
@@ -669,7 +669,7 @@ The negation of a statement states the opposite of the given statement.
 
 <br>
 
-#### Chapter 7:
+#### Section 7:
 
 <br>
 
@@ -777,7 +777,7 @@ The negation of a statement states the opposite of the given statement.
 
 <br>
 
-#### Chapter 8:
+#### Section 8:
 
 <br>
 
@@ -876,7 +876,7 @@ The negation of a statement states the opposite of the given statement.
 
 <br>
 
-#### Chapter 9:
+#### Section 9:
 
 <br>
 
@@ -979,7 +979,7 @@ The negation of a statement states the opposite of the given statement.
 
 <br>
 
-#### Chapter 10
+#### Section 10
 
 <br>
 
