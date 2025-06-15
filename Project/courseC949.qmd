@@ -2949,7 +2949,7 @@ If `'Alice'` is in `phone_book`, it returns her number. Otherwise, it adds `'Ali
 
 <br>
 
-Variable declaration (dynamic vs static)
+Variable declaration **(dynamic vs static)**
 
 The way variables are declared and managed in programming languages can be broadly 
 categorized into **static** and **dynamic** types. This classification impacts how and 
@@ -3045,5 +3045,672 @@ In Python, `x` can dynamically grow in size as new elements are added to the lis
 <br>
 
 :::
+
+<br>
+
+#### Strongly-typed vs Weakly-typed
+
+::: {.lead}
+##### Strongly-Typed Languages
+:::
+
+<br>
+
+::: {.panel-tabset}
+
+## Definition:
+
+In strongly-typed languages, the type of a variable is strictly enforced. 
+This means that once a variable is assigned a specific type, it cannot be 
+implicitly converted to another type without explicit conversion.
+
+## Key Characteristics:
+
+  - **Strict Type Enforcement:** Operations between incompatible types will result in a compile-time or runtime error. For example, you cannot add a string to an integer without explicitly converting one of them.
+  - **Fewer Implicit Conversions:** Strongly-typed languages avoid automatic type coercion, where one type is automatically converted to another.
+  - **Type Safety:** The language provides more safety by catching type-related errors early, often at compile time.
+
+## Examples:
+
+  - **Java:** You cannot assign a string to an integer variable without explicit conversion.
+
+::: {.text-center}
+```{java stronglyJava, eval=FALSE}
+int x = "5"; // Compile-time error
+```
+:::
+
+  - **C#:** You must explicitly cast types when necessary.
+
+::: {.text-center}
+```{c stronglyCSharp, eval=FALSE}
+int x = 10;
+string y = "5";
+int result = x + int.Parse(y); // Correct
+```
+:::
+
+  - **Python:** While dynamically typed, Python is strongly-typed as it does not allow implicit conversion between incompatible types.
+
+::: {.text-center}
+```{python stronglyPython, eval=FALSE}
+x = 10
+y = "5"
+result = x + y  # Runtime error
+```
+:::
+
+:::
+
+<br>
+
+::: {.lead}
+##### Weakly-typed Languages
+:::
+
+<br>
+
+::: {.panel-tabset}
+
+## Definition:
+
+In weakly-typed languages, the type system is more flexible, allowing implicit 
+conversions between types. The language may automatically convert one type to 
+another as needed, often during runtime.
+
+## Key Characteristics:
+
+  - **Implicit Type Coercion:** The language can automatically convert types in certain situations, such as adding a number to a string by converting the number to a string.
+  - **Less Type Safety:** While more flexible, weakly-typed languages may introduce subtle bugs due to unintended type coercions that go unnoticed.
+  - **Ease of Use:** In some scenarios, weak typing can make code easier to write and understand, especially for quick scripting tasks.
+
+## Examples:
+
+  - **JavaScript:** Automatically converts types when needed.
+
+::: {.text-center}
+```{js weaklyJS, eval=FALSE}
+let x = 10;
+let y = "5";
+let result = x + y; // "105" (y is converted to a string)
+```
+:::
+
+  - **PHP:** Also allows implicit type conversion.
+
+::: {.text-center}
+```{bash weaklyPHP, eval=FALSE}
+$x = 10;
+$y = "5";
+$result = $x + $y; // 15 (y is converted to a number)
+```
+:::
+
+
+:::
+
+<br>
+
+---
+
+::: {.lead}
+###### **Comparison between Types**
+:::
+
+<br>
+
+::: {.callout-note title="Comparison: Strongly-Typed vs. Weakly-Typed" collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
+
+  - **Type Safety:** Strongly-typed languages provide more safety by enforcing type rules, reducing errors due to unintended type conversions. Weakly-typed languages sacrifice some of this safety for flexibility.
+  - **Flexibility:** Weakly-typed languages allow for more flexible and often shorter code, especially in cases where automatic type conversion is beneficial.
+  - **Error Handling:** Strongly-typed languages catch type-related errors early, often at compile time, while weakly-typed languages may only reveal such errors at runtime, if at all.
+
+:::
+
+<br>
+
+---
+
+<br>
+
+#### Assignment operators
+
+  - **Simple Assignment (**`=`**):** Assigns a value to a variable.
+  - **Compound Assignment:**
+    - `+=`: Addition
+    - `-=`: Subtraction
+    - `*=`: Multiplication
+    - `/=`: Division
+    - `//=`: Floor Division
+    - `%=`: Modulus
+    - `**=`: Exponentiation
+    - **Bitwise Operators:** `&=`, `|=`, `^=`, `<<=`, `>>=`
+
+Assignment operators streamline code by combining operations and assignments 
+into a single step, making code more concise and often more readable. 
+
+<br>
+
+::: {.lead}
+##### Order of operations / precedence rules
+:::
+
+<br>
+
+::: {.callout-note title="Operations & Rules" collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
+
+<br>
+
+###### 1. Arithmetic Operations
+
+  1. **Parentheses:** `()`
+    - Expressions inside parentheses are evaluated first.
+    - Example: $\text{(2 + 3) * 4}$ evaluates to `20`.
+
+  2. **Exponentiation:** ** (or ^ in some languages like Excel)
+    - Raises a number to the power of another number.
+    - Example: $\text{2 ** 3}$ evaluates to `8`.
+
+  3. **Unary Plus and Minus:** `+`, `-` *(unary)*
+    - Unary plus and minus are applied next.
+    - Example: $\text{-5 + 3}$ evaluates to `-2`.
+
+  4. **Multiplication and Division:** `*`, `/`, `//` *(floor division)*, `%` *(modulus)*
+    - Multiplication and division have the same precedence, evaluated from left to right.
+    - Example: $\text{6 / 2 * 3}$ evaluates to `9`.
+
+  5. **Addition and Subtraction:** `+`, `-`
+    - Addition and subtraction have the same precedence, evaluated from left to right.
+    - Example: $\text{5 + 3 - 2}$ evaluates to `6`.
+
+<br>
+
+###### 2. Comparison Operations
+
+  1. **Equality and Inequality:** $==$, $!=$
+    - Checks if two values are equal or not equal.
+
+  2. **Relational Operators:** $>$, $<$, $>=$, $<=$
+    - Compares two values to determine the relationship between them.
+
+<br>
+
+###### 3. Logical Operations
+
+  1. **Negation:** `not`
+    - Evaluates to the opposite Boolean value.
+
+  2. **And:** `and`
+    - Evaluates to `True` if both operands are `True`.
+
+  3. **Or:** `or`
+    - Evaluates to `True` if at least one operand is `True`.
+
+<br>
+
+###### 4. Assignment Operators
+
+  1. **Simple Assignment:** $=$
+    - Assigns a value to a variable.
+
+  2. **Compound Assignment:** $+=$, $-=$, $*=$, $/=$, etc.
+    - Performs an operation and assigns the result to a variable.
+
+<br>
+
+###### 5. Bitwise Operations
+
+  1. **Bitwise Not:** $\text{~}$
+    - Inverts all bits of the operand.
+
+  2. **Bitwise And:** $\text{&}$
+    - Performs a bitwise AND operation.
+
+  3. **Bitwise Or:** $|$
+    - Performs a bitwise OR operation.
+
+  4. **Bitwise XOR:** $\text{^}$
+    - Performs a bitwise XOR operation.
+
+  5. **Bitwise Shift:** $<<$, $>>$
+    - Shifts bits to the left or right.
+
+<br>
+
+###### 6. Miscellaneous
+
+  1. **Function Calls**
+    - Functions are evaluated first, from innermost to outermost.
+  2. **Member Access:** $.$ *(dot operator)*
+    - Accesses properties or methods of an object.
+  3. **Indexing and Slicing:** $\text{[ ]}$
+    - Retrieves or modifies elements from collections like lists or arrays.
+
+<br>
+
+:::
+
+<br>
+
+::: {.lead}
+##### Loops
+:::
+
+<br>
+
+::: {.callout-note title="Types of Loops" collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
+
+<br>
+
+###### Topic
+
+**For Loop**
+
+  - **Description:** The for loop iterates over a sequence *(such as a list, tuple, or string)* or a range of numbers, executing a block of code for each item.
+
+```{python forLoop, eval=FALSE}
+# Iterating over a list
+numbers = [1, 2, 3, 4, 5]
+for number in numbers:
+    print(number)
+
+# Iterating over a range
+for i in range(5):
+    print(i)
+```
+
+**While Loop**
+
+  - **Description:** The while loop repeatedly executes a block of code as long as a specified condition remains True.
+
+```{python whileLoop, eval=FALSE}
+# Looping while a condition is True
+count = 0
+while count < 5:
+    print(count)
+    count += 1
+```
+
+**Do-While Loop**
+
+  - Description: The `do-while` loop *(available in C/C++ but not in Python)* executes a block of code at least once and then repeatedly executes it as long as a condition remains `True`.
+
+```{c dowhileLoop, eval=FALSE}
+// Looping at least once and then while a condition is True
+int count = 0;
+do {
+    std::cout << count << std::endl;
+    count++;
+} while (count < 5);
+```
+
+**Break**
+
+  - **Description:** Exits the loop immediately, regardless of the loop's condition.
+
+```{python breakLoops, eval=FALSE}
+for i in range(10):
+    if i == 5:
+        break
+    print(i)
+```
+
+**Continue**
+
+  - **Description:** Skips the rest of the code inside the current iteration of the loop and proceeds to the next iteration.
+
+```{python continueLoops, eval=FALSE}
+for i in range(10):
+    if i % 2 == 0:
+        continue
+    print(i)
+```
+
+**Pass**
+
+  - **Description:** In Python, pass is a placeholder statement used when a statement is syntactically required but you do not want to execute any code.
+
+```{python passLoops, eval=FALSE}
+for i in range(10):
+    if i % 2 == 0:
+        pass  # Do nothing
+    else:
+        print(i)
+```
+
+**Nested Loops**
+
+  - **Description:** You can nest loops inside other loops to perform more complex iterations.
+
+```{python nestedLoops, eval=FALSE}
+for i in range(3):
+    for j in range(2):
+        print(f"i={i}, j={j}")
+```
+
+<br>
+
+:::
+
+<br>
+
+::: {.lead}
+##### Conditional statements / branching
+:::
+
+<br>
+
+::: {.callout-note title="Types of Statements" collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
+
+<br>
+
+###### Topic
+
+  - **If Statement**
+
+    - **Description:** The `if` statement executes a block of code if its condition is `True`.
+
+    ```{python ifStatement, eval=FALSE}
+        x = 10
+        if x > 5:
+            print("x is greater than 5")
+    ```
+
+  - **If-Else Statement**
+
+    - **Description:** The `if-else` statement executes one block of code if the condition is `True`, and another block if it is `False`.
+
+    ```{python ifelseStatement}
+        x = 3
+        if x > 5:
+            print("x is greater than 5")
+        else:
+            print("x is 5 or less")
+    ```
+
+  - **If-Elif-Else Statement**
+
+    - **Description:** The `if-elif-else` statement allows for multiple conditions to be checked in sequence. If the if condition is `False`, it checks `elif` *(else if)* conditions in order, and finally executes the `else` block if none of the conditions are `True`.
+  
+    ```{python ifelifStatement, eval=FALSE}
+        x = 7
+        if x > 10:
+            print("x is greater than 10")
+        elif x == 7:
+            print("x is 7")
+        else:
+            print("x is less than 10 and not 7")
+    ```
+
+
+  - **Switch-Case Statement**
+
+    - **Description:** The `switch-case` statement *(used in C/C++ and some other languages but not Python)* provides a way to dispatch execution to different parts of code based on the value of an expression.
+
+    ```{c switchStatement, eval=FALSE}
+        int day = 3;
+        switch (day) {
+            case 1:
+                std::cout << "Monday" << std::endl;
+                break;
+            case 2:
+                std::cout << "Tuesday" << std::endl;
+                break;
+            case 3:
+                std::cout << "Wednesday" << std::endl;
+                break;
+            default:
+                std::cout << "Other day" << std::endl;
+        }
+    ```
+
+  - **AND Operator**
+
+    - **Description:** Returns `True` if both conditions are `True`.
+
+    - **Syntax:**
+      - **Python/C/C++:** `condition1 and condition2`
+
+    - **Example:**
+      - **Python:** `if x > 0 and x < 10` **:**
+      - **C++:** `if (x > 0 && x < 10)`
+
+  - **OR Operator**
+
+    - **Description:** Returns `True` if at least one of the conditions is `True`.
+
+    - **Syntax:**
+      - **Python/C/C++:** `condition1` or `condition2`
+
+    - **Example:**
+      - **Python:** `if x < 0 or x > 10` **:**
+      - **C++:** `if (x < 0 || x > 10)`
+
+  - **NOT Operator**
+
+    - **Description:** Returns the opposite Boolean value of the condition.
+
+    - **Syntax:**
+      - **Python/C/C++:** `not condition`
+
+    - **Example:**
+      - **Python:** `if not x > 5` **:**
+      - **C++:** `if (!(x > 5))`
+
+<br>
+
+:::
+
+<br>
+
+::: {.lead}
+##### Classes
+:::
+
+<br>
+
+**Definition**
+
+A class is essentially a template for creating objects. It encapsulates data for the object and methods to operate on that data.
+
+```{python classObjects, eval=FALSE}
+class ClassName:
+    def __init__(self, attribute1, attribute2):
+        self.attribute1 = attribute1
+        self.attribute2 = attribute2
+
+    def method_name(self):
+        # Method code
+```
+
+<br>
+
+::: {.lead}
+##### Components of a Class
+:::
+
+<br>
+
+::: {.panel-tabset}
+
+## 1. Attributes:
+
+Variables that hold data related to the class. They define the state of an object.
+
+  - **Python:** Defined within the `__init__` method using `self`.
+  - **C++:** Defined within the class, often with private access and initialized via a constructor.
+
+## 2. Methods:
+
+Functions defined within a class that operate on its attributes or perform actions.
+
+  - **Python:** Defined with def keyword within the class.
+  - **C++:** Defined with the function signature inside the class and implemented outside the class body.
+
+## 3. Constructor:
+
+A special method that initializes objects of the class. It is called when an 
+object is created.
+
+  - **Python:** `__init__` method.
+  - **C++:** Defined with the class name and no return type.
+
+## 4. Destructor:
+
+A method that cleans up when an object is destroyed (in C++). Python manages 
+memory automatically, so a destructor is less commonly used.
+
+  - **Python:** `__del__` method *(optional)*.
+  - **C++:** Destructor defined with `~ClassName()`.
+
+```{python componentsCode, eval=FALSE}
+class Car:
+    def __init__(self, make, model, year):
+        self.make = make
+        self.model = model
+        self.year = year
+
+    def display_info(self):
+        print(f"{self.year} {self.make} {self.model}")
+
+# Creating an object of the class
+my_car = Car("Toyota", "Corolla", 2022)
+my_car.display_info()  # Output: 2022 Toyota Corolla
+```
+
+<br>
+
+:::
+
+<br>
+
+::: {.lead}
+##### Inheritance
+:::
+
+<br>
+
+::: {.panel-tabset}
+
+## Definition:
+
+Inheritance allows you to create a new class that is based on an existing class, 
+inheriting its attributes and methods.
+
+## Example:
+
+```{python inheritCode, eval=FALSE}
+class ParentClass:
+    # Parent class code
+
+class ChildClass(ParentClass):
+    # Child class code
+```
+
+<br>
+
+:::
+
+<br>
+
+::: {.lead}
+##### Encapsulation
+:::
+
+<br>
+
+::: {.panel-tabset}
+
+## Definition:
+
+Encapsulation is the concept of restricting access to certain details of an 
+object’s implementation. It involves using access specifiers to control the 
+visibility of attributes and methods.
+
+## Access Specifiers:
+
+  - **Python:** Uses naming conventions *(e.g., `_private` or `__private`)* rather than strict access specifiers.
+
+  - **C++:** Uses `public`, `protected`, and `private` keywords to control access.
+
+  ```{python accessCode, eval=FALSE}
+      class BankAccount: 
+        def __init__(self, balance):
+        self.__balance = balance
+
+        def deposit(self, amount):
+            if amount > 0:
+                self.__balance += amount
+
+        def get_balance(self):
+            return self.__balance
+
+      # Creating an object of the class
+      account = BankAccount(1000)
+      account.deposit(500)
+      print(account.get_balance())  # Output: 1500
+  ```
+
+<br>
+
+:::
+
+<br>
+
+::: {.lead}
+##### Polymorphism
+:::
+
+<br>
+
+::: {.panel-tabset}
+
+## Definition:
+
+Polymorphism allows objects of different classes to be treated as objects of a 
+common base class, typically through method overriding.
+
+## Example:
+
+```{python polymorphCode, eval=FALSE}
+class Animal:
+    def speak(self):
+        print("Animal speaks")
+
+class Dog(Animal):
+    def speak(self):
+        print("Dog barks")
+
+def make_animal_speak(animal):
+    animal.speak()
+
+# Creating objects
+animal = Animal()
+dog = Dog()
+
+make_animal_speak(animal)  # Output: Animal speaks
+make_animal_speak(dog)     # Output: Dog barks
+```
+
+<br>
+
+:::
+
+<br>
+
+---
+
+::: {.lead}
+###### **Summary**
+:::
+
+  - **Classes:** Define custom data types with attributes and methods.
+  - **Inheritance:** Create new classes based on existing ones, inheriting their properties and methods.
+  - **Encapsulation:** Restrict access to certain parts of an object’s implementation.
+  - **Polymorphism:** Allow different classes to be treated as objects of a common base class, often through method overriding.
+
+<br>
+
+---
 
 <br>
