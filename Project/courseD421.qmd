@@ -2584,7 +2584,7 @@ Exercise 14a
 
 ::: {.panel-tabset}
 
-## Example A
+## Ex. A
 
 (A.) If you have the flu, then you will miss the final examination.
 
@@ -2592,7 +2592,7 @@ Exercise 14a
 Conditional Statement
 :::
 
-## Example B
+## Ex. B
 
 (B.) If you won’t miss the final examination, then you’ll pass the course, 
 and conversely.
@@ -2601,7 +2601,7 @@ and conversely.
 Biconditional Statement.
 :::
 
-## Example C
+## Ex. C
 
 (C.) If you miss the final examination, then you will not pass the course
 
@@ -2609,7 +2609,7 @@ Biconditional Statement.
 Conditional Statement and negate r
 :::
 
-## Example D
+## Ex. D
 
 (D.) You have the flu, or you miss the final examination, or you pass the course.
 
@@ -2617,7 +2617,7 @@ Conditional Statement and negate r
 All are disjunctions so use or
 :::
 
-## Example E
+## Ex. E
 
 (E.) If you have the flu, then you will not pass the course or if you miss the 
 final examination, you will not pass the course.
@@ -2626,7 +2626,7 @@ final examination, you will not pass the course.
 *(Conditional statement of p and negation of r)* Disjunction *(Conditional Statement of q and negation of r)*
 :::
 
-## Example F
+## Ex. F
 
 (F.) You have the flu and you miss the final examination or you don’t miss the 
 final examination and you pass the course.
@@ -2644,7 +2644,7 @@ Exercise 14b
 
 ::: {.panel-tabset}
 
-## Example A
+## Ex. A
 
 (B)> You won't miss the final examination if and only if you pass the course.
 
@@ -2667,7 +2667,7 @@ Exercise 14c
 
 ::: {.panel-tabset}
 
-## Example A
+## Ex. A
 
 (C) If you miss the examination then you will be failing the course
 
@@ -2684,7 +2684,7 @@ Exercise 14d
 
 ::: {.panel-tabset}
 
-## Example A
+## Ex. A
 
 (D) You have the flu OR you miss the final examination OR you pass the course.
 
@@ -2701,7 +2701,7 @@ Exercise 14e
 
 ::: {.panel-tabset}
 
-## Example A
+## Ex. A
 
 (E) If you have the flu then you'll not pass the course OR If you miss the final 
 examination then you'll fail the course
@@ -2719,13 +2719,672 @@ Exercise 14f
 
 ::: {.panel-tabset}
 
-## Example A
+## Ex. A
 
 (F) You have the flu and you miss the examination OR You will not miss the 
 final examination and you pass the course
 
 ::: {.text-center}
 (P and Q) OR (not Q and R)
+:::
+
+:::
+
+<!-- end of collapse -->
+:::
+
+::: {.callout-note title="Exercise 15" collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
+
+::: {.lead}
+###### Exercise 15a
+:::
+
+::: {.panel-tabset}
+
+## Step-1
+
+**Given:**
+
+::: {.text-center}
+**
+p: You drive over 65 miles per hour.
+
+q:You get a speeding ticket.
+**
+:::
+
+**Interpretation Symbols**
+
+::: {.text-center}
+$\text{¬p: not p}$
+
+$\text{p∨q: p or q}$
+
+$\text{p∧q: p and q}$
+
+$\text{p→q: if p, then}$ 
+
+$\text{p↔q: if and only if}$
+:::
+
+## Step-2
+
+**SOLUTION**
+
+Replace the propositions of $\text{p and q}$ by their symbol in the given propositions, 
+then use the above interpretation of the symbols.
+
+::: {.text-center}
+(a) The given proposition states: $\text{not p}$, or equivalently $¬p$.
+:::
+
+## Result
+
+::: {.text-center}
+*(a) $¬p$*
+:::
+
+:::
+
+::: {.lead}
+###### Exercise 15b
+:::
+
+::: {.panel-tabset}
+
+## Step-1
+
+**Given:**
+
+::: {.text-center}
+**
+p: You drive over 65 miles per hour.
+
+q:You get a speeding ticket.
+**
+:::
+
+**Interpretation Symbols**
+
+::: {.text-center}
+$\text{¬p: not p}$
+
+$\text{p∨q: p or q}$
+
+$\text{p∧q: p and q}$
+
+$\text{p→q: if p, then}$ 
+
+$\text{p↔q: if and only if}$
+:::
+
+## Step-2
+
+**SOLUTION**
+
+Replace the propositions of $\text{p and q}$ by their symbol in the given propositions, 
+then use the above interpretation of the symbols.
+
+::: {.text-center}
+(b) The given proposition states: $\text{p and not q}$, or equivalently $p∧¬q$.
+:::
+
+## Result
+
+::: {.text-center}
+*(b) $p∧¬q$*
+:::
+
+:::
+
+::: {.lead}
+###### Exercise 15c
+:::
+
+::: {.panel-tabset}
+
+## Step-1
+
+**Given:**
+
+::: {.text-center}
+**
+p: You drive over 65 miles per hour.
+
+q:You get a speeding ticket.
+**
+:::
+
+**Interpretation Symbols**
+
+::: {.text-center}
+$\text{¬p: not p}$
+
+$\text{p∨q: p or q}$
+
+$\text{p∧q: p and q}$
+
+$\text{p→q: if p, then}$ 
+
+$\text{p↔q: if and only if}$
+:::
+
+## Step-2
+
+**SOLUTION**
+
+Replace the propositions of $\text{p and q}$ by their symbol in the given propositions, 
+then use the above interpretation of the symbols.
+
+::: {.text-center}
+(c) The given proposition states: $\text{if p then q}$, or equivalently $p→q$.
+:::
+
+## Result
+
+::: {.text-center}
+*(c) $p→q$*
+:::
+
+:::
+
+::: {.lead}
+###### Exercise 15d
+:::
+
+::: {.panel-tabset}
+
+## Step-1
+
+**Given:**
+
+::: {.text-center}
+**
+p: You drive over 65 miles per hour.
+
+q:You get a speeding ticket.
+**
+:::
+
+**Interpretation Symbols**
+
+::: {.text-center}
+$\text{¬p: not p}$
+
+$\text{p∨q: p or q}$
+
+$\text{p∧q: p and q}$
+
+$\text{p→q: if p, then}$ 
+
+$\text{p↔q: if and only if}$
+:::
+
+## Step-2
+
+**SOLUTION**
+
+Replace the propositions of $\text{p and q}$ by their symbol in the given propositions, 
+then use the above interpretation of the symbols.
+
+::: {.text-center}
+(d) The given proposition states: $\text{if not p then not q}$, or equivalently $¬p→¬q$.
+:::
+
+## Result
+
+::: {.text-center}
+*(d) $¬p→¬q$*
+:::
+
+:::
+
+::: {.lead}
+###### Exercise 15e
+:::
+
+::: {.panel-tabset}
+
+## Step-1
+
+**Given:**
+
+::: {.text-center}
+**
+p: You drive over 65 miles per hour.
+
+q:You get a speeding ticket.
+**
+:::
+
+**Interpretation Symbols**
+
+::: {.text-center}
+$\text{¬p: not p}$
+
+$\text{p∨q: p or q}$
+
+$\text{p∧q: p and q}$
+
+$\text{p→q: if p, then}$ 
+
+$\text{p↔q: if and only if}$
+:::
+
+## Step-2
+
+**SOLUTION**
+
+Replace the propositions of $\text{p and q}$ by their symbol in the given propositions, 
+then use the above interpretation of the symbols.
+
+::: {.text-center}
+(e) "Sufficient" means the same as the if-then statement. The given proposition 
+states: $\text{if p, then q}$, or equivalently $p→q$.
+:::
+
+## Result
+
+::: {.text-center}
+*(e) $p→q$*
+:::
+
+:::
+
+::: {.lead}
+###### Exercise 15f
+:::
+
+::: {.panel-tabset}
+
+## Step-1
+
+**Given:**
+
+::: {.text-center}
+**
+p: You drive over 65 miles per hour.
+
+q:You get a speeding ticket.
+**
+:::
+
+**Interpretation Symbols**
+
+::: {.text-center}
+$\text{¬p: not p}$
+
+$\text{p∨q: p or q}$
+
+$\text{p∧q: p and q}$
+
+$\text{p→q: if p, then}$ 
+
+$\text{p↔q: if and only if}$
+:::
+
+## Step-2
+
+**SOLUTION**
+
+Replace the propositions of $\text{p and q}$ by their symbol in the given propositions, 
+then use the above interpretation of the symbols.
+
+::: {.text-center}
+(f) The given proposition states: $\text{q and not p}$, or equivalently $q∧¬p$.
+:::
+
+## Result
+
+::: {.text-center}
+*(f) $q∧¬p$*
+:::
+
+:::
+
+::: {.lead}
+###### Exercise 15g
+:::
+
+::: {.panel-tabset}
+
+## Step-1
+
+**Given:**
+
+::: {.text-center}
+**
+p: You drive over 65 miles per hour.
+
+q:You get a speeding ticket.
+**
+:::
+
+**Interpretation Symbols**
+
+::: {.text-center}
+$\text{¬p: not p}$
+
+$\text{p∨q: p or q}$
+
+$\text{p∧q: p and q}$
+
+$\text{p→q: if p, then}$ 
+
+$\text{p↔q: if and only if}$
+:::
+
+## Step-2
+
+**SOLUTION**
+
+Replace the propositions of $\text{p and q}$ by their symbol in the given propositions, 
+then use the above interpretation of the symbols.
+
+::: {.text-center}
+(g) We could rewrite the given sentence as: If you get a speeding ticket, then you are driving are 65 miles per hour. The given proposition then states: $\text{if q then p}$, or equivalently $q→p.$
+:::
+
+## Result
+
+::: {.text-center}
+*(g) $q→p$*
+:::
+
+:::
+
+<!-- end of collapse -->
+:::
+
+::: {.callout-note title="Exercise 16" collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
+
+::: {.lead}
+###### Exercise 16a
+:::
+
+::: {.panel-tabset}
+
+## Step-1
+
+We are given the three propositions (note that they are declarative and thus propositions indeed):
+
+::: {.text-center}
+$\text{p: You get an A on the final exam,}$
+
+$\text{q: You do every exercise in this book,}$
+
+$\text{r: You get an A in this class.}$
+:::
+
+## Step-2
+
+a. The conjunction "but" essentially logically corresponds to "and" since it 
+implies that two statements are simultaneously true.
+
+The first part of statement corresponds directly to proposition $r$ and the 
+second *(after comma)* to negation of the proposition $q$, yielding:
+
+::: {.text-center}
+$r∧¬q$
+:::
+
+## Result
+
+::: {.text-center}
+*a. $r∧¬q$*
+:::
+
+:::
+
+::: {.lead}
+###### Exercise 16b
+:::
+
+::: {.panel-tabset}
+
+## Step-1
+
+We are given the three propositions (note that they are declarative and thus propositions indeed):
+
+::: {.text-center}
+$\text{p: You get an A on the final exam,}$
+
+$\text{q: You do every exercise in this book,}$
+
+$\text{r: You get an A in this class.}$
+:::
+
+## Step-2
+
+**b.** There are essentially three distinct statements in given sentence, each 
+corresponding to one of the given three propositions and thus we write it as:
+
+::: {.text-center}
+$p∧q∧r$
+:::
+
+## Result
+
+::: {.text-center}
+*b. $p∧q∧r$*
+:::
+
+:::
+
+::: {.lead}
+###### Exercise 16c
+:::
+
+::: {.panel-tabset}
+
+## Step-1
+
+We are given the three propositions (note that they are declarative and thus propositions indeed):
+
+::: {.text-center}
+$\text{p: You get an A on the final exam,}$
+
+$\text{q: You do every exercise in this book,}$
+
+$\text{r: You get an A in this class.}$
+:::
+
+## Step-2
+
+**c.** The first part of the given sentence contains proposition r and the second 
+contains proposition $p$. The word *"necessary"* obviously implies necessity, 
+precisely the fact that if $r$ is true, $p$ must be true as well:
+
+::: {.text-center}
+$r→p$
+:::
+
+## Result
+
+::: {.text-center}
+*c. $r→p$*
+:::
+
+:::
+
+::: {.lead}
+###### Exercise 16d
+:::
+
+::: {.panel-tabset}
+
+## Step-1
+
+We are given the three propositions (note that they are declarative and thus propositions indeed):
+
+::: {.text-center}
+$\text{p: You get an A on the final exam,}$
+
+$\text{q: You do every exercise in this book,}$
+
+$\text{r: You get an A in this class.}$
+:::
+
+## Step-2
+
+**d.** The three statements in the given sentence evidently correspond to, in order, 
+propositions $p$, $¬q$, and $r$.
+
+As before *"but"* implies the independent nature of the first two, i.e. that 
+they are both true $—$ we use the logical conjunction.
+
+Similarly, the word "nevertheless" implies this logical operation as well — the 
+statements are true regardless of one another, i.e. simultaneously:
+
+::: {.text-center}
+$p∧¬q∧r$
+:::
+
+## Result
+
+::: {.text-center}
+*d. $p∧¬q∧r$*
+:::
+
+:::
+
+::: {.lead}
+###### Exercise 16e
+:::
+
+::: {.panel-tabset}
+
+## Step-1
+
+We are given the three propositions (note that they are declarative and thus propositions indeed):
+
+::: {.text-center}
+$\text{p: You get an A on the final exam,}$
+
+$\text{q: You do every exercise in this book,}$
+
+$\text{r: You get an A in this class.}$
+:::
+
+## Step-2
+
+**e.** The part of the sentence before the word "sufficient" is simply the logical 
+conjunction of propositions p and q, and the part after it is a proposition r.
+
+The sufficiency of the first part means that it is true and will imply that the 
+second part is true as well, or put in mathematical terms:
+
+::: {.text-center}
+$(p∧q)→r$
+:::
+
+## Result
+
+::: {.text-center}
+*e. $(p∧q)→r$*
+:::
+
+:::
+
+::: {.lead}
+###### Exercise 16f
+:::
+
+::: {.panel-tabset}
+
+## Step-1
+
+We are given the three propositions (note that they are declarative and thus propositions indeed):
+
+::: {.text-center}
+$\text{p: You get an A on the final exam,}$
+
+$\text{q: You do every exercise in this book,}$
+
+$\text{r: You get an A in this class.}$
+:::
+
+## Step-2
+
+**f.** As we know, "if and only if" corresponds to logical equivalence, so we 
+only need to write the parts before and after those words in terms of propositions 
+and logical operators.
+
+The part before it evidently corresponds to proposition $r$ and the one after is 
+a disjunction of statements $\text{p and q}$. Thus, the solution is:
+
+::: {.text-center}
+$r↔(p∨q)$
+:::
+
+## Result
+
+::: {.text-center}
+*f. $r↔(p∨q)$*
+:::
+
+:::
+
+<!-- end of collapse -->
+:::
+
+::: {.callout-note title="Exercise 17" collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
+
+::: {.lead}
+###### Exercise 17a
+:::
+
+::: {.panel-tabset}
+
+## Ex. 1
+
+::: {.text-left}
+(A.) $r∧¬p$
+:::
+
+::: {.lead}
+Conjunction of r and negation of p
+:::
+
+## Ex. 2
+
+(B.) $¬p∧q∧r$
+
+::: {.text-center}
+Negation of p conjunction of q conjunction of r
+:::
+
+## Ex. 3
+
+(C.) $r→(q↔¬p)$
+
+::: {.text-center}
+Conditional statement of r and q biconditional of negation of p
+:::
+
+## Ex. 4
+
+(D.) $¬q∧¬p∧r$
+
+::: {.text-center}
+Negation of q conjunction of negation of p conjunction of r
+:::
+
+## Ex. 5
+
+(E.) $(q→(¬r∧p))∧¬((¬r∧¬p)→q)$
+
+::: {.text-center}
+A conditional statement of q and negation of r conjunction of p. Conjunction of 
+negation *(Negation of r conjunction of negation of p)* conditional of q.
+:::
+
+## Ex. 6
+
+(F.) $(p∧r)→¬q$
+
+::: {.text-center}
+(Conjunction of p and r) conditional of negation of q
 :::
 
 :::
