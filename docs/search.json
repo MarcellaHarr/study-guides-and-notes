@@ -114,7 +114,7 @@
     "href": "courseD493.html",
     "title": "Scripting & Programming",
     "section": "",
-    "text": "Scripting & Programming - Applications (D493)\n\n\n\n\\(\\text{#include &lt; ... &gt;}\\) library facility\n\na directive that tells the compiler what library will be used.\n\n\\(\\text{std}\\) standard library\n\nis a namespace\n\n\n\n\n\\(::\\) scope operator\n\nallows look-ups for objects by their names within a namespace\n\n\n\n\n\\(\\text{cout}\\) [see • out] standard output\n\nan \\(IO\\) object\n\n\\(\\text{}\\) [see • in] standard input\n\nan \\(IO\\) object\n\n\\(\\text{endl;}\\) manipulator\n\nends the current line and flushes the buffer associated with the device to force the text to show up on the console.\n\n\n#include &lt;iostream&gt;\n\nint main()\n{\n  std::cout &lt;&lt; \"Hello, World!\" &lt;&lt; std::endl;\n}",
+    "text": "Scripting & Programming - Applications (D493)\n\n\n\n#include &lt; … &gt; library facility | a directive that tells the compiler what library will be used.\n\n\n\\(\\text{_std_}\\) standard library | is a namespace\n\n\n\\(::\\) scope operator | allows look-ups for objects by their names within a namespace\n\n\n\\(\\text{cout}\\) [see • out] standard output | an \\(IO\\) object\n\n\n\\(\\text{cin}\\) [see • in] standard input | an \\(IO\\) object\n\n\n\\(\\text{endl;}\\) manipulator | ends the current line and flushes the buffer associated with the device to force the text to show up on the console.\n\n#include &lt;iostream&gt;\n\nint main()\n{\n  std::cout &lt;&lt; \"Hello, World!\" &lt;&lt; std::endl;\n}",
     "crumbs": [
       "Scripting & Programming"
     ]
