@@ -14,27 +14,27 @@ _#include < ... >_ *library facility*
 :::
 
 ::: {.lead}
-$\text{_std_}$ *standard library*
+_$\text{std}$_ *standard library*
 | is a namespace
 :::
 
 ::: {.lead}
-$::$ *scope operator*
+_$::$_ *scope operator*
 | allows look-ups for objects by their names within a namespace
 :::
 
 ::: {.lead}
-$\text{cout}$ [see • out] *standard output*
+_$\text{cout}$_ [see • out] *standard output*
 | an $IO$ object
 :::
 
 ::: {.lead}
-$\text{cin}$ [see • in] *standard input*
+_$\text{cin}$_ [see • in] *standard input*
 | an $IO$ object
 :::
 
 ::: {.lead}
-$\text{endl;}$ *manipulator*
+_$\text{endl;}$_ *manipulator*
 | ends the current line and flushes the *buffer* associated with the device to force the text to show up on the console.
 :::
 
