@@ -8,15 +8,31 @@ Scripting & Programming - Applications (D493)
 
 <br>
 
-::: {.lead}
-Bool:
+$\text{#include < ... >}$ library facility
+  : a directive that tells the compiler what library will be used.
 
-An integer type whose value can be either [true]{.mark} or [false]{.mark}.
+$\text{std}$ standard library
+  : is a namespace
+
+::: {.lead}
+$::$ scope operator
+  : allows look-ups for objects by their names within a namespace
 :::
 
+$\text{cout}$ *[see • out]* standard output
+  : an $IO$ object
+
+$\text{}$ *[see • in]* standard input
+  : an $IO$ object
+
+$\text{endl;}$ manipulator
+  : ends the current line and flushes the *buffer* associated with the device to force the text to show up on the console.
+
 ```cpp
-bool is_even(int x) {
- return x%2 == 0;
+#include <iostream>
+
+int main()
+{
+  std::cout << "Hello, World!" << std::endl;
 }
-const bool b = is_even(47); // false
 ```
