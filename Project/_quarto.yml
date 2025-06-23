@@ -19,8 +19,8 @@ bibliography: references.bib
 
 format:
   html:
-    theme:
-      dark: lux
+    theme: lux
+    theme-color: dark
     toc: true
     toc-depth: 5
     toc-expand: 2
