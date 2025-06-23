@@ -24,6 +24,7 @@ format:
       light: lux
       dark: darkly
     toc: true
+    linkcolor: "#F6B89E"
     toc-depth: 5
     toc-expand: 2
     toc-title: "Contents"
