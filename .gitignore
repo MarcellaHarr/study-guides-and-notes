@@ -4,3 +4,6 @@
 
 # Ignore workspace settings
 .vscode/settings.json
+
+# Ignore folder from Posit.cloud
+study-guides-and-notes/
