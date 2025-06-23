@@ -20,9 +20,8 @@ bibliography: references.bib
 format:
   html:
     css: bootstrap.css
-    theme: 
-      light: lux
-      dark: lux
+    theme: []
+    prefer-dark-mode: true
     toc: true
     toc-depth: 5
     toc-expand: 2
@@ -33,9 +32,9 @@ format:
     page-layout: full
     grid:
       body-width: 975px
+
   pdf:
     documentclass: scrreprt
 
-editor: 
+editor:
   render-on-save: true
-
