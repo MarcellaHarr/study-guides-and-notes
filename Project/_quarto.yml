@@ -21,8 +21,7 @@ format:
   html:
     theme:
       light: lux
-      dark: dark
-    theme-color: dark
+      dark: lux-dark
     toc: true
     toc-depth: 5
     toc-expand: 2
