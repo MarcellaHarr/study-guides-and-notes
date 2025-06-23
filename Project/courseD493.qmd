@@ -11,7 +11,7 @@ Scripting & Programming - Applications (D493)
 #### Basic
 
 ::: {.lead}
-| [_#include < ... >_]{.mark} *library facility*
+| [_#include < ... >_]{.mark .vocab} *library facility*
 |   a directive that tells the compiler what library will be used.
 <br>
 
