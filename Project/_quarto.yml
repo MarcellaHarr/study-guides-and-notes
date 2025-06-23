@@ -23,8 +23,8 @@ format:
     theme:
       light: lux
       dark: darkly
+    linkcolor: "#c4937e"
     toc: true
-    linkcolor: "#F6B89E"
     toc-depth: 5
     toc-expand: 2
     toc-title: "Contents"
