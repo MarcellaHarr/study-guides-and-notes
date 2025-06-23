@@ -20,7 +20,7 @@ bibliography: references.bib
 format:
   html:
     css: bootstrap.css
-    theme: []
+    theme: none
     prefer-dark-mode: true
     toc: true
     toc-depth: 5
