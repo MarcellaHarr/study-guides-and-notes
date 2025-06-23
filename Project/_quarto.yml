@@ -23,8 +23,7 @@ format:
     theme:
       light: lux
       dark: darkly
-    toccolor: "#ac806e"
-    linkcolor: "#f6b89e"
+    css: custom_styles.css
     toc: true
     toc-depth: 5
     toc-expand: 2
