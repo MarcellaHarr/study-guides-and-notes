@@ -8,34 +8,48 @@ Scripting & Programming - Applications (D493)
 
 <br>
 
+#### Basic
+
 ::: {.lead}
-| _#include < ... >_ *library facility*
+| [_#include < ... >_]{.mark} *library facility*
 |   a directive that tells the compiler what library will be used.
+<br>
+
 :::
 
 ::: {.lead}
 | _$\text{std}$_ *standard library*
 |   is a namespace
+<br>
+
 :::
 
 ::: {.lead}
 | _$::$_ *scope operator*
 |   allows look-ups for objects by their names within a namespace
+<br>
+
 :::
 
 ::: {.lead}
-| _$\text{cout}$_ [see • out] *standard output*
-|   an $IO$ object
+| _$\text{cout}$_ [see • out] *character out*
+|   a standard $IO$ object
+<br>
+
 :::
 
 ::: {.lead}
-| _$\text{cin}$_ [see • in] *standard input*
-|   an $IO$ object
+| _$\text{cin}$_ [see • in] *character in*
+|   a standard $IO$ object
+<br>
+
 :::
 
 ::: {.lead}
 | _$\text{endl;}$_ *manipulator*
 |   ends the current line and flushes the *buffer* associated with the device to force the text to show up on the console.
+<br>
+
 :::
 
 ```cpp
