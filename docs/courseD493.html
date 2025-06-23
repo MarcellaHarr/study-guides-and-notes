@@ -383,11 +383,17 @@ window.Quarto = {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="2">
+    <h2 id="toc-title">Contents</h2>
+   
+  <ul>
+  <li><a href="#basic" id="toc-basic" class="nav-link active" data-scroll-target="#basic">Basic</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
-<main class="content column-page-right" id="quarto-document-content">
+<main class="content column-body" id="quarto-document-content">
 
 
 <header id="title-block-header" class="quarto-title-block default">
@@ -397,7 +403,7 @@ window.Quarto = {
 
 
 
-<div class="quarto-title-meta column-page-right">
+<div class="quarto-title-meta column-body">
 
     
   
@@ -413,29 +419,37 @@ window.Quarto = {
 <p>Scripting &amp; Programming - Applications (D493)</p>
 </div>
 <p><br></p>
+<section id="basic" class="level4">
+<h4 class="anchored" data-anchor-id="basic">Basic</h4>
 <div class="lead">
-<div class="line-block"><em>#include &lt; … &gt;</em> <em>library facility</em><br>
+<div class="line-block"><mark><em>#include &lt; … &gt;</em></mark> <em>library facility</em><br>
 &nbsp;&nbsp;a directive that tells the compiler what library will be used.</div>
+<p><br></p>
 </div>
 <div class="lead">
 <div class="line-block"><em><span class="math inline">\(\text{std}\)</span></em> <em>standard library</em><br>
 &nbsp;&nbsp;is a namespace</div>
+<p><br></p>
 </div>
 <div class="lead">
 <div class="line-block"><em><span class="math inline">\(::\)</span></em> <em>scope operator</em><br>
 &nbsp;&nbsp;allows look-ups for objects by their names within a namespace</div>
+<p><br></p>
 </div>
 <div class="lead">
-<div class="line-block"><em><span class="math inline">\(\text{cout}\)</span></em> [see • out] <em>standard output</em><br>
-&nbsp;&nbsp;an <span class="math inline">\(IO\)</span> object</div>
+<div class="line-block"><em><span class="math inline">\(\text{cout}\)</span></em> [see • out] <em>character out</em><br>
+&nbsp;&nbsp;a standard <span class="math inline">\(IO\)</span> object</div>
+<p><br></p>
 </div>
 <div class="lead">
-<div class="line-block"><em><span class="math inline">\(\text{cin}\)</span></em> [see • in] <em>standard input</em><br>
-&nbsp;&nbsp;an <span class="math inline">\(IO\)</span> object</div>
+<div class="line-block"><em><span class="math inline">\(\text{cin}\)</span></em> [see • in] <em>character in</em><br>
+&nbsp;&nbsp;a standard <span class="math inline">\(IO\)</span> object</div>
+<p><br></p>
 </div>
 <div class="lead">
 <div class="line-block"><em><span class="math inline">\(\text{endl;}\)</span></em> <em>manipulator</em><br>
 &nbsp;&nbsp;ends the current line and flushes the <em>buffer</em> associated with the device to force the text to show up on the console.</div>
+<p><br></p>
 </div>
 <div class="sourceCode" id="cb1"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="pp">#include </span><span class="im">&lt;iostream&gt;</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -445,6 +459,7 @@ window.Quarto = {
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -859,7 +874,7 @@ window.Quarto = {
     }
   });
   </script>
-<nav class="page-navigation column-page-right">
+<nav class="page-navigation column-body">
   <div class="nav-page nav-page-previous">
       <a href="./courseC949.html" class="pagination-link" aria-label="DSA I">
         <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">DSA I</span>
