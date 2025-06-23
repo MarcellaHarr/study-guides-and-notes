@@ -21,8 +21,8 @@ format:
   html:
     css: bootstrap.css
     theme: 
-      light: [lux, _variables.scss]
-      dark: [lux, _bootswatch.scss]
+      light: lux
+      dark: lux
     toc: true
     toc-depth: 5
     toc-expand: 2
