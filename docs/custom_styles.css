@@ -1,4 +1,29 @@
+/* Links */
+a {
+  color: #f6b89e;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+a:hover {
+  border-bottom-color: #ac806e;
+}
+
+/* TOC links */
+.quarto-toc a {
+  color: #f6b89e;
+  text-decoration: none;
+  display: block;
+  padding: 0.2em 0;
+}
+
+.quarto-toc a:hover {
+  color: #cc9696;
+}
+
+/* Custom elements */
 mark.vocab {
-  color: #7d12ba;
-  background-color: #f8f9fa;
+  color: #cc9696;
+  background-color: #fff0da;
 }
