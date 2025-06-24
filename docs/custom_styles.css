@@ -1,29 +1,46 @@
 /* Links */
 a {
-  color: #f6b89e;
+  color: #73a1a1;
   text-decoration: none;
   border-bottom: 1px solid transparent;
   transition: border-color 0.2s ease;
 }
 
 a:hover {
-  border-bottom-color: #ac806e;
+  color: #a18a73;
 }
 
 /* TOC links */
-.quarto-toc a {
+div.sidebar-item-container .active, 
+div.sidebar-item-container .show>.nav-link, 
+div.sidebar-item-container .sidebar-link>code {
   color: #f6b89e;
-  text-decoration: none;
-  display: block;
-  padding: 0.2em 0;
 }
 
-.quarto-toc a:hover {
-  color: #cc9696;
+div.sidebar-item-container a:hover {
+  color: #e2d5d5;
+}
+
+/* Contents menu */
+.sidebar nav[role=doc-toc] ul>li>a.active, 
+.sidebar nav[role=doc-toc] ul>li>ul>li>a.active {
+    border-left: 1px solid #e2d5d5;
+    color: #e2d5d5 !important;
+}
+
+.sidebar nav[role=doc-toc] ul>li a:hover, 
+.sidebar nav[role=doc-toc] ul>li>ul>li a:hover {
+  color: #f6b89e !important;
 }
 
 /* Custom elements */
 mark.vocab {
   color: #cc9696;
-  background-color: #fff0da;
+  background-color: transparent;
 }
+
+.panel-tabset {
+  margin-bottom: 2.25rem;
+}
+
+/* https://rpubs.com/drgregmartin/1266676 */
