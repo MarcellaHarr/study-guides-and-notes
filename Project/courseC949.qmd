@@ -11,6 +11,14 @@ Data Structures and Algorithms I (C949)
 
 :::
 
+---
+
+::: {.callout-note}
+This study guide is not mines. It belongs to this person [OfficeRunner >>](https://www.reddit.com/r/WGU/comments/1f52ld1/great_proctor_experience_c949_data_structures_and/) I found on reddit.
+:::
+
+---
+
 <br>
 
 ## Explains Algorithms (29%)
