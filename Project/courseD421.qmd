@@ -22,7 +22,84 @@ These exercises are not mines. They are from this [Quizlet »](https://quizlet.c
 #### Section 1.2:
 :::
 
-::: {.callout-note title="Exercise 1" collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
+```{r}
+embed_youtube("uRj87VpsOkM") %>% 
+  use_bs_responsive()
+```
+
+A **set** is a collection of objects. The objects in a set are called **elements**. 
+The **roster notation** definition of a set is a list of the elements enclosed 
+in curly braces with the individual elements separated by commas. 
+
+---
+
+```{r}
+embed_youtube("_QYbYUhFpyg") %>% 
+  use_bs_responsive()
+```
+
+The set with no elements is called the **empty set** and is denoted by the 
+symbol $∅$. The empty set is sometimes referred to as the **null set** and can 
+also be denoted by $\{ \}$. A **finite set** has a finite number of elements. 
+An **infinite set** has an infinite number of elements. The cardinality of a 
+finite set is the number of elements in that set, and is denoted as $|\thinspace|$.
+
+---
+
+<br>
+
+```{r}
+embed_youtube("UqulNbiHrrU") %>% 
+  use_bs_responsive()
+```
+
+::: {#tbl-panel layout-ncol=2}
+| Symbol | Set                                                                                                               | Example |
+|--------|-------------------------------------------------------------------------------------------------------------------|------|
+| $\mathbb{N}$      | The set of natural numbers: All integers greater than or equal to 0.                                              | $0, 1, 2$    |
+| $\mathbb{Z}$      | The set of all integers.                                                                                          | $..., -2, -1, 0, 1, 2, ...$    |
+| $\mathbb{Q}$      | The set of rational numbers: All real numbers that can be expressed as a/b, where a and b are integers and b ≠ 0. | $0,\thinspace 1/2,\thinspace 5.23, \thinspace -5/3$    |
+| $\mathbb{R}$      | The set of real numbers.                                                                                          | $0, 1/2, 5.23, -5/3,\thinspace \pi, \sqrt{2}$ |
+
+: Common Math Sets {#tbl-first}
+
+| Symbol            | Set |
+|------------------ |------|
+| $\mathbb{R^+}$    | The set of all positive real numbers.    |
+| $\mathbb{R^-}$    | The set of all negative real numbers.    |
+| $\mathbb{Z^+}$    | The set of all positive integers.    |
+| $\mathbb{Z^-}$    | The set of all negative integers    |
+
+: Superscripts {#tbl-second}
+
+Math Symbol Examples
+:::
+
+<br>
+
+A number x is **positive** if $x > 0$. A number x is **negative** if $x < 0$. The 
+number $0$ is neither positive nor negative, so $0 \in \mathbb{Z^+}$ and $0 \in \mathbb{Z^-}$,
+and a number $x$ is **non-negative** if $x ≥ 0$.
+
+---
+
+```{r}
+embed_youtube("xnfUZ-NTsCE") %>% 
+  use_bs_responsive()
+```
+
+In **set builder notation**, a set is defined by specifying that the set includes 
+all elements in a larger set that also satisfy certain conditions.
+
+::: {.text-center}
+$\mathbb{A} = { x \in \mathbb{S} : \mathbb{P}(x) }$
+
+*$\mathbb{S}$ is the larger set from which the elements in $\mathbb{S}$ are taken.*
+:::
+
+---
+
+::: {.callout-note title="Exercises" collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
 
 ::: {.lead}
 ###### Exercise 1a
