@@ -16,10 +16,10 @@ These exercises are not mines. They are from this [Quizlet »](https://quizlet.c
 
 <br>
 
-### Chapter 1: The Foundations
+### Module 1: Working with Sets
 
 ::: {.lead}
-#### Section 1:
+#### Section 1.2:
 :::
 
 ::: {.callout-note title="Exercise 1" collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
@@ -32,37 +32,45 @@ These exercises are not mines. They are from this [Quizlet »](https://quizlet.c
 
 ## Step-1
 
-In this exercise, we determine whether the given statement represents a proposition.
+The goal of this exercise is to list all elements of the set
 
-**What is a proposition?**
+::: {.text-center}
+$\{x∣x \text{ is a real number such that } x^2=1\}$
+:::
+
+**What is a set?**
 
 ## Step-2
 
-A **proposition** is a statement that is known to be true or known to be false. 
-If we don't know if a statement is true or false, then the statement is not a 
-proposition.
+A **set** is an unordered collection of objects that satisfy a certain 
+property. This property can be expressed mathematically or in a form of a sentence.
 
 ## Step-3
 
-**(a)**
+Let's identify all real numbers $x$ for which $x^2=1$.
 
-The statement is a proposition because we know that the statement is true 
-$T$ *(as Boston is the capital of Massachusetts)*.
+::: {.text-center}
+$x^2 = 1 ⟹ x = ± 1 ⟹ x = ± 1$
+:::
+
+Therefore, elements of the given set are $−1$ and $1$. We can also write this as
+
+::: {.text-center}
+$\{x∣x \text{ is a real number such that } x^2=1\} = \{-1, 1\}$.
+:::
 
 ## Step-4
 
-Let us summarize how the results were derived.
+Let's recap what we have done.
 
-To determine whether a statement is a proposition, we determined whether the 
-statement was true or false.
-
-If we were able to derive a truth value, then the statement has to be a proposition.
-If we were unable to assign a truth value to the statement or the truth value 
-was dependent on some variable, then the statement couldn't be a proposition.
+We determined that the real numbers whose square is equal to $1$ are $−1$ and $1$, 
+and that they are the only elements of this set.
 
 ## Results
 
-*(a) Proposition, $T$*
+::: {.text-center}
+$−1,1$
+:::
 
 :::
 
