@@ -14,11 +14,15 @@ These exercises are not mines. They are from this [Quizlet »](https://quizlet.c
 
 ---
 
-```{r setup-magrittr, include=FALSE}
+```{r setup-packages, include=FALSE}
 if (!requireNamespace("magrittr", quietly = TRUE)) {
   install.packages("magrittr")
 }
+if (!requireNamespace("vembedr", quietly = TRUE)) {
+  install.packages("vembedr")
+}
 library(magrittr)
+library(vembedr)
 ```
 
 <br>
