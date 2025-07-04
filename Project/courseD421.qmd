@@ -72,7 +72,7 @@ embed_youtube("UqulNbiHrrU") %>%
 | $\mathbb{Q}$      | The set of rational numbers: All real numbers that can be expressed as a/b, where a and b are integers and b ≠ 0. | $0,\thinspace 1/2,\thinspace 5.23, \thinspace -5/3$    |
 | $\mathbb{R}$      | The set of real numbers.                                                                                          | $0, 1/2, 5.23, -5/3,\thinspace \pi, \sqrt{2}$ |
 
-: Common Math Sets {#tbl-first .striped .hover tbl-colwidths="10,70,20"}
+: Common Math Sets {#tbl-first .striped .hover}
 
 | Symbol            | Set |
 |------------------ |------|
