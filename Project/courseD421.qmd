@@ -34,7 +34,7 @@ library(vembedr)
 :::
 
 ```{r set-basics-vid, echo=FALSE}
-embed_youtube("uRj87VpsOkM") %>% 
+embed_youtube("uRj87VpsOkM", ratio = "21by9") %>% 
   use_bs_responsive()
 ```
 
@@ -45,7 +45,7 @@ in curly braces with the individual elements separated by commas.
 ---
 
 ```{r identify-sets-vid, echo=FALSE}
-embed_youtube("_QYbYUhFpyg") %>% 
+embed_youtube("_QYbYUhFpyg", ratio = "16by9") %>% 
   use_bs_responsive()
 ```
 
