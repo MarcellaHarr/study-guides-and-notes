@@ -26,14 +26,44 @@ library(magrittr)
 ### Module 1: Working with Sets
 
 ::: {.lead}
-#### Section 1.2:
+#### Section 1:
 :::
+
+---
 
 {{< video https://youtu.be/uRj87VpsOkM aspect-ratio="21x9" >}}
 
 A **set** is a collection of objects. The objects in a set are called **elements**. 
 The **roster notation** definition of a set is a list of the elements enclosed 
 in curly braces with the individual elements separated by commas. 
+
+---
+
+{{< video https://youtu.be/jsZGvxxnL_c aspect-ratio="21x9" >}}
+
+::: {.panel-tabset}
+
+## "Element of" Example
+
+::: {.text-center}
+**element** $\epsilon$ **set**
+:::
+
+$x\enspace \epsilon \enspace \{w,x\}$
+$p\enspace \epsilon \enspace \{q,r,s\}$
+
+## Subset Example
+
+::: {.text-center}
+**set** $\subseteq$ **set**
+:::
+
+$\{6,7,8\}\enspace \subseteq \enspace \{1,2,3,...\}$
+$\{2\}\enspace \subseteq \enspace \{1,2\}$
+
+:::
+
+<br>
 
 ---
 
