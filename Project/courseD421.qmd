@@ -33,10 +33,7 @@ library(vembedr)
 #### Section 1.2:
 :::
 
-```{r set-basics-vid, echo=FALSE}
-embed_youtube("uRj87VpsOkM", ratio = "21by9") %>% 
-  use_bs_responsive()
-```
+{{< video https://youtu.be/uRj87VpsOkM aspect-ratio="21x9" >}}
 
 A **set** is a collection of objects. The objects in a set are called **elements**. 
 The **roster notation** definition of a set is a list of the elements enclosed 
