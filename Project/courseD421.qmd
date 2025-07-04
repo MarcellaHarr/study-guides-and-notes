@@ -31,6 +31,8 @@ library(magrittr)
 
 ---
 
+<br>
+
 {{< video https://youtu.be/uRj87VpsOkM aspect-ratio="21x9" >}}
 
 A **set** is a collection of objects. The objects in a set are called **elements**. 
@@ -41,6 +43,8 @@ in curly braces with the individual elements separated by commas.
 
 {{< video https://youtu.be/jsZGvxxnL_c aspect-ratio="21x9" >}}
 
+<br>
+
 ::: {.panel-tabset}
 
 ## "Element of" Example
@@ -50,6 +54,7 @@ in curly braces with the individual elements separated by commas.
 :::
 
 $x\enspace \epsilon \enspace \{w,x\}$
+
 $p\enspace \epsilon \enspace \{q,r,s\}$
 
 ## Subset Example
@@ -59,6 +64,7 @@ $p\enspace \epsilon \enspace \{q,r,s\}$
 :::
 
 $\{6,7,8\}\enspace \subseteq \enspace \{1,2,3,...\}$
+
 $\{2\}\enspace \subseteq \enspace \{1,2\}$
 
 :::
