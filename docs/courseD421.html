@@ -20,6 +20,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -73,6 +108,8 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<link href="site_libs/vembedr-0.1.5/css/vembedr.css" rel="stylesheet">
+
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -412,13 +449,166 @@ Note
 <section id="section-1.2" class="level4 lead">
 <h4 class="anchored" data-anchor-id="section-1.2">Section 1.2:</h4>
 </section>
-<div class="callout callout-style-simple callout-note no-icon callout-titled" title="Exercise 1" style="border-left:none; border-right:none; border-top:none; border-bottom:none;">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">embed_youtube</span>(<span class="st">"uRj87VpsOkM"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">use_bs_responsive</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="vembedr embed-responsive embed-responsive-16by9">
+<div>
+<iframe src="https://www.youtube.com/embed/uRj87VpsOkM" width="533" height="300" frameborder="0" allowfullscreen="" data-external="1" class="embed-responsive-item"></iframe>
+</div>
+</div>
+</div>
+</div>
+<p>A <strong>set</strong> is a collection of objects. The objects in a set are called <strong>elements</strong>. The <strong>roster notation</strong> definition of a set is a list of the elements enclosed in curly braces with the individual elements separated by commas.</p>
+<hr>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">embed_youtube</span>(<span class="st">"_QYbYUhFpyg"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">use_bs_responsive</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="vembedr embed-responsive embed-responsive-16by9">
+<div>
+<iframe src="https://www.youtube.com/embed/_QYbYUhFpyg" width="533" height="300" frameborder="0" allowfullscreen="" data-external="1" class="embed-responsive-item"></iframe>
+</div>
+</div>
+</div>
+</div>
+<p>The set with no elements is called the <strong>empty set</strong> and is denoted by the symbol <span class="math inline">\(∅\)</span>. The empty set is sometimes referred to as the <strong>null set</strong> and can also be denoted by <span class="math inline">\(\{ \}\)</span>. A <strong>finite set</strong> has a finite number of elements. An <strong>infinite set</strong> has an infinite number of elements. The cardinality of a finite set is the number of elements in that set, and is denoted as <span class="math inline">\(|\thinspace|\)</span>.</p>
+<hr>
+<p><br></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">embed_youtube</span>(<span class="st">"UqulNbiHrrU"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">use_bs_responsive</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="vembedr embed-responsive embed-responsive-16by9">
+<div>
+<iframe src="https://www.youtube.com/embed/UqulNbiHrrU" width="533" height="300" frameborder="0" allowfullscreen="" data-external="1" class="embed-responsive-item"></iframe>
+</div>
+</div>
+</div>
+</div>
+<div id="tbl-panel" class="quarto-layout-panel anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-panel-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1: Math Symbol Examples
+</figcaption>
+<div aria-describedby="tbl-panel-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="tbl-panel" style="flex-basis: 50.0%;justify-content: center;">
+<div id="tbl-first" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-subfloat-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-subfloat-caption quarto-subfloat-tbl" id="tbl-first-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(a) Common Math Sets
+</figcaption>
+<div aria-describedby="tbl-first-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 6%">
+<col style="width: 89%">
+<col style="width: 4%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Symbol</th>
+<th style="text-align: left;">Set</th>
+<th style="text-align: left;">Example</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><span class="math inline">\(\mathbb{N}\)</span></td>
+<td style="text-align: left;">The set of natural numbers: All integers greater than or equal to 0.</td>
+<td style="text-align: left;"><span class="math inline">\(0, 1, 2\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><span class="math inline">\(\mathbb{Z}\)</span></td>
+<td style="text-align: left;">The set of all integers.</td>
+<td style="text-align: left;"><span class="math inline">\(..., -2, -1, 0, 1, 2, ...\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><span class="math inline">\(\mathbb{Q}\)</span></td>
+<td style="text-align: left;">The set of rational numbers: All real numbers that can be expressed as a/b, where a and b are integers and b ≠ 0.</td>
+<td style="text-align: left;"><span class="math inline">\(0,\thinspace 1/2,\thinspace 5.23, \thinspace -5/3\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><span class="math inline">\(\mathbb{R}\)</span></td>
+<td style="text-align: left;">The set of real numbers.</td>
+<td style="text-align: left;"><span class="math inline">\(0, 1/2, 5.23, -5/3,\thinspace \pi, \sqrt{2}\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="tbl-panel" style="flex-basis: 50.0%;justify-content: center;">
+<div id="tbl-second" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-subfloat-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-subfloat-caption quarto-subfloat-tbl" id="tbl-second-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(b) Superscripts
+</figcaption>
+<div aria-describedby="tbl-second-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Symbol</th>
+<th style="text-align: left;">Set</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><span class="math inline">\(\mathbb{R^+}\)</span></td>
+<td style="text-align: left;">The set of all positive real numbers.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><span class="math inline">\(\mathbb{R^-}\)</span></td>
+<td style="text-align: left;">The set of all negative real numbers.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><span class="math inline">\(\mathbb{Z^+}\)</span></td>
+<td style="text-align: left;">The set of all positive integers.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><span class="math inline">\(\mathbb{Z^-}\)</span></td>
+<td style="text-align: left;">The set of all negative integers</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</figure>
+</div>
+<p><br></p>
+<p>A number x is <strong>positive</strong> if <span class="math inline">\(x &gt; 0\)</span>. A number x is <strong>negative</strong> if <span class="math inline">\(x &lt; 0\)</span>. The number <span class="math inline">\(0\)</span> is neither positive nor negative, so <span class="math inline">\(0 \in \mathbb{Z^+}\)</span> and <span class="math inline">\(0 \in \mathbb{Z^-}\)</span>, and a number <span class="math inline">\(x\)</span> is <strong>non-negative</strong> if <span class="math inline">\(x ≥ 0\)</span>.</p>
+<hr>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">embed_youtube</span>(<span class="st">"xnfUZ-NTsCE"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">use_bs_responsive</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="vembedr embed-responsive embed-responsive-16by9">
+<div>
+<iframe src="https://www.youtube.com/embed/xnfUZ-NTsCE" width="533" height="300" frameborder="0" allowfullscreen="" data-external="1" class="embed-responsive-item"></iframe>
+</div>
+</div>
+</div>
+</div>
+<p>In <strong>set builder notation</strong>, a set is defined by specifying that the set includes all elements in a larger set that also satisfy certain conditions.</p>
+<div class="text-center">
+<p><span class="math inline">\(\mathbb{A} = { x \in \mathbb{S} : \mathbb{P}(x) }\)</span></p>
+<p><em><span class="math inline">\(\mathbb{S}\)</span> is the larger set from which the elements in <span class="math inline">\(\mathbb{S}\)</span> are taken.</em></p>
+</div>
+<hr>
+<div class="callout callout-style-simple callout-note no-icon callout-titled" title="Exercises" style="border-left:none; border-right:none; border-top:none; border-bottom:none;">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Exercise 1
+Exercises
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
