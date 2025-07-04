@@ -1,7 +1,14 @@
 # DSA I {.unnumbered}
 
-```{r include=FALSE}
-library(vembedr)
+
+```{r install-packages, include=FALSE}
+if (!requireNamespace("magrittr", quietly = TRUE)) {
+  install.packages("magrittr")
+}
+if (!requireNamespace("reticulate", quietly = TRUE)) {
+  install.packages("reticulate")
+}
+library(magrittr)
 library(reticulate)
 ```
 
@@ -120,18 +127,7 @@ Your algorithm should be extensible if another algorithm designer or programmer 
 
 <br>
 
-```{r bruteVid, echo=FALSE}
-embed_youtube(
-  id = "BYWf6-tpQ4k",
-  width = NULL,
-  height = 315,
-  ratio = "16by9",
-  frameborder = 0,
-  allowfullscreen = TRUE,
-  query = NULL)
-```
-
-<br>
+{{< video https://youtu.be/BYWf6-tpQ4k aspect-ratio="21x9" >}}
 
 **Brute Force Algorithm**
 
@@ -141,18 +137,7 @@ ones due to its high time complexity.
 
 ---
 
-```{r recursiveVid, echo=FALSE}
-embed_youtube(
-  id = "ivl5-snqul8",
-  width = NULL,
-  height = 315,
-  ratio = "16by9",
-  frameborder = 0,
-  allowfullscreen = TRUE,
-  query = NULL)
-```
-
-<br>
+{{< video https://youtu.be/ivl5-snqul8 aspect-ratio="21x9" >}}
 
 **Recursive Algorithm**
 
@@ -162,18 +147,7 @@ for tasks with recursive structures.
 
 ---
 
-```{r encryptVid, echo=FALSE}
-embed_youtube(
-  id = "0TCY1rfpjxc",
-  width = NULL,
-  height = 315,
-  ratio = "16by9",
-  frameborder = 0,
-  allowfullscreen = TRUE,
-  query = NULL)
-```
-
-<br>
+{{< video https://youtu.be/0TCY1rfpjxc aspect-ratio="21x9" >}}
 
 **Encryption Algorithm** 
 
@@ -185,18 +159,7 @@ transactions.
 
 <br>
 
-```{r backtickVid, echo=FALSE}
-embed_youtube(
-  id = "RtpJOGvfo7E",
-  width = NULL,
-  height = 315,
-  ratio = "16by9",
-  frameborder = 0,
-  allowfullscreen = TRUE,
-  query = NULL)
-```
-
-<br>
+{{< video https://youtu.be/RtpJOGvfo7E aspect-ratio="21x9" >}}
 
 **Backtracking Algorithm**
 
@@ -206,18 +169,7 @@ and optimization problems.
 
 ---
 
-```{r searchVid, echo=FALSE}
-embed_youtube(
-  id = "ZpFqAoO4YPc",
-  width = NULL,
-  height = 315,
-  ratio = "16by9",
-  frameborder = 0,
-  allowfullscreen = TRUE,
-  query = NULL)
-```
-
-<br>
+{{< video https://youtu.be/ZpFqAoO4YPc aspect-ratio="21x9" >}}
 
 **Searching Algorithm**
 
@@ -226,18 +178,7 @@ retrieval of information from sorted or unsorted collections.
 
 ---
 
-```{r sortVid, echo=FALSE}
-embed_youtube(
-  id = "rbbTd-gkajw",
-  width = NULL,
-  height = 315,
-  ratio = "16by9",
-  frameborder = 0,
-  allowfullscreen = TRUE,
-  query = NULL)
-```
-
-<br>
+{{< video https://youtu.be/rbbTd-gkajw aspect-ratio="21x9" >}}
 
 **Sorting Algorithm**
 
@@ -248,29 +189,9 @@ to enhance data organization and retrieval.
 
 <br>
 
-```{r hashVid_1, echo=FALSE}
-embed_youtube(
-  id = "WEILxTBDy0Y",
-  width = NULL,
-  height = 315,
-  ratio = "16by9",
-  frameborder = 0,
-  allowfullscreen = TRUE,
-  query = NULL)
-```
+{{< video https://youtu.be/WEILxTBDy0Y aspect-ratio="21x9" >}}
 
-```{r hashVid_2, echo=FALSE}
-embed_youtube(
-  id = "FsfRsGFHuv4",
-  width = NULL,
-  height = 315,
-  ratio = "16by9",
-  frameborder = 0,
-  allowfullscreen = TRUE,
-  query = NULL)
-```
-
-<br>
+{{< video https://youtu.be/FsfRsGFHuv4 aspect-ratio="21x9" >}}
 
 **Hashing Algorithm** 
 
@@ -279,18 +200,7 @@ retrieval in hash tables, commonly used in databases and password storage.
 
 ---
 
-```{r divideVid, echo=FALSE}
-embed_youtube(
-  id = "ib4BHvr5-Ao",
-  width = NULL,
-  height = 315,
-  ratio = "16by9",
-  frameborder = 0,
-  allowfullscreen = TRUE,
-  query = NULL)
-```
-
-<br>
+{{< video https://youtu.be/ib4BHvr5-Ao aspect-ratio="21x9" >}}
 
 **Divide & Conquer Algorithm**
 
@@ -299,18 +209,7 @@ and then combines their solutions to address the original problem effectively.
 
 ---
 
-```{r greedyVid, echo=FALSE}
-embed_youtube(
-  id = "hDDrIw_DSto",
-  width = NULL,
-  height = 315,
-  ratio = "16by9",
-  frameborder = 0,
-  allowfullscreen = TRUE,
-  query = NULL)
-```
-
-<br>
+{{< video https://youtu.be/hDDrIw_DSto aspect-ratio="21x9" >}}
 
 **Greedy Algorithm**
 
@@ -322,18 +221,7 @@ solution.
 
 <br>
 
-```{r dynamicVid, echo=FALSE}
-embed_youtube(
-  id = "vYquumk4nWw",
-  width = NULL,
-  height = 315,
-  ratio = "16by9",
-  frameborder = 0,
-  allowfullscreen = TRUE,
-  query = NULL)
-```
-
-<br>
+{{< video https://youtu.be/vYquumk4nWw aspect-ratio="21x9" >}}
 
 **Dynamic Programming Algorithm**
 
@@ -342,18 +230,7 @@ enhancing the efficiency of solving complex problems.
 
 ---
 
-```{r randomVid, echo=FALSE}
-embed_youtube(
-  id = "8t9RaIQzp_o",
-  width = NULL,
-  height = 315,
-  ratio = "16by9",
-  frameborder = 0,
-  allowfullscreen = TRUE,
-  query = NULL)
-```
-
-<br>
+{{< video https://youtu.be/8t9RaIQzp_o aspect-ratio="21x9" >}}
 
 **Randomized Algorithm**
 
