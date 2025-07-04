@@ -33,7 +33,7 @@ library(vembedr)
 #### Section 1.2:
 :::
 
-```{r}
+```{r set-basics-vid, echo=FALSE}
 embed_youtube("uRj87VpsOkM") %>% 
   use_bs_responsive()
 ```
@@ -44,7 +44,7 @@ in curly braces with the individual elements separated by commas.
 
 ---
 
-```{r}
+```{r identify-sets-vid, echo=FALSE}
 embed_youtube("_QYbYUhFpyg") %>% 
   use_bs_responsive()
 ```
@@ -59,7 +59,7 @@ finite set is the number of elements in that set, and is denoted as $|\thinspace
 
 <br>
 
-```{r}
+```{r intro-set-vid, echo=FALSE}
 embed_youtube("UqulNbiHrrU") %>% 
   use_bs_responsive()
 ```
@@ -72,7 +72,7 @@ embed_youtube("UqulNbiHrrU") %>%
 | $\mathbb{Q}$      | The set of rational numbers: All real numbers that can be expressed as a/b, where a and b are integers and b ≠ 0. | $0,\thinspace 1/2,\thinspace 5.23, \thinspace -5/3$    |
 | $\mathbb{R}$      | The set of real numbers.                                                                                          | $0, 1/2, 5.23, -5/3,\thinspace \pi, \sqrt{2}$ |
 
-: Common Math Sets {#tbl-first}
+: Common Math Sets {#tbl-first .striped .hover tbl-colwidths="10,70,20"}
 
 | Symbol            | Set |
 |------------------ |------|
@@ -94,7 +94,7 @@ and a number $x$ is **non-negative** if $x ≥ 0$.
 
 ---
 
-```{r}
+```{r set-builder-vide, echo=FALSE}
 embed_youtube("xnfUZ-NTsCE") %>% 
   use_bs_responsive()
 ```
