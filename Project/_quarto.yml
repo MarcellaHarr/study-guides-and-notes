@@ -34,6 +34,13 @@ format:
     page-layout: full
     grid:
       body-width: 975px
+    include-in-header:
+      text: |
+        <style>
+          #tbl-panel {
+            padding: 0 !important;
+          }
+        </style>
 
   pdf:
     documentclass: scrreprt
