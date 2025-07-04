@@ -18,11 +18,7 @@ These exercises are not mines. They are from this [Quizlet »](https://quizlet.c
 if (!requireNamespace("magrittr", quietly = TRUE)) {
   install.packages("magrittr")
 }
-if (!requireNamespace("vembedr", quietly = TRUE)) {
-  install.packages("vembedr")
-}
 library(magrittr)
-library(vembedr)
 ```
 
 <br>
@@ -41,10 +37,7 @@ in curly braces with the individual elements separated by commas.
 
 ---
 
-```{r identify-sets-vid, echo=FALSE}
-embed_youtube("_QYbYUhFpyg", ratio = "16by9") %>% 
-  use_bs_responsive()
-```
+{{< video https://youtu.be/_QYbYUhFpyg aspect-ratio="21x9" >}}
 
 The set with no elements is called the **empty set** and is denoted by the 
 symbol $∅$. The empty set is sometimes referred to as the **null set** and can 
@@ -56,10 +49,7 @@ finite set is the number of elements in that set, and is denoted as $|\thinspace
 
 <br>
 
-```{r intro-set-vid, echo=FALSE}
-embed_youtube("UqulNbiHrrU") %>% 
-  use_bs_responsive()
-```
+{{< video https://youtu.be/UqulNbiHrrU aspect-ratio="21x9" >}}
 
 ::: {#tbl-panel layout-ncol=2}
 | Symbol | Set                                                                                                               | Example |
@@ -91,10 +81,7 @@ and a number $x$ is **non-negative** if $x ≥ 0$.
 
 ---
 
-```{r set-builder-vide, echo=FALSE}
-embed_youtube("xnfUZ-NTsCE") %>% 
-  use_bs_responsive()
-```
+{{< video https://youtu.be/xnfUZ-NTsCE aspect-ratio="21x9" >}}
 
 In **set builder notation**, a set is defined by specifying that the set includes 
 all elements in a larger set that also satisfy certain conditions.
