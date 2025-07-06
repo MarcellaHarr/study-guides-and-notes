@@ -181,7 +181,7 @@ $\mathbb{C} \subset \mathbb{A}$ **or** $\mathbb{C} \subset \mathbb{B}$
 <br>
 
 ::: {.callout-note collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
-##### Exercises
+## Exercises
 
 ::: {.lead}
 ###### Exercise 1a
