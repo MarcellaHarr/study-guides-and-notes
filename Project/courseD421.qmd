@@ -180,7 +180,7 @@ $\mathbb{C} \subset \mathbb{A}$ **or** $\mathbb{C} \subset \mathbb{B}$
 
 <br>
 
-##### Exercises
+###### Exercises
 
 ::: {.callout-note collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
 ## 1a - 1c
