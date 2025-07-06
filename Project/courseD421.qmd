@@ -23,13 +23,14 @@ library(magrittr)
 
 <br>
 
-## Module l: Working with Sets
+## Module I: Working with Sets
 
 #### Section 1:
 
 <br>
 
 ###### 1.2
+#### ***
 
 {{< video https://youtu.be/uRj87VpsOkM aspect-ratio="21x9" >}}
 
@@ -40,6 +41,8 @@ in curly braces with the individual elements separated by commas.
 <br>
 
 ###### 1.2.1
+
+<br>
 
 {{< video https://youtu.be/_QYbYUhFpyg aspect-ratio="21x9" >}}
 
@@ -52,6 +55,7 @@ finite set is the number of elements in that set, and is denoted as $|\thinspace
 <br>
 
 ###### 1.2.2
+***
 
 {{< video https://youtu.be/jsZGvxxnL_c aspect-ratio="21x9" >}}
 
