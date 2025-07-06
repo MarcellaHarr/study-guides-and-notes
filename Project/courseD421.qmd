@@ -27,9 +27,9 @@ library(magrittr)
 
 #### Section 1:
 
----
-
 <br>
+
+###### 1.2
 
 {{< video https://youtu.be/uRj87VpsOkM aspect-ratio="21x9" >}}
 
@@ -37,9 +37,21 @@ A **set** is a collection of objects. The objects in a set are called **elements
 The **roster notation** definition of a set is a list of the elements enclosed 
 in curly braces with the individual elements separated by commas. 
 
----
+<br>
+
+###### 1.2.1
+
+{{< video https://youtu.be/_QYbYUhFpyg aspect-ratio="21x9" >}}
+
+The set with no elements is called the **empty set** and is denoted by the 
+symbol $∅$. The empty set is sometimes referred to as the **null set** and can 
+also be denoted by $\{ \}$. A **finite set** has a finite number of elements. 
+An **infinite set** has an infinite number of elements. The cardinality of a 
+finite set is the number of elements in that set, and is denoted as $|\thinspace|$.
 
 <br>
+
+###### 1.2.2
 
 {{< video https://youtu.be/jsZGvxxnL_c aspect-ratio="21x9" >}}
 
@@ -72,19 +84,7 @@ $\{2\}\enspace \subseteq \enspace \{1,2\}$
 
 <br>
 
----
-
-{{< video https://youtu.be/_QYbYUhFpyg aspect-ratio="21x9" >}}
-
-The set with no elements is called the **empty set** and is denoted by the 
-symbol $∅$. The empty set is sometimes referred to as the **null set** and can 
-also be denoted by $\{ \}$. A **finite set** has a finite number of elements. 
-An **infinite set** has an infinite number of elements. The cardinality of a 
-finite set is the number of elements in that set, and is denoted as $|\thinspace|$.
-
----
-
-<br>
+###### 1.2.3
 
 {{< video https://youtu.be/UqulNbiHrrU aspect-ratio="21x9" >}}
 
@@ -111,13 +111,13 @@ Math Symbol Examples
 <!-- end of table panel  -->
 :::
 
-<br>
-
 A number x is **positive** if $x > 0$. A number x is **negative** if $x < 0$. The 
 number $0$ is neither positive nor negative, so $0 \in \mathbb{Z^+}$ and $0 \in \mathbb{Z^-}$,
 and a number $x$ is **non-negative** if $x ≥ 0$.
 
----
+<br>
+
+###### 1.2.4
 
 {{< video https://youtu.be/xnfUZ-NTsCE aspect-ratio="21x9" >}}
 
@@ -130,9 +130,9 @@ $\mathbb{A} = { x \in \mathbb{S} : \mathbb{P}(x) }$
 *$\mathbb{S}$ is the larger set from which the elements in $\mathbb{S}$ are taken.*
 :::
 
----
-
 <br>
+
+###### 1.2.5
 
 {{< video https://youtu.be/s8FGAclojcs aspect-ratio="21x9" >}}
 
@@ -358,4 +358,6 @@ $0,1,4,9,16,25,36,49,64,81$
 <!-- end callout -->
 :::
 
+<br>
 
+#### Section 2:
