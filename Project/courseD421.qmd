@@ -146,7 +146,7 @@ $\mathbb{A} = { x \in \mathbb{S} : \mathbb{P}(x) }$
 **set** $\subseteq$ **set**
 :::
 
-Equal sets $\{ \}$ can be considered subsets $ \subseteq $. Meaning all of a
+Equal sets $\{ \}$ can be considered subsets $\subseteq$. Meaning all of a
 set's elements must be found in the other set (superset).
 
 $\mathbb{A}= \{ \mathbb{a, b, c, d, e} \}$
@@ -180,7 +180,8 @@ $\mathbb{C} \subset \mathbb{A}$ **or** $\mathbb{C} \subset \mathbb{B}$
 
 <br>
 
-::: {.callout-note title="Exercises" collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
+::: {.callout-note collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
+##### Exercises
 
 ::: {.lead}
 ###### Exercise 1a
