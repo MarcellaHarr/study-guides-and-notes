@@ -41,6 +41,8 @@ in curly braces with the individual elements separated by commas.
 
 ---
 
+<br>
+
 {{< video https://youtu.be/jsZGvxxnL_c aspect-ratio="21x9" >}}
 
 <br>
@@ -129,6 +131,54 @@ $\mathbb{A} = { x \in \mathbb{S} : \mathbb{P}(x) }$
 :::
 
 ---
+
+<br>
+
+{{< video https://youtu.be/s8FGAclojcs aspect-ratio="21x9" >}}
+
+<br>
+
+::: {.panel-tabset}
+
+## Equal Subsets
+
+::: {.text-center}
+**set** $\subseteq$ **set**
+:::
+
+Equal sets $\{ \}$ can be considered subsets $ \subseteq $. Meaning all of a
+set's elements must be found in the other set (superset).
+
+$\mathbb{A}= \{ \mathbb{a, b, c, d, e} \}$
+
+$\mathbb{B}= \{ \mathbb{e, b, c, a, d} \}$
+
+::: {.text-center}
+$\mathbb{B} \subseteq \mathbb{A}$
+:::
+
+## Proper Subsets
+
+::: {.text-center}
+**set** $\subset$ **set**
+:::
+
+With **proper subsets** $\subset$, equality is not possible. Meaning, a set that is a subset
+$\subseteq$ with lesser elements than the superset is considered a proper subset. 
+
+$\mathbb{A}= \{ \mathbb{a, b, c, d, e} \}$
+
+$\mathbb{B}= \{ \mathbb{e, b, c, a, d} \}$
+
+$\mathbb{C}= \{ \mathbb{e, c, a} \}$
+
+::: {.text-center}
+$\mathbb{C} \subset \mathbb{A}$ **or** $\mathbb{C} \subset \mathbb{B}$
+:::
+
+:::
+
+<br>
 
 ::: {.callout-note title="Exercises" collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
 
