@@ -178,12 +178,14 @@ $\mathbb{C} \subset \mathbb{A}$ **or** $\mathbb{C} \subset \mathbb{B}$
 
 :::
 
+##### Exercises
+
 <br>
 
-###### Exercises
-
 ::: {.callout-note collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
-## 1a - 1c
+##### 1a - 1c
+
+<br>
 
 ::: {.lead}
 ###### Exercise 1a
