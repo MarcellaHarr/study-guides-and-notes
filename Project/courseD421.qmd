@@ -181,16 +181,14 @@ $\mathbb{C} \subset \mathbb{A}$ **or** $\mathbb{C} \subset \mathbb{B}$
 <!-- end of panel tabset  -->
 :::
 
-<!-- ::: {.lead}
+::: {.lead}
 ##### Exercises
-::: -->
+:::
 
 <br>
 
 ::: {.callout-note collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
-::: {.lead}
-##### Exercises 1a-1c
-:::
+##### 1a - 1c
 
 <br>
 
