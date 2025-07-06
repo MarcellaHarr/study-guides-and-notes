@@ -30,7 +30,7 @@ library(magrittr)
 <br>
 
 ###### 1.2
-#### ***
+***
 
 {{< video https://youtu.be/uRj87VpsOkM aspect-ratio="21x9" >}}
 
@@ -41,8 +41,7 @@ in curly braces with the individual elements separated by commas.
 <br>
 
 ###### 1.2.1
-
-<br>
+***
 
 {{< video https://youtu.be/_QYbYUhFpyg aspect-ratio="21x9" >}}
 
@@ -89,6 +88,7 @@ $\{2\}\enspace \subseteq \enspace \{1,2\}$
 <br>
 
 ###### 1.2.3
+***
 
 {{< video https://youtu.be/UqulNbiHrrU aspect-ratio="21x9" >}}
 
@@ -122,6 +122,7 @@ and a number $x$ is **non-negative** if $x ≥ 0$.
 <br>
 
 ###### 1.2.4
+***
 
 {{< video https://youtu.be/xnfUZ-NTsCE aspect-ratio="21x9" >}}
 
@@ -137,6 +138,7 @@ $\mathbb{A} = { x \in \mathbb{S} : \mathbb{P}(x) }$
 <br>
 
 ###### 1.2.5
+***
 
 {{< video https://youtu.be/s8FGAclojcs aspect-ratio="21x9" >}}
 
