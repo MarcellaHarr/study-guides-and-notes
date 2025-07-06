@@ -23,11 +23,9 @@ library(magrittr)
 
 <br>
 
-### Module 1: Working with Sets
+## Module l: Working with Sets
 
-::: {.lead}
 #### Section 1:
-:::
 
 ---
 
@@ -181,14 +179,9 @@ $\mathbb{C} \subset \mathbb{A}$ **or** $\mathbb{C} \subset \mathbb{B}$
 <!-- end of panel tabset  -->
 :::
 
-::: {.lead}
 ##### Exercises
-:::
 
-<br>
-
-::: {.callout-note collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
-##### 1a - 1c
+::: {.callout-note title="1a - 1c" collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
 
 <br>
 
@@ -240,7 +233,7 @@ and that they are the only elements of this set.
 $−1,1$
 :::
 
-<!-- end panel -->
+<!-- end panel tabset -->
 :::
 
 
@@ -293,7 +286,7 @@ numbers from $1$ to $11$, and they are the only elements of our set.
 $1,2,3,4,5,6,7,8,9,10,11$
 :::
 
-<!-- end panel -->
+<!-- end panel tabset -->
 :::
 
 
@@ -359,7 +352,7 @@ which are the elements of our set.
 $0,1,4,9,16,25,36,49,64,81$
 :::
 
-<!-- end panel -->
+<!-- end panel tabset -->
 :::
 
 <!-- end callout -->
