@@ -69,6 +69,7 @@ $\{6,7,8\}\enspace \subseteq \enspace \{1,2,3,...\}$
 
 $\{2\}\enspace \subseteq \enspace \{1,2\}$
 
+<!-- end of panel tabset  -->
 :::
 
 <br>
@@ -109,6 +110,7 @@ finite set is the number of elements in that set, and is denoted as $|\thinspace
 : Superscripts {#tbl-second}
 
 Math Symbol Examples
+<!-- end of table panel  -->
 :::
 
 <br>
@@ -176,14 +178,19 @@ $\mathbb{C}= \{ \mathbb{e, c, a} \}$
 $\mathbb{C} \subset \mathbb{A}$ **or** $\mathbb{C} \subset \mathbb{B}$
 :::
 
+<!-- end of panel tabset  -->
 :::
 
+<!-- ::: {.lead}
 ##### Exercises
+::: -->
 
 <br>
 
 ::: {.callout-note collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
-##### 1a - 1c
+::: {.lead}
+##### Exercises 1a-1c
+:::
 
 <br>
 
