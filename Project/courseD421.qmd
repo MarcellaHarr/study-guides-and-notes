@@ -137,7 +137,7 @@ $\mathbb{A} = { x \in \mathbb{S} : \mathbb{P}(x) }$
 
 <br>
 
-###### 1.2.5
+###### 1.2.5 / 1.3
 ***
 
 {{< video https://youtu.be/s8FGAclojcs aspect-ratio="21x9" >}}
@@ -184,6 +184,14 @@ $\mathbb{C} \subset \mathbb{A}$ **or** $\mathbb{C} \subset \mathbb{B}$
 
 <!-- end of panel tabset  -->
 :::
+
+The **universal set** is a set that contains all elements mentioned in a particular 
+context, and is denoted by the variable $\cup$. A **Venn diagram** visual 
+representation of sets using overlapping circles or other closed curves. However,
+zyBook's uses rectangles to denote the universal set and oval shapes to denote 
+sets within $\cup$.
+
+<br>
 
 ##### Exercises
 
