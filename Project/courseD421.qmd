@@ -96,7 +96,7 @@ elements.
 
 {{< video https://youtu.be/UqulNbiHrrU aspect-ratio="21x9" >}}
 
-::: {#tbl-panel layout-ncol=2}
+::: {#tbl-panel layout-ncol=1}
 | Symbol | Set                                                                                                               | Example |
 |--------|-------------------------------------------------------------------------------------------------------------------|------|
 | $\mathbb{N}$      | The set of natural numbers: All integers greater than or equal to 0.                                              | $0, 1, 2$    |
@@ -243,9 +243,11 @@ $P\{\mathbb{A}\} = \{ \varnothing, \{1\}, \{2\}, \{3\}, \{1, 2\}, \{1,3\}, \{2,3
 :::
 
 ::: {.lead}
-| Cardinality of a power set
-  | Let $\mathbb{A}$ be a finite set of cardinality $n$. Then the cardinality of the power set of $\mathbb{A}$ is $2^n$, or $\mid P\{\mathbb{A}\}=2^n \mid$.
+|Cardinality of a power set
+  |Let $\mathbb{A}$ be a finite set of cardinality $n$. Then the cardinality of the power set of $\mathbb{A}$ is $2^n$, or $\mid P\{\mathbb{A}\}=2^n \mid$.
 :::
+
+<br>
 
 {{< video https://youtu.be/kPcDNNB3U4g aspect-ratio="21x9" >}}
 
