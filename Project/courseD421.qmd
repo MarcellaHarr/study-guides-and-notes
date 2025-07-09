@@ -34,9 +34,10 @@ library(magrittr)
 
 {{< video https://youtu.be/uRj87VpsOkM aspect-ratio="21x9" >}}
 
-A **set** is a collection of objects. The objects in a set are called **elements**. 
-The **roster notation** definition of a set is a list of the elements enclosed 
-in curly braces with the individual elements separated by commas. 
+A [**set**]{.mark .vocab} is a collection of objects. The objects in a set are 
+called [**elements**]{.mark .vocab}. The [**roster notation**]{.mark .vocab} definition 
+of a set is a list of the elements enclosed in curly braces with the individual 
+elements separated by commas. 
 
 <br>
 
@@ -45,11 +46,10 @@ in curly braces with the individual elements separated by commas.
 
 {{< video https://youtu.be/nXAOZo_gMaQ aspect-ratio="21x9" >}}
 
-The set with no elements is called the **empty set** and is denoted by the 
-symbol $∅$. The empty set is sometimes referred to as the **null set** and can 
-also be denoted by $\{ \}$. A **finite set** has a finite number of elements. 
-An **infinite set** has an infinite number of elements. The cardinality of a 
-finite set is the number of elements in that set, and is denoted as $|\thinspace|$.
+The set with no elements is called the [**empty set**]{.mark .vocab} and is denoted by the 
+symbol $∅$. The empty set is sometimes referred to as the [**null set**]{.mark .vocab} and can 
+also be denoted by $\{ \}$. A [**finite set**]{.mark .vocab} has a finite number of elements. 
+An [**infinite set**]{.mark .vocab} has an infinite number of elements.
 
 <br>
 
@@ -85,6 +85,10 @@ $\{2\}\enspace \subseteq \enspace \{1,2\}$
 <!-- end of panel tabset  -->
 :::
 
+The [**cardinality**]{.mark .vocab} of a finite set is the number of elements in that set, and 
+is denoted as $|\thinspace|$. Two sets are equal if they have exactly the same 
+elements.
+
 <br>
 
 ###### 1.2.3
@@ -115,9 +119,9 @@ Math Symbol Examples
 <!-- end of table panel  -->
 :::
 
-A number x is **positive** if $x > 0$. A number x is **negative** if $x < 0$. The 
+A number x is [**positive**]{.mark .vocab} if $x > 0$. A number x is [**negative**]{.mark .vocab} if $x < 0$. The 
 number $0$ is neither positive nor negative, so $0 \in \mathbb{Z^+}$ and $0 \in \mathbb{Z^-}$,
-and a number $x$ is **non-negative** if $x ≥ 0$.
+and a number $x$ is [**non-negative**]{.mark .vocab} if $x ≥ 0$.
 
 <br>
 
@@ -126,7 +130,7 @@ and a number $x$ is **non-negative** if $x ≥ 0$.
 
 {{< video https://youtu.be/xnfUZ-NTsCE aspect-ratio="21x9" >}}
 
-In **set builder notation**, a set is defined by specifying that the set includes 
+In [**set builder notation**]{.mark .vocab}, a set is defined by specifying that the set includes 
 all elements in a larger set that also satisfy certain conditions.
 
 ::: {.text-center}
@@ -142,8 +146,8 @@ $\mathbb{A} = { x \in \mathbb{S} : \mathbb{P}(x) }$
 
 {{< video https://youtu.be/GVZUpOm3XUg aspect-ratio="21x9" >}}
 
-The **universal set** is a set that contains all elements mentioned in a particular 
-context, and is denoted by the variable $\cup$. A **Venn diagram** visual 
+The [**universal set**]{.mark .vocab} is a set that contains all elements mentioned in a particular 
+context, and is denoted by the variable $\cup$. A [**Venn diagram**]{.mark .vocab} visual 
 representation of sets using overlapping circles or other closed curves. However,
 zyBook's uses rectangles to denote the universal set and oval shapes to denote 
 sets within $\cup$.
@@ -179,8 +183,9 @@ $\mathbb{B} \subseteq \mathbb{A}$
 **set** $\subset$ **set**
 :::
 
-With **proper subsets** $\subset$, equality is not possible. Meaning, a set that is a subset
-$\subseteq$ with lesser elements than the superset is considered a proper subset. 
+With [**proper subsets**]{.mark .vocab} $\subset$, equality is not possible. Meaning, 
+a set that is a subset $\subseteq$ with lesser elements than the superset is 
+considered a proper subset. 
 
 $\mathbb{A}= \{ \mathbb{a, b, c, d, e} \}$
 
@@ -195,10 +200,56 @@ $\mathbb{C} \subset \mathbb{A}$ **or** $\mathbb{C} \subset \mathbb{B}$
 <!-- end of panel tabset  -->
 :::
 
+A [**subset**]{.mark .vocab} is a set whose elements are all contained within 
+another set. If every element, for example, in set $\mathbb{A}$ is also an element 
+of set $\mathbb{B}$, then $\mathbb{A}$ is a subset of $\mathbb{B}$. It is denoted 
+by the symbol: $\mathbb{A} \thinspace \subseteq \mathbb{B}$.
+
+A [**proper subset**]{.mark .vocab} is a subset that is strictly contained within another set, 
+meaning it does not include all elements of the larger set. If $\mathbb{A} \thinspace \subseteq \mathbb{B}$ 
+and $\mathbb{A} \thinspace \ne \thinspace \mathbb{B}$, then $\mathbb{A}$ is a proper subset of $\mathbb{B}$.
+It is denoted by the symbol: $\mathbb{A} \thinspace \subset \thinspace \mathbb{B}$.
+
+
 <br>
 
-###### 1.3.2
+###### 1.4
 ***
+
+{{< video https://youtu.be/WgE5kr0Tj7M aspect-ratio="21x9" >}}
+
+The [**empty set**]{.mark .vocab} $\varnothing$ is not the same as $\{ \varnothing \}$. 
+The cardinality of $\{ \varnothing \}$ is one since it contains exactly one element, 
+which is the empty set. A set can contain a combination of numbers and sets of numbers 
+as in:
+
+::: {.text-center}
+$\mathbb{B} = \{ 2, \varnothing, \{1, 2, 3\}, \{1\} \}$
+:::
+
+<br>
+
+###### 1.5
+***
+
+{{< video https://youtu.be/0XNSBoqG-1s aspect-ratio="21x9" >}}
+
+A [**power set**]{.mark .vocab} is a set of all the [subsets]{.underline}. For 
+example, the power set of a set $\mathbb{A}$, denoted $P\{\mathbb{A}\}$, is the 
+set of all subsets of $\mathbb{A}$, so, if $\mathbb{A} = \{1,2,3\}$, then:
+
+::: {.text-center}
+$P\{\mathbb{A}\} = \{ \varnothing, \{1\}, \{2\}, \{3\}, \{1, 2\}, \{1,3\}, \{2,3\}, \{1, 2, 3\} \}$
+:::
+
+::: {.lead}
+| Cardinality of a power set
+  | Let $\mathbb{A}$ be a finite set of cardinality $n$. Then the cardinality of the power set of $\mathbb{A}$ is $2^n$, or $\mid P\{\mathbb{A}\}=2^n \mid$.
+:::
+
+{{< video https://youtu.be/kPcDNNB3U4g aspect-ratio="21x9" >}}
+
+<br>
 
 ##### Exercises
 
