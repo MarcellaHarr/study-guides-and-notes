@@ -395,6 +395,7 @@ window.Quarto = {
 <div class="lead">
 <p>Discrete Math II Functions and Applications (D421)</p>
 </div>
+<!-- \thinspace (1/12em); \enspace; \quad; \qquad -->
 <hr>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -633,7 +634,12 @@ Table&nbsp;1: Math Symbol Examples <!-- end of table panel  -->
 <p><span class="math inline">\(P\{\mathbb{A}\} = \{ \varnothing, \{1\}, \{2\}, \{3\}, \{1, 2\}, \{1,3\}, \{2,3\}, \{1, 2, 3\} \}\)</span></p>
 </div>
 <div class="lead">
-<p>|Cardinality of a power set |Let <span class="math inline">\(\mathbb{A}\)</span> be a finite set of cardinality <span class="math inline">\(n\)</span>. Then the cardinality of the power set of <span class="math inline">\(\mathbb{A}\)</span> is <span class="math inline">\(2^n\)</span>, or <span class="math inline">\(\mid P\{\mathbb{A}\}=2^n \mid\)</span>.</p>
+<dl>
+<dt>Cardinality of a power set</dt>
+<dd>
+Let <span class="math inline">\(\mathbb{A}\)</span> be a finite set of cardinality <span class="math inline">\(n\)</span>. Then the cardinality of the power set of <span class="math inline">\(\mathbb{A}\)</span> is <span class="math inline">\(2^n\)</span>, or <span class="math inline">\(\mid P\{\mathbb{A}\}=2^n \mid\)</span>.
+</dd>
+</dl>
 </div>
 <p><br></p>
 <div class="quarto-video ratio ratio-21x9"><iframe data-external="1" src="https://www.youtube.com/embed/kPcDNNB3U4g" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
@@ -645,8 +651,74 @@ Table&nbsp;1: Math Symbol Examples <!-- end of table panel  -->
 <div class="quarto-video ratio ratio-21x9"><iframe data-external="1" src="https://www.youtube.com/embed/mOMoZYGirQQ" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
 <p><mark class="vocab"><strong>Set intersection</strong></mark> is the operation that produces a set containing only the elements that are common to both sets. If <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> are sets, their intersection is the set of all elements that are members of both <span class="math inline">\(\mathbb{A}\)</span> <mark class="vocab"><strong>and</strong></mark> <span class="math inline">\(\mathbb{B}\)</span>. It is denoted by the symbol: <span class="math inline">\(\mathbb{A} \cap \mathbb{B}\)</span></p>
 <p><br></p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true">Formula</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false">Example</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-3" role="tab" aria-controls="tabset-3-3" aria-selected="false">Note</a></li></ul>
+<div class="tab-content">
+<div id="tabset-3-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-3-1-tab">
+<div class="lead text-center">
+<p><span class="math inline">\(\mathbb{A} \cap \mathbb{B} = \{ x \thinspace \epsilon \thinspace \mathbb{A} \enspace\text{and}\enspace x \thinspace \epsilon \thinspace \mathbb{B} \}\)</span></p>
+</div>
+<p>This is the formula for the set intersection.</p>
+</div>
+<div id="tabset-3-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-2-tab">
+<div class="lead">
+<p>IF</p>
+</div>
+<div class="lead text-center">
+<p><span class="math inline">\(\mathbb{A} = \{ 1,3,5 \}\)</span>;<br> <span class="math inline">\(\mathbb{B} = \{ 3,4,5 \}\)</span>;</p>
+</div>
+<div class="lead">
+<p>THEN</p>
+</div>
+<div class="lead text-center">
+<p><span class="math inline">\(\mathbb{A} \cap \mathbb{B} = \{ 3,5 \}\)</span>;</p>
+</div>
+</div>
+<div id="tabset-3-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-3-tab">
+<p>The union and intersection operations are commutative. That is,</p>
+<div class="lead text-center">
+<p><span class="math inline">\(\mathbb{A} \cap \mathbb{B} = \mathbb{B} \cap \mathbb{A}\)</span></p>
+</div>
+<!-- end of panel tabset  -->
+</div>
+</div>
+</div>
+<p><br></p>
 <div class="quarto-video ratio ratio-21x9"><iframe data-external="1" src="https://www.youtube.com/embed/kPcDNNB3U4g" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
 <p><mark class="vocab"><strong>Set union</strong></mark> is the operation that produces a set containing all elements that belong to either of two sets. If <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> are sets, their union is the set of all elements that are in <span class="math inline">\(\mathbb{A}\)</span>, <mark class="vocab"><strong>or</strong></mark> <span class="math inline">\(\mathbb{B}\)</span>, <mark class="vocab"><strong>or</strong></mark> in both. It is denoted by the symbol: <span class="math inline">\(\mathbb{A} \cup \mathbb{B}\)</span>.</p>
+<p><br></p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-4-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-1" role="tab" aria-controls="tabset-4-1" aria-selected="true">Formula</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-2" role="tab" aria-controls="tabset-4-2" aria-selected="false">Example</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-3" role="tab" aria-controls="tabset-4-3" aria-selected="false">Note</a></li></ul>
+<div class="tab-content">
+<div id="tabset-4-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-4-1-tab">
+<div class="lead text-center">
+<p><span class="math inline">\(\mathbb{A} \cup \mathbb{B} = \{ x \thinspace \epsilon \thinspace \mathbb{A} \enspace\text{or}\enspace x \thinspace \epsilon \thinspace \mathbb{B} \}\)</span></p>
+</div>
+<p>This is the formula for the set union.</p>
+</div>
+<div id="tabset-4-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-2-tab">
+<div class="lead">
+<p>IF</p>
+</div>
+<div class="text-center">
+<p><span class="math inline">\(\mathbb{A} = \{ 1,3,5 \}\)</span>;<br> <span class="math inline">\(\mathbb{B} = \{ 3,4,5 \}\)</span>;</p>
+</div>
+<div class="lead">
+<p>THEN</p>
+</div>
+<div class="lead text-center">
+<p><span class="math inline">\(\mathbb{A} \cup \mathbb{B} = \{ 1,3,4,5 \}\)</span>;</p>
+</div>
+</div>
+<div id="tabset-4-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-3-tab">
+<p>The union and intersection operations are commutative. That is,</p>
+<div class="lead text-center">
+<p><span class="math inline">\(\mathbb{A} \cup \mathbb{B} = \mathbb{B} \cup \mathbb{A}\)</span></p>
+</div>
+<!-- end of panel tabset  -->
+</div>
+</div>
+</div>
 <p><br></p>
 </section>
 <section id="exercises" class="level5">
@@ -668,19 +740,19 @@ Table&nbsp;1: Math Symbol Examples <!-- end of table panel  -->
 <h6 class="anchored" data-anchor-id="exercise-1a">Exercise 1a</h6>
 </section>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true">Step-1</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false">Step-2</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-3" role="tab" aria-controls="tabset-3-3" aria-selected="false">Step-3</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-4" role="tab" aria-controls="tabset-3-4" aria-selected="false">Step-4</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-5" role="tab" aria-controls="tabset-3-5" aria-selected="false">Results</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-5-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-1" role="tab" aria-controls="tabset-5-1" aria-selected="true">Step-1</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-5-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-2" role="tab" aria-controls="tabset-5-2" aria-selected="false">Step-2</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-5-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-3" role="tab" aria-controls="tabset-5-3" aria-selected="false">Step-3</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-5-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-4" role="tab" aria-controls="tabset-5-4" aria-selected="false">Step-4</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-5-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-5" role="tab" aria-controls="tabset-5-5" aria-selected="false">Results</a></li></ul>
 <div class="tab-content">
-<div id="tabset-3-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-3-1-tab">
+<div id="tabset-5-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-5-1-tab">
 <p>The goal of this exercise is to list all elements of the set</p>
 <div class="text-center">
 <p><span class="math inline">\(\{x∣x \text{ is a real number such that } x^2=1\}\)</span></p>
 </div>
 <p><strong>What is a set?</strong></p>
 </div>
-<div id="tabset-3-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-2-tab">
+<div id="tabset-5-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-5-2-tab">
 <p>A <strong>set</strong> is an unordered collection of objects that satisfy a certain property. This property can be expressed mathematically or in a form of a sentence.</p>
 </div>
-<div id="tabset-3-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-3-tab">
+<div id="tabset-5-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-5-3-tab">
 <p>Let’s identify all real numbers <span class="math inline">\(x\)</span> for which <span class="math inline">\(x^2=1\)</span>.</p>
 <div class="text-center">
 <p><span class="math inline">\(x^2 = 1 ⟹ x = ± 1 ⟹ x = ± 1\)</span></p>
@@ -690,11 +762,11 @@ Table&nbsp;1: Math Symbol Examples <!-- end of table panel  -->
 <p><span class="math inline">\(\{x∣x \text{ is a real number such that } x^2=1\} = \{-1, 1\}\)</span>.</p>
 </div>
 </div>
-<div id="tabset-3-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-4-tab">
+<div id="tabset-5-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-5-4-tab">
 <p>Let’s recap what we have done.</p>
 <p>We determined that the real numbers whose square is equal to <span class="math inline">\(1\)</span> are <span class="math inline">\(−1\)</span> and <span class="math inline">\(1\)</span>, and that they are the only elements of this set.</p>
 </div>
-<div id="tabset-3-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-5-tab">
+<div id="tabset-5-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-5-5-tab">
 <div class="text-center">
 <p><span class="math inline">\(−1,1\)</span></p>
 </div>
@@ -706,19 +778,19 @@ Table&nbsp;1: Math Symbol Examples <!-- end of table panel  -->
 <h6 class="anchored" data-anchor-id="exercise-1b">Exercise 1b</h6>
 </section>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-4-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-1" role="tab" aria-controls="tabset-4-1" aria-selected="true">Step-1</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-2" role="tab" aria-controls="tabset-4-2" aria-selected="false">Step-2</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-3" role="tab" aria-controls="tabset-4-3" aria-selected="false">Step-3</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-4" role="tab" aria-controls="tabset-4-4" aria-selected="false">Step-4</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-5" role="tab" aria-controls="tabset-4-5" aria-selected="false">Results</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-6-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-1" role="tab" aria-controls="tabset-6-1" aria-selected="true">Step-1</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-6-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-2" role="tab" aria-controls="tabset-6-2" aria-selected="false">Step-2</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-6-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-3" role="tab" aria-controls="tabset-6-3" aria-selected="false">Step-3</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-6-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-4" role="tab" aria-controls="tabset-6-4" aria-selected="false">Step-4</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-6-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-5" role="tab" aria-controls="tabset-6-5" aria-selected="false">Results</a></li></ul>
 <div class="tab-content">
-<div id="tabset-4-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-4-1-tab">
+<div id="tabset-6-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-6-1-tab">
 <p>The goal of this exercise is to list all elements of the set</p>
 <div class="text-center">
 <p><span class="math inline">\(\{x∣ x \text{ is a positive integer less than } 12\}\)</span></p>
 </div>
 <p><strong>What is a set?</strong></p>
 </div>
-<div id="tabset-4-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-2-tab">
+<div id="tabset-6-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-6-2-tab">
 <p>A <strong>set</strong> is an unordered collection of objects that satisfy a certain property. This property can be expressed mathematically or in a form of a sentence.</p>
 </div>
-<div id="tabset-4-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-3-tab">
+<div id="tabset-6-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-6-3-tab">
 <p>Remember that positive integers are whole positive numbers, also called natural numbers. This set consists of numbers <span class="math inline">\(1,2,3,….\)</span> Therefore, integers that are less than <span class="math inline">\(12\)</span> are</p>
 <div class="text-center">
 <p><span class="math inline">\(1,2,3,4,5,6,7,8,9,10,11\)</span></p>
@@ -728,10 +800,10 @@ Table&nbsp;1: Math Symbol Examples <!-- end of table panel  -->
 <p><span class="math inline">\(\{x∣ x \text{ is a positive integer less than } 12\} = \{1,2,3,4,5,6,7,8,9,10,11\}\)</span></p>
 </div>
 </div>
-<div id="tabset-4-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-4-tab">
+<div id="tabset-6-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-6-4-tab">
 <p>Let’s recap what we have done. We recalled what the set of positive integers is, and then identified the ones that are less than <span class="math inline">\(12\)</span>. These are the whole numbers from <span class="math inline">\(1\)</span> to <span class="math inline">\(11\)</span>, and they are the only elements of our set.</p>
 </div>
-<div id="tabset-4-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-5-tab">
+<div id="tabset-6-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-6-5-tab">
 <div class="text-center">
 <p><span class="math inline">\(1,2,3,4,5,6,7,8,9,10,11\)</span></p>
 </div>
@@ -743,16 +815,16 @@ Table&nbsp;1: Math Symbol Examples <!-- end of table panel  -->
 <h6 class="anchored" data-anchor-id="exercise-1c">Exercise 1c</h6>
 </section>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-5-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-1" role="tab" aria-controls="tabset-5-1" aria-selected="true">Step-1</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-5-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-2" role="tab" aria-controls="tabset-5-2" aria-selected="false">Step-2</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-5-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-3" role="tab" aria-controls="tabset-5-3" aria-selected="false">Step-3</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-5-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-4" role="tab" aria-controls="tabset-5-4" aria-selected="false">Step-4</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-5-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-5" role="tab" aria-controls="tabset-5-5" aria-selected="false">Results</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-7-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-7-1" role="tab" aria-controls="tabset-7-1" aria-selected="true">Step-1</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-7-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-7-2" role="tab" aria-controls="tabset-7-2" aria-selected="false">Step-2</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-7-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-7-3" role="tab" aria-controls="tabset-7-3" aria-selected="false">Step-3</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-7-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-7-4" role="tab" aria-controls="tabset-7-4" aria-selected="false">Step-4</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-7-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-7-5" role="tab" aria-controls="tabset-7-5" aria-selected="false">Results</a></li></ul>
 <div class="tab-content">
-<div id="tabset-5-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-5-1-tab">
+<div id="tabset-7-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-7-1-tab">
 <p>The goal of this exercise is to list all elements of the set</p>
 <p><strong>What is a set?</strong></p>
 </div>
-<div id="tabset-5-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-5-2-tab">
+<div id="tabset-7-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-7-2-tab">
 <p>A <strong>set</strong> is an unordered collection of objects that satisfy a certain property. This property can be expressed mathematically or in a form of a sentence.</p>
 </div>
-<div id="tabset-5-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-5-3-tab">
+<div id="tabset-7-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-7-3-tab">
 <p>In part <span class="math inline">\(b)\,\)</span> we recalled that integers are whole numbers. Their squares are positive whole numbers, or natural numbers. Suppose that a is an integer such that</p>
 <div class="text-center">
 <p><span class="math inline">\(a^2=x\)</span></p>
@@ -771,11 +843,11 @@ Table&nbsp;1: Math Symbol Examples <!-- end of table panel  -->
 </div>
 <p>Hence, there are <span class="math inline">\(10\)</span> elements of our set.</p>
 </div>
-<div id="tabset-5-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-5-4-tab">
+<div id="tabset-7-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-7-4-tab">
 <p>Let’s recap what we have done.</p>
 <p>First, we identified that the absolute value of an integer whose square is less than <span class="math inline">\(100\)</span> is smaller than <span class="math inline">\(10\)</span>. Then, we listed them and found their squares, which are the elements of our set.</p>
 </div>
-<div id="tabset-5-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-5-5-tab">
+<div id="tabset-7-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-7-5-tab">
 <div class="{text-center}">
 <p><span class="math inline">\(0,1,4,9,16,25,36,49,64,81\)</span></p>
 </div>
