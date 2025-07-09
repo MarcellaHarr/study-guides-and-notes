@@ -48,8 +48,9 @@ elements separated by commas.
 
 The set with no elements is called the [**empty set**]{.mark .vocab} and is denoted by the 
 symbol $∅$. The empty set is sometimes referred to as the [**null set**]{.mark .vocab} and can 
-also be denoted by $\{ \}$. A [**finite set**]{.mark .vocab} has a finite number of elements. 
-An [**infinite set**]{.mark .vocab} has an infinite number of elements.
+also be denoted by $\{ \}$. [It is also an element of every power set.]{.mark .vocab} 
+A [**finite set**]{.mark .vocab} has a finite number of elements. An [**infinite set**]{.mark .vocab} has 
+an infinite number of elements.
 
 <br>
 
@@ -234,22 +235,47 @@ $\mathbb{B} = \{ 2, \varnothing, \{1, 2, 3\}, \{1\} \}$
 
 {{< video https://youtu.be/0XNSBoqG-1s aspect-ratio="21x9" >}}
 
-A [**power set**]{.mark .vocab} is a set of all the [subsets]{.underline}. For 
-example, the power set of a set $\mathbb{A}$, denoted $P\{\mathbb{A}\}$, is the 
-set of all subsets of $\mathbb{A}$, so, if $\mathbb{A} = \{1,2,3\}$, then:
+A [**power set**]{.mark .vocab} is a set of all the [subsets]{.underline}, 
+including the empty set and the set itself. For example, the power set of a 
+set $\mathbb{A}$, denoted $P\{\mathbb{A}\}$, is the set of all subsets 
+of $\mathbb{A}$, so, if $\mathbb{A} = \{1,2,3\}$, then:
 
 ::: {.text-center}
 $P\{\mathbb{A}\} = \{ \varnothing, \{1\}, \{2\}, \{3\}, \{1, 2\}, \{1,3\}, \{2,3\}, \{1, 2, 3\} \}$
 :::
 
 ::: {.lead}
+
 |Cardinality of a power set
   |Let $\mathbb{A}$ be a finite set of cardinality $n$. Then the cardinality of the power set of $\mathbb{A}$ is $2^n$, or $\mid P\{\mathbb{A}\}=2^n \mid$.
+
 :::
 
 <br>
 
 {{< video https://youtu.be/kPcDNNB3U4g aspect-ratio="21x9" >}}
+
+<br>
+
+###### 1.6
+***
+
+{{< video https://youtu.be/mOMoZYGirQQ aspect-ratio="21x9" >}}
+
+[**Set intersection**]{.mark .vocab} is the operation that produces a set 
+containing only the elements that are common to both sets. If $A$ and $B$ 
+are sets, their intersection is the set of all elements that are members of both $\mathbb{A}$ 
+[**and**]{.mark .vocab} $\mathbb{B}$. It is denoted by the symbol: $\mathbb{A} \cap \mathbb{B}$
+
+<br>
+
+{{< video https://youtu.be/kPcDNNB3U4g aspect-ratio="21x9" >}}
+
+[**Set union**]{.mark .vocab} is the operation that produces a set containing 
+all elements that belong to either of two sets. If $A$ and $B$ are sets, their 
+union is the set of all elements that are in $\mathbb{A}$, [**or**]{.mark .vocab} 
+$\mathbb{B}$, [**or**]{.mark .vocab} in both. It is denoted by the 
+symbol: $\mathbb{A} \cup \mathbb{B}$.
 
 <br>
 
