@@ -67,7 +67,7 @@ an infinite number of elements.
 
 ## "Element of" Example
 
-::: {.text-center}
+::: {.lead .text-center}
 **element** $\epsilon$ **set**
 :::
 
@@ -77,7 +77,7 @@ $p\enspace \epsilon \enspace \{q,r,s\}$
 
 ## Subset Example
 
-::: {.text-center}
+::: {.lead .text-center}
 **set** $\subseteq$ **set**
 :::
 
@@ -136,7 +136,7 @@ and a number $x$ is [**non-negative**]{.mark .vocab} if $x ≥ 0$.
 In [**set builder notation**]{.mark .vocab}, a set is defined by specifying that the set includes 
 all elements in a larger set that also satisfy certain conditions.
 
-::: {.text-center}
+::: {.lead .text-center}
 $\mathbb{A} = { x \in \mathbb{S} : \mathbb{P}(x) }$
 
 *$\mathbb{S}$ is the larger set from which the elements in $\mathbb{S}$ are taken.*
@@ -172,11 +172,12 @@ sets within $\cup$.
 Equal sets $\{ \}$ can be considered subsets $\subseteq$. Meaning all of a
 set's elements must be found in the other set (superset).
 
-$\mathbb{A}= \{ \mathbb{a, b, c, d, e} \}$
-
+::: {.lead}
+$\mathbb{A}= \{ \mathbb{a, b, c, d, e} \}$ <br>
 $\mathbb{B}= \{ \mathbb{e, b, c, a, d} \}$
+:::
 
-::: {.text-center}
+::: {.lead .text-center}
 $\mathbb{B} \subseteq \mathbb{A}$
 :::
 
@@ -190,13 +191,13 @@ With [**proper subsets**]{.mark .vocab} $\subset$, equality is not possible. Mea
 a set that is a subset $\subseteq$ with lesser elements than the superset is 
 considered a proper subset. 
 
-$\mathbb{A}= \{ \mathbb{a, b, c, d, e} \}$
-
-$\mathbb{B}= \{ \mathbb{e, b, c, a, d} \}$
-
+::: {.lead}
+$\mathbb{A}= \{ \mathbb{a, b, c, d, e} \}$<br>
+$\mathbb{B}= \{ \mathbb{e, b, c, a, d} \}$<br>
 $\mathbb{C}= \{ \mathbb{e, c, a} \}$
+:::
 
-::: {.text-center}
+::: {.lead .text-center}
 $\mathbb{C} \subset \mathbb{A}$ **or** $\mathbb{C} \subset \mathbb{B}$
 :::
 
@@ -226,7 +227,7 @@ The cardinality of $\{ \varnothing \}$ is one since it contains exactly one elem
 which is the empty set. A set can contain a combination of numbers and sets of numbers 
 as in:
 
-::: {.text-center}
+::: {.lead .text-center}
 $\mathbb{B} = \{ 2, \varnothing, \{1, 2, 3\}, \{1\} \}$
 :::
 
@@ -248,7 +249,7 @@ $P\{\mathbb{A}\} = \{ \varnothing, \{1\}, \{2\}, \{3\}, \{1, 2\}, \{1,3\}, \{2,3
 
 ::: {.lead}
 Cardinality of a power set
-: Let $\mathbb{A}$ be a finite set of cardinality $n$. Then the cardinality of the power set of $\mathbb{A}$ is $2^n$, or $\mid P\{\mathbb{A}\}=2^n \mid$.
+:  Let $\mathbb{A}$ be a finite set of cardinality $n$. Then the cardinality of the power set of $\mathbb{A}$ is $2^n$, or $\mid P\{\mathbb{A}\}=2^n \mid$.
 :::
 
 <br>
@@ -300,7 +301,7 @@ $\mathbb{A} \cap \mathbb{B} = \{ 3,5 \}$;
 
 ## Note
 
-The union and intersection operations are commutative. That is,
+The *union* and [**intersection**]{.mark .vocab} operations are commutative. That is,
 
 :::{.lead .text-center}
 $\mathbb{A} \cap \mathbb{B} = \mathbb{B} \cap \mathbb{A}$
@@ -311,7 +312,7 @@ $\mathbb{A} \cap \mathbb{B} = \mathbb{B} \cap \mathbb{A}$
 
 <br>
 
-{{< video https://youtu.be/kPcDNNB3U4g aspect-ratio="21x9" >}}
+{{< video https://youtu.be/hJHGyLpa0RQ aspect-ratio="21x9" >}}
 
 [**Set union**]{.mark .vocab} is the operation that produces a set containing 
 all elements that belong to either of two sets. If $A$ and $B$ are sets, their 
@@ -352,7 +353,7 @@ $\mathbb{A} \cup \mathbb{B} = \{ 1,3,4,5 \}$;
 
 ## Note
 
-The union and intersection operations are commutative. That is,
+The [**union**]{.mark .vocab} and *intersection* operations are commutative. That is,
 
 :::{.lead .text-center}
 $\mathbb{A} \cup \mathbb{B} = \mathbb{B} \cup \mathbb{A}$
@@ -360,6 +361,11 @@ $\mathbb{A} \cup \mathbb{B} = \mathbb{B} \cup \mathbb{A}$
 
 <!-- end of panel tabset  -->
 :::
+
+<br>
+
+###### 1.7
+***
 
 <br>
 
