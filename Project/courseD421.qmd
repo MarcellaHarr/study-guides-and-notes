@@ -369,6 +369,42 @@ $\mathbb{A} \cup \mathbb{B} = \mathbb{B} \cup \mathbb{A}$
 
 <br>
 
+###### 1.7.4
+***
+
+{{< video https://youtu.be/2LutE_XlGP8 aspect-ratio="21x9" >}}
+
+<br>
+
+::: {.panel-tabset}
+
+## Intersection
+
+::: {.lead .text-center}
+$\bigcap_{i=1}^n A_i$
+:::
+
+The [**intersection of multiple sets**]{.mark .vocab} is an operation that 
+yields the set of all elements common to every set in a sequence. When given a 
+collection of sets indexed by integers from 1 to n, their intersection is the 
+set of elements that appear in all of the sets from [$A_\imath$]{.lead} to [$A_n$]{.lead}.
+
+## Union
+
+::: {.lead .text-center}
+$\bigcup_{i=1}^n A_i$;
+:::
+
+The [**union of multiple sets**]{.mark .vocab} is an operation that yields the 
+set of all elements that appear in at least one of the sets in a sequence. When 
+given a collection of sets indexed by integers from 1 to n, their union includes 
+every element from any of the sets [$A_\imath$]{.lead} through [$A_n$]{.lead}.
+
+<!-- end of panel tabset  -->
+:::
+
+<br>
+
 ##### Exercises
 
 ::: {.callout-note title="1a - 1c" collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
