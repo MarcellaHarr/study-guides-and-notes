@@ -367,6 +367,52 @@ $\mathbb{A} \cup \mathbb{B} = \mathbb{B} \cup \mathbb{A}$
 ###### 1.7
 ***
 
+{{< video https://youtu.be/Mhip1rljvRo aspect-ratio="21x9" >}}
+
+<br>
+
+::: {.panel-tabset}
+
+## Set Operations
+
+::: {.lead .text-center}
+$\mathbb{A} \cup \mathbb{B}; \enspace \mathbb{A} \cap \mathbb{B}; \enspace \mathbb{A} \setminus \mathbb{B}$
+:::
+
+[**Set operations**]{.mark .vocab} are mathematical procedures used to create 
+new sets from existing ones. Common operations include union, intersection, and 
+difference, and they follow rules similar to logical operators in propositional 
+logic.
+
+
+## Set Expression
+
+A [**set expression**]{.mark .vocab} is a mathematical statement that combines 
+sets using one or more operations to define a new set. Parentheses are often 
+used to clarify order of operations and ensure accurate interpretation.
+
+::: {.lead .text-center}
+An example is: $\mathbb{A} \cup (\,\mathbb{B} \cap \mathbb{C})\,$,
+::: 
+which represents the union of A with the intersection of B and C.
+
+## Set Defined
+
+A [**defined set**]{.mark .vocab} is when its elements are explicitly or 
+logically described. It can be defined by listing elements, using conditions, 
+or applying set operations.
+
+For example,
+
+::: {.lead .text-center}
+$\mathbb{A} \cap \mathbb{B} \cap \mathbb{C} \cap \mathbb{D}$
+:::
+
+The set above is defined as the set of elements common to all four sets: $\mathbb{A}, \mathbb{B}, \mathbb{C}, \text{and} \thinspace \mathbb{D}$.
+
+<!-- end of panel tabset  -->
+:::
+
 <br>
 
 ###### 1.7.4
