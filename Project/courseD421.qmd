@@ -380,8 +380,9 @@ $\mathbb{A} \cup \mathbb{B} = \mathbb{B} \cup \mathbb{A}$
 
 ## Intersection
 
+<!-- $\bigcap_{i=1}^n A_i$ -->
 ::: {.lead .text-center}
-$\bigcap_{i=1}^n A_i$
+$\bigcap^n_{i=0} A_i$
 :::
 
 The [**intersection of multiple sets**]{.mark .vocab} is an operation that 
@@ -391,8 +392,9 @@ set of elements that appear in all of the sets from [$A_\imath$]{.lead} to [$A_n
 
 ## Union
 
+<!-- $\bigcup_{i=1}^n A_i$ -->
 ::: {.lead .text-center}
-$\bigcup_{i=1}^n A_i$;
+$\bigcup^n_{i=0} A_i$
 :::
 
 The [**union of multiple sets**]{.mark .vocab} is an operation that yields the 
