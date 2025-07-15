@@ -1,20 +1,7 @@
 # Discrete Math II {.unnumbered}
 
-```{r install-packages, include=FALSE}
-if (!requireNamespace("magrittr", quietly = TRUE)) {
-  install.packages("magrittr")
-}
-if (!requireNamespace("reticulate", quietly = TRUE)) {
-  install.packages("reticulate")
-}
-library(magrittr)
-library(reticulate)
-```
-
 ::: {.lead}
-
 Discrete Math II Functions and Applications (D421)
-
 :::
 
 <!-- \thinspace (1/12em); \enspace; \quad; \qquad -->
@@ -26,13 +13,6 @@ These exercises are not mines. They are from this [Quizlet »](https://quizlet.c
 :::
 
 ---
-
-```{r setup-packages, include=FALSE}
-if (!requireNamespace("magrittr", quietly = TRUE)) {
-  install.packages("magrittr")
-}
-library(magrittr)
-```
 
 <br>
 
@@ -591,7 +571,7 @@ multiples of 2 to 5 from 1 to 20, by asking, "Is it a multiple of 2, 3, 4, or 5?
 Now, combine all the unique elements from all five sets — but since $A_1$ already 
 includes everything from 1 to 20, the union is just:
 
-```{markdown exbMultiples}
+```
   2           3           4           5
  /|\         /|\         /|\         /|\
 2 4 6      3 6 9      4 8 12      5 10 15
