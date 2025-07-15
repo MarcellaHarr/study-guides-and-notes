@@ -1,5 +1,16 @@
 # Discrete Math II {.unnumbered}
 
+```{r install-packages, include=FALSE}
+if (!requireNamespace("magrittr", quietly = TRUE)) {
+  install.packages("magrittr")
+}
+if (!requireNamespace("reticulate", quietly = TRUE)) {
+  install.packages("reticulate")
+}
+library(magrittr)
+library(reticulate)
+```
+
 ::: {.lead}
 
 Discrete Math II Functions and Applications (D421)
@@ -524,7 +535,6 @@ $$
 [*"The set of all values x such that x equals 60 times k, where k is any integer."*]{.mark .vocab}
 :::
 
-
 <!-- end of panel tabset  -->
 :::
 
@@ -542,7 +552,6 @@ is the set of all integer multiples of $i$.
 ::: {.lead .text-center}
 $$( \,\bigcup^5_{i=2} A_i) \, \cap \{ x \in \mathbb{Z}:1 \leq x \leq 20 \}$$
 :::
-
 
 ## Step 1
 
@@ -605,6 +614,7 @@ The union of the sets $A_2$ through $A_5$ in [**roster notation**]{.mark .vocab}
 $$
 ( \,\bigcup^5_{i=2} A_i) \, = \{ 2, 3, 4, 5, 6, 8, 9, 10, 12, 14, 15, 16, 18, 20 \}
 $$
+:::
 
 
 <!-- end of panel tabset  -->
@@ -623,7 +633,6 @@ $$
 
 ## Intersection
 
-<!-- $\bigcap_{i=1}^n A_i$ -->
 ::: {.lead .text-center}
 $\bigcap^n_{i=0} A_i$
 :::
@@ -636,7 +645,6 @@ set of elements that appear in all of the sets from [$A_\imath$]{.lead} to [$A_n
 
 ## Union
 
-<!-- $\bigcup_{i=1}^n A_i$ -->
 ::: {.lead .text-center}
 $\bigcup^n_{i=0} A_i$
 :::
@@ -708,6 +716,7 @@ $−1,1$
 <!-- end panel tabset -->
 :::
 
+<br>
 
 ::: {.lead}
 ###### Exercise 1b
