@@ -564,13 +564,13 @@ $\{ x \in \mathbb{Z}:1 \leq x \leq 20 \}$: This is just the set of integers from
 We only care about values up to 20 because of the intersection. So list all 
 multiples of 2 to 5 from 1 to 20, by asking, "Is it a multiple of 2, 3, 4, or 5?":
 
-- $A_2:\{2, 4, 6, 8, 10, 12, 14, 16, 18, 20}$
+- $A_2:\{2, 4, 6, 8, 10, 12, 14, 16, 18, 20}\$
 
-- $A_3:\{3, 6, 9, 12, 15, 18}$
+- $A_3:\{3, 6, 9, 12, 15, 18}\$
 
-- $A_4:\{4, 8, 12, 16, 20}$
+- $A_4:\{4, 8, 12, 16, 20}\$
 
-- $A_5:\{5, 10, 15, 20}$
+- $A_5:\{5, 10, 15, 20}\$
 
 
 ## Step 3
