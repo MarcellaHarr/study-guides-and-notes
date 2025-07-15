@@ -571,7 +571,7 @@ multiples of 2 to 5 from 1 to 20, by asking, "Is it a multiple of 2, 3, 4, or 5?
 Now, combine all the unique elements from all five sets — but since $A_1$ already 
 includes everything from 1 to 20, the union is just:
 
-```
+```{markdown exbMultiples}
   2           3           4           5
  /|\         /|\         /|\         /|\
 2 4 6      3 6 9      4 8 12      5 10 15
