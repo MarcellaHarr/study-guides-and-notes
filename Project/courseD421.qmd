@@ -487,7 +487,9 @@ $A_5 = \{0,5,10,15,20,25, \ldots\}$
 
 ## Step 2
 
-**What Does $\bigcap_{i=1}^5 A_i$ Mean?**
+$$
+**What Does \bigcap_{i=1}^5 A_i Mean?**
+$$
 
 This is asking:
 
@@ -506,10 +508,10 @@ To satisfy all five conditions, a number must be a common multiple of all
 five integers and to be a multiple of all five integers, a number has to be 
 divisible by their **least common multiple (LCM)**.
 
-::: {.text-center}
-- LCM(1, 2, 3, 4, 5) = 60
+- **LCM(1, 2, 3, 4, 5) = 60**
 
-```{text exaLCM}
+::: {.text-center}
+```{markdown exaLCM}
   A₁      A₂        A₃        A₄        A₅
          / \       / \       / \       / \
  none   1   2     1   3     2   2     1   5
@@ -557,13 +559,13 @@ $$( \,\bigcup^5_{i=2} A_i) \, \cap \{ x \in \mathbb{Z}:1 \leq x \leq 20 \}$$
 
 **Understand the definition**
 
-$$\bigcup^5_{i=2} A_i$$: This means take all multiples of any one of, $A_2, A_3, A_4, A_5$
-(excluding $A_1$,) and put them into one big set (union.)
+- $$( \,\bigcup^5_{i=2} A_i) \, \text{: This means take all multiples of any one of,} A_2, A_3, A_4, A_5 ( \, excluding A_1, ) \, \text{and put them into one big set (union.)}$$
 
-$\bigcap$: This means intersection, or common values between two sets.
+- $\bigcap$: This means intersection, or common values between two sets.
 
-$\{ x \in \mathbb{Z}:1 \leq x \leq 20 \}$: This is just the set of integers from 1 to 20, and is read as:
-- [“The set of all integers x such that x is greater than or equal to 1 and less than or equal to 20.”]{.mark .vocab} 
+- $\{ x \in \mathbb{Z}:1 \leq x \leq 20 \}$: This is just the set of integers from 1 to 20, and is read as:
+
+  - [“The set of all integers x such that x is greater than or equal to 1 and less than or equal to 20.”]{.mark .vocab} 
 
 
 ## Step 2
@@ -573,13 +575,13 @@ $\{ x \in \mathbb{Z}:1 \leq x \leq 20 \}$: This is just the set of integers from
 We only care about values up to 20 because of the intersection. So list all 
 multiples of 2 to 5 from 1 to 20, by asking, "Is it a multiple of 2, 3, 4, or 5?":
 
-- $A_2:\{2, 4, 6, 8, 10, 12, 14, 16, 18, 20}\$
+- $A_2:\{ 2, 4, 6, 8, 10, 12, 14, 16, 18, 20 \}$
 
-- $A_3:\{3, 6, 9, 12, 15, 18}\$
+- $A_3:\{ 3, 6, 9, 12, 15, 18 \}$
 
-- $A_4:\{4, 8, 12, 16, 20}\$
+- $A_4:\{ 4, 8, 12, 16, 20 \}$
 
-- $A_5:\{5, 10, 15, 20}\$
+- $A_5:\{ 5, 10, 15, 20 \}$
 
 
 ## Step 3
@@ -589,7 +591,7 @@ multiples of 2 to 5 from 1 to 20, by asking, "Is it a multiple of 2, 3, 4, or 5?
 Now, combine all the unique elements from all five sets — but since $A_1$ already 
 includes everything from 1 to 20, the union is just:
 
-```{text exbMultiples}
+```{markdown exbMultiples}
   2           3           4           5
  /|\         /|\         /|\         /|\
 2 4 6      3 6 9      4 8 12      5 10 15
@@ -603,7 +605,7 @@ Excluded:
 
 ---
 
-The common multiples combined together are: $\{2, 3, 4, 5, 6, 8, 9, 10, 12, 14, 15, 16, 18, 20}$
+The common multiples combined together are: $\{2, 3, 4, 5, 6, 8, 9, 10, 12, 14, 15, 16, 18, 20}\$
 
 
 ## Result
