@@ -490,13 +490,11 @@ divisible by their **least common multiple (LCM)**.
 
 - **LCM(1, 2, 3, 4, 5) = 60**
 
-::: {.text-center}
-```{markdown exaLCM}
+```{text exaLCM}
   A₁      A₂        A₃        A₄        A₅
          / \       / \       / \       / \
  none   1   2     1   3     2   2     1   5
 ```
-:::
 
 Then multiply the prime factors, $2 \cdot 3 \cdot 2 \cdot 5=60$
 
@@ -571,7 +569,7 @@ multiples of 2 to 5 from 1 to 20, by asking, "Is it a multiple of 2, 3, 4, or 5?
 Now, combine all the unique elements from all five sets — but since $A_1$ already 
 includes everything from 1 to 20, the union is just:
 
-```{markdown exbMultiples}
+<!-- ```{markdown exbMultiples}
   2           3           4           5
  /|\         /|\         /|\         /|\
 2 4 6      3 6 9      4 8 12      5 10 15
@@ -581,7 +579,7 @@ includes everything from 1 to 20, the union is just:
 
 Excluded:
   1  7  11  13  17  19
-```
+``` -->
 
 ---
 
