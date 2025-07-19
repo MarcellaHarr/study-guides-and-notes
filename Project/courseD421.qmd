@@ -36,7 +36,7 @@ elements separated by commas.
 
 <br>
 
-###### 1.2.1
+#### 1.2.1
 ***
 
 ##### empty set
@@ -51,7 +51,7 @@ an infinite number of elements.
 
 <br>
 
-###### 1.2.2
+#### 1.2.2
 ***
 
 ##### set member & subset
@@ -91,7 +91,7 @@ elements.
 
 <br>
 
-###### 1.2.3
+#### 1.2.3
 ***
 
 ##### theory symbols
@@ -127,7 +127,7 @@ and a number $x$ is [**non-negative**]{.mark .vocab} if $x ≥ 0$.
 
 <br>
 
-###### 1.2.4
+#### 1.2.4
 ***
 
 ##### set builder
@@ -145,7 +145,7 @@ $\mathbb{A} = { x \in \mathbb{S} : \mathbb{P}(x) }$
 
 <br>
 
-###### 1.2.5 / 1.3
+#### 1.2.5 / 1.3
 ***
 
 ##### universal set
@@ -220,7 +220,7 @@ It is denoted by the symbol: $\mathbb{A} \thinspace \subset \thinspace \mathbb{B
 
 <br>
 
-###### 1.4
+#### 1.4
 ***
 
 ##### set containing
@@ -238,7 +238,7 @@ $\mathbb{B} = \{ 2, \varnothing, \{1, 2, 3\}, \{1\} \}$
 
 <br>
 
-###### 1.5
+#### 1.5
 ***
 
 ##### power set
@@ -265,7 +265,7 @@ Cardinality of a power set
 
 <br>
 
-###### 1.6
+#### 1.6
 ***
 
 ##### intersection & union
@@ -373,7 +373,7 @@ $\mathbb{A} \cup \mathbb{B} = \mathbb{B} \cup \mathbb{A}$
 
 <br>
 
-###### 1.7
+#### 1.7
 ***
 
 ##### set operation
@@ -426,7 +426,7 @@ The set above is defined as the set of elements common to all four sets: $\mathb
 
 <br>
 
-###### 1.7.2
+#### 1.7.2
 ***
 
 ##### integer multiples
@@ -629,7 +629,7 @@ $$
 
 <br>
 
-###### 1.7.4
+#### 1.7.4
 ***
 
 ##### multiple set
@@ -668,7 +668,7 @@ every element from any of the sets [$A_\imath$]{.lead} through [$A_n$]{.lead}.
 
 <br>
 
-###### 1.8
+#### 1.8
 ***
 
 ##### set/symmetric difference
