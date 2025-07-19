@@ -650,14 +650,14 @@ every element from any of the sets [$A_\imath$]{.lead} through [$A_n$]{.lead}.
 
 ::: {.panel-tabset}
 
-## `Set Difference`
+## Set Difference
 
 ::: {.lead .text-center}
 $\mathbb{A} - \mathbb{B}$
 :::
 
 [**Set difference**]{.mark .vocab} is the operation that produces a set containing 
-elements that belong to one set but [**not**]{.underline} to another. If $\mathbb{A}$ 
+elements that belong to one set but [**not**]{.underline .mark .vocab} to another. If $\mathbb{A}$ 
 and $\mathbb{B}$ are sets, the set difference $A -B$ contains all elements that 
 are in $\mathbb{A}$ and not in $\mathbb{B}$.
 
@@ -690,7 +690,9 @@ $A - B \neq B - A$ in general.
 $\mathbb{A} \oplus \mathbb{B}$
 :::
 
-Symmetric difference is the operation that produces a set containing elements that belong to exactly one of two sets — in either A or B, but not in both.
+[**Symmetric difference**]{.mark .vocab} is the operation that produces a set 
+containing elements that belong to exactly one of two sets — in either $\mathbb{A}$ 
+or $\mathbb{B}$, but [not in both]{.underline}.
 
 ---
 
@@ -712,7 +714,7 @@ The symmetric difference is [**commutative**]{.mark .vocab}, so $\mathbb{A} \opl
 
 <br>
 
-Here's a vid on how specifically set and symmetric difference translates into
+Here's a vid on how, specifically, set and symmetric difference translates into
 programming.
 
 {{< video https://youtu.be/fX51KlbC1TM aspect-ratio="21x9" >}}
@@ -722,6 +724,7 @@ programming.
 
 ###### 1.8.3
 ***
+#### set complement operation
 
 {{< video https://youtu.be/HrD_vpFzrBk aspect-ratio="21x9" >}}
 
@@ -734,11 +737,14 @@ programming.
 The **set complement operation** produces a set containing all elements in a universal set $(\, \mathbb{U} )\,$ that are **not** in a subset $(\, \mathbb{A} )\,$.
 
 It is denoted by:
+
 - $(\, \mathbb{A}^c )\,$ or $(\, \overline{\mathbb{A}} )\,$ *(depending on notation style)*
+
 - Formally:
+
   - $[\, \mathbb{A}^c = \{ x \in \mathbb{U} : x \notin \mathbb{A} \} \quad \text{or} \quad \mathbb{A}^c = \mathbb{U} - \mathbb{A}]\,$
 
-📘 Note: This operation **requires** a well-defined universal set $(\, U )\,$ 
+📘 Note: This operation **requires** a well-defined universal set $(\, \mathbb{U} )\,$ 
 unlike union or intersection.
 
 
@@ -786,9 +792,9 @@ Which is the set of all even integers.
 | Symmetric<br> Difference | $\mathbb{A} \oplus \mathbb{B}$ | $\{ x:x \in \mathbb{A}-\mathbb{B} \quad \text{or} \quad x: \in \mathbb{B}-\mathbb{A} \}$ |
 | Complement        | $\overline{\rm \mathbb{A}}$       | $\{ x:x \notin \mathbb{A} \}$    |
 
-: Common Math Sets {#tbl-first .striped .hover}
+: Set Operations {#tbl-first .striped .hover}
 
-Table: Summary of Set Operations
+Section 1.8 Summary
 <!-- end of table panel  -->
 :::
 
