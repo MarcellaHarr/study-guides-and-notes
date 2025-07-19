@@ -720,6 +720,62 @@ programming.
 <br>
 
 
+###### 1.8.3
+***
+
+{{< video https://youtu.be/HrD_vpFzrBk aspect-ratio="21x9" >}}
+
+<br>
+
+::: {.panel-tabset}
+
+## Complement Operations
+
+The **set complement operation** produces a set containing all elements in a universal set $(\, \mathbb{U} )\,$ that are **not** in a subset $(\, \mathbb{A} )\,$.
+
+It is denoted by:
+- $(\, \mathbb{A}^c )\,$ or $(\, \overline{\mathbb{A}} )\,$ *(depending on notation style)*
+- Formally:
+  - $[\, \mathbb{A}^c = \{ x \in \mathbb{U} : x \notin \mathbb{A} \} \quad \text{or} \quad \mathbb{A}^c = \mathbb{U} - \mathbb{A}]\,$
+
+📘 Note: This operation **requires** a well-defined universal set $(\, U )\,$ 
+unlike union or intersection.
+
+
+## Alternate Form
+
+You can express the complement using a **set difference** operation:
+
+$[\, \mathbb{A}^c = \mathbb{U} - \mathbb{A} ]\,$
+
+This says: take everything in the universe $( \, \mathbb{U} ) \,$ and remove 
+the contents of $( \, \mathbb{A} ) \,$.
+
+
+## Example
+
+Let the universal set be $( \, \mathbb{U} = \mathbb{Z} ) \,$ the set of all integers.
+
+**Define:**
+
+::: {.lead .text-center}
+$[ \, \mathbb{A} = \{ x \in \mathbb{Z} : x \text{ is odd} \} ] \,$
+:::
+
+**Then:**
+
+::: {.lead .text-center}
+$[ \, \mathbb{A}^c = \{ x \in \mathbb{Z} : x \text{ is even} \} ] \,$
+:::
+
+Which is the set of all even integers.
+
+<!-- end of panel tabset  -->
+:::
+
+<br>
+
+
 <!-- ###### Section # -->
 <!-- *** -->
 
