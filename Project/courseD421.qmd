@@ -775,6 +775,27 @@ Which is the set of all even integers.
 
 <br>
 
+---
+
+::: {#tbl-panel layout-ncol=1}
+|     Operation     |            Notation               | Description  |
+|-------------------|-----------------------------------|--------------|
+| Intersection      | $\mathbb{A} \cap \mathbb{B}$      | $\{ x: x \in \mathbb{A} \enspace \text{and} \enspace x \in \mathbb{B} \}$   |
+| Union             | $\mathbb{A} \cup \mathbb{B}$      | $\{ x:x \in \mathbb{A} \quad \text{or} \quad x \in \mathbb{B} \quad \text{or} \enspace \text{both} \}$    |
+| Difference        | $\mathbb{A} - \mathbb{B}$         | $\{ x:x \in \mathbb{A} \quad \text{and} \quad x \notin \mathbb{B} \}$    |
+| Symmetric<br> Difference | $\mathbb{A} \oplus \mathbb{B}$ | $\{ x:x \in \mathbb{A}-\mathbb{B} \quad \text{or} \quad x: \in \mathbb{B}-\mathbb{A} \}$ |
+| Complement        | $\overline{\rm \mathbb{A}}$       | $\{ x:x \notin \mathbb{A} \}$    |
+
+: Common Math Sets {#tbl-first .striped .hover}
+
+Table: Summary of Set Operations
+<!-- end of table panel  -->
+:::
+
+---
+
+<br>
+
 
 <!-- ###### Section # -->
 <!-- *** -->
