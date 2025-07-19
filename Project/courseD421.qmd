@@ -641,6 +641,104 @@ every element from any of the sets [$A_\imath$]{.lead} through [$A_n$]{.lead}.
 
 <br>
 
+###### 1.8
+***
+
+{{< video https://youtu.be/HJduHa16Y70 aspect-ratio="21x9" >}}
+
+<br>
+
+::: {.panel-tabset}
+
+## `Set Difference`
+
+::: {.lead .text-center}
+$\mathbb{A} - \mathbb{B}$
+:::
+
+[**Set difference**]{.mark .vocab} is the operation that produces a set containing 
+elements that belong to one set but [**not**]{.underline} to another. If $\mathbb{A}$ 
+and $\mathbb{B}$ are sets, the set difference $A -B$ contains all elements that 
+are in $\mathbb{A}$ and not in $\mathbb{B}$.
+
+
+## Note
+
+{{< video https://youtu.be/mtRzKu4eGf4 aspect-ratio="21x9" >}}
+
+---
+
+::: {.lead .text-center}
+The set difference operation is not [**commutative**]{.mark .vocab}, meaning 
+$A - B \neq B - A$ in general.
+:::
+
+<!-- end of panel tabset  -->
+:::
+
+<br>
+
+{{< video https://youtu.be/wlehAlkJfA0 aspect-ratio="21x9" >}}
+
+<br>
+
+::: {.panel-tabset}
+
+## Symmetric Difference
+
+::: {.lead .text-center}
+$\mathbb{A} \oplus \mathbb{B}$
+:::
+
+Symmetric difference is the operation that produces a set containing elements that belong to exactly one of two sets — in either A or B, but not in both.
+
+---
+
+An alternate definition expresses it using union and set difference:
+
+::: {.lead .text-center}
+$\mathbb{A} \oplus \mathbb{B}= ( \, \mathbb{A} - \mathbb{B} ) \, \cup ( \, \mathbb{B} - \mathbb{A} ) \,$
+:::
+
+
+## Note
+
+::: {.lead .text-center}
+The symmetric difference is [**commutative**]{.mark .vocab}, so $\mathbb{A} \oplus \mathbb{B} = \mathbb{B} \oplus \mathbb{A}$
+:::
+
+<!-- end of panel tabset  -->
+:::
+
+<br>
+
+Here's a vid on how specifically set and symmetric difference translates into
+programming.
+
+{{< video https://youtu.be/fX51KlbC1TM aspect-ratio="21x9" >}}
+
+<br>
+
+
+<!-- ###### Section # -->
+<!-- *** -->
+
+<!-- {{< video https://youtu.be/<add video ending> aspect-ratio="21x9" >}} -->
+
+<!-- <br> -->
+
+<!-- ::: {.panel-tabset} -->
+
+<!-- ## Tab Title -->
+
+<!-- end of panel tabset  -->
+<!-- ::: -->
+
+<!-- <br> -->
+
+
+
+
 ##### Exercises
 
 ::: {.callout-note title="1a - 1c" collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
