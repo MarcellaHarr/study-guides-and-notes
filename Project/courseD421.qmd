@@ -879,11 +879,11 @@ arithmetic operations.
 
 - Combined operations should be evaluated by grouping parentheses first, then applying the logic of each operator.
 
-- Set expressions such as $(\, (\mathbb{A} \oplus \mathbb{B}) \cup (\mathbb{A} \cap \mathbb{C}) )\,$ illustrate how **symmetric difference**, **union**, and **intersection** interact.
+- Set expressions such as $(\, (\, \mathbb{A} \oplus \mathbb{B})\, \cup (\, \mathbb{A} \cap \mathbb{C})\, )\,$ illustrate how **symmetric difference**, **union**, and **intersection** interact.
 
 🧠 Tip: Just as in algebra, parentheses determine the order of evaluation. For example:
 
-  - $(\, (\mathbb{A} \cup \mathbb{B}) \cap \mathbb{C} )\,$ may produce a different result than $(\, \mathbb{A} \cup (\mathbb{B} \cap \mathbb{C}) )\,$
+  - $(\, (\, \mathbb{A} \cup \mathbb{B})\, \cap \mathbb{C} )\,$ may produce a different result than $(\, \mathbb{A} \cup (\, \mathbb{B} \cap \mathbb{C})\, )\,$
 
 
 ## Example
@@ -902,7 +902,7 @@ arithmetic operations.
 
 **Now combine operations:**
 
-- $(\, (\mathbb{A} \oplus \mathbb{B}) \cup (\mathbb{A} \cap \mathbb{C}) )\,$ defines a new set composed of:
+- $(\, (\, \mathbb{A} \oplus \mathbb{B})\, \cup (\, \mathbb{A} \cap \mathbb{C})\, )\,$ defines a new set composed of:
 
   - Elements in $A$ [**or**]{.mark .vocab} $B$ but [**not both**]{.mark .vocab}, combined with
   
