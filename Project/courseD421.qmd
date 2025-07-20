@@ -743,10 +743,25 @@ The symmetric difference is [**commutative**]{.mark .vocab}, so $\mathbb{A} \opl
 
 <br>
 
+#### 1.8.1
+***
+
+##### set subtraction
+
+{{< video https://youtu.be/IL465-AUUVY aspect-ratio="21x9" >}}
+
+*Note: [Set subtraction]{.mark .vocab} is not associative*
+
+<br>
+
+---
+
 Here's a vid on how, specifically, set and symmetric difference translates into
 programming.
 
 {{< video https://youtu.be/fX51KlbC1TM aspect-ratio="21x9" >}}
+
+---
 
 <br>
 
@@ -832,9 +847,72 @@ Section 1.8 Summary
 
 <br>
 
+#### Section #
+***
 
-<!-- ###### Section # -->
+##### combining sets
+
+{{< video https://youtu.be/ZQ5pGz3zAYA aspect-ratio="21x9" >}}
+
+<br>
+
+{{< video https://youtu.be/PCEPxKrRaQE aspect-ratio="21x9" >}}
+
+<br>
+
+::: {.panel-tabset}
+
+## Definition
+
+[**Combining sets**]{.mark .vocab} refers to the use of multiple set operations — such as 
+**union**, **intersection**, **difference**, and **complement** — in a single 
+expression to create new sets from existing ones.
+
+These operations may be nested or sequenced to define increasingly complex 
+relationships among sets, and are governed by mathematical precedence similar to 
+arithmetic operations.
+
+
+## Explanation
+
+- The complement operation requires a clearly defined **universal set** $(\, \mathbb{U} )\,$ against which the contents of a subset $(\, \mathbb{A} )\,$ are negated.
+
+- Combined operations should be evaluated by grouping parentheses first, then applying the logic of each operator.
+
+- Set expressions such as $(\, (\mathbb{A} \oplus \mathbb{B}) \cup (\mathbb{A} \cap \mathbb{C}) )\,$ illustrate how **symmetric difference**, **union**, and **intersection** interact.
+
+🧠 Tip: Just as in algebra, parentheses determine the order of evaluation. For example:
+- $(\, (\mathbb{A} \cup \mathbb{B}) \cap \mathbb{C} )\,$ may produce a different result than $(\, \mathbb{A} \cup (\mathbb{B} \cap \mathbb{C}) )\,$
+
+
+## Example
+
+Let:
+- $(\, \mathbb{A} = \{ \text{even integers} \} )\,$
+- $(\, \mathbb{U} = \mathbb{Z} )\,$ the set of all integers
+
+Then:
+- The complement of $(\, A )\,$ is:
+  $[\,A^c = \{ x \in \mathbb{Z} : x \text{ is odd} \}]\,$
+
+Now combine operations:
+
+- $(\, (\mathbb{A} \oplus \mathbb{B}) \cup (\mathbb{A} \cap \mathbb{C}) )\,$ defines a new set composed of:
+
+  - Elements in $A$ [**or**]{.mark .vocab} $B$ but [**not both**]{.mark .vocab}, combined with
+  
+  - Elements shared between $A$ [**and**]{.mark .vocab} $C$
+
+<!-- end of panel tabset  -->
+:::
+
+<br>
+
+
+<!-- #### Section # -->
 <!-- *** -->
+
+<!-- ##### subtitle -->
 
 <!-- {{< video https://youtu.be/<add video ending> aspect-ratio="21x9" >}} -->
 
