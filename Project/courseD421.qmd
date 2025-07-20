@@ -847,7 +847,7 @@ Section 1.8 Summary
 
 <br>
 
-#### Section #
+#### 1.9
 ***
 
 ##### combining sets
