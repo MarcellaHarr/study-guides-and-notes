@@ -882,20 +882,25 @@ arithmetic operations.
 - Set expressions such as $(\, (\mathbb{A} \oplus \mathbb{B}) \cup (\mathbb{A} \cap \mathbb{C}) )\,$ illustrate how **symmetric difference**, **union**, and **intersection** interact.
 
 🧠 Tip: Just as in algebra, parentheses determine the order of evaluation. For example:
-- $(\, (\mathbb{A} \cup \mathbb{B}) \cap \mathbb{C} )\,$ may produce a different result than $(\, \mathbb{A} \cup (\mathbb{B} \cap \mathbb{C}) )\,$
+
+  - $(\, (\mathbb{A} \cup \mathbb{B}) \cap \mathbb{C} )\,$ may produce a different result than $(\, \mathbb{A} \cup (\mathbb{B} \cap \mathbb{C}) )\,$
 
 
 ## Example
 
-Let:
+**Let:**
+
 - $(\, \mathbb{A} = \{ \text{even integers} \} )\,$
+
 - $(\, \mathbb{U} = \mathbb{Z} )\,$ the set of all integers
 
-Then:
-- The complement of $(\, A )\,$ is:
-  $[\,A^c = \{ x \in \mathbb{Z} : x \text{ is odd} \}]\,$
+**Then:**
 
-Now combine operations:
+- The complement of $(\, A )\,$ is:
+
+  - $[\,A^c = \{ x \in \mathbb{Z} : x \text{ is odd} \}]\,$
+
+**Now combine operations:**
 
 - $(\, (\mathbb{A} \oplus \mathbb{B}) \cup (\mathbb{A} \cap \mathbb{C}) )\,$ defines a new set composed of:
 
