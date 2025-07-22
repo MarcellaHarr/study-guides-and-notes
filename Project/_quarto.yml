@@ -35,8 +35,5 @@ format:
     grid:
       body-width: 975px
 
-  pdf:
-    documentclass: scrreprt
-
 editor:
   render-on-save: true
