@@ -1,5 +1,4 @@
-# Data Structures & Algorithms I {.unnumbered}
-
+# Data Structures {.unnumbered}
 
 ```{r install-packages, include=FALSE}
 if (!requireNamespace("magrittr", quietly = TRUE)) {
@@ -13,9 +12,7 @@ library(reticulate)
 ```
 
 ::: {.lead}
-
-Data Structures and Algorithms I (C949)
-
+Data Structures & Algorithms I (C949)
 :::
 
 ---
