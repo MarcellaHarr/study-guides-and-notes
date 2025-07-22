@@ -1,9 +1,66 @@
+# Python files
+*.pyc
+__pycache__/
+
+# Virtualenv
+# https://realpython.com/python-virtual-environments-a-primer/#the-virtualenv-project
+.Python
+[Bb]in
+[Ii]nclude
+[Ll]ib
+[Ll]ib64
+[Ll]ocal
+[Ss]cripts
+pyvenv.cfg
+# custom venv name
+.venv
+# custom venv name
+.quartovenv
+pip-selfcheck.json
+
+# Logs
+*.log
+
+# Database files
+*.sqlite3
+*.db
+Task/Database/.cache/
+
+# Test Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Node modules
+node_modules/
+
+# Visual Studio Code IDE and editor files
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+!*.code-workspace
+
+# Built Visual Studio Code Extensions
+*.vsix
+
+# PyCharm IDE and editor files
+.idea/*
+
+# Ignore dotenv files
+.env.*
+!.env.shared
+
+# Distribution / Packages
+dist/
+build/
+*.egg-info/
+
 # Ignore generated files and build folders
 .Rhistory
 .Rproj.user
-
-# Ignore workspace settings
-.vscode/settings.json
 
 # Ignore folder from Posit.cloud
 study-guides-and-notes/
