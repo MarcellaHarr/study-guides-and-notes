@@ -1,4 +1,4 @@
-# DSA I {.unnumbered}
+# Data Structures & Algorithms I {.unnumbered}
 
 
 ```{r install-packages, include=FALSE}
