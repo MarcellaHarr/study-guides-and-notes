@@ -34,7 +34,9 @@ This study guide is not mines. It belongs to this person [OfficeRunner >>](https
 
 <br>
 
+::: {.quarto-include-in-search-index}
 **Finiteness**
+:::
 
 An algorithm must always have a finite number of steps before it ends. When the 
 operation is finished, it must have a defined endpoint or output and not enter 
