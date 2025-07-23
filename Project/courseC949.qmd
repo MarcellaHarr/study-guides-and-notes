@@ -34,20 +34,26 @@ This study guide is not mines. It belongs to this person [OfficeRunner >>](https
 
 <br>
 
+<p><a id="finiteness" class="search-target"></a></p>
+
 ::: {.quarto-include-in-search-index #finiteness}
-##### <span id="finiteness" class="search-target">Finiteness</span>
+##### <span>Finiteness</span>
 
 <p>An algorithm must always have a finite number of steps before it ends. When the 
 operation is finished, it must have a defined endpoint or output and not enter 
 an endless loop.</p>
+
 :::
 
+<p><a id="definiteness"></a></p>
+
 ::: {.quarto-include-in-search-index #definiteness}
-##### <span id="definiteness" class="search-target"><strong>Definiteness</strong></span>
+##### <span class="search-target"><strong>Definiteness</strong></span>
 
 <p>An algorithm needs to have exact definitions for each step. Clear and 
 straightforward directions ensure that every step is understood and can be 
 taken easily.</p>
+
 :::
 
 **Input**
