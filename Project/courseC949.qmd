@@ -3188,7 +3188,8 @@ into a single step, making code more concise and often more readable.
 
 ###### Topic
 
-::: {.quarto-include-in-search-index #forloop-section}
+<a id="forloop-section"></a>
+::: {.quarto-include-in-search-index}
 **For Loop**
 :::
 
