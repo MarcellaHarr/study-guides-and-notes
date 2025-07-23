@@ -356,7 +356,7 @@ window.Quarto = {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./courseC949.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Data Structures &amp; Algorithms I</span></a>
+ <span class="menu-text">Data Structures</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -467,6 +467,55 @@ window.Quarto = {
 </section>
 
 </main> <!-- /main -->
+// Script for handling search index vocabulary and callouts nested or otherwise
+
+
+
+// Deep nesting function
+
+document.addEventListener("DOMContentLoaded", function () {
+
+  const hash = window.location.hash;
+
+  if (!hash) return;
+
+
+
+  const target = document.querySelector(hash);
+
+  if (!target) return;
+
+
+
+  // Traverse upward through all parent elements
+
+  let current = target;
+
+  while (current) {
+
+    if (
+
+      current.classList &amp;&amp;
+      current.classList.contains("callout-collapsed")
+
+    ) {
+
+      current.classList.remove("callout-collapsed");
+
+    }
+
+    current = current.parentElement;
+
+  }
+
+
+
+  // Optional: log when done
+
+  console.log("Callout expansion logic applied for:", hash);
+
+});
+
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right
@@ -881,8 +930,8 @@ window.Quarto = {
   </script>
 <nav class="page-navigation column-body">
   <div class="nav-page nav-page-previous">
-      <a href="./courseC949.html" class="pagination-link" aria-label="Data Structures &amp; Algorithms I">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Data Structures &amp; Algorithms I</span>
+      <a href="./courseC949.html" class="pagination-link" aria-label="Data Structures">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Data Structures</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
