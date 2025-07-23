@@ -1,6 +1,4 @@
-// Script for handling search index vocabulary and callouts nested or otherwise
-
-// Deep nesting function
+<script>
 document.addEventListener("DOMContentLoaded", function () {
   const hash = window.location.hash;
   if (!hash) return;
@@ -23,3 +21,4 @@ document.addEventListener("DOMContentLoaded", function () {
   // Optional: log when done
   console.log("Callout expansion logic applied for:", hash);
 });
+</script>
