@@ -24,8 +24,8 @@ format:
       light: lux
       dark: darkly
     css: custom_styles.css
-    include-in-header:
-      - file: custom_script.js
+    include-after-body:
+      - custom/custom_script.js
     toc: true
     toc-depth: 5
     toc-expand: 2
