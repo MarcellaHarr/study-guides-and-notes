@@ -527,11 +527,17 @@ Names
 <div class="callout-body-container callout-body">
 <p><br></p>
 <section id="finiteness" class="level5 quarto-include-in-search-index">
-<h5 class="anchored" data-anchor-id="finiteness"><span id="finiteness" class="search-target-highlight">Finiteness</span></h5>
+<h5 class="anchored" data-anchor-id="finiteness"><span id="finiteness" class="search-target">Finiteness</span></h5>
+<p>
+An algorithm must always have a finite number of steps before it ends. When the operation is finished, it must have a defined endpoint or output and not enter an endless loop.
+</p>
 </section>
-<p>An algorithm must always have a finite number of steps before it ends. When the operation is finished, it must have a defined endpoint or output and not enter an endless loop.</p>
-<p><strong>Definiteness</strong></p>
-<p>An algorithm needs to have exact definitions for each step. Clear and straightforward directions ensure that every step is understood and can be taken easily.</p>
+<section id="definiteness" class="level5 quarto-include-in-search-index">
+<h5 class="anchored" data-anchor-id="definiteness"><span id="definiteness" class="search-target"><strong>Definiteness</strong></span></h5>
+<p>
+An algorithm needs to have exact definitions for each step. Clear and straightforward directions ensure that every step is understood and can be taken easily.
+</p>
+</section>
 <p><strong>Input</strong></p>
 <p>An algorithm requires one or more inputs. The values that are first supplied to the algorithm before its processing are known as inputs. These inputs come from a predetermined range of acceptable values.</p>
 <p><strong>Output</strong></p>
@@ -4667,23 +4673,31 @@ Types of Statements
 </div> <!-- /content -->
 document.addEventListener("DOMContentLoaded", function () {
 
-  function expandParentsToTarget(target) {
+  function expandCalloutAncestors(target) {
 
     if (!target) return;
 
 
 
-    let parent = target.parentElement;
+    let current = target.parentElement;
 
-    while (parent) {
+    while (current) {
 
-      if (parent.classList &amp;&amp; parent.classList.contains("collapse") &amp;&amp; !parent.classList.contains("show")) {
+      // Expand collapsed callouts
 
-        parent.classList.add("show");
+      if (
+
+        current.classList &amp;&amp;
+        current.classList.contains("collapse") &amp;&amp;
+        !current.classList.contains("show")
+
+      ) {
+
+        current.classList.add("show");
 
       }
 
-      parent = parent.parentElement;
+      current = current.parentElement;
 
     }
 
@@ -4699,19 +4713,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-  function checkAndExpandFromHash() {
+  function handleHashMatch() {
 
     const hash = decodeURIComponent(window.location.hash);
 
     if (!hash) return;
 
-    const targetId = hash.startsWith("#") ? hash.slice(1) : hash;
+    const id = hash.startsWith("#") ? hash.slice(1) : hash;
 
-    const targetElement = document.getElementById(targetId);
+    const anchor = document.getElementById(id);
 
-    if (targetElement) {
+    if (anchor) {
 
-      setTimeout(() =&gt; expandParentsToTarget(targetElement), 200);
+      setTimeout(() =&gt; expandCalloutAncestors(anchor), 200);
 
     }
 
@@ -4719,12 +4733,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-  window.addEventListener("hashchange", checkAndExpandFromHash);
+  window.addEventListener("hashchange", handleHashMatch);
 
-  checkAndExpandFromHash();
+  handleHashMatch();
 
 });
-
 
 
 

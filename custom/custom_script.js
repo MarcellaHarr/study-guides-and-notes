@@ -1,13 +1,18 @@
 document.addEventListener("DOMContentLoaded", function () {
-  function expandParentsToTarget(target) {
+  function expandCalloutAncestors(target) {
     if (!target) return;
 
-    let parent = target.parentElement;
-    while (parent) {
-      if (parent.classList && parent.classList.contains("collapse") && !parent.classList.contains("show")) {
-        parent.classList.add("show");
+    let current = target.parentElement;
+    while (current) {
+      // Expand collapsed callouts
+      if (
+        current.classList &&
+        current.classList.contains("collapse") &&
+        !current.classList.contains("show")
+      ) {
+        current.classList.add("show");
       }
-      parent = parent.parentElement;
+      current = current.parentElement;
     }
 
     target.classList.add("search-target-highlight");
@@ -15,16 +20,16 @@ document.addEventListener("DOMContentLoaded", function () {
     target.scrollIntoView({ behavior: "smooth", block: "center" });
   }
 
-  function checkAndExpandFromHash() {
+  function handleHashMatch() {
     const hash = decodeURIComponent(window.location.hash);
     if (!hash) return;
-    const targetId = hash.startsWith("#") ? hash.slice(1) : hash;
-    const targetElement = document.getElementById(targetId);
-    if (targetElement) {
-      setTimeout(() => expandParentsToTarget(targetElement), 200);
+    const id = hash.startsWith("#") ? hash.slice(1) : hash;
+    const anchor = document.getElementById(id);
+    if (anchor) {
+      setTimeout(() => expandCalloutAncestors(anchor), 200);
     }
   }
 
-  window.addEventListener("hashchange", checkAndExpandFromHash);
-  checkAndExpandFromHash();
+  window.addEventListener("hashchange", handleHashMatch);
+  handleHashMatch();
 });

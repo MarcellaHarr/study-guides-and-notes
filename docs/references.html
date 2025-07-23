@@ -799,23 +799,31 @@ div.csl-indent {
 </div> <!-- /content -->
 document.addEventListener("DOMContentLoaded", function () {
 
-  function expandParentsToTarget(target) {
+  function expandCalloutAncestors(target) {
 
     if (!target) return;
 
 
 
-    let parent = target.parentElement;
+    let current = target.parentElement;
 
-    while (parent) {
+    while (current) {
 
-      if (parent.classList &amp;&amp; parent.classList.contains("collapse") &amp;&amp; !parent.classList.contains("show")) {
+      // Expand collapsed callouts
 
-        parent.classList.add("show");
+      if (
+
+        current.classList &amp;&amp;
+        current.classList.contains("collapse") &amp;&amp;
+        !current.classList.contains("show")
+
+      ) {
+
+        current.classList.add("show");
 
       }
 
-      parent = parent.parentElement;
+      current = current.parentElement;
 
     }
 
@@ -831,19 +839,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-  function checkAndExpandFromHash() {
+  function handleHashMatch() {
 
     const hash = decodeURIComponent(window.location.hash);
 
     if (!hash) return;
 
-    const targetId = hash.startsWith("#") ? hash.slice(1) : hash;
+    const id = hash.startsWith("#") ? hash.slice(1) : hash;
 
-    const targetElement = document.getElementById(targetId);
+    const anchor = document.getElementById(id);
 
-    if (targetElement) {
+    if (anchor) {
 
-      setTimeout(() =&gt; expandParentsToTarget(targetElement), 200);
+      setTimeout(() =&gt; expandCalloutAncestors(anchor), 200);
 
     }
 
@@ -851,12 +859,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-  window.addEventListener("hashchange", checkAndExpandFromHash);
+  window.addEventListener("hashchange", handleHashMatch);
 
-  checkAndExpandFromHash();
+  handleHashMatch();
 
 });
-
 
 
 
