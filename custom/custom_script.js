@@ -4,8 +4,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     let parent = target.parentElement;
     while (parent) {
-      if (parent.classList.contains("callout-collapsed")) {
-        parent.classList.remove("callout-collapsed");
+      if (parent.classList && parent.classList.contains("collapse") && !parent.classList.contains("show")) {
+        parent.classList.add("show");
       }
       parent = parent.parentElement;
     }

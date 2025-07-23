@@ -34,7 +34,7 @@ This study guide is not mines. It belongs to this person [OfficeRunner >>](https
 
 <br>
 
-::: {.quarto-include-in-search-index #Finiteness}
+::: {.quarto-include-in-search-index #finiteness}
 ##### <span id="finiteness" class="search-target">Finiteness</span>
 :::
 

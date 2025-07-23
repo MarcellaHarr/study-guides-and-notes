@@ -863,17 +863,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     while (parent) {
 
-      if (parent.classList.contains("callout") &amp;&amp; parent.hasAttribute("data-callout")) {
+      if (parent.classList &amp;&amp; parent.classList.contains("collapse") &amp;&amp; !parent.classList.contains("show")) {
 
-        const toggleButton = parent.querySelector(".callout-header button, summary");
-
-        if (toggleButton &amp;&amp; toggleButton.getAttribute("aria-expanded") === "false") {
-
-          toggleButton.click();
-
-        }
-
-        parent.open = true; // force it open anyway
+        parent.classList.add("show");
 
       }
 
