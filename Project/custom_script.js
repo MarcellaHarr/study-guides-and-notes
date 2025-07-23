@@ -1,24 +1,53 @@
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-  const hash = window.location.hash;
-  if (!hash) return;
+  function expandParentsToTarget(target) {
+    if (!target) return;
 
-  const target = document.querySelector(hash);
-  if (!target) return;
+    let parent = target.parentElement;
 
-  // Traverse upward through all parent elements
-  let current = target;
-  while (current) {
-    if (
-      current.classList &&
-      current.classList.contains("callout-collapsed")
-    ) {
-      current.classList.remove("callout-collapsed");
+    while (parent) {
+      // Check for a collapsible callout
+      if (parent.classList.contains("callout") && parent.hasAttribute("data-callout")) {
+        // If it's collapsed, simulate a click or expand manually
+        const toggleButton = parent.querySelector(".callout-header button, summary");
+
+        if (toggleButton) {
+          // Expand if collapsed
+          if (toggleButton.getAttribute("aria-expanded") === "false") {
+            toggleButton.click();
+          }
+        } else {
+          // If toggle isn't present (e.g., <details>), force open
+          if (parent.tagName.toLowerCase() === "details") {
+            parent.open = true;
+          }
+        }
+      }
+
+      parent = parent.parentElement;
     }
-    current = current.parentElement;
+
+    // Scroll smoothly to the target
+    target.scrollIntoView({ behavior: "smooth", block: "center" });
   }
 
-  // Optional: log when done
-  console.log("Callout expansion logic applied for:", hash);
+  function checkAndExpandFromHash() {
+    const hash = decodeURIComponent(window.location.hash);
+    if (!hash) return;
+
+    const targetId = hash.startsWith("#") ? hash.slice(1) : hash;
+    const targetElement = document.getElementById(targetId);
+
+    if (targetElement) {
+      // Delay slightly in case DOM hasn’t finished expanding all panels
+      setTimeout(() => expandParentsToTarget(targetElement), 200);
+    }
+  }
+
+  // Listen for hash change when clicking search results
+  window.addEventListener("hashchange", checkAndExpandFromHash);
+
+  // Also trigger once on initial page load (useful if navigating directly to a URL with hash)
+  checkAndExpandFromHash();
 });
 </script>

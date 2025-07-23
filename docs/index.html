@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Marcella Harris">
-<meta name="dcterms.date" content="2025-07-22">
+<meta name="dcterms.date" content="2025-07-23">
 
 <title>My Study Notes &amp; Guides</title>
 <style>
@@ -78,45 +78,103 @@ ul.task-list li input[type="checkbox"] {
 
 document.addEventListener("DOMContentLoaded", function () {
 
-  const hash = window.location.hash;
+  function expandParentsToTarget(target) {
 
-  if (!hash) return;
-
-
-
-  const target = document.querySelector(hash);
-
-  if (!target) return;
+    if (!target) return;
 
 
 
-  // Traverse upward through all parent elements
+    let parent = target.parentElement;
 
-  let current = target;
 
-  while (current) {
 
-    if (
+    while (parent) {
 
-      current.classList &&
+      // Check for a collapsible callout
 
-      current.classList.contains("callout-collapsed")
+      if (parent.classList.contains("callout") && parent.hasAttribute("data-callout")) {
 
-    ) {
+        // If it's collapsed, simulate a click or expand manually
 
-      current.classList.remove("callout-collapsed");
+        const toggleButton = parent.querySelector(".callout-header button, summary");
+
+
+
+        if (toggleButton) {
+
+          // Expand if collapsed
+
+          if (toggleButton.getAttribute("aria-expanded") === "false") {
+
+            toggleButton.click();
+
+          }
+
+        } else {
+
+          // If toggle isn't present (e.g., <details>), force open
+
+          if (parent.tagName.toLowerCase() === "details") {
+
+            parent.open = true;
+
+          }
+
+        }
+
+      }
+
+
+
+      parent = parent.parentElement;
 
     }
 
-    current = current.parentElement;
+
+
+    // Scroll smoothly to the target
+
+    target.scrollIntoView({ behavior: "smooth", block: "center" });
 
   }
 
 
 
-  // Optional: log when done
+  function checkAndExpandFromHash() {
 
-  console.log("Callout expansion logic applied for:", hash);
+    const hash = decodeURIComponent(window.location.hash);
+
+    if (!hash) return;
+
+
+
+    const targetId = hash.startsWith("#") ? hash.slice(1) : hash;
+
+    const targetElement = document.getElementById(targetId);
+
+
+
+    if (targetElement) {
+
+      // Delay slightly in case DOM hasn’t finished expanding all panels
+
+      setTimeout(() => expandParentsToTarget(targetElement), 200);
+
+    }
+
+  }
+
+
+
+  // Listen for hash change when clicking search results
+
+  window.addEventListener("hashchange", checkAndExpandFromHash);
+
+
+
+  // Also trigger once on initial page load (useful if navigating directly to a URL with hash)
+
+  checkAndExpandFromHash();
 
 });
 
@@ -409,7 +467,7 @@ document.addEventListener("DOMContentLoaded", function () {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">July 22, 2025</p>
+      <p class="date">July 23, 2025</p>
     </div>
   </div>
   
