@@ -37,7 +37,7 @@ This study guide is not mines. It belongs to this person [OfficeRunner >>](https
 <p><a id="finiteness" class="search-target"></a></p>
 
 ::: {.quarto-include-in-search-index #finiteness}
-##### <span>Finiteness</span>
+##### <span id="finiteness"><strong>[Finiteness]{.mark .vocab}</strong></span>
 
 <p>An algorithm must always have a finite number of steps before it ends. When the 
 operation is finished, it must have a defined endpoint or output and not enter 
@@ -48,7 +48,7 @@ an endless loop.</p>
 <p><a id="definiteness" class="search-target"></a></p>
 
 ::: {.quarto-include-in-search-index #definiteness}
-##### <span><strong>[Definiteness]{.mark .vocab}</strong></span>
+##### <span id="definiteness" class="search-target"><strong>[Definiteness]{.mark .vocab}</strong></span>
 
 <p>An algorithm needs to have exact definitions for each step. Clear and 
 straightforward directions ensure that every step is understood and can be 
@@ -59,7 +59,7 @@ taken easily.</p>
 <p><a id="input" class="search-target"></a></p>
 
 ::: {.quarto-include-in-search-index #input}
-##### <span><strong>[Input]{.mark .vocab}</strong></span>
+##### <span id="input" class="search-target"><strong>[Input]{.mark .vocab}</strong></span>
 
 <p>An algorithm requires one or more inputs. The values that are first supplied to 
 the algorithm before its processing are known as inputs. These inputs come from 
