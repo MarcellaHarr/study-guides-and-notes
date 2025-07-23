@@ -36,7 +36,7 @@ This study guide is not mines. It belongs to this person [OfficeRunner >>](https
 
 <p><a id="finiteness"></a></p>
 
-::: {.quarto-include-in-search-index}
+::: {.quarto-include-in-search-index #finiteness}
 **Finiteness**
 :::
 
@@ -3190,9 +3190,9 @@ into a single step, making code more concise and often more readable.
 
 ###### Topic
 
-<p><a id="forloop-section"></a></p>
+<p><a id="forloop"></a></p>
 
-::: {.quarto-include-in-search-index}
+::: {.quarto-include-in-search-index #forloop}
 **For Loop**
 :::
 
