@@ -3328,9 +3328,8 @@ else:
     print("x is less than 10 and not 7")
 ```
 
-  ::: {.quarto-include-in-search-index #switchcase-section}
-  - Switch-Case Statement
-  :::
+  
+  - **Switch-Case Statement**
 
     - **Description:** The `switch-case` statement *(used in C/C++ and some other languages but not Python)* provides a way to dispatch execution to different parts of code based on the value of an expression.
 
