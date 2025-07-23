@@ -4242,74 +4242,6 @@ Types of Statements
 </section>
 
 </main> <!-- /main -->
-document.addEventListener("DOMContentLoaded", function () {
-
-  function expandParentsToTarget(target) {
-
-    if (!target) return;
-
-
-
-    let parent = target.parentElement;
-
-    while (parent) {
-
-      if (parent.classList.contains("callout") &amp;&amp; parent.hasAttribute("data-callout")) {
-
-        const toggleButton = parent.querySelector(".callout-header button, summary");
-
-        if (toggleButton &amp;&amp; toggleButton.getAttribute("aria-expanded") === "false") {
-
-          toggleButton.click();
-
-        }
-
-        parent.open = true; // force it open anyway
-
-      }
-
-      parent = parent.parentElement;
-
-    }
-
-
-
-    target.classList.add("search-target-highlight");
-
-    setTimeout(() =&gt; target.classList.remove("search-target-highlight"), 4000);
-
-    target.scrollIntoView({ behavior: "smooth", block: "center" });
-
-  }
-
-
-
-  function checkAndExpandFromHash() {
-
-    const hash = decodeURIComponent(window.location.hash);
-
-    if (!hash) return;
-
-    const targetId = hash.startsWith("#") ? hash.slice(1) : hash;
-
-    const targetElement = document.getElementById(targetId);
-
-    if (targetElement) {
-
-      setTimeout(() =&gt; expandParentsToTarget(targetElement), 200);
-
-    }
-
-  }
-
-
-
-  window.addEventListener("hashchange", checkAndExpandFromHash);
-
-  checkAndExpandFromHash();
-
-});
-
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right
@@ -4735,6 +4667,74 @@ document.addEventListener("DOMContentLoaded", function () {
   </div>
 </nav>
 </div> <!-- /content -->
+document.addEventListener("DOMContentLoaded", function () {
+
+  function expandParentsToTarget(target) {
+
+    if (!target) return;
+
+
+
+    let parent = target.parentElement;
+
+    while (parent) {
+
+      if (parent.classList.contains("callout") &amp;&amp; parent.hasAttribute("data-callout")) {
+
+        const toggleButton = parent.querySelector(".callout-header button, summary");
+
+        if (toggleButton &amp;&amp; toggleButton.getAttribute("aria-expanded") === "false") {
+
+          toggleButton.click();
+
+        }
+
+        parent.open = true; // force it open anyway
+
+      }
+
+      parent = parent.parentElement;
+
+    }
+
+
+
+    target.classList.add("search-target-highlight");
+
+    setTimeout(() =&gt; target.classList.remove("search-target-highlight"), 4000);
+
+    target.scrollIntoView({ behavior: "smooth", block: "center" });
+
+  }
+
+
+
+  function checkAndExpandFromHash() {
+
+    const hash = decodeURIComponent(window.location.hash);
+
+    if (!hash) return;
+
+    const targetId = hash.startsWith("#") ? hash.slice(1) : hash;
+
+    const targetElement = document.getElementById(targetId);
+
+    if (targetElement) {
+
+      setTimeout(() =&gt; expandParentsToTarget(targetElement), 200);
+
+    }
+
+  }
+
+
+
+  window.addEventListener("hashchange", checkAndExpandFromHash);
+
+  checkAndExpandFromHash();
+
+});
+
 
 
 

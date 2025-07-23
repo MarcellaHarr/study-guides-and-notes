@@ -25,7 +25,7 @@ format:
       dark: darkly
     css: custom_styles.css
     include-after-body:
-      - custom/custom_script.js
+      - file: ../custom/custom_script.js
     toc: true
     toc-depth: 5
     toc-expand: 2
