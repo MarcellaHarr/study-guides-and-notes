@@ -34,10 +34,8 @@ This study guide is not mines. It belongs to this person [OfficeRunner >>](https
 
 <br>
 
-<p><a id="finiteness"></a></p>
-
-::: {.quarto-include-in-search-index #finiteness}
-**Finiteness**
+::: {.quarto-include-in-search-index}
+##### <span id="finiteness" class="search-target">Finiteness</span>
 :::
 
 An algorithm must always have a finite number of steps before it ends. When the 
