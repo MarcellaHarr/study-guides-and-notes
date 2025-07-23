@@ -45,10 +45,10 @@ an endless loop.</p>
 
 :::
 
-<p><a id="definiteness"></a></p>
+<p><a id="definiteness" class="search-target"></a></p>
 
 ::: {.quarto-include-in-search-index #definiteness}
-##### <span class="search-target"><strong>Definiteness</strong></span>
+##### <span><strong>[Definiteness]{.mark .vocab}</strong></span>
 
 <p>An algorithm needs to have exact definitions for each step. Clear and 
 straightforward directions ensure that every step is understood and can be 
@@ -56,30 +56,51 @@ taken easily.</p>
 
 :::
 
-**Input**
+<p><a id="input" class="search-target"></a></p>
 
-An algorithm requires one or more inputs. The values that are first supplied to 
+::: {.quarto-include-in-search-index #input}
+##### <span><strong>[Input]{.mark .vocab}</strong></span>
+
+<p>An algorithm requires one or more inputs. The values that are first supplied to 
 the algorithm before its processing are known as inputs. These inputs come from 
-a predetermined range of acceptable values.
+a predetermined range of acceptable values.</p>
 
-**Output**
+:::
 
-One or more outputs must be produced by an algorithm. The output is the outcome 
+<p><a id="output" class="search-target"></a></p>
+
+::: {.quarto-include-in-search-index #output}
+##### <span><strong>[Output]{.mark .vocab}</strong></span>
+
+<p>One or more outputs must be produced by an algorithm. The output is the outcome 
 of the algorithm after every step has been completed. The relationship between 
-the input and the result should be clear.
+the input and the result should be clear.</p>
 
-**Effectiveness**
+:::
 
-An algorithm's stages must be sufficiently straightforward to be carried out in 
+<p><a id="effectiveness" class="search-target"></a></p>
+
+::: {.quarto-include-in-search-index #effectiveness}
+##### <span><strong>[Effectiveness]{.mark .vocab}</strong></span>
+
+<p>An algorithm's stages must be sufficiently straightforward to be carried out in 
 a finite time utilizing fundamental operations. With the resources at hand, 
-every operation in the algorithm should be doable and practicable.
+every operation in the algorithm should be doable and practicable.</p>
 
-**Generality**
+:::
 
-Rather than being limited to a single particular case, an algorithm should be 
+<p><a id="generality" class="search-target"></a></p>
+
+::: {.quarto-include-in-search-index #generality}
+##### <span><strong>[Generality]{.mark .vocab}</strong></span>
+
+<p>Rather than being limited to a single particular case, an algorithm should be 
 able to solve a group of issues. It should offer a generic fix that manages a 
-variety of inputs inside a predetermined range or domain.
+variety of inputs inside a predetermined range or domain.</p>
 
+:::
+
+<!--- end of callout note --->
 :::
 
 #### Factors of an Algorithm
@@ -88,40 +109,85 @@ variety of inputs inside a predetermined range or domain.
 
 <br>
 
-`**Modularity**`
+<p><a id="modularity" class="search-target"></a></p>
 
-This feature was perfectly designed for the algorithm if you are given a problem and break it down into small-small modules or small-small steps, which is a basic definition of an algorithm.
+::: {.quarto-include-in-search-index #modularity}
+##### <span><strong>[Modularity]{.mark .vocab}</strong></span>
 
-**Correctness**
+<p>This feature was perfectly designed for the algorithm if you are given a problem 
+and break it down into small-small modules or small-small steps, which is a basic 
+definition of an algorithm.</p>
 
-An algorithm's correctness is defined as when the given inputs produce the desired output, indicating that the algorithm was designed correctly. An algorithm's analysis has been completed correctly.
+:::
 
-**Maintainability**
+<p><a id="correctness" class="search-target"></a></p>
 
-It means that the algorithm should be designed in a straightforward, structured way so that when you redefine the algorithm, no significant changes are made to the algorithm.
+::: {.quarto-include-in-search-index #correctness}
+##### <span><strong>[Correctness]{.mark .vocab}</strong></span>
 
-**Functionality**
+<p>An algorithm's correctness is defined as when the given inputs produce the desired 
+output, indicating that the algorithm was designed correctly. An algorithm's 
+analysis has been completed correctly.</p>
 
-It takes into account various logical steps to solve a real-world problem.
+:::
 
-**Robustness**
+<p><a id="maintainability" class="search-target"></a></p>
 
-Robustness refers to an algorithm's ability to define your problem clearly.
+::: {.quarto-include-in-search-index #maintainability}
+##### <span><strong>[Maintainability]{.mark .vocab}</strong></span>
 
-**User-friendly**
+<p>It means that the algorithm should be designed in a straightforward, structured way so that when you redefine the algorithm, no significant changes are made to the algorithm.</p>
 
-If the algorithm is difficult to understand, the designer will not explain it to the programmer.
+:::
 
-**Simplicity**
+<p><a id="functionality" class="search-target"></a></p>
 
-If an algorithm is simple, it is simple to understand.
+::: {.quarto-include-in-search-index #functionality}
+##### <span><strong>[Functionality]{.mark .vocab}</strong></span>
 
-`**Extensibility**`
+<p>It takes into account various logical steps to solve a real-world problem.</p>
 
-Your algorithm should be extensible if another algorithm designer or programmer wants to use it.
+:::
+
+<p><a id="robustness" class="search-target"></a></p>
+
+::: {.quarto-include-in-search-index #robustness}
+##### <span><strong>[Robustness]{.mark .vocab}</strong></span>
+
+<p>Robustness refers to an algorithm's ability to define your problem clearly.</p>
+
+:::
+
+<p><a id="user-friendly" class="search-target"></a></p>
+
+::: {.quarto-include-in-search-index #user-friendly}
+##### <span><strong>[User-friendly]{.mark .vocab}</strong></span>
+
+<p>If the algorithm is difficult to understand, the designer will not explain it to the programmer.</p>
+
+:::
+
+<p><a id="simplicity" class="search-target"></a></p>
+
+::: {.quarto-include-in-search-index #simplicity}
+##### <span><strong>[Simplicity]{.mark .vocab}</strong></span>
+
+<p>If an algorithm is simple, it is simple to understand.</p>
+
+:::
+
+<p><a id="extensibility" class="search-target"></a></p>
+
+::: {.quarto-include-in-search-index #extensibility}
+##### <span><strong>[Extensibility]{.mark .vocab}</strong></span>
+
+<p>Your algorithm should be extensible if another algorithm designer or programmer wants to use it.</p>
+
+:::
 
 <br>
 
+<!--- end of callout note --->
 :::
 
 #### Types of Algorithms
@@ -136,7 +202,7 @@ Your algorithm should be extensible if another algorithm designer or programmer 
 
 {{< video https://youtu.be/BYWf6-tpQ4k aspect-ratio="21x9" >}}
 
-**Brute Force Algorithm**
+[**Brute Force Algorithm**]{.mark .vocab}
 
 A straightforward approach that exhaustively tries all possible solutions, 
 suitable for small problem instances but may become impractical for larger 
@@ -146,7 +212,7 @@ ones due to its high time complexity.
 
 {{< video https://youtu.be/ivl5-snqul8 aspect-ratio="21x9" >}}
 
-**Recursive Algorithm**
+[**Recursive Algorithm**]{.mark .vocab}
 
 A method that breaks a problem into smaller, similar subproblems and repeatedly 
 applies itself to solve them until reaching a base case, making it effective 
@@ -156,7 +222,7 @@ for tasks with recursive structures.
 
 {{< video https://youtu.be/0TCY1rfpjxc aspect-ratio="21x9" >}}
 
-**Encryption Algorithm** 
+[**Encryption Algorithm**]{.mark .vocab} 
 
 Utilized to transform data into a secure, unreadable form using cryptographic 
 techniques, ensuring confidentiality and privacy in digital communications and 
@@ -168,7 +234,7 @@ transactions.
 
 {{< video https://youtu.be/RtpJOGvfo7E aspect-ratio="21x9" >}}
 
-**Backtracking Algorithm**
+[**Backtracking Algorithm**]{.mark .vocab}
 
 A trial-and-error technique used to explore potential solutions by undoing 
 choices when they lead to an incorrect outcome, commonly employed in puzzles 
@@ -178,7 +244,7 @@ and optimization problems.
 
 {{< video https://youtu.be/ZpFqAoO4YPc aspect-ratio="21x9" >}}
 
-**Searching Algorithm**
+[**Searching Algorithm**]{.mark .vocab}
 
 Designed to find a specific target within a data set, enabling efficient 
 retrieval of information from sorted or unsorted collections.
@@ -187,7 +253,7 @@ retrieval of information from sorted or unsorted collections.
 
 {{< video https://youtu.be/rbbTd-gkajw aspect-ratio="21x9" >}}
 
-**Sorting Algorithm**
+[**Sorting Algorithm**]{.mark .vocab}
 
 Aimed at arranging elements in a specific order, like numerical or alphabetical, 
 to enhance data organization and retrieval.
@@ -200,7 +266,7 @@ to enhance data organization and retrieval.
 
 {{< video https://youtu.be/FsfRsGFHuv4 aspect-ratio="21x9" >}}
 
-**Hashing Algorithm** 
+[**Hashing Algorithm**]{.mark .vocab} 
 
 Converts data into a fixed-size hash value, enabling rapid data access and 
 retrieval in hash tables, commonly used in databases and password storage.
@@ -209,7 +275,7 @@ retrieval in hash tables, commonly used in databases and password storage.
 
 {{< video https://youtu.be/ib4BHvr5-Ao aspect-ratio="21x9" >}}
 
-**Divide & Conquer Algorithm**
+[**Divide & Conquer Algorithm**]{.mark .vocab}
 
 Breaks a complex problem into smaller subproblems, solves them independently, 
 and then combines their solutions to address the original problem effectively.
@@ -218,7 +284,7 @@ and then combines their solutions to address the original problem effectively.
 
 {{< video https://youtu.be/hDDrIw_DSto aspect-ratio="21x9" >}}
 
-**Greedy Algorithm**
+[**Greedy Algorithm**]{.mark .vocab}
 
 Makes locally optimal choices at each step in the hope of finding a global 
 optimum, useful for optimization problems but may not always lead to the best 
@@ -230,7 +296,7 @@ solution.
 
 {{< video https://youtu.be/vYquumk4nWw aspect-ratio="21x9" >}}
 
-**Dynamic Programming Algorithm**
+[**Dynamic Programming Algorithm**]{.mark .vocab}
 
 Stores and reuses intermediate results to avoid redundant computations, 
 enhancing the efficiency of solving complex problems.
@@ -239,11 +305,12 @@ enhancing the efficiency of solving complex problems.
 
 {{< video https://youtu.be/8t9RaIQzp_o aspect-ratio="21x9" >}}
 
-**Randomized Algorithm**
+[**Randomized Algorithm**]{.mark .vocab}
 
 Utilizes randomness in its steps to achieve a solution, often used in situations 
 where an approximate or probabilistic answer suffices.
 
+<!--- end of panel tabset --->
 :::
 
 <br>
@@ -288,6 +355,7 @@ its result.
 
 <br>
 
+<!--- end of panel tabset --->
 :::
 
 <br>
@@ -316,7 +384,7 @@ def factorial(n):
 
 ## Logic
 
-**How It Works:**
+[**How It Works:**]{.mark .vocab}
 
   - Base Case: When n is 0, the function returns 1.
   - Recursive Case: For any other value of n, the function calls itself with n−1 and multiplies the result by n.
@@ -333,24 +401,25 @@ For example, calling `factorial(3)` would work as follows:
 
 ## Pros/Cons
 
-**Advantages of Recursion**
+[**Advantages of Recursion**]{.mark .vocab}
 
-  - **Simplicity:** Recursive solutions are often more elegant and easier to understand than their iterative counterparts.
-  - **Direct Translation:** Some problems are naturally recursive, like tree traversals, making recursion the most straightforward approach.
+  - [**Simplicity:**]{.mark .vocab} Recursive solutions are often more elegant and easier to understand than their iterative counterparts.
+  - [**Direct Translation:**]{.mark .vocab} Some problems are naturally recursive, like tree traversals, making recursion the most straightforward approach.
 
-**Disadvantages of Recursion**
+[**Disadvantages of Recursion**]{.mark .vocab}
 
-  - **Performance:** Recursive algorithms can be less efficient due to the overhead of multiple function calls and potential stack overflow issues for deep recursion.
-  - **Memory Usage:** Recursion can consume more memory because each function call adds a new frame to the call stack.
+  - [**Performance:**]{.mark .vocab} Recursive algorithms can be less efficient due to the overhead of multiple function calls and potential stack overflow issues for deep recursion.
+  - [**Memory Usage:**]{.mark .vocab} Recursion can consume more memory because each function call adds a new frame to the call stack.
 
 ## Usage
 
-**When to Use Recursion**
+[**When to Use Recursion**]{.mark .vocab}
   - When a problem can naturally be divided into similar sub-problems *(e.g., tree traversal, searching algorithms like binary search)*.
   - When the recursive solution is significantly simpler or more intuitive than an iterative one.
 
 <br>
 
+<!--- end of panel tabset --->
 :::
 
 <br>
@@ -378,7 +447,7 @@ significantly in how they approach the search and their efficiency.
 
 ## Steps
 
-**Algorithm:**
+[**Algorithm:**]{.mark .vocab}
 
   1. Start from the first element of the array.
   2. Compare the current element with the target element.
@@ -386,12 +455,12 @@ significantly in how they approach the search and their efficiency.
   4. If they don't match, move to the next element and repeat the process.
   5. If the target element is not found by the end of the array, return a "not found" indication.
 
-**Time Complexity:** $O(n)$, where n is the number of elements in the array. This is 
+[**Time Complexity:**]{.mark .vocab} $O(n)$, where n is the number of elements in the array. This is 
 because in the worst case, the algorithm may need to check every element in the array.
 
 ## Usage
 
-**When to Use:**
+[**When to Use:**]{.mark .vocab}
 
   - When the array or list is small.
   - When the array is unsorted.
@@ -408,6 +477,7 @@ def linear_search(arr, target):
 
 <br>
 
+<!--- end of panel tabset --->
 :::
 
 <br>
@@ -425,7 +495,7 @@ def linear_search(arr, target):
 
 ## Steps
 
-**Algorithm:**
+[**Algorithm:**]{.mark .vocab}
 
   1. Start with two pointers, one at the beginning (low) and one at the end (high) of the sorted array.
   2. Find the middle element of the current interval.
@@ -436,11 +506,11 @@ def linear_search(arr, target):
   4. If the interval becomes invalid (low > high), return a "not found" indication.
 
 
-**Time Complexity:** $\text{O(log⁡ n)}$, where n is the number of elements in the array. This logarithmic time complexity makes binary search significantly faster than linear search for large data sets.
+[**Time Complexity:**]{.mark .vocab} $\text{O(log⁡ n)}$, where n is the number of elements in the array. This logarithmic time complexity makes binary search significantly faster than linear search for large data sets.
 
 ## Usage
 
-**When to Use:**
+[**When to Use:**]{.mark .vocab}
 
   - When the array or list is sorted.
   - When the array is large and efficiency is crucial.
@@ -464,16 +534,17 @@ def binary_search(arr, target):
 
 ## Compare
 
-**Comparison**
+[**Comparison**]{.mark .vocab}
 
-  - **Efficiency:** Binary search is faster than linear search, especially for large data sets, but it requires the array to be sorted.
-  - **Simplicity:** Linear search is simpler to implement and doesn't require the array to be sorted, making it more versatile for smaller or unsorted data sets.
-  - **Use Cases:**
-      - **Linear Search:** Suitable for small or unsorted collections where the simplicity of the algorithm outweighs the need for speed.
-      - **Binary Search:** Ideal for large, sorted collections where performance is a priority.
+  - [**Efficiency:**]{.mark .vocab} Binary search is faster than linear search, especially for large data sets, but it requires the array to be sorted.
+  - [**Simplicity:**]{.mark .vocab} Linear search is simpler to implement and doesn't require the array to be sorted, making it more versatile for smaller or unsorted data sets.
+  - [**Use Cases:**]{.mark .vocab}
+      - [**Linear Search:**]{.mark .vocab} Suitable for small or unsorted collections where the simplicity of the algorithm outweighs the need for speed.
+      - [**Binary Search:**]{.mark .vocab} Ideal for large, sorted collections where performance is a priority.
 
 <br>
 
+<!--- end of panel tabset --->
 :::
 
 <br>
@@ -514,6 +585,7 @@ $\text{ arr = {45, 77, 89, 90, 94, 99, 100} }$ and $\text{key = 100}$
 
 <br>
 
+<!--- end of panel tabset --->
 :::
 
 <br>
@@ -532,14 +604,14 @@ $\text{ arr = {45, 77, 89, 90, 94, 99, 100} }$ and $\text{key = 100}$
 
 ## Logic
 
-  - **Concept:** As discussed earlier, linear search involves checking each element in a list or array sequentially until the target element is found or the end of the collection is reached.
-  - **Time Complexity:** $O(n)$, where n is the number of elements.
+  - [**Concept:**]{.mark .vocab} As discussed earlier, linear search involves checking each element in a list or array sequentially until the target element is found or the end of the collection is reached.
+  - [**Time Complexity:**]{.mark .vocab} $O(n)$, where n is the number of elements.
 
 ## Usage
 
-  - **Use Case:** Best used when the list is small or unsorted.
+  - [**Use Case:**]{.mark .vocab} Best used when the list is small or unsorted.
   
-  - **Distinct Characteristics:**
+  - [**Distinct Characteristics:**]{.mark .vocab}
   
       - Simple, sequential search.
       - Checks each element one by one.
@@ -547,7 +619,7 @@ $\text{ arr = {45, 77, 89, 90, 94, 99, 100} }$ and $\text{key = 100}$
 
 ## States
 
-  - **Linear Search Worst, Average and Best**
+  - [**Linear Search Worst, Average and Best**]{.mark .vocab}
   
       - `**Best Case:**` $O(1)$ — The target element is the first element.
       - `**Average Case:**` $O(n)$ — The target element is somewhere in the middle or not in the array.
@@ -555,6 +627,7 @@ $\text{ arr = {45, 77, 89, 90, 94, 99, 100} }$ and $\text{key = 100}$
 
 <br>
 
+<!--- end of panel tabset --->
 :::
 
 <br>
@@ -569,14 +642,14 @@ $\text{ arr = {45, 77, 89, 90, 94, 99, 100} }$ and $\text{key = 100}$
 
 ## Logic
 
-  - **Concept:** Binary search operates on a sorted list. It repeatedly divides the search interval in half until the target element is found or the interval is empty.
-  - **Time Complexity:** $\text{O(log⁡ n)}$
+  - [**Concept:**]{.mark .vocab} Binary search operates on a sorted list. It repeatedly divides the search interval in half until the target element is found or the interval is empty.
+  - [**Time Complexity:**]{.mark .vocab} $\text{O(log⁡ n)}$
 
 ## Usage
 
-  - **Use Case:** Ideal for large, sorted datasets.
+  - [**Use Case:**]{.mark .vocab} Ideal for large, sorted datasets.
 
-  - **Distinct Characteristics:**
+  - [**Distinct Characteristics:**]{.mark .vocab}
 
       - `Requires a sorted array.`
       - Divides the search interval in half repeatedly.
@@ -584,14 +657,15 @@ $\text{ arr = {45, 77, 89, 90, 94, 99, 100} }$ and $\text{key = 100}$
 
 ## States
 
-  - **Binary Search Worst, Average and Best**
+  - [**Binary Search Worst, Average and Best**]{.mark .vocab}
 
-      - **Best Case:** $O(1)$ — The target element is the middle element.
-      - **Average Case:** $\text{O(log⁡ n)}$ — The target element is not immediately found but within the sorted array.
-      - **Worst Case:** $\text{O(log⁡ n)}$ — The target element is at the extreme ends or not present.
+      - [**Best Case:**]{.mark .vocab} $O(1)$ — The target element is the middle element.
+      - [**Average Case:**]{.mark .vocab} $\text{O(log⁡ n)}$ — The target element is not immediately found but within the sorted array.
+      - [**Worst Case:**]{.mark .vocab} $\text{O(log⁡ n)}$ — The target element is at the extreme ends or not present.
 
 <br>
 
+<!--- end of panel tabset --->
 :::
 
 <br>
@@ -606,22 +680,23 @@ $\text{ arr = {45, 77, 89, 90, 94, 99, 100} }$ and $\text{key = 100}$
 
 ## Logic
 
-  - **Concept:** Similar to binary search but works on uniformly distributed data. It estimates the position of the target element based on the value.
-  - **Time Complexity:** O(log ⁡log ⁡n) in the best case, $O(n)$ in the worst case.
+  - [**Concept:**]{.mark .vocab} Similar to binary search but works on uniformly distributed data. It estimates the position of the target element based on the value.
+  - [**Time Complexity:**]{.mark .vocab} O(log ⁡log ⁡n) in the best case, $O(n)$ in the worst case.
 
 ## Usage
 
-  - **Use Case:** Effective when the data is uniformly distributed.
+  - [**Use Case:**]{.mark .vocab} Effective when the data is uniformly distributed.
 
 ## States
 
   - Interpolation Search Worst, Average and Best
-      - **Best Case:** $O(1)$ — The target element is exactly where the interpolation suggests.
-      - **Average Case:** $\text{O(log ⁡log⁡ n)}$ — Uniformly distributed data.
-      - **Worst Case:** $O(n)$ — Highly skewed data distribution or worst interpolation.
+      - [**Best Case:**]{.mark .vocab} $O(1)$ — The target element is exactly where the interpolation suggests.
+      - [**Average Case:**]{.mark .vocab} $\text{O(log ⁡log⁡ n)}$ — Uniformly distributed data.
+      - [**Worst Case:**]{.mark .vocab} $O(n)$ — Highly skewed data distribution or worst interpolation.
 
 <br>
 
+<!--- end of panel tabset --->
 :::
 
 <br>
@@ -636,29 +711,30 @@ $\text{ arr = {45, 77, 89, 90, 94, 99, 100} }$ and $\text{key = 100}$
 
 ## Logic
 
-  - **Concept:** Used primarily in graph and tree data structures. **Depth-First Search (DFS)** explores as far as possible along one branch before backtracking, while **Breadth-First Search (BFS)** explores all neighbors at the present depth before moving on to nodes at the next depth level.
-  - **Time Complexity:** $\text{O(V + E)}$, where V is the number of vertices and E is the number of edges.
+  - [**Concept:**]{.mark .vocab} Used primarily in graph and tree data structures. [**Depth-First Search (DFS)**]{.mark .vocab} explores as far as possible along one branch before backtracking, while [**Breadth-First Search (BFS)**]{.mark .vocab} explores all neighbors at the present depth before moving on to nodes at the next depth level.
+  - [**Time Complexity:**]{.mark .vocab} $\text{O(V + E)}$, where V is the number of vertices and E is the number of edges.
 
 ## Usage
 
-  - **Use Case:** Useful for searching nodes in graphs and trees.
+  - [**Use Case:**]{.mark .vocab} Useful for searching nodes in graphs and trees.
 
 ## States
 
-  - **(DFS)**
+  - [**(DFS)**]{.mark .vocab}
 
-      - **Best Case:** $O(1)$ — The target node is found immediately.
-      - **Average Case:** $\text{O(V + E)}$— Typically when all nodes and edges must be explored.
-      - **Worst Case:** $\text{O(V + E)}$ — The target node is the last one discovered.
+      - [**Best Case:**]{.mark .vocab} $O(1)$ — The target node is found immediately.
+      - [**Average Case:**]{.mark .vocab} $\text{O(V + E)}$— Typically when all nodes and edges must be explored.
+      - [**Worst Case:**]{.mark .vocab} $\text{O(V + E)}$ — The target node is the last one discovered.
 
-  - **(BFS)**
+  - [**(BFS)**]{.mark .vocab}
 
-      - **Best Case:** $O(1)$ — The target node is the root or the first node checked.
-      - **Average Case:** $\text{O(V + E)}$ — All nodes and edges need to be explored.
-      - **Worst Case:** $\text{O(V + E)}$ — The target node is the last one explored.
+      - [**Best Case:**]{.mark .vocab} $O(1)$ — The target node is the root or the first node checked.
+      - [**Average Case:**]{.mark .vocab} $\text{O(V + E)}$ — All nodes and edges need to be explored.
+      - [**Worst Case:**]{.mark .vocab} $\text{O(V + E)}$ — The target node is the last one explored.
 
 <br>
 
+<!--- end of panel tabset --->
 :::
 
 <br>
@@ -680,11 +756,11 @@ This makes searching and other operations more efficient.
 
 ## Usage
 
-  - **Use Case:** Simple but inefficient for large datasets. Best used for educational purposes or small lists.
+  - [**Use Case:**]{.mark .vocab} Simple but inefficient for large datasets. Best used for educational purposes or small lists.
 
 ## Descriptor
 
-  - **Distinct Characteristics:**
+  - [**Distinct Characteristics:**]{.mark .vocab}
 
       - Repeatedly swaps adjacent elements if they are in the wrong order.
       - Simple, but inefficient for large datasets.
@@ -693,16 +769,17 @@ This makes searching and other operations more efficient.
 ## States
 
   - Bubble Sort Worst, Average and Best
-      - **Best Case:** $O(n)$ — The array is already sorted *(with an optimized version that stops early)*.
-      - **Average Case:** $O(n^2)$ — Average case with random elements.
-      - **Worst Case:** $O(n^2)$ — The array is sorted in reverse order.
+      - [**Best Case:**]{.mark .vocab} $O(n)$ — The array is already sorted *(with an optimized version that stops early)*.
+      - [**Average Case:**]{.mark .vocab} $O(n^2)$ — Average case with random elements.
+      - [**Worst Case:**]{.mark .vocab} $O(n^2)$ — The array is sorted in reverse order.
 
 ## Tips
 
-  - **Bubble:** Look for something that swaps so the result can “bubble” to the top. (Swap, Exchange)
+  - [**Bubble:**]{.mark .vocab} Look for something that swaps so the result can “bubble” to the top. (Swap, Exchange)
 
 <br>
 
+<!--- end of panel tabset --->
 :::
 
 <br>
@@ -717,11 +794,11 @@ This makes searching and other operations more efficient.
 
 ## Usage
 
-  - **Use Case:** Inefficient for large lists, but useful when memory writes are more expensive than comparisons.
+  - [**Use Case:**]{.mark .vocab} Inefficient for large lists, but useful when memory writes are more expensive than comparisons.
 
 ## Descriptor
 
-  - **Distinct Characteristics:**
+  - [**Distinct Characteristics:**]{.mark .vocab}
 
       - Finds the minimum element and swaps it with the first unsorted element.
       - Reduces the problem size by one in each iteration.
@@ -731,16 +808,17 @@ This makes searching and other operations more efficient.
 
   - Selection Sort Worst, Average and Best
 
-      - **Best Case:** $O(n^2)$ — Selection sort does not improve with better input, always $O(n^2)$.
-      - **Average Case:** $O(n^2)$ — Average case with random elements.
-      - **Worst Case:** $O(n^2)$ — Selection sort is insensitive to input order.
+      - [**Best Case:**]{.mark .vocab} $O(n^2)$ — Selection sort does not improve with better input, always $O(n^2)$.
+      - [**Average Case:**]{.mark .vocab} $O(n^2)$ — Average case with random elements.
+      - [**Worst Case:**]{.mark .vocab} $O(n^2)$ — Selection sort is insensitive to input order.
 
 ## Tips
 
-  - **Selection:** Look for code that repeatedly finds the minimum *(or maximum)* element and moves it to the beginning *(or end)* of the list. *(Select minimum, Swap with start)*
+  - [**Selection:**]{.mark .vocab} Look for code that repeatedly finds the minimum *(or maximum)* element and moves it to the beginning *(or end)* of the list. *(Select minimum, Swap with start)*
 
 <br>
 
+<!--- end of panel tabset --->
 :::
 
 <br>
@@ -755,11 +833,11 @@ This makes searching and other operations more efficient.
 
 ## Usage
 
-  - **Use Case:** Good for small or nearly sorted lists.
+  - [**Use Case:**]{.mark .vocab} Good for small or nearly sorted lists.
 
 ## Descriptor
 
-  - **Distinct Characteristics:**
+  - [**Distinct Characteristics:**]{.mark .vocab}
 
       - Builds a sorted list one element at a time.
       - Efficient for small or nearly sorted datasets.
@@ -767,18 +845,19 @@ This makes searching and other operations more efficient.
 
 ## States
 
-  - **Insertion Sort Worst, Average and Best**
+  - [**Insertion Sort Worst, Average and Best**]{.mark .vocab}
 
-      - **Best Case:** $O(n)$ — The array is already sorted.
-      - **Average Case:** $O(n^2)$ — Average case with random elements.
-      - **Worst Case:** $O(n^2)$ — The array is sorted in reverse order.
+      - [**Best Case:**]{.mark .vocab} $O(n)$ — The array is already sorted.
+      - [**Average Case:**]{.mark .vocab} $O(n^2)$ — Average case with random elements.
+      - [**Worst Case:**]{.mark .vocab} $O(n^2)$ — The array is sorted in reverse order.
 
 ## Tips
 
-  - **Insertion:** Look for code that builds a sorted portion of the list one element at a time by inserting each new element into its correct position within the already-sorted part. *(Insert, Shift Element)*
+  - [**Insertion:**]{.mark .vocab} Look for code that builds a sorted portion of the list one element at a time by inserting each new element into its correct position within the already-sorted part. *(Insert, Shift Element)*
 
 <br>
 
+<!--- end of panel tabset --->
 :::
 
 <br>
@@ -793,11 +872,11 @@ This makes searching and other operations more efficient.
 
 ## Usage
 
-  - **Use Case:** Efficient and stable; good for large datasets.
+  - [**Use Case:**]{.mark .vocab} Efficient and stable; good for large datasets.
 
 ## Descriptor
 
-  - **Distinct Characteristics:**
+  - [**Distinct Characteristics:**]{.mark .vocab}
 
       - Divides the list into halves, sorts each half, and then merges them.
       - Stable and efficient for large datasets.
@@ -805,18 +884,19 @@ This makes searching and other operations more efficient.
 
 ## States
 
-  - **Merge Sort Worst, Average and Best**
+  - [**Merge Sort Worst, Average and Best**]{.mark .vocab}
 
-      - **Best Case:** $\text{O(n ⁡log⁡ n)}$ — Merge sort’s time complexity is the same in all cases.
-      - **Average Case:** $\text{O(n ⁡log⁡ n)}$.
-      - **Worst Case:** $\text{O(n ⁡log⁡ n)}$.
+      - [**Best Case:**]{.mark .vocab} $\text{O(n ⁡log⁡ n)}$ — Merge sort’s time complexity is the same in all cases.
+      - [**Average Case:**]{.mark .vocab} $\text{O(n ⁡log⁡ n)}$.
+      - [**Worst Case:**]{.mark .vocab} $\text{O(n ⁡log⁡ n)}$.
 
 ## Tips
 
-  - **Merge:** Look for something that continually splits a list in half. *(Merge, Split)*
+  - [**Merge:**]{.mark .vocab} Look for something that continually splits a list in half. *(Merge, Split)*
 
 <br>
 
+<!--- end of panel tabset --->
 :::
 
 <br>
@@ -831,11 +911,11 @@ This makes searching and other operations more efficient.
 
 ## Usage
 
-  - **Use Case:** Often faster in practice than merge sort but less stable.
+  - [**Use Case:**]{.mark .vocab} Often faster in practice than merge sort but less stable.
 
 ## Descriptor
 
-  - **Distinct Characteristics:**
+  - [**Distinct Characteristics:**]{.mark .vocab}
 
       - Selects a *“pivot”* element and partitions the array around it.
       - Recursively sorts the partitions.
@@ -843,18 +923,19 @@ This makes searching and other operations more efficient.
 
 ## States
 
-  - **Quicksort Worst, Average and Best**
+  - [**Quicksort Worst, Average and Best**]{.mark .vocab}
 
-      - **Best Case:** $\text{O(n ⁡log⁡ n)}$ — The pivot splits the array into two nearly equal halves.
-      - **Average Case:** $\text{O(n ⁡log⁡ n)}$ — Average case with random pivots.
-      - **Worst Case:** $O(n^2)$ — The pivot is always the smallest or largest element, leading to unbalanced partitions.
+      - [**Best Case:**]{.mark .vocab} $\text{O(n ⁡log⁡ n)}$ — The pivot splits the array into two nearly equal halves.
+      - [**Average Case:**]{.mark .vocab} $\text{O(n ⁡log⁡ n)}$ — Average case with random pivots.
+      - [**Worst Case:**]{.mark .vocab} $O(n^2)$ — The pivot is always the smallest or largest element, leading to unbalanced partitions.
 
 ## Tips
 
-  - **Quicksort:** Look for the keywords *“pivot”* and/or *“split”*. *(Pivot, Split)*
+  - [**Quicksort:**]{.mark .vocab} Look for the keywords *“pivot”* and/or *“split”*. *(Pivot, Split)*
 
 <br>
 
+<!--- end of panel tabset --->
 :::
 
 <br>
@@ -869,11 +950,11 @@ This makes searching and other operations more efficient.
 
 ## Usage
 
-  - **Use Case:** Useful when memory usage is a concern as it’s an in-place algorithm.
+  - [**Use Case:**]{.mark .vocab} Useful when memory usage is a concern as it’s an in-place algorithm.
 
 ## Descriptor
 
-  - **Distinct Characteristics:**
+  - [**Distinct Characteristics:**]{.mark .vocab}
 
       - Utilizes a binary heap data structure.
       - Builds a max-heap and repeatedly extracts the maximum element.
@@ -881,18 +962,19 @@ This makes searching and other operations more efficient.
 
 ## States
 
-  - **Heap Sort Worst, Average and Best**
+  - [**Heap Sort Worst, Average and Best**]{.mark .vocab}
 
-      - **Best Case:** $\text{O(n ⁡log⁡ n)}$ — Heap sort’s time complexity is the same in all cases.
-      - **Average Case:** $\text{O(n ⁡log⁡ n)}$.
-      - **Worst Case:** $\text{O(n ⁡log⁡ n)}$.
+      - [**Best Case:**]{.mark .vocab} $\text{O(n ⁡log⁡ n)}$ — Heap sort’s time complexity is the same in all cases.
+      - [**Average Case:**]{.mark .vocab} $\text{O(n ⁡log⁡ n)}$.
+      - [**Worst Case:**]{.mark .vocab} $\text{O(n ⁡log⁡ n)}$.
 
 ## Tips
 
-  - **Heap Sort:** Look for code that uses a heap data structure to repeatedly extract the maximum *(or minimum)* element and rebuilds the heap. *(Heapify, Extract Max, Build Heap)*
+  - [**Heap Sort:**]{.mark .vocab} Look for code that uses a heap data structure to repeatedly extract the maximum *(or minimum)* element and rebuilds the heap. *(Heapify, Extract Max, Build Heap)*
 
 <br>
 
+<!--- end of panel tabset --->
 :::
 
 <br>
@@ -911,7 +993,7 @@ This makes searching and other operations more efficient.
 
 ## Descriptor
 
-  - **Distinct Characteristics:**
+  - [**Distinct Characteristics:**]{.mark .vocab}
 
       - Non-comparative sorting.
       - Counts occurrences of each element and uses this information to place elements.
@@ -919,14 +1001,15 @@ This makes searching and other operations more efficient.
 
 ## States
 
-  - **Counting Sort Worst, Average and Best**
+  - [**Counting Sort Worst, Average and Best**]{.mark .vocab}
 
-      - **Best Case:** $\text{O(n ⁡+ k) - k}$ is the range of the input.
-      - **Average Case:** $\text{O(n ⁡+ k)}$.
-      - **Worst Case:** $\text{O(n ⁡+ k)}$.
+      - [**Best Case:**]{.mark .vocab} $\text{O(n ⁡+ k) - k}$ is the range of the input.
+      - [**Average Case:**]{.mark .vocab} $\text{O(n ⁡+ k)}$.
+      - [**Worst Case:**]{.mark .vocab} $\text{O(n ⁡+ k)}$.
 
 <br>
 
+<!--- end of panel tabset --->
 :::
 
 <br>
@@ -941,11 +1024,11 @@ This makes searching and other operations more efficient.
 
 ## Usage
 
-  - **Use Case:** Effective for sorting large numbers or strings with a fixed length.
+  - [**Use Case:**]{.mark .vocab} Effective for sorting large numbers or strings with a fixed length.
 
 ## Descriptor
 
-  - **Distinct Characteristics:**
+  - [**Distinct Characteristics:**]{.mark .vocab}
 
       - Sorts numbers by processing individual digits.
       - Non-comparative, stable, and efficient for specific data types.
@@ -953,18 +1036,19 @@ This makes searching and other operations more efficient.
 
 ## States
 
-  - **Radix Sort Worst, Average and Best**
+  - [**Radix Sort Worst, Average and Best**]{.mark .vocab}
 
-      - **Best Case:** $\text{O(n ⁡* k)}$ — k is the number of digits in the largest number.
-      - **Average Case:** $\text{O(n ⁡* k)}$.
-      - **Worst Case:** $\text{O(n ⁡* k)}$.
+      - [**Best Case:**]{.mark .vocab} $\text{O(n ⁡* k)}$ — k is the number of digits in the largest number.
+      - [**Average Case:**]{.mark .vocab} $\text{O(n ⁡* k)}$.
+      - [**Worst Case:**]{.mark .vocab} $\text{O(n ⁡* k)}$.
 
 ## Tips
 
-  - **Radix Sort:** Look for code that sorts numbers based on their individual digits, starting from the **least significant digit (LSD)** or the most **significant digit (MSD)**. *(Count, Frequency, Sum)*
+  - [**Radix Sort:**]{.mark .vocab} Look for code that sorts numbers based on their individual digits, starting from the [**least significant digit (LSD)**]{.mark .vocab} or the most [**significant digit (MSD)**]{.mark .vocab}. *(Count, Frequency, Sum)*
 
 <br>
 
+<!--- end of panel tabset --->
 :::
 
 <br>
@@ -979,11 +1063,11 @@ This makes searching and other operations more efficient.
 
 ## Usage
 
-  - **Use Case:** Good for uniformly distributed data.
+  - [**Use Case:**]{.mark .vocab} Good for uniformly distributed data.
 
 ## Descriptor
 
-  - **Distinct Characteristics:**
+  - [**Distinct Characteristics:**]{.mark .vocab}
   
       - Distributes elements into buckets and sorts each bucket individually.
       - Efficient when the input is uniformly distributed.
@@ -991,18 +1075,19 @@ This makes searching and other operations more efficient.
 
 ## States
 
-  - **Bucket Sort Worst, Average and Best**
+  - [**Bucket Sort Worst, Average and Best**]{.mark .vocab}
 
-      - **Best Case:** $\text{O(n + k)}$ — k is the number of buckets; assumes uniform distribution.
-      - **Average Case:** $\text{O(n + k)}$.
-      - **Worst Case:** $O(n^2)$ — All elements end up in one bucket *(degenerate case)*.
+      - [**Best Case:**]{.mark .vocab} $\text{O(n + k)}$ — k is the number of buckets; assumes uniform distribution.
+      - [**Average Case:**]{.mark .vocab} $\text{O(n + k)}$.
+      - [**Worst Case:**]{.mark .vocab} $O(n^2)$ — All elements end up in one bucket *(degenerate case)*.
 
 ## Tips
 
-  - **Bucket:** Look for something that distributes the values into “buckets” where they are individually sorted. *(Bucket)*
+  - [**Bucket:**]{.mark .vocab} Look for something that distributes the values into “buckets” where they are individually sorted. *(Bucket)*
 
 <br>
 
+<!--- end of panel tabset --->
 :::
 
 <br>
@@ -1017,7 +1102,7 @@ This makes searching and other operations more efficient.
 
 ## Descriptor
 
-  - **Distinct Characteristics:**
+  - [**Distinct Characteristics:**]{.mark .vocab}
 
       - Generalization of insertion sort with a gap sequence.
       - Sorts elements far apart and gradually reduces the gap.
@@ -1026,18 +1111,19 @@ This makes searching and other operations more efficient.
 
 ## States
 
-  - **Shell Sort Worst, Average and Best**
+  - [**Shell Sort Worst, Average and Best**]{.mark .vocab}
 
-      - **Best Case:** $\text{O(n log n)}$ — Occurs when the array is already sorted or nearly sorted, especially when using a good gap sequence like the Knuth sequence.
-      - **Average Case:** $O(n^(3/2))$ or $O(n^1.5)$ — Highly dependent on the gap sequence used. With commonly used sequences like the Knuth sequence, the average-case complexity is approximately $O(n^1.5)$.
-      - **Worst Case:** ${O(n^2)}$ — Can degrade to ${O(n^2)}$, particularly with poorly chosen gap sequences like the original Shell sequence *(where the gaps are halved each time)*
+      - [**Best Case:**]{.mark .vocab} $\text{O(n log n)}$ — Occurs when the array is already sorted or nearly sorted, especially when using a good gap sequence like the Knuth sequence.
+      - [**Average Case:**]{.mark .vocab} $O(n^(3/2))$ or $O(n^1.5)$ — Highly dependent on the gap sequence used. With commonly used sequences like the Knuth sequence, the average-case complexity is approximately $O(n^1.5)$.
+      - [**Worst Case:**]{.mark .vocab} ${O(n^2)}$ — Can degrade to ${O(n^2)}$, particularly with poorly chosen gap sequences like the original Shell sequence *(where the gaps are halved each time)*
 
 ## Tips
 
-  - **Shell Sort:** Look for code that sorts elements at specific intervals and gradually reduces the interval until it performs a final insertion sort. *(Gap, Interval)*
+  - [**Shell Sort:**]{.mark .vocab} Look for code that sorts elements at specific intervals and gradually reduces the interval until it performs a final insertion sort. *(Gap, Interval)*
 
 <br>
 
+<!--- end of panel tabset --->
 :::
 
 <br>
@@ -1045,46 +1131,49 @@ This makes searching and other operations more efficient.
 ---
 
 ::: {.lead}
-###### **Summary**
+###### [**Summary**]{.mark .vocab}
 :::
 
 <br>
 
 ::: {.callout-note title="Searching & Sorting Algorithms" collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
 
-  - **Linear Search:** Simple, sequential; $O(n)$.
-  - **Binary Search:** Sorted data, divide and conquer; $\text{O(log n)}$.
-  - **Bubble Sort:** Swaps, bubbles up; $O(n^2)$.
-  - **Selection Sort:** Finds minimum, swaps; $O(n^2)$.
-  - **Insertion Sort:** Builds sorted list, shifts; $O(n^2)$, $O(n)$ best case.
-  - **Merge Sort:** Divide and conquer, merge; $\text{O(n log n)}$.
-  - **Quick Sort:** Pivot, partition; $\text{O(n log n)}$ average, $O(n^2)$ worst case.
-  - **Heap Sort:** Max-heap, extract max; $\text{O(n log n)}$.
-  - **Counting Sort:** Counts occurrences, non-comparative; $\text{O(n + k)}$.
-  - **Radix Sort:** Sorts by digits, non-comparative; $O(nk)$.
-  - **Bucket Sort:** Distributes into buckets, sorts; $\text{O(n + k)}$.
-  - **Shell Sort:** Gap sequence, insertion-like; $O(n^3/2)$.
+  - [**Linear Search:**]{.mark .vocab} Simple, sequential; $O(n)$.
+  - [**Binary Search:**]{.mark .vocab} Sorted data, divide and conquer; $\text{O(log n)}$.
+  - [**Bubble Sort:**]{.mark .vocab} Swaps, bubbles up; $O(n^2)$.
+  - [**Selection Sort:**]{.mark .vocab} Finds minimum, swaps; $O(n^2)$.
+  - [**Insertion Sort:**]{.mark .vocab} Builds sorted list, shifts; $O(n^2)$, $O(n)$ best case.
+  - [**Merge Sort:**]{.mark .vocab} Divide and conquer, merge; $\text{O(n log n)}$.
+  - [**Quick Sort:**]{.mark .vocab} Pivot, partition; $\text{O(n log n)}$ average, $O(n^2)$ worst case.
+  - [**Heap Sort:**]{.mark .vocab} Max-heap, extract max; $\text{O(n log n)}$.
+  - [**Counting Sort:**]{.mark .vocab} Counts occurrences, non-comparative; $\text{O(n + k)}$.
+  - [**Radix Sort:**]{.mark .vocab} Sorts by digits, non-comparative; $O(nk)$.
+  - [**Bucket Sort:**]{.mark .vocab} Distributes into buckets, sorts; $\text{O(n + k)}$.
+  - [**Shell Sort:**]{.mark .vocab} Gap sequence, insertion-like; $O(n^3/2)$.
 
+<!--- end of callout note --->
 :::
 
 ::: {.callout-note title="Key Observations" collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
 
-  - **Bubble Sort, Selection Sort, and Insertion Sort:** These are simple but inefficient for large datasets, especially in the worst case.
-  - **Merge Sort and Heap Sort:** Stable and consistent in performance, regardless of the input.
-  - **Quick Sort:** Very efficient on average but can degrade to $O(n^2)$  in the worst case without proper pivot selection.
-  - **Counting Sort, Radix Sort, and Bucket Sort:** Efficient for specific types of data *(e.g., integers within a fixed range)* but less versatile.
+  - [**Bubble Sort, Selection Sort, and Insertion Sort:**]{.mark .vocab} These are simple but inefficient for large datasets, especially in the worst case.
+  - [**Merge Sort and Heap Sort:**]{.mark .vocab} Stable and consistent in performance, regardless of the input.
+  - [**Quick Sort:**]{.mark .vocab} Very efficient on average but can degrade to $O(n^2)$  in the worst case without proper pivot selection.
+  - [**Counting Sort, Radix Sort, and Bucket Sort:**]{.mark .vocab} Efficient for specific types of data *(e.g., integers within a fixed range)* but less versatile.
 
+<!--- end of callout note --->
 :::
 
 ::: {.callout-note title="Choosing the Right Algorithm" collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
 
-  - **Small datasets:** Simpler algorithms like bubble sort, selection sort, or insertion sort might suffice.
-  - **Large datasets:** More efficient algorithms like merge sort, quick sort, or heap sort are preferred.
-  - **Sorted data:** Algorithms like insertion sort can be very efficient.
-  - **Special conditions:** Use counting sort, radix sort, or bucket sort if the data is within a certain range or has other specific properties.
+  - [**Small datasets:**]{.mark .vocab} Simpler algorithms like bubble sort, selection sort, or insertion sort might suffice.
+  - [**Large datasets:**]{.mark .vocab} More efficient algorithms like merge sort, quick sort, or heap sort are preferred.
+  - [**Sorted data:**]{.mark .vocab} Algorithms like insertion sort can be very efficient.
+  - [**Special conditions:**]{.mark .vocab} Use counting sort, radix sort, or bucket sort if the data is within a certain range or has other specific properties.
 
 <br>
 
+<!--- end of callout note --->
 :::
 
 ---
@@ -1093,14 +1182,14 @@ This makes searching and other operations more efficient.
 
 #### Big O Notation
 
-**What is Big O Notation?**
+[**What is Big O Notation?**]{.mark .vocab}
 
-  - **Big O Notation:** It provides an upper bound on the time or space complexity of an algorithm, representing the worst-case scenario. It’s a way to describe the efficiency of an algorithm as the input size grows towards infinity.
+  - [**Big O Notation:**]{.mark .vocab} It provides an upper bound on the time or space complexity of an algorithm, representing the worst-case scenario. It’s a way to describe the efficiency of an algorithm as the input size grows towards infinity.
 
-**Why Use Big O Notation?**
+[**Why Use Big O Notation?**]{.mark .vocab}
 
-  - **Comparing Algorithms:** It allows us to compare the efficiency of different algorithms independently of hardware or other environmental factors.
-  - **Scalability:** It helps us understand how an algorithm will perform as the size of the input data grows.
+  - [**Comparing Algorithms:**]{.mark .vocab} It allows us to compare the efficiency of different algorithms independently of hardware or other environmental factors.
+  - [**Scalability:**]{.mark .vocab} It helps us understand how an algorithm will perform as the size of the input data grows.
 
 <br>
 
@@ -1110,65 +1199,67 @@ This makes searching and other operations more efficient.
 
 ::: {.callout-note title="Common Big Os" collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
 
-  1. **`O(1) - Constant Time`:**
-      - **Description:** The algorithm takes the same amount of time to execute regardless of the size of the input.
-      - **Example:** Accessing an element in an array by index.
-      - **Efficiency:** Excellent.
+  1. [**`O(1) - Constant Time`:**]{.mark .vocab}
+      - [**Description:**]{.mark .vocab} The algorithm takes the same amount of time to execute regardless of the size of the input.
+      - [**Example:**]{.mark .vocab} Accessing an element in an array by index.
+      - [**Efficiency:**]{.mark .vocab} Excellent.
 
-  2. **`O(log n) - Logarithmic Time`:**
-      - **Description:** The runtime increases logarithmically as the input size increases. Typically occurs in algorithms that halve the problem size at each step, like binary search.
-      - **Example:** Binary search.
-      - **Efficiency:** Very good for large inputs.
+  2. [**`O(log n) - Logarithmic Time`:**]{.mark .vocab}
+      - [**Description:**]{.mark .vocab} The runtime increases logarithmically as the input size increases. Typically occurs in algorithms that halve the problem size at each step, like binary search.
+      - [**Example:**]{.mark .vocab} Binary search.
+      - [**Efficiency:**]{.mark .vocab} Very good for large inputs.
 
-  3. **`O(n) - Linear Time`:**
-      - **Description:** The runtime increases linearly with the size of the input. If you double the input size, the runtime also doubles.
-      - **Example:** Linear search, iterating through a list.
-      - **Efficiency:** Reasonable for moderate to large inputs.
+  3. [**`O(n) - Linear Time`:**]{.mark .vocab}
+      - [**Description:**]{.mark .vocab} The runtime increases linearly with the size of the input. If you double the input size, the runtime also doubles.
+      - [**Example:**]{.mark .vocab} Linear search, iterating through a list.
+      - [**Efficiency:**]{.mark .vocab} Reasonable for moderate to large inputs.
 
-  4. **`O(n log n) - Log-Linear Time`:**
-      - **Description:** The runtime increases more than linearly but less than quadratically. Common in efficient sorting algorithms like merge sort and quicksort.
-      - **Example:** Merge sort, quicksort, heap sort.
-      - **Efficiency:** Efficient for large inputs.
+  4. [**`O(n log n) - Log-Linear Time`:**
+      - [**Description:**]{.mark .vocab} The runtime increases more than linearly but less than quadratically. Common in efficient sorting algorithms like merge sort and quicksort.
+      - [**Example:**]{.mark .vocab} Merge sort, quicksort, heap sort.
+      - [**Efficiency:**]{.mark .vocab} Efficient for large inputs.
 
-  5. **`O(n^2) - Quadratic Time`:**
-      - **Description:** The runtime increases quadratically with the size of the input. If you double the input size, the runtime quadruples.
-      - **Example:** Bubble sort, insertion sort, selection sort *(for unsorted arrays)*.
-      - **Efficiency:** Poor for large inputs.
+  5. [**`O(n^2) - Quadratic Time`:**]{.mark .vocab}
+      - [**Description:**]{.mark .vocab} The runtime increases quadratically with the size of the input. If you double the input size, the runtime quadruples.
+      - [**Example:**]{.mark .vocab} Bubble sort, insertion sort, selection sort *(for unsorted arrays)*.
+      - [**Efficiency:**]{.mark .vocab} Poor for large inputs.
 
-  6. **`O(2n) - Exponential Time`:**
-      - **Description:** The runtime doubles with each additional element in the input. Common in algorithms that solve problems by brute force or explore all possible solutions.
-      - **Example:** Recursive algorithms for the Fibonacci sequence, certain dynamic programming problems.
-      - **Efficiency:** Very poor, impractical for large inputs.
+  6. [**`O(2n) - Exponential Time`:**]{.mark .vocab}
+      - [**Description:**]{.mark .vocab} The runtime doubles with each additional element in the input. Common in algorithms that solve problems by brute force or explore all possible solutions.
+      - [**Example:**]{.mark .vocab} Recursive algorithms for the Fibonacci sequence, certain dynamic programming problems.
+      - [**Efficiency:**]{.mark .vocab} Very poor, impractical for large inputs.
 
-  7. **`O(n!) - Factorial Time`:**
-      - **Description:** The runtime increases factorially with the size of the input. Common in algorithms that generate all permutations of an input set.
-      - **Example:** Traveling salesman problem via brute force.
-      - **Efficiency:** Extremely poor, infeasible for even moderate input sizes.
+  7. [**`O(n!) - Factorial Time`:**
+      - [**Description:**]{.mark .vocab} The runtime increases factorially with the size of the input. Common in algorithms that generate all permutations of an input set.
+      - [**Example:**]{.mark .vocab} Traveling salesman problem via brute force.
+      - [**Efficiency:**]{.mark .vocab} Extremely poor, infeasible for even moderate input sizes.
 
+<!--- end of callout note --->
 :::
 
 ::: {.callout-note title="Time Complexity" collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
 
-**Best Case, Worst Case, and Average Case**
+[**Best Case, Worst Case, and Average Case**]{.mark .vocab}
 
-  - **Best Case:** The scenario where the algorithm performs the minimum possible number of operations. It’s often less relevant because it’s optimistic.
-      - **Example:** For linear search, the best case is $O(1)$, where the target element is the first one in the array.
+  - [**Best Case:**]{.mark .vocab} The scenario where the algorithm performs the minimum possible number of operations. It’s often less relevant because it’s optimistic.
+      - [**Example:**]{.mark .vocab} For linear search, the best case is $O(1)$, where the target element is the first one in the array.
 
-  - **Worst Case:** The scenario where the algorithm performs the maximum possible number of operations. Big O notation typically describes the worst-case complexity.
-      - **Example:** For linear search, the worst case is $O(n)$, where the target element is the last one in the array or isn’t present at all.
+  - [**Worst Case:**]{.mark .vocab} The scenario where the algorithm performs the maximum possible number of operations. Big O notation typically describes the worst-case complexity.
+      - [**Example:**]{.mark .vocab} For linear search, the worst case is $O(n)$, where the target element is the last one in the array or isn’t present at all.
 
-  - **Average Case:** The scenario that represents the expected number of operations for a typical input. It’s more complex to calculate because it depends on the distribution of inputs.
-      - **Example:** For linear search, the average case is $O(n/2)$, but in Big O notation, we simplify this to $O(n)$.
+  - [**Average Case:**]{.mark .vocab} The scenario that represents the expected number of operations for a typical input. It’s more complex to calculate because it depends on the distribution of inputs.
+      - [**Example:**]{.mark .vocab} For linear search, the average case is $O(n/2)$, but in Big O notation, we simplify this to $O(n)$.
 
+<!--- end of callout note --->
 :::
 
 ::: {.callout-note title="Calculation Rules" collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
 
-**Ignore Constants:**
+[**Ignore Constants:**]{.mark .vocab}
 
-  - **Rule:** In Big O notation, constant factors are ignored.
-  - **Why:** Big O notation focuses on the growth rate as the input size $(n)$ increases, so a constant multiplier doesn't affect the growth rate.
-  - **Example:** $O(2n)$ simplifies to $O(n)$
+  - [**Rule:**]{.mark .vocab} In Big O notation, constant factors are ignored.
+  - [**Why:**]{.mark .vocab} Big O notation focuses on the growth rate as the input size $(n)$ increases, so a constant multiplier doesn't affect the growth rate.
+  - [**Example:**]{.mark .vocab} $O(2n)$ simplifies to $O(n)$
 
 **Focus on the Dominant Term:**
 
@@ -1225,6 +1316,7 @@ This makes searching and other operations more efficient.
 
 <br>
 
+<!--- end of callout note --->
 :::
 
 <br>
@@ -1342,6 +1434,7 @@ Enums are useful in scenarios where a variable should only be allowed to take on
 
 <br>
 
+<!--- end of panel tabset --->
 :::
 
 <br>
@@ -1372,6 +1465,7 @@ Enums are useful in scenarios where a variable should only be allowed to take on
 
 <br>
 
+<!--- end of panel tabset --->
 :::
 
 <br>
@@ -1397,6 +1491,7 @@ Enums are useful in scenarios where a variable should only be allowed to take on
 
 <br>
 
+<!--- end of panel tabset --->
 :::
 
 <br>
@@ -1435,6 +1530,7 @@ Enums are useful in scenarios where a variable should only be allowed to take on
 
 <br>
 
+<!--- end of panel tabset --->
 :::
 
 <br>
@@ -1482,6 +1578,7 @@ Enums are useful in scenarios where a variable should only be allowed to take on
 
 <br>
 
+<!--- end of panel tabset --->
 :::
 
 <br>
@@ -1536,6 +1633,7 @@ Enums are useful in scenarios where a variable should only be allowed to take on
 
 <br>
 
+<!--- end of panel tabset --->
 :::
 
 <br>
@@ -1699,6 +1797,7 @@ print(fruits_copy)  # Output: ['apple', 'banana', 'orange']
 
 <br>
 
+<!--- end of panel tabset --->
 :::
 
 <br>
@@ -1744,6 +1843,7 @@ print(fruits_copy)  # Output: ['apple', 'banana', 'orange']
 
 <br>
 
+<!--- end of panel tabset --->
 :::
 
 <br>
@@ -1782,6 +1882,7 @@ print(fruits_copy)  # Output: ['apple', 'banana', 'orange']
 
 <br>
 
+<!--- end of panel tabset --->
 :::
 
 <br>
@@ -1814,6 +1915,7 @@ print(fruits_copy)  # Output: ['apple', 'banana', 'orange']
 
 <br>
 
+<!--- end of panel tabset --->
 :::
 
 <br>
@@ -1849,6 +1951,7 @@ print(fruits_copy)  # Output: ['apple', 'banana', 'orange']
 
 <br>
 
+<!--- end of panel tabset --->
 :::
 
 <br>
@@ -1931,6 +2034,7 @@ To determine where the data associated with the last 4 digits of the Social Secu
 
 <br>
 
+<!--- end of callout note --->
 :::
 
 <br>
@@ -2001,6 +2105,7 @@ To determine where the data associated with the last 4 digits of the Social Secu
 
 <br>
 
+<!--- end of callout note --->
 :::
 
 <br>
@@ -2045,6 +2150,7 @@ To determine where the data associated with the last 4 digits of the Social Secu
 
 <br>
 
+<!--- end of callout note --->
 :::
 
 <br>
@@ -2094,6 +2200,7 @@ To determine where the data associated with the last 4 digits of the Social Secu
 
 <br>
 
+<!--- end of callout note --->
 :::
 
 <br>
@@ -2140,6 +2247,7 @@ To determine where the data associated with the last 4 digits of the Social Secu
 
 <br>
 
+<!--- end of callout note --->
 :::
 
 <br>
@@ -2158,6 +2266,7 @@ To determine where the data associated with the last 4 digits of the Social Secu
   - **Red-Black Trees:** Looser balancing, fewer rotations, generally faster insertions and deletions.
   - **B-Trees:** Optimized for storage systems, used in databases, and file systems for handling large volumes of data.
 
+<!--- end of callout note --->
 :::
 
 ::: {.callout-note title="Tree Traversal" collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
@@ -2166,6 +2275,7 @@ To determine where the data associated with the last 4 digits of the Social Secu
   - *In-Order Traversal (LNR)* - Left, Node, Right
   - *Post-Order Traversal (LRN)* - Left, Right, Node
 
+<!--- end of callout note --->
 :::
 
 <br>
@@ -2208,6 +2318,7 @@ D   E
 
   - The Pre-Order traversal would be: **A B D E C**
 
+<!--- end of panel tabset --->
 :::
 
 <br>
@@ -2246,6 +2357,7 @@ D   E
 
   - The In-Order traversal would be: **D B E A C**
 
+<!--- end of panel tabset --->
 :::
 
 <br>
@@ -2284,6 +2396,7 @@ D   E
 
   - The Post-Order traversal would be: **D E B C A**
 
+<!--- end of panel tabset --->
 :::
 
 <br>
@@ -2302,6 +2415,7 @@ D   E
   - **In-Order (LNR):** "In" implies "in between" - the Node is processed in between the Left and Right subtrees.
   - **Post-Order (LRN):** "Post" means "after" - the Node is processed after the subtrees.
 
+<!--- end of callout note --->
 :::
 
 ::: {.callout-note title="Visual Mnemonic:" collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
@@ -2310,6 +2424,7 @@ D   E
   - **In-Order:** Imagine walking along the edge of the tree, touching the left side first, then the root, and then the right side.
   - **Post-Order:** Imagine leaving the tree by processing the children before the root.
 
+<!--- end of callout note --->
 :::
 
 <br>
@@ -2356,6 +2471,7 @@ D   E
 
   - Often used to implement priority queues, scheduling algorithms, and for efficient sorting *(Heap Sort)*.
 
+<!--- end of panel tabset --->
 :::
 
 <br>
@@ -2384,6 +2500,7 @@ D   E
   - Verify the index:
       - Ensure the calculated index falls within the bounds of the heap list.
 
+<!--- end of callout note --->
 :::
 
 ::: {.callout-note title="The Index Of The Left Child Of An Item In A Heap" collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
@@ -2402,6 +2519,7 @@ D   E
   - Verify the index:
       - Ensure the calculated index falls within the bounds of the heap list.
 
+<!--- end of callout note --->
 :::
 
 <br>
@@ -2436,6 +2554,7 @@ D   E
 
   - Useful in situations requiring the management of unique elements, such as maintaining a list of unique IDs, handling membership checks, and performing mathematical set operations.
 
+<!--- end of panel tabset --->
 :::
 
 <br>
@@ -2486,6 +2605,7 @@ D   E
 
   - Ideal for modeling relationships and connections, such as social networks, transportation networks, and dependency graphs in project management.
 
+<!--- end of panel tabset --->
 :::
 
 <br>
@@ -2505,6 +2625,7 @@ D   E
     - **Time Complexity:** $O(V2)$ for the simplest implementation, $\text{O(V log V+E)}$ with a priority queue *(using a binary heap)*, where $V$ is the number of vertices and $E$ is the number of edges.
     - **Functionality:** It finds the shortest path from a single source vertex to all other vertices in a graph by iteratively selecting the vertex with the smallest known distance, updating the distances to its neighbors, and marking it as visited.
 
+<!--- end of callout note --->
 :::
 
 ::: {.callout-note title="Bellman-Ford Shortest Path Algorithm" collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
@@ -2516,6 +2637,7 @@ D   E
     - **Time Complexity:** $O(V*E)$, where $V$ is the number of vertices and $E$ is the number of edges.
     - **Functionality:** It calculates the shortest path from a single source vertex to all other vertices by relaxing all edges repeatedly over $V−1$ iterations.
 
+<!--- end of callout note --->
 :::
 
 ::: {.callout-note title="Differences Between Dijkstra and Bellman-Ford" collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
@@ -2531,6 +2653,7 @@ D   E
 
 : Comparison chart
 
+<!--- end of callout note --->
 :::
 
 <br>
@@ -2556,6 +2679,7 @@ D   E
   - **Set:** Unique elements; fast membership checks.
   - **Graph:** Nodes and edges; used in networks and relationship modeling.
 
+<!--- end of callout note --->
 :::
 
 <br>
@@ -2893,6 +3017,7 @@ the class rather than any specific instance.
 
 <br>
 
+<!--- end of callout note --->
 :::
 
 <br>
@@ -2936,6 +3061,7 @@ In Python, `x` can dynamically grow in size as new elements are added to the lis
 
 <br>
 
+<!--- end of callout note --->
 :::
 
 <br>
@@ -2992,6 +3118,7 @@ result = x + y  # Runtime error
 ```
 :::
 
+<!--- end of panel tabset --->
 :::
 
 <br>
@@ -3038,7 +3165,7 @@ $result = $x + $y; // 15 (y is converted to a number)
 ```
 :::
 
-
+<!--- end of panel tabset --->
 :::
 
 <br>
@@ -3057,6 +3184,7 @@ $result = $x + $y; // 15 (y is converted to a number)
   - **Flexibility:** Weakly-typed languages allow for more flexible and often shorter code, especially in cases where automatic type conversion is beneficial.
   - **Error Handling:** Strongly-typed languages catch type-related errors early, often at compile time, while weakly-typed languages may only reveal such errors at runtime, if at all.
 
+<!--- end of callout note --->
 :::
 
 <br>
@@ -3180,6 +3308,7 @@ into a single step, making code more concise and often more readable.
 
 <br>
 
+<!--- end of callout note --->
 :::
 
 <br>
@@ -3286,6 +3415,7 @@ for i in range(3):
 
 <br>
 
+<!--- end of callout note --->
 :::
 
 <br>
@@ -3395,6 +3525,7 @@ switch (day) {
 
 <br>
 
+<!--- end of callout note --->
 :::
 
 <br>
@@ -3476,6 +3607,7 @@ my_car.display_info()  # Output: 2022 Toyota Corolla
 
 <br>
 
+<!--- end of panel tabset --->
 :::
 
 <br>
@@ -3505,6 +3637,7 @@ class ChildClass(ParentClass):
 
 <br>
 
+<!--- end of panel tabset --->
 :::
 
 <br>
@@ -3549,6 +3682,7 @@ print(account.get_balance())  # Output: 1500
 
 <br>
 
+<!--- end of panel tabset --->
 :::
 
 <br>
@@ -3590,6 +3724,7 @@ make_animal_speak(dog)     # Output: Dog barks
 
 <br>
 
+<!--- end of panel tabset --->
 :::
 
 <br>
