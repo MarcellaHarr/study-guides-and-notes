@@ -43,4 +43,20 @@ mark.vocab {
   margin-bottom: 2.25rem;
 }
 
+
+/* Search Term Highlighting */
+.search-target-highlight {
+  background-color: #fff3cd; /* light yellow highlight */
+  border-left: 4px solid #ffcc00;
+  padding-left: 4px;
+  animation: fadeHighlight 2s ease-out;
+}
+
+@keyframes fadeHighlight {
+  from { background-color: #fffae6; }
+  to { background-color: transparent; }
+}
+
+
+
 /* https://rpubs.com/drgregmartin/1266676 */

@@ -11,21 +11,23 @@ document.addEventListener("DOMContentLoaded", function () {
         // If it's collapsed, simulate a click or expand manually
         const toggleButton = parent.querySelector(".callout-header button, summary");
 
-        if (toggleButton) {
-          // Expand if collapsed
-          if (toggleButton.getAttribute("aria-expanded") === "false") {
-            toggleButton.click();
-          }
-        } else {
-          // If toggle isn't present (e.g., <details>), force open
-          if (parent.tagName.toLowerCase() === "details") {
-            parent.open = true;
-          }
+        if (toggleButton && toggleButton.getAttribute("aria-expanded") === "false") {
+          toggleButton.click();
+        } else if (parent.tagName.toLowerCase() === "details") {
+          parent.open = true;
         }
       }
 
       parent = parent.parentElement;
     }
+
+    // Add highlight class and scroll
+    target.classList.add("search-target-highlight");
+
+    // Remove the highlight after a few seconds for accessibility
+    setTimeout(() => {
+      target.classList.remove("search-target-highlight");
+    }, 4000);
 
     // Scroll smoothly to the target
     target.scrollIntoView({ behavior: "smooth", block: "center" });

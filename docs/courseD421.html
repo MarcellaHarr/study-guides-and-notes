@@ -99,25 +99,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-        if (toggleButton) {
+        if (toggleButton && toggleButton.getAttribute("aria-expanded") === "false") {
 
-          // Expand if collapsed
+          toggleButton.click();
 
-          if (toggleButton.getAttribute("aria-expanded") === "false") {
+        } else if (parent.tagName.toLowerCase() === "details") {
 
-            toggleButton.click();
-
-          }
-
-        } else {
-
-          // If toggle isn't present (e.g., <details>), force open
-
-          if (parent.tagName.toLowerCase() === "details") {
-
-            parent.open = true;
-
-          }
+          parent.open = true;
 
         }
 
@@ -128,6 +116,22 @@ document.addEventListener("DOMContentLoaded", function () {
       parent = parent.parentElement;
 
     }
+
+
+
+    // Add highlight class and scroll
+
+    target.classList.add("search-target-highlight");
+
+
+
+    // Remove the highlight after a few seconds for accessibility
+
+    setTimeout(() => {
+
+      target.classList.remove("search-target-highlight");
+
+    }, 4000);
 
 
 
