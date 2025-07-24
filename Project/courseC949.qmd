@@ -30,7 +30,7 @@ This study guide is not mines. It belongs to this person [OfficeRunner >>](https
 
 #### Characteristics of Algorithms
 
-::: {.callout-note title="Names" collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
+::: {.callout-note title="Names" collapse="false" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
 
 <br>
 
