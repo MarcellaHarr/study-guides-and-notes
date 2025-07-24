@@ -30,7 +30,7 @@ This study guide is not mines. It belongs to this person [OfficeRunner >>](https
 
 #### Characteristics of Algorithms
 
-::: {.callout-note title="Names" collapse="false" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
+::: {.callout-note #call-out-note title="Names" collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
 
 <br>
 
@@ -105,7 +105,7 @@ variety of inputs inside a predetermined range or domain.</p>
 
 #### Factors of an Algorithm
 
-::: {.callout-note title="Factors" collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
+::: {.callout-note #call-out-note title="Factors" collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
 
 <br>
 
@@ -1136,7 +1136,7 @@ This makes searching and other operations more efficient.
 
 <br>
 
-::: {.callout-note title="Searching & Sorting Algorithms" collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
+::: {.callout-note #call-out-note #call-out-note title="Searching & Sorting Algorithms" collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
 
   - [**Linear Search:**]{.mark .vocab} Simple, sequential; $O(n)$.
   - [**Binary Search:**]{.mark .vocab} Sorted data, divide and conquer; $\text{O(log n)}$.
@@ -1154,7 +1154,7 @@ This makes searching and other operations more efficient.
 <!--- end of callout note --->
 :::
 
-::: {.callout-note title="Key Observations" collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
+::: {.callout-note #call-out-note title="Key Observations" collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
 
   - [**Bubble Sort, Selection Sort, and Insertion Sort:**]{.mark .vocab} These are simple but inefficient for large datasets, especially in the worst case.
   - [**Merge Sort and Heap Sort:**]{.mark .vocab} Stable and consistent in performance, regardless of the input.

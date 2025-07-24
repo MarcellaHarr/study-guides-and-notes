@@ -799,31 +799,51 @@ div.csl-indent {
 </div> <!-- /content -->
 document.addEventListener("DOMContentLoaded", function () {
 
-  function expandCalloutFromTarget(target) {
+  function expandCalloutFromSearchTarget(target) {
 
     if (!target) return;
 
 
 
-    // Traverse upward until we hit the main `.callout` wrapper
+    // Explicitly fetch the callout container by ID
 
-    let calloutContainer = target.closest(".callout");
+    const calloutContainer = document.getElementById("call-out-note");
 
-    if (calloutContainer) {
+    if (!calloutContainer) return;
 
-      // Look for collapsible body directly under callout
 
-      const collapsible = calloutContainer.querySelector(".collapse:not(.show)");
 
-      if (collapsible) {
+    // Locate its header and extract the Bootstrap target
 
-        collapsible.classList.add("show");
+    const header = calloutContainer.querySelector(".callout-header");
+
+    if (header) {
+
+      const selector = header.getAttribute("data-bs-target");
+
+      if (selector) {
+
+        const collapsibleBody = document.querySelector(selector);
+
+        if (
+
+          collapsibleBody &amp;&amp;
+          collapsibleBody.classList.contains("collapse") &amp;&amp;
+          !collapsibleBody.classList.contains("show")
+
+        ) {
+
+          collapsibleBody.classList.add("show");
+
+        }
 
       }
 
     }
 
 
+
+    // Highlight the matched search term and scroll to it
 
     target.classList.add("search-target-highlight");
 
@@ -835,19 +855,21 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-  function handleHashMatch() {
+  function checkAndExpandHashTarget() {
 
     const hash = decodeURIComponent(window.location.hash);
 
     if (!hash) return;
 
+
+
     const cleanId = hash.replace(/^#/, "");
 
-    const targetElement = document.getElementById(cleanId);
+    const anchor = document.getElementById(cleanId);
 
-    if (targetElement) {
+    if (anchor) {
 
-      setTimeout(() =&gt; expandCalloutFromTarget(targetElement), 200);
+      setTimeout(() =&gt; expandCalloutFromSearchTarget(anchor), 200);
 
     }
 
@@ -855,9 +877,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-  window.addEventListener("hashchange", handleHashMatch);
+  window.addEventListener("hashchange", checkAndExpandHashTarget);
 
-  handleHashMatch();
+  checkAndExpandHashTarget();
 
 });
 
