@@ -1851,7 +1851,7 @@ Table&nbsp;2: Section 1.8 Summary <!-- end of table panel  -->
 </div> <!-- /content -->
 document.addEventListener("DOMContentLoaded", function () {
 
-  function expandCalloutAncestors(target) {
+  function expandCalloutViaHeader(target) {
 
     if (!target) return;
 
@@ -1861,17 +1861,23 @@ document.addEventListener("DOMContentLoaded", function () {
 
     while (current) {
 
-      // Expand collapsed callouts
+      if (current.classList.contains("callout-header")) {
 
-      if (
+        const targetSelector = current.getAttribute("data-bs-target");
 
-        current.classList &amp;&amp;
-        current.classList.contains("collapse") &amp;&amp;
-        !current.classList.contains("show")
+        if (targetSelector) {
 
-      ) {
+          const collapsible = document.querySelector(targetSelector);
 
-        current.classList.add("show");
+          if (collapsible &amp;&amp; collapsible.classList.contains("collapse") &amp;&amp; !collapsible.classList.contains("show")) {
+
+            collapsible.classList.add("show");
+
+          }
+
+        }
+
+        break;
 
       }
 
@@ -1903,7 +1909,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (anchor) {
 
-      setTimeout(() =&gt; expandCalloutAncestors(anchor), 200);
+      setTimeout(() =&gt; expandCalloutViaHeader(anchor), 200);
 
     }
 

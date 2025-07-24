@@ -1,16 +1,18 @@
 document.addEventListener("DOMContentLoaded", function () {
-  function expandCalloutAncestors(target) {
+  function expandCalloutViaHeader(target) {
     if (!target) return;
 
     let current = target.parentElement;
     while (current) {
-      // Expand collapsed callouts
-      if (
-        current.classList &&
-        current.classList.contains("collapse") &&
-        !current.classList.contains("show")
-      ) {
-        current.classList.add("show");
+      if (current.classList.contains("callout-header")) {
+        const targetSelector = current.getAttribute("data-bs-target");
+        if (targetSelector) {
+          const collapsible = document.querySelector(targetSelector);
+          if (collapsible && collapsible.classList.contains("collapse") && !collapsible.classList.contains("show")) {
+            collapsible.classList.add("show");
+          }
+        }
+        break;
       }
       current = current.parentElement;
     }
@@ -26,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const id = hash.startsWith("#") ? hash.slice(1) : hash;
     const anchor = document.getElementById(id);
     if (anchor) {
-      setTimeout(() => expandCalloutAncestors(anchor), 200);
+      setTimeout(() => expandCalloutViaHeader(anchor), 200);
     }
   }
 
