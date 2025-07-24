@@ -30,7 +30,7 @@ This study guide is not mines. It belongs to this person [OfficeRunner >>](https
 
 #### Characteristics of Algorithms
 
-::: {.callout-note #call-out-note title="Names" collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
+::: {.callout-note #call-out-note title="Names" collapse="false" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
 
 <br>
 
@@ -105,7 +105,7 @@ variety of inputs inside a predetermined range or domain.</p>
 
 #### Factors of an Algorithm
 
-::: {.callout-note #call-out-note title="Factors" collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
+::: {.callout-note #call-out-note title="Factors" collapse="false" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
 
 <br>
 
@@ -1136,7 +1136,7 @@ This makes searching and other operations more efficient.
 
 <br>
 
-::: {.callout-note #call-out-note #call-out-note title="Searching & Sorting Algorithms" collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
+::: {.callout-note #call-out-note #call-out-note title="Searching & Sorting Algorithms" collapse="false" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
 
   - [**Linear Search:**]{.mark .vocab} Simple, sequential; $O(n)$.
   - [**Binary Search:**]{.mark .vocab} Sorted data, divide and conquer; $\text{O(log n)}$.
@@ -1154,7 +1154,7 @@ This makes searching and other operations more efficient.
 <!--- end of callout note --->
 :::
 
-::: {.callout-note #call-out-note title="Key Observations" collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
+::: {.callout-note #call-out-note title="Key Observations" collapse="false" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
 
   - [**Bubble Sort, Selection Sort, and Insertion Sort:**]{.mark .vocab} These are simple but inefficient for large datasets, especially in the worst case.
   - [**Merge Sort and Heap Sort:**]{.mark .vocab} Stable and consistent in performance, regardless of the input.
@@ -1164,7 +1164,7 @@ This makes searching and other operations more efficient.
 <!--- end of callout note --->
 :::
 
-::: {.callout-note title="Choosing the Right Algorithm" collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
+::: {.callout-note title="Choosing the Right Algorithm" collapse="false" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
 
   - [**Small datasets:**]{.mark .vocab} Simpler algorithms like bubble sort, selection sort, or insertion sort might suffice.
   - [**Large datasets:**]{.mark .vocab} More efficient algorithms like merge sort, quick sort, or heap sort are preferred.
@@ -1197,7 +1197,7 @@ This makes searching and other operations more efficient.
 ##### O Notations
 :::
 
-::: {.callout-note title="Common Big Os" collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
+::: {.callout-note title="Common Big Os" collapse="false" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
 
   1. [**`O(1) - Constant Time`:**]{.mark .vocab}
       - [**Description:**]{.mark .vocab} The algorithm takes the same amount of time to execute regardless of the size of the input.
@@ -1237,7 +1237,7 @@ This makes searching and other operations more efficient.
 <!--- end of callout note --->
 :::
 
-::: {.callout-note title="Time Complexity" collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
+::: {.callout-note title="Time Complexity" collapse="false" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
 
 [**Best Case, Worst Case, and Average Case**]{.mark .vocab}
 
@@ -1253,7 +1253,7 @@ This makes searching and other operations more efficient.
 <!--- end of callout note --->
 :::
 
-::: {.callout-note title="Calculation Rules" collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
+::: {.callout-note title="Calculation Rules" collapse="false" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
 
 [**Ignore Constants:**]{.mark .vocab}
 
@@ -1956,7 +1956,7 @@ print(fruits_copy)  # Output: ['apple', 'banana', 'orange']
 
 <br>
 
-::: {.callout-note title="Hash Table" collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
+::: {.callout-note title="Hash Table" collapse="false" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
 
 ###### Descriptions
 
@@ -2045,7 +2045,7 @@ To determine where the data associated with the last 4 digits of the Social Secu
 
 <br>
 
-::: {.callout-note title="Tree" collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
+::: {.callout-note title="Tree" collapse="false" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
 
 <br>
 
@@ -2116,7 +2116,7 @@ To determine where the data associated with the last 4 digits of the Social Secu
 
 <br>
 
-::: {.callout-note title="AVL Trees" collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
+::: {.callout-note title="AVL Trees" collapse="false" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
 
 <br>
 
@@ -2161,7 +2161,7 @@ To determine where the data associated with the last 4 digits of the Social Secu
 
 <br>
 
-::: {.callout-note title="Red-Black Trees" collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
+::: {.callout-note title="Red-Black Trees" collapse="false" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
 
 <br>
 
@@ -2211,7 +2211,7 @@ To determine where the data associated with the last 4 digits of the Social Secu
 
 <br>
 
-::: {.callout-note title="B-Trees" collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
+::: {.callout-note title="B-Trees" collapse="false" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
 
 <br>
 
@@ -2260,7 +2260,7 @@ To determine where the data associated with the last 4 digits of the Social Secu
 
 <br>
 
-::: {.callout-note title="Comparison Summary" collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
+::: {.callout-note title="Comparison Summary" collapse="false" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
 
   - **AVL Trees:** Strictly balanced, more rotations, better for search-heavy applications.
   - **Red-Black Trees:** Looser balancing, fewer rotations, generally faster insertions and deletions.
@@ -2269,7 +2269,7 @@ To determine where the data associated with the last 4 digits of the Social Secu
 <!--- end of callout note --->
 :::
 
-::: {.callout-note title="Tree Traversal" collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
+::: {.callout-note title="Tree Traversal" collapse="false" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
 
   - *Pre-Order Traversal (NLR)* - Node, Left, Right
   - *In-Order Traversal (LNR)* - Left, Node, Right
@@ -2409,7 +2409,7 @@ D   E
 
 <br>
 
-::: {.callout-note title="How to Remember Them:" collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
+::: {.callout-note title="How to Remember Them:" collapse="false" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
 
   - **Pre-Order (NLR):** Think of "Pre" as "before" - you process the Node before anything else.
   - **In-Order (LNR):** "In" implies "in between" - the Node is processed in between the Left and Right subtrees.
@@ -2418,7 +2418,7 @@ D   E
 <!--- end of callout note --->
 :::
 
-::: {.callout-note title="Visual Mnemonic:" collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
+::: {.callout-note title="Visual Mnemonic:" collapse="false" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
 
   - **Pre-Order:** Imagine starting at the root and touching it first.
   - **In-Order:** Imagine walking along the edge of the tree, touching the left side first, then the root, and then the right side.
@@ -2484,7 +2484,7 @@ D   E
 
 <br>
 
-::: {.callout-note title="The Index Of The Right Child Of An Item In A Heap" collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
+::: {.callout-note title="The Index Of The Right Child Of An Item In A Heap" collapse="false" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
 
 **heapList = [22, 33, 44, 55, 66]**
 
@@ -2503,7 +2503,7 @@ D   E
 <!--- end of callout note --->
 :::
 
-::: {.callout-note title="The Index Of The Left Child Of An Item In A Heap" collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
+::: {.callout-note title="The Index Of The Left Child Of An Item In A Heap" collapse="false" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
 
 **heapList = [22, 33, 44, 55, 66]**
 
@@ -2616,7 +2616,7 @@ D   E
 
 <br>
 
-::: {.callout-note title="Dijkstra's Shortest Path Algorithm" collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
+::: {.callout-note title="Dijkstra's Shortest Path Algorithm" collapse="false" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
 
   - **Overview:**
 
@@ -2628,7 +2628,7 @@ D   E
 <!--- end of callout note --->
 :::
 
-::: {.callout-note title="Bellman-Ford Shortest Path Algorithm" collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
+::: {.callout-note title="Bellman-Ford Shortest Path Algorithm" collapse="false" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
 
   - **Overview:**
 
@@ -2640,7 +2640,7 @@ D   E
 <!--- end of callout note --->
 :::
 
-::: {.callout-note title="Differences Between Dijkstra and Bellman-Ford" collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
+::: {.callout-note title="Differences Between Dijkstra and Bellman-Ford" collapse="false" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
 
 | Feature Dijkstra's       | Algorithm Bellman-Ford               | Algorithm                   |
 | -------------------------|-------------------------------------:|:---------------------------:|
@@ -2973,7 +2973,7 @@ when variables are allocated and accessed in memory.
 
 <br>
 
-::: {.callout-note title="Static Variable Declaration" collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
+::: {.callout-note title="Static Variable Declaration" collapse="false" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
 
 <br>
 
@@ -3022,7 +3022,7 @@ the class rather than any specific instance.
 
 <br>
 
-::: {.callout-note title="Dynamic Variable Declaration" collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
+::: {.callout-note title="Dynamic Variable Declaration" collapse="false" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
 
 <br>
 
@@ -3178,7 +3178,7 @@ $result = $x + $y; // 15 (y is converted to a number)
 
 <br>
 
-::: {.callout-note title="Comparison: Strongly-Typed vs. Weakly-Typed" collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
+::: {.callout-note title="Comparison: Strongly-Typed vs. Weakly-Typed" collapse="false" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
 
   - **Type Safety:** Strongly-typed languages provide more safety by enforcing type rules, reducing errors due to unintended type conversions. Weakly-typed languages sacrifice some of this safety for flexibility.
   - **Flexibility:** Weakly-typed languages allow for more flexible and often shorter code, especially in cases where automatic type conversion is beneficial.
@@ -3217,7 +3217,7 @@ into a single step, making code more concise and often more readable.
 
 <br>
 
-::: {.callout-note title="Operations & Rules" collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
+::: {.callout-note title="Operations & Rules" collapse="false" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
 
 <br>
 
@@ -3319,15 +3319,15 @@ into a single step, making code more concise and often more readable.
 
 <br>
 
-::: {.callout-note title="Types of Loops" collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
+::: {.callout-note title="Types of Loops" collapse="false" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
 
 <br>
 
 ###### Topic
 
-<p><a id="forloop"></a></p>
+<p><a id="for-loop" class="search-target"></a></p>
 
-::: {.quarto-include-in-search-index #forloop}
+::: {.quarto-include-in-search-index #for-loop}
 **For Loop**
 :::
 
@@ -3426,7 +3426,7 @@ for i in range(3):
 
 <br>
 
-::: {.callout-note title="Types of Statements" collapse="true" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
+::: {.callout-note title="Types of Statements" collapse="false" appearance="simple" icon="false" style="border-left:none; border-right:none; border-top:none; border-bottom:none;"}
 
 <br>
 
