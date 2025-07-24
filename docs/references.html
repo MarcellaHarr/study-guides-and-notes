@@ -799,37 +799,27 @@ div.csl-indent {
 </div> <!-- /content -->
 document.addEventListener("DOMContentLoaded", function () {
 
-  function expandCalloutViaHeader(target) {
+  function expandCalloutFromTarget(target) {
 
     if (!target) return;
 
 
 
-    let current = target.parentElement;
+    // Traverse upward until we hit the main `.callout` wrapper
 
-    while (current) {
+    let calloutContainer = target.closest(".callout");
 
-      if (current.classList.contains("callout-header")) {
+    if (calloutContainer) {
 
-        const targetSelector = current.getAttribute("data-bs-target");
+      // Look for collapsible body directly under callout
 
-        if (targetSelector) {
+      const collapsible = calloutContainer.querySelector(".collapse:not(.show)");
 
-          const collapsible = document.querySelector(targetSelector);
+      if (collapsible) {
 
-          if (collapsible &amp;&amp; collapsible.classList.contains("collapse") &amp;&amp; !collapsible.classList.contains("show")) {
-
-            collapsible.classList.add("show");
-
-          }
-
-        }
-
-        break;
+        collapsible.classList.add("show");
 
       }
-
-      current = current.parentElement;
 
     }
 
@@ -851,13 +841,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (!hash) return;
 
-    const id = hash.startsWith("#") ? hash.slice(1) : hash;
+    const cleanId = hash.replace(/^#/, "");
 
-    const anchor = document.getElementById(id);
+    const targetElement = document.getElementById(cleanId);
 
-    if (anchor) {
+    if (targetElement) {
 
-      setTimeout(() =&gt; expandCalloutViaHeader(anchor), 200);
+      setTimeout(() =&gt; expandCalloutFromTarget(targetElement), 200);
 
     }
 

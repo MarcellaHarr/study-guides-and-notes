@@ -1,20 +1,15 @@
 document.addEventListener("DOMContentLoaded", function () {
-  function expandCalloutViaHeader(target) {
+  function expandCalloutFromTarget(target) {
     if (!target) return;
 
-    let current = target.parentElement;
-    while (current) {
-      if (current.classList.contains("callout-header")) {
-        const targetSelector = current.getAttribute("data-bs-target");
-        if (targetSelector) {
-          const collapsible = document.querySelector(targetSelector);
-          if (collapsible && collapsible.classList.contains("collapse") && !collapsible.classList.contains("show")) {
-            collapsible.classList.add("show");
-          }
-        }
-        break;
+    // Traverse upward until we hit the main `.callout` wrapper
+    let calloutContainer = target.closest(".callout");
+    if (calloutContainer) {
+      // Look for collapsible body directly under callout
+      const collapsible = calloutContainer.querySelector(".collapse:not(.show)");
+      if (collapsible) {
+        collapsible.classList.add("show");
       }
-      current = current.parentElement;
     }
 
     target.classList.add("search-target-highlight");
@@ -25,10 +20,10 @@ document.addEventListener("DOMContentLoaded", function () {
   function handleHashMatch() {
     const hash = decodeURIComponent(window.location.hash);
     if (!hash) return;
-    const id = hash.startsWith("#") ? hash.slice(1) : hash;
-    const anchor = document.getElementById(id);
-    if (anchor) {
-      setTimeout(() => expandCalloutViaHeader(anchor), 200);
+    const cleanId = hash.replace(/^#/, "");
+    const targetElement = document.getElementById(cleanId);
+    if (targetElement) {
+      setTimeout(() => expandCalloutFromTarget(targetElement), 200);
     }
   }
 
