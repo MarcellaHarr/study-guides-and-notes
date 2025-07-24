@@ -2,21 +2,21 @@ document.addEventListener("DOMContentLoaded", function () {
   function expandCalloutFromSearchTarget(target) {
     if (!target) return;
 
-    // Explicitly fetch the callout container by ID
-    const calloutContainer = document.getElementById("call-out-note");
-    if (!calloutContainer) return;
-
-    // Locate its header and extract the Bootstrap target
-    const header = calloutContainer.querySelector(".callout-header");
-    if (header) {
-      const selector = header.getAttribute("data-bs-target");
-      if (selector) {
-        const collapsibleBody = document.querySelector(selector);
-        if (collapsibleBody && collapsibleBody.classList.contains("collapse")) {
-          // Always collapse first
-          collapsibleBody.classList.remove("show");
-          // Then expand
-          setTimeout(() => collapsibleBody.classList.add("show"), 10);
+    // Check if the target is inside a callout-note container
+    const calloutContainer = target.closest(".callout-note");
+    if (calloutContainer) {
+      // Locate its header and extract the Bootstrap target
+      const header = calloutContainer.querySelector(".callout-header");
+      if (header) {
+        const selector = header.getAttribute("data-bs-target");
+        if (selector) {
+          const collapsibleBody = document.querySelector(selector);
+          if (collapsibleBody && collapsibleBody.classList.contains("collapse")) {
+            // Always collapse first
+            collapsibleBody.classList.remove("show");
+            // Then expand
+            setTimeout(() => collapsibleBody.classList.add("show"), 10);
+          }
         }
       }
     }
@@ -40,13 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const cleanId = hash.replace(/^#/, "");
     const anchor = document.getElementById(cleanId);
     if (anchor) {
-      // Ensure compatibility with call-out-note IDs
-      const calloutNote = anchor.closest(".callout-note");
-      if (calloutNote) {
-        setTimeout(() => expandCalloutFromSearchTarget(calloutNote), 200);
-      } else {
-        setTimeout(() => expandCalloutFromSearchTarget(anchor), 200);
-      }
+      setTimeout(() => expandCalloutFromSearchTarget(anchor), 200);
     }
   }
 

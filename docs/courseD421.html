@@ -1857,35 +1857,35 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-    // Explicitly fetch the callout container by ID
+    // Check if the target is inside a callout-note container
 
-    const calloutContainer = document.getElementById("call-out-note");
+    const calloutContainer = target.closest(".callout-note");
 
-    if (!calloutContainer) return;
+    if (calloutContainer) {
 
+      // Locate its header and extract the Bootstrap target
 
+      const header = calloutContainer.querySelector(".callout-header");
 
-    // Locate its header and extract the Bootstrap target
+      if (header) {
 
-    const header = calloutContainer.querySelector(".callout-header");
+        const selector = header.getAttribute("data-bs-target");
 
-    if (header) {
+        if (selector) {
 
-      const selector = header.getAttribute("data-bs-target");
+          const collapsibleBody = document.querySelector(selector);
 
-      if (selector) {
+          if (collapsibleBody &amp;&amp; collapsibleBody.classList.contains("collapse")) {
 
-        const collapsibleBody = document.querySelector(selector);
+            // Always collapse first
 
-        if (collapsibleBody &amp;&amp; collapsibleBody.classList.contains("collapse")) {
+            collapsibleBody.classList.remove("show");
 
-          // Always collapse first
+            // Then expand
 
-          collapsibleBody.classList.remove("show");
+            setTimeout(() =&gt; collapsibleBody.classList.add("show"), 10);
 
-          // Then expand
-
-          setTimeout(() =&gt; collapsibleBody.classList.add("show"), 10);
+          }
 
         }
 
@@ -1933,19 +1933,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (anchor) {
 
-      // Ensure compatibility with call-out-note IDs
-
-      const calloutNote = anchor.closest(".callout-note");
-
-      if (calloutNote) {
-
-        setTimeout(() =&gt; expandCalloutFromSearchTarget(calloutNote), 200);
-
-      } else {
-
-        setTimeout(() =&gt; expandCalloutFromSearchTarget(anchor), 200);
-
-      }
+      setTimeout(() =&gt; expandCalloutFromSearchTarget(anchor), 200);
 
     }
 
