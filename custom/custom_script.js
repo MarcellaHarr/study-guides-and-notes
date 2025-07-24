@@ -12,12 +12,11 @@ document.addEventListener("DOMContentLoaded", function () {
       const selector = header.getAttribute("data-bs-target");
       if (selector) {
         const collapsibleBody = document.querySelector(selector);
-        if (
-          collapsibleBody &&
-          collapsibleBody.classList.contains("collapse") &&
-          !collapsibleBody.classList.contains("show")
-        ) {
-          collapsibleBody.classList.add("show");
+        if (collapsibleBody && collapsibleBody.classList.contains("collapse")) {
+          // Always collapse first
+          collapsibleBody.classList.remove("show");
+          // Then expand
+          setTimeout(() => collapsibleBody.classList.add("show"), 10);
         }
       }
     }
@@ -29,13 +28,25 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function checkAndExpandHashTarget() {
-    const hash = decodeURIComponent(window.location.hash);
+    let hash = "";
+    try {
+      hash = decodeURIComponent(window.location.hash);
+    } catch (e) {
+      // If the hash is malformed, skip processing
+      return;
+    }
     if (!hash) return;
 
     const cleanId = hash.replace(/^#/, "");
     const anchor = document.getElementById(cleanId);
     if (anchor) {
-      setTimeout(() => expandCalloutFromSearchTarget(anchor), 200);
+      // Ensure compatibility with call-out-note IDs
+      const calloutNote = anchor.closest(".callout-note");
+      if (calloutNote) {
+        setTimeout(() => expandCalloutFromSearchTarget(calloutNote), 200);
+      } else {
+        setTimeout(() => expandCalloutFromSearchTarget(anchor), 200);
+      }
     }
   }
 

@@ -849,15 +849,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
         const collapsibleBody = document.querySelector(selector);
 
-        if (
+        if (collapsibleBody &amp;&amp; collapsibleBody.classList.contains("collapse")) {
 
-          collapsibleBody &amp;&amp;
-          collapsibleBody.classList.contains("collapse") &amp;&amp;
-          !collapsibleBody.classList.contains("show")
+          // Always collapse first
 
-        ) {
+          collapsibleBody.classList.remove("show");
 
-          collapsibleBody.classList.add("show");
+          // Then expand
+
+          setTimeout(() =&gt; collapsibleBody.classList.add("show"), 10);
 
         }
 
@@ -881,7 +881,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function checkAndExpandHashTarget() {
 
-    const hash = decodeURIComponent(window.location.hash);
+    let hash = "";
+
+    try {
+
+      hash = decodeURIComponent(window.location.hash);
+
+    } catch (e) {
+
+      // If the hash is malformed, skip processing
+
+      return;
+
+    }
 
     if (!hash) return;
 
@@ -893,7 +905,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (anchor) {
 
-      setTimeout(() =&gt; expandCalloutFromSearchTarget(anchor), 200);
+      // Ensure compatibility with call-out-note IDs
+
+      const calloutNote = anchor.closest(".callout-note");
+
+      if (calloutNote) {
+
+        setTimeout(() =&gt; expandCalloutFromSearchTarget(calloutNote), 200);
+
+      } else {
+
+        setTimeout(() =&gt; expandCalloutFromSearchTarget(anchor), 200);
+
+      }
 
     }
 
