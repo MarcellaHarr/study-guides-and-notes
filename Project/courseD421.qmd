@@ -127,7 +127,7 @@ and a number $x$ is [**non-negative**]{.mark .vocab} if $x ≥ 0$.
 
 <br>
 
-#### 1.2.4
+##### 1.2.4
 ***
 
 ##### set builder
@@ -145,7 +145,7 @@ $\mathbb{A} = { x \in \mathbb{S} : \mathbb{P}(x) }$
 
 <br>
 
-#### 1.2.5 / 1.3
+##### 1.2.5 / 1.3
 ***
 
 ##### universal set
@@ -220,7 +220,7 @@ It is denoted by the symbol: $\mathbb{A} \thinspace \subset \thinspace \mathbb{B
 
 <br>
 
-#### 1.4
+##### 1.4
 ***
 
 ##### set containing
@@ -238,7 +238,7 @@ $\mathbb{B} = \{ 2, \varnothing, \{1, 2, 3\}, \{1\} \}$
 
 <br>
 
-#### 1.5
+##### 1.5
 ***
 
 ##### power set
@@ -265,7 +265,7 @@ Cardinality of a power set
 
 <br>
 
-#### 1.6
+##### 1.6
 ***
 
 ##### intersection & union
@@ -373,7 +373,7 @@ $\mathbb{A} \cup \mathbb{B} = \mathbb{B} \cup \mathbb{A}$
 
 <br>
 
-#### 1.7
+##### 1.7
 ***
 
 ##### set operation
@@ -426,7 +426,7 @@ The set above is defined as the set of elements common to all four sets: $\mathb
 
 <br>
 
-#### 1.7.2
+##### 1.7.2
 ***
 
 ##### integer multiples
@@ -570,7 +570,7 @@ $$( \,\bigcup^5_{i=2} A_i) \, \cap \{ x \in \mathbb{Z}:1 \leq x \leq 20 \}$$
 
 - $\{ x \in \mathbb{Z}:1 \leq x \leq 20 \}$: This is just the set of integers from 1 to 20, and is read as:
 
-  - [“The set of all integers x such that x is greater than or equal to 1 and less than or equal to 20.”]{.mark .vocab} 
+  - ["The set of all integers x such that x is greater than or equal to 1 and less than or equal to 20."]{.mark .vocab} 
 
 
 ## Step 2
@@ -629,7 +629,7 @@ $$
 
 <br>
 
-#### 1.7.4
+##### 1.7.4
 ***
 
 ##### multiple set
@@ -668,7 +668,7 @@ every element from any of the sets [$A_\imath$]{.lead} through [$A_n$]{.lead}.
 
 <br>
 
-#### 1.8
+##### 1.8
 ***
 
 ##### set/symmetric difference
@@ -743,7 +743,7 @@ The symmetric difference is [**commutative**]{.mark .vocab}, so $\mathbb{A} \opl
 
 <br>
 
-#### 1.8.1
+##### 1.8.1
 ***
 
 ##### set subtraction
@@ -766,7 +766,7 @@ programming.
 <br>
 
 
-#### 1.8.3
+##### 1.8.3
 ***
 
 ##### set complement operation
@@ -783,11 +783,11 @@ The **set complement operation** produces a set containing all elements in a uni
 
 It is denoted by:
 
-- $(\, \mathbb{A}^c )\,$ or $(\, \overline{\mathbb{A}} )\,$ *(depending on notation style)*
+- $(\, \mathbb{A}^` )\,$ or $(\, \overline{\mathbb{A}} )\,$ *(depending on notation style)*
 
 - Formally:
 
-  - $[\, \mathbb{A}^c = \{ x \in \mathbb{U} : x \notin \mathbb{A} \} \quad \text{or} \quad \mathbb{A}^c = \mathbb{U} - \mathbb{A}]\,$
+  - $[\, \mathbb{A}^` = \{ x \in \mathbb{U} : x \notin \mathbb{A} \} \quad \text{or} \quad \mathbb{A}^` = \mathbb{U} - \mathbb{A}]\,$
 
 📘 Note: This operation **requires** a well-defined universal set $(\, \mathbb{U} )\,$ 
 unlike union or intersection.
@@ -797,7 +797,7 @@ unlike union or intersection.
 
 You can express the complement using a **set difference** operation:
 
-$[\, \mathbb{A}^c = \mathbb{U} - \mathbb{A} ]\,$
+$[\, \mathbb{A}^` = \mathbb{U} - \mathbb{A} ]\,$
 
 This says: take everything in the universe $( \, \mathbb{U} ) \,$ and remove 
 the contents of $( \, \mathbb{A} ) \,$.
@@ -816,7 +816,7 @@ $[ \, \mathbb{A} = \{ x \in \mathbb{Z} : x \text{ is odd} \} ] \,$
 **Then:**
 
 ::: {.lead .text-center}
-$[ \, \mathbb{A}^c = \{ x \in \mathbb{Z} : x \text{ is even} \} ] \,$
+$[ \, \mathbb{A}^` = \{ x \in \mathbb{Z} : x \text{ is even} \} ] \,$
 :::
 
 Which is the set of all even integers.
@@ -847,7 +847,7 @@ Section 1.8 Summary
 
 <br>
 
-#### 1.9
+##### 1.9
 ***
 
 ##### combining sets
@@ -881,9 +881,9 @@ arithmetic operations.
 
 - Set expressions such as $(\, (\, \mathbb{A} \oplus \mathbb{B})\, \cup (\, \mathbb{A} \cap \mathbb{C})\, )\,$ illustrate how **symmetric difference**, **union**, and **intersection** interact.
 
-🧠 Tip: Just as in algebra, parentheses determine the order of evaluation. For example:
+  - 🧠 Tip: Just as in algebra, parentheses determine the order of evaluation. For example:
 
-  - $(\, (\, \mathbb{A} \cup \mathbb{B})\, \cap \mathbb{C} )\,$ may produce a different result than $(\, \mathbb{A} \cup (\, \mathbb{B} \cap \mathbb{C})\, )\,$
+    - $(\, (\, \mathbb{A} \cup \mathbb{B})\, \cap \mathbb{C} )\,$ may produce a different result than $(\, \mathbb{A} \cup (\, \mathbb{B} \cap \mathbb{C})\, )\,$
 
 
 ## Example
@@ -898,7 +898,7 @@ arithmetic operations.
 
 - The complement of $(\, A )\,$ is:
 
-  - $[\,A^c = \{ x \in \mathbb{Z} : x \text{ is odd} \}]\,$
+  - $[\,A^` = \{ x \in \mathbb{Z} : x \text{ is odd} \}]\,$
 
 **Now combine operations:**
 
@@ -910,6 +910,73 @@ arithmetic operations.
 
 <!-- end of panel tabset  -->
 :::
+
+<br>
+
+##### 1.9.1
+***
+
+##### set operations
+
+{{< video https://youtu.be/lEs4l3FWcM0 aspect-ratio="21x9" >}}
+
+<br>
+
+:::: {.panel-tabset}
+
+### Definition
+
+**Set operations** are mathematical procedures used to create new sets by 
+combining or comparing existing ones. These operations include:
+
+  - **Union** $(\, \mathbb{A} \cup \mathbb{B} )\,$: All elements in either set $(\, \mathbb{A} )\,$, set $(\, \mathbb{B} )\,$, or both
+  - **Intersection** $(\, \mathbb{A} \cap \mathbb{B} )\,$: Elements common to both sets
+  - **Difference** $(\, \mathbb{A} - \mathbb{B} )\,$: Elements in $(\, \mathbb{A} )\,$ but not in $(\, \mathbb{B} )\,$
+  - **Complement** $(\, \mathbb{A}^` )\,$: All elements not in $(\, \mathbb{A} )\,$ relative to a universal set
+  - **Symmetric Difference** $(\, \mathbb{A} \oplus \mathbb{B} )\,$: Elements in exactly one of the sets $(\, \mathbb{A} )\,$ or $(\, \mathbb{B} )\,$
+
+They allow us to define complex relationships and subsets within a broader universal context.
+
+---
+
+### Explanation
+
+Set operations can be applied to any number of sets. For instance:
+  - $(\, \mathbb{A} \cup \mathbb{B} )\,$: "All elements that belong to $(\, \mathbb{A} )\,$ or $(\, \mathbb{B} )\,$, or both."
+    $[\, \mathbb{A} \cup \mathbb{B} = \{ x \mid x \in \mathbb{A} \vee x \in \mathbb{B} \}]\,$
+
+- These operations are especially helpful in everyday logic. Example:  
+  If $(\, \mathbb{A} )\,$ is the set of math majors and $(\, \mathbb{B} )\,$ is the set of computer science majors, then:
+
+    - $(\, \mathbb{A} \cup \mathbb{B} )\,$: Students majoring in either math or computer science  
+    - $(\, \mathbb{A} \cap \mathbb{B} )\,$: Joint majors  
+    - $(\, \mathbb{A}^` )\,$: Students not majoring in math, assuming the universal set is all students
+
+🧠 Venn diagrams are a powerful visual tool for illustrating these relationships.
+
+---
+
+### Example
+
+Let:
+
+  - $(\, \mathbb{A} = \{ x \in \mathbb{U} : x \text{ is a math major} \} )\,$
+  - $(\, \mathbb{B} = \{ x \in \mathbb{U} : x \text{ is a CS major} \} )\,$
+  - $(\, \mathbb{U} )\,$ = all students at the school
+
+Then:
+
+  - $(\, \mathbb{A} \cup \mathbb{B} )\,$: Students in either major  
+  - $(\, \mathbb{A} \cap \mathbb{B} )\,$: Students in both majors  
+  - $(\, \mathbb{A}^` )\,$: Students who are **not** math majors
+
+Visual interpretation:
+> In a Venn diagram, the union $(\, \mathbb{A} \cup \mathbb{B} )\,$ would be shaded across both 
+circles for $(\, \mathbb{A} )\,$ and $(\, \mathbb{B} )\,$, representing all students who are in at 
+least one of the two sets.
+
+<!-- end of panel tabset  -->
+:::: 
 
 <br>
 
