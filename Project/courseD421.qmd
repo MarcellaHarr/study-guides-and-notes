@@ -275,7 +275,7 @@ Cardinality of a power set
 [**Set intersection**]{.mark .vocab} is the operation that produces a set 
 containing only the elements that are common to both sets. If $A$ and $B$ 
 are sets, their intersection is the set of all elements that are members of both $\mathbb{A}$ 
-[**and**]{.mark .vocab} $\mathbb{B}$. It is denoted by the symbol: $\mathbb{A} \cap \mathbb{B}$
+`**and**` $\mathbb{B}$. It is denoted by the symbol: $\mathbb{A} \cap \mathbb{B}$
 
 <br>
 
@@ -325,9 +325,8 @@ $\mathbb{A} \cap \mathbb{B} = \mathbb{B} \cap \mathbb{A}$
 
 [**Set union**]{.mark .vocab} is the operation that produces a set containing 
 all elements that belong to either of two sets. If $A$ and $B$ are sets, their 
-union is the set of all elements that are in $\mathbb{A}$, [**or**]{.mark .vocab} 
-$\mathbb{B}$, [**or**]{.mark .vocab} in both. It is denoted by the 
-symbol: $\mathbb{A} \cup \mathbb{B}$.
+union is the set of all elements that are in $\mathbb{A}$, `**or**` $\mathbb{B}$, 
+`**or**` in both. It is denoted by the symbol: $\mathbb{A} \cup \mathbb{B}$.
 
 <br>
 
@@ -510,7 +509,7 @@ So, we need to find integers that are multiples of all these numbers at once.
 
 To satisfy all five conditions, a number must be a common multiple of all 
 five integers and to be a multiple of all five integers, a number has to be 
-divisible by their **least common multiple (LCM)**.
+divisible by their `**least common multiple (LCM)**`.
 
 - **LCM(1, 2, 3, 4, 5) = 60**
 
@@ -686,7 +685,7 @@ $\mathbb{A} - \mathbb{B}$
 :::
 
 [**Set difference**]{.mark .vocab} is the operation that produces a set containing 
-elements that belong to one set but [**not**]{.underline .mark .vocab} to another. If $\mathbb{A}$ 
+elements that belong to one set but `**not**` to another. If $\mathbb{A}$ 
 and $\mathbb{B}$ are sets, the set difference $A -B$ contains all elements that 
 are in $\mathbb{A}$ and not in $\mathbb{B}$.
 
@@ -779,7 +778,8 @@ programming.
 
 ## Complement Operations
 
-The **set complement operation** produces a set containing all elements in a universal set $(\, \mathbb{U} )\,$ that are **not** in a subset $(\, \mathbb{A} )\,$.
+The [**set complement operation**]{.mark .vocab} produces a set containing all 
+elements in a universal set $(\, \mathbb{U} )\,$ that are `**not**` in a subset $(\, \mathbb{A} )\,$.
 
 It is denoted by:
 
@@ -789,13 +789,13 @@ It is denoted by:
 
   - $[\, \mathbb{A}^` = \{ x \in \mathbb{U} : x \notin \mathbb{A} \} \quad \text{or} \quad \mathbb{A}^` = \mathbb{U} - \mathbb{A}]\,$
 
-📘 Note: This operation **requires** a well-defined universal set $(\, \mathbb{U} )\,$ 
+📘 Note: This operation `**requires**` a well-defined universal set $(\, \mathbb{U} )\,$ 
 unlike union or intersection.
 
 
 ## Alternate Form
 
-You can express the complement using a **set difference** operation:
+You can express the complement using a [**set difference**]{.mark .vocab} operation:
 
 $[\, \mathbb{A}^` = \mathbb{U} - \mathbb{A} ]\,$
 
@@ -865,7 +865,7 @@ Section 1.8 Summary
 ## Definition
 
 [**Combining sets**]{.mark .vocab} refers to the use of multiple set operations — such as 
-**union**, **intersection**, **difference**, and **complement** — in a single 
+`**union**`, `**intersection**`, `**difference**`, and `**complement**` — in a single 
 expression to create new sets from existing ones.
 
 These operations may be nested or sequenced to define increasingly complex 
@@ -875,11 +875,11 @@ arithmetic operations.
 
 ## Explanation
 
-- The complement operation requires a clearly defined **universal set** $(\, \mathbb{U} )\,$ against which the contents of a subset $(\, \mathbb{A} )\,$ are negated.
+- The complement operation requires a clearly defined `**universal set**` $(\, \mathbb{U} )\,$ against which the contents of a subset $(\, \mathbb{A} )\,$ are negated.
 
 - Combined operations should be evaluated by grouping parentheses first, then applying the logic of each operator.
 
-- Set expressions such as $(\, (\, \mathbb{A} \oplus \mathbb{B})\, \cup (\, \mathbb{A} \cap \mathbb{C})\, )\,$ illustrate how **symmetric difference**, **union**, and **intersection** interact.
+- Set expressions such as $(\, (\, \mathbb{A} \oplus \mathbb{B})\, \cup (\, \mathbb{A} \cap \mathbb{C})\, )\,$ illustrate how `**symmetric difference**`, `**union**`, and `**intersection**` interact.
 
   - 🧠 Tip: Just as in algebra, parentheses determine the order of evaluation. For example:
 
@@ -894,19 +894,22 @@ arithmetic operations.
 
 - $(\, \mathbb{U} = \mathbb{Z} )\,$ the set of all integers
 
+
 **Then:**
 
-- The complement of $(\, A )\,$ is:
+- The complement of $(\, \mathbb{A} )\,$ is:
 
-  - $[\,A^` = \{ x \in \mathbb{Z} : x \text{ is odd} \}]\,$
+  - $[\, \mathbb{A}^` = \{ x \in \mathbb{Z} : x \text{ is odd} \}]\,$
+
 
 **Now combine operations:**
 
 - $(\, (\, \mathbb{A} \oplus \mathbb{B})\, \cup (\, \mathbb{A} \cap \mathbb{C})\, )\,$ defines a new set composed of:
 
-  - Elements in $A$ [**or**]{.mark .vocab} $B$ but [**not both**]{.mark .vocab}, combined with
-  
-  - Elements shared between $A$ [**and**]{.mark .vocab} $C$
+  - Elements in $\mathbb{A}$ `**or**` $\mathbb{B}$ but `**not both**`, combined with
+
+  - Elements shared between $\mathbb{A}$ `**and**` $\mathbb{C}$
+
 
 <!-- end of panel tabset  -->
 :::
@@ -935,9 +938,10 @@ combining or comparing existing ones. These operations include:
   - **Complement** $(\, \mathbb{A}^` )\,$: All elements not in $(\, \mathbb{A} )\,$ relative to a universal set
   - **Symmetric Difference** $(\, \mathbb{A} \oplus \mathbb{B} )\,$: Elements in exactly one of the sets $(\, \mathbb{A} )\,$ or $(\, \mathbb{B} )\,$
 
+---
+
 They allow us to define complex relationships and subsets within a broader universal context.
 
----
 
 ### Explanation
 
@@ -952,9 +956,10 @@ Set operations can be applied to any number of sets. For instance:
     - $(\, \mathbb{A} \cap \mathbb{B} )\,$: Joint majors  
     - $(\, \mathbb{A}^` )\,$: Students not majoring in math, assuming the universal set is all students
 
+---
+
 🧠 Venn diagrams are a powerful visual tool for illustrating these relationships.
 
----
 
 ### Example
 
@@ -968,15 +973,140 @@ Then:
 
   - $(\, \mathbb{A} \cup \mathbb{B} )\,$: Students in either major  
   - $(\, \mathbb{A} \cap \mathbb{B} )\,$: Students in both majors  
-  - $(\, \mathbb{A}^` )\,$: Students who are **not** math majors
+  - $(\, \mathbb{A}^` )\,$: Students who are `**not**` math majors
+
+---
 
 Visual interpretation:
+
 > In a Venn diagram, the union $(\, \mathbb{A} \cup \mathbb{B} )\,$ would be shaded across both 
 circles for $(\, \mathbb{A} )\,$ and $(\, \mathbb{B} )\,$, representing all students who are in at 
 least one of the two sets.
 
 <!-- end of panel tabset  -->
 :::: 
+
+<br>
+
+##### 1.10
+***
+
+##### set identities & laws
+
+{{< video https://youtu.be/ReV1lwBw_lc aspect-ratio="21x9" >}}
+
+<br>
+
+---
+
+::: {#tbl-panel layout-ncol=1}
+
+| Name/Law               | Identity A                      | Identity B                      | Description                                               |
+|------------------------|----------------------------------|----------------------------------|-----------------------------------------------------------|
+| Identity Laws  | $(\, \mathbb{A} \cap \mathbb{U} = \mathbb{A} )\,$  | $(\, \mathbb{A} \cup \emptyset = \mathbb{A} )\,$  | Union or intersection with identity elements keeps $(\, \mathbb{A} )\,$ |
+| Domination Laws | $(\, \mathbb{A} \cup \mathbb{U} = \mathbb{U} )\,$  | $(\, \mathbb{A} \cap \emptyset = \emptyset )\,$ | Union with universal set and intersection with empty set |
+| Idempotent Laws | $(\, \mathbb{A} \cup \mathbb{A} = \mathbb{A} )\,$  | $(\, \mathbb{A} \cap \mathbb{A} = \mathbb{A} )\,$ | Repeating the same set yields no change  |
+| Complementation Law | $(\, (\mathbb{A}^`)^` = \mathbb{A} )\,$ | —  | Double complement returns the original set |
+| Commutative Laws | $(\, \mathbb{A} \cup \mathbb{B} = \mathbb{B} \cup \mathbb{A} )\,$  | $(\, \mathbb{A} \cap \mathbb{B} = \mathbb{B} \cap \mathbb{A} )\,$  | Reordering operands doesn’t affect result |
+| Associative Laws | $(\, \mathbb{A} \cup (\mathbb{B} \cup \mathbb{C}) = (\mathbb{A} \cup \mathbb{B}) \cup \mathbb{C} )\,$ | $(\, \mathbb{A} \cap (\mathbb{B} \cap \mathbb{C}) = (\mathbb{A} \cap \mathbb{B}) \cap \mathbb{C} )\,$ | Parentheses can be regrouped |
+| Distributive Laws | $(\, \mathbb{A} \cup (\mathbb{B} \cap \mathbb{C}) = (\mathbb{A} \cup \mathbb{B}) \cap (\mathbb{A} \cup \mathbb{C}) )\,$ | $(\, \mathbb{A} \cap (\mathbb{B} \cup \mathbb{C}) = (\mathbb{A} \cap \mathbb{B}) \cup (\mathbb{A} \cap \mathbb{C}) )\,$ | Similar to algebraic distributive properties |
+| De Morgan’s Laws | $(\, (\mathbb{A} \cup \mathbb{B})^` = \mathbb{A}^` \cap \mathbb{B}^` )\,$ | $(\, (\mathbb{A} \cap \mathbb{B})^` = \mathbb{A}^` \cup \mathbb{B}^` )\,$ | Switching union/intersection under complement |
+| Absorption Laws | $(\, \mathbb{A} \cup (\mathbb{A} \cap \mathbb{B}) = \mathbb{A} )\,$ | $(\, \mathbb{A} \cap (\mathbb{A} \cup \mathbb{B}) = \mathbb{A} )\,$ | Combining $(\, \mathbb{A} )\,$ with a subset of itself yields $(\, \mathbb{A} )\,$ |
+| Complement Laws  | $(\, \mathbb{A} \cup \mathbb{A}^` = \mathbb{U} )\,$  | $(\, \mathbb{A} \cap \mathbb{A}^` = \emptyset )\,$  | Elements must be in either $(\, \mathbb{A} )\,$ or its complement |
+
+: Summary Set Identity Laws {#tbl-first .striped .hover}
+
+Set Identities
+<!-- end of table panel  -->
+:::
+
+---
+
+<br>
+
+:::: {.panel-tabset}
+
+### Set Identities
+
+[**Set identities**]{.mark .vocab} describe relationships between set operations, such as union,
+intersection, and complement. These identities are analogous to logical
+equivalences and can often be proved using similar techniques.
+
+---
+
+> 📘 These laws hold within Boolean algebra and serve as foundational rules for manipulating sets.
+
+
+### Atomic Sets
+
+[**Atomic sets**]{.mark .vocab} are the basic building blocks from which more complex set expressions are constructed.
+
+- Each atomic set is usually a clearly defined, named subset within the universal set $(\, \mathbb{U} )\,$.
+
+- Examples might include:
+
+  - $(\, \mathbb{A} )\,$: students studying mathematics
+  - $(\, \mathbb{B} )\,$: students studying computer science
+  - $(\, \mathbb{C} )\,$: students in another major
+
+---
+
+🧠 When working with two or three atomic sets, `**Venn diagrams**` help visualize relationships.  
+However, for four or more atomic sets, diagrams may become too complex and require ellipses to represent all possible regions of overlap.
+
+
+### Membership Tables
+
+[**Membership tables**]{.mark .vocab} help verify set identities by listing all possible combinations of atomic set membership.
+
+- For each element:
+
+  - Use `**1**` to indicate inclusion in a set
+  - Use `**0**` to indicate exclusion
+
+This is similar to `**truth tables**` in logic, allowing us to compare both sides of an identity expression.
+
+**Why use them:**
+
+- They provide a systematic way to validate identities, especially when direct proofs or diagrams become too involved.
+- Useful when dealing with three or more sets, where combinations become numerous.
+
+---
+
+**Example layout:**
+
+| Element | A | B | C | Left Side | Right Side |
+|---------|---|---|---|------------|-------------|
+| x₁      | 1 | 0 | 1 | ✅        | ✅         |
+| x₂      | 0 | 1 | 0 | ❌        | ❌         |
+
+✅ indicates the element satisfies both expressions  
+❌ means it does not belong to the set under that condition
+
+<!-- end of panel tabset  -->
+:::: 
+
+<br>
+
+---
+
+::: {#tbl-panel layout-ncol=1}
+
+To prove that two sets are equal, you can use:
+
+| Method                    | Description                                                                 |
+|---------------------------|-----------------------------------------------------------------------------|
+| Subset Method             | Show both sides are subsets of each other                                 |
+| Membership Table          | Check all possible combinations of atomic sets for consistency            |
+| Apply Existing Identities | Use known laws to transform one side into the other through step-by-step reasoning |
+
+: Methods of Proving Set Identities {#tbl-first .striped .hover}
+
+Proving Techniques
+<!-- end of table panel  -->
+:::
+
+---
 
 <br>
 
