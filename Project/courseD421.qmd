@@ -22,7 +22,7 @@ These exercises are not mines. They are from this [Quizlet »](https://quizlet.c
 
 <br>
 
-#### 1.2
+##### 1.2
 ***
 
 ##### set theory
@@ -36,7 +36,7 @@ elements separated by commas.
 
 <br>
 
-#### 1.2.1
+##### 1.2.1
 ***
 
 ##### empty set
@@ -51,7 +51,7 @@ an infinite number of elements.
 
 <br>
 
-#### 1.2.2
+##### 1.2.2
 ***
 
 ##### set member & subset
@@ -91,7 +91,7 @@ elements.
 
 <br>
 
-#### 1.2.3
+##### 1.2.3
 ***
 
 ##### theory symbols
