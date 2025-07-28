@@ -1,3 +1,10 @@
+/* Inner Scrollbar */
+.sidebar.margin-sidebar {
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -webkit-scrollbar-width: none;
+}
+
 /* Links */
 a {
   color: #73a1a1;
