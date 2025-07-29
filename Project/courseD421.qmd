@@ -6,6 +6,23 @@ Discrete Math II Functions and Applications (D421)
 
 <!-- \thinspace (1/12em); \enspace; \quad; \qquad -->
 
+```{r install-table-packages, include=FALSE}
+repos <- c(CRAN = "https://cran.rstudio.com")
+
+if (!requireNamespace("knitr", quietly = TRUE)) {
+  install.packages("knitr", repos = repos)
+}
+if (!requireNamespace("magrittr", quietly = TRUE)) {
+  install.packages("magrittr", repos = repos)
+}
+if (!requireNamespace("kableExtra", quietly = TRUE)) {
+  install.packages("kableExtra", repos = repos)
+}
+library(knitr)
+library(magrittr)
+library(kableExtra)
+```
+
 ---
 
 ::: {.callout-note}
@@ -828,18 +845,61 @@ Which is the set of all even integers.
 
 ---
 
-::: {#tbl-panel layout-ncol=1}
-|     Operation     |            Notation               | Description  |
-|-------------------|-----------------------------------|--------------|
-| Intersection      | $\mathbb{A} \cap \mathbb{B}$      | $\{ x: x \in \mathbb{A} \enspace \text{and} \enspace x \in \mathbb{B} \}$   |
-| Union             | $\mathbb{A} \cup \mathbb{B}$      | $\{ x:x \in \mathbb{A} \quad \text{or} \quad x \in \mathbb{B} \quad \text{or} \enspace \text{both} \}$    |
-| Difference        | $\mathbb{A} - \mathbb{B}$         | $\{ x:x \in \mathbb{A} \quad \text{and} \quad x \notin \mathbb{B} \}$    |
-| Symmetric<br> Difference | $\mathbb{A} \oplus \mathbb{B}$ | $\{ x:x \in \mathbb{A}-\mathbb{B} \quad \text{or} \quad x: \in \mathbb{B}-\mathbb{A} \}$ |
-| Complement        | $\overline{\rm \mathbb{A}}$       | $\{ x:x \notin \mathbb{A} \}$    |
+::: {#tbl-panel layout-ncol=1 .scroll-table}
 
-: Set Operations {#tbl-first .striped .hover}
+```{r}
+#| label: tbl-operations
+#| tbl-cap: "Set Operations "
+#| echo: false
 
-Section 1.8 Summary
+# Create a data frame for set operations
+opps <- data.frame(
+  Operation_type = c(
+    "Intersection", "Union", "Difference", "Symmetric Difference", "Complement"
+  ),
+  Notation_denoted = c(
+    "\\( \\mathbb{A} \\cap \\mathbb{B} \\)",
+    "\\( \\mathbb{A} \\cup \\mathbb{B} \\)",
+    "\\( \\mathbb{A} - \\mathbb{B} \\)",
+    "\\( \\mathbb{A} \\oplus \\mathbb{B} \\)",
+    "\\( \\overline{\\mathbb{A}} \\)"
+  ),
+  Description = c(
+    "\\( \\{ x: x \\in \\mathbb{A} \\enspace \\text{and} \\enspace x \\in \\mathbb{B} \\} \\)",
+    "\\( \\{ x:x \\in \\mathbb{A} \\quad \\text{or} \\quad x \\in \\mathbb{B} \\quad \\text{or} \\enspace \\text{both} \\} \\)",
+    "\\( \\{ x:x \\in \\mathbb{A} \\quad \\text{and} \\quad x \\notin \\mathbb{B} \\} \\)",
+    "\\( \\{ x:x \\in (\\mathbb{A}-\\mathbb{B})\\quad \\text{or} \\quad x: \\in (\\mathbb{B}-\\mathbb{A})\\} \\)",
+    "\\( \\{ x:x \\notin \\mathbb{A} \\} \\)"
+  )
+)
+
+# Render the table
+oppTbl <- kbl(
+  opps, escape = FALSE, booktabs = TRUE,
+  col.names = c("Operation", "Notation", "Description"),
+  caption = "Section 1.8 Summary"
+)
+
+# Apply styling for HTML or LaTeX outputs
+if(knitr::is_latex_output()) {
+  oppTbl %>% kable_styling(
+    latex_options = c("striped", "hold_position"),
+    font_size = 9,
+    full_width = FALSE
+  ) %>%
+    row_spec(0, bold = TRUE) %>%
+    column_spec(1, width = "2cm") %>%
+    column_spec(3, width = "6cm")
+} else {
+  oppTbl %>% kable_styling(
+    bootstrap_options = c("striped", "hover"),
+    full_width = FALSE,
+    position = "center",
+    font_size = 90
+  )
+}
+```
+
 <!-- end of table panel  -->
 :::
 
@@ -997,30 +1057,88 @@ least one of the two sets.
 
 <br>
 
----
+::: {#tbl-panel layout-ncol=1 .scroll-table}
 
-::: {#tbl-panel layout-ncol=1}
+```{r}
+#| label: tbl-set-laws
+#| tbl-cap: "Summary Set Identity Laws"
+#| echo: false
 
-| Name/Law               | Identity A                      | Identity B                      | Description                                               |
-|------------------------|----------------------------------|----------------------------------|-----------------------------------------------------------|
-| Identity Laws  | $(\, \mathbb{A} \cap \mathbb{U} = \mathbb{A} )\,$  | $(\, \mathbb{A} \cup \emptyset = \mathbb{A} )\,$  | Union or intersection with identity elements keeps $(\, \mathbb{A} )\,$ |
-| Domination Laws | $(\, \mathbb{A} \cup \mathbb{U} = \mathbb{U} )\,$  | $(\, \mathbb{A} \cap \emptyset = \emptyset )\,$ | Union with universal set and intersection with empty set |
-| Idempotent Laws | $(\, \mathbb{A} \cup \mathbb{A} = \mathbb{A} )\,$  | $(\, \mathbb{A} \cap \mathbb{A} = \mathbb{A} )\,$ | Repeating the same set yields no change  |
-| Complementation Law | $(\, (\mathbb{A}^`)^` = \mathbb{A} )\,$ | —  | Double complement returns the original set |
-| Commutative Laws | $(\, \mathbb{A} \cup \mathbb{B} = \mathbb{B} \cup \mathbb{A} )\,$  | $(\, \mathbb{A} \cap \mathbb{B} = \mathbb{B} \cap \mathbb{A} )\,$  | Reordering operands doesn’t affect result |
-| Associative Laws | $(\, \mathbb{A} \cup (\mathbb{B} \cup \mathbb{C}) = (\mathbb{A} \cup \mathbb{B}) \cup \mathbb{C} )\,$ | $(\, \mathbb{A} \cap (\mathbb{B} \cap \mathbb{C}) = (\mathbb{A} \cap \mathbb{B}) \cap \mathbb{C} )\,$ | Parentheses can be regrouped |
-| Distributive Laws | $(\, \mathbb{A} \cup (\mathbb{B} \cap \mathbb{C}) = (\mathbb{A} \cup \mathbb{B}) \cap (\mathbb{A} \cup \mathbb{C}) )\,$ | $(\, \mathbb{A} \cap (\mathbb{B} \cup \mathbb{C}) = (\mathbb{A} \cap \mathbb{B}) \cup (\mathbb{A} \cap \mathbb{C}) )\,$ | Similar to algebraic distributive properties |
-| De Morgan’s Laws | $(\, (\mathbb{A} \cup \mathbb{B})^` = \mathbb{A}^` \cap \mathbb{B}^` )\,$ | $(\, (\mathbb{A} \cap \mathbb{B})^` = \mathbb{A}^` \cup \mathbb{B}^` )\,$ | Switching union/intersection under complement |
-| Absorption Laws | $(\, \mathbb{A} \cup (\mathbb{A} \cap \mathbb{B}) = \mathbb{A} )\,$ | $(\, \mathbb{A} \cap (\mathbb{A} \cup \mathbb{B}) = \mathbb{A} )\,$ | Combining $(\, \mathbb{A} )\,$ with a subset of itself yields $(\, \mathbb{A} )\,$ |
-| Complement Laws  | $(\, \mathbb{A} \cup \mathbb{A}^` = \mathbb{U} )\,$  | $(\, \mathbb{A} \cap \mathbb{A}^` = \emptyset )\,$  | Elements must be in either $(\, \mathbb{A} )\,$ or its complement |
+# Define the laws with raw LaTeX strings wrapped in \\(...\\)
+laws <- data.frame(
+  Name_Law = c(
+    "Identity Laws", "Domination Laws", "Idempotent Laws",
+    "Complementation Law", "Commutative Laws", "Associative Laws",
+    "Distributive Laws", "De Morgan’s Laws", "Absorption Laws",
+    "Complement Laws"
+  ),
+  Identity_A = c(
+    "\\( \\mathbb{A} \\cap \\mathbb{U} = \\mathbb{A} \\)",
+    "\\( \\mathbb{A} \\cup \\mathbb{U} = \\mathbb{U} \\)",
+    "\\( \\mathbb{A} \\cup \\mathbb{A} = \\mathbb{A} \\)",
+    "\\( (\\mathbb{A}')' = \\mathbb{A} \\)",
+    "\\( \\mathbb{A} \\cup \\mathbb{B} = \\mathbb{B} \\cup \\mathbb{A} \\)",
+    "\\( \\mathbb{A} \\cup (\\mathbb{B} \\cup \\mathbb{C}) = (\\mathbb{A} \\cup \\mathbb{B}) \\cup \\mathbb{C} \\)",
+    "\\( \\mathbb{A} \\cup (\\mathbb{B} \\cap \\mathbb{C}) = (\\mathbb{A} \\cup \\mathbb{B}) \\cap (\\mathbb{A} \\cup \\mathbb{C}) \\)",
+    "\\( (\\mathbb{A} \\cup \\mathbb{B})' = \\mathbb{A}' \\cap \\mathbb{B}' \\)",
+    "\\( \\mathbb{A} \\cup (\\mathbb{A} \\cap \\mathbb{B}) = \\mathbb{A} \\)",
+    "\\( \\mathbb{A} \\cup \\mathbb{A}' = \\mathbb{U} \\)"
+  ),
+  Identity_B = c(
+    "\\( \\mathbb{A} \\cup \\emptyset = \\mathbb{A} \\)",
+    "\\( \\mathbb{A} \\cap \\emptyset = \\emptyset \\)",
+    "\\( \\mathbb{A} \\cap \\mathbb{A} = \\mathbb{A} \\)",
+    "—",
+    "\\( \\mathbb{A} \\cap \\mathbb{B} = \\mathbb{B} \\cap \\mathbb{A} \\)",
+    "\\( \\mathbb{A} \\cap (\\mathbb{B} \\cap \\mathbb{C}) = (\\mathbb{A} \\cap \\mathbb{B}) \\cap \\mathbb{C} \\)",
+    "\\( \\mathbb{A} \\cap (\\mathbb{B} \\cup \\mathbb{C}) = (\\mathbb{A} \\cap \\mathbb{B}) \\cup (\\mathbb{A} \\cap \\mathbb{C}) \\)",
+    "\\( (\\mathbb{A} \\cap \\mathbb{B})' = \\mathbb{A}' \\cup \\mathbb{B}' \\)",
+    "\\( \\mathbb{A} \\cap (\\mathbb{A} \\cup \\mathbb{B}) = \\mathbb{A} \\)",
+    "\\( \\mathbb{A} \\cap \\mathbb{A}' = \\emptyset \\)"
+  ),
+  Description = c(
+    "Union or intersection with identity elements keeps \\( \\mathbb{A} \\)",
+    "Union with universal set and intersection with empty set",
+    "Repeating the same set yields no change",
+    "Double complement returns the original set",
+    "Reordering operands doesn’t affect result",
+    "Parentheses can be regrouped",
+    "Similar to algebraic distributive properties",
+    "Switching union/intersection under complement",
+    "Combining \\( \\mathbb{A} \\) with a subset of itself yields \\( \\mathbb{A} \\)",
+    "Elements must be in either \\( \\mathbb{A} \\) or its complement"
+  )
+)
 
-: Summary Set Identity Laws {#tbl-first .striped .hover}
+# Render the table
+tab <- kbl(
+  laws, escape = FALSE, booktabs = TRUE,
+  col.names = c("Name/Law", "Identity A", "Identity B", "Description"),
+  caption = "Summary Set Identity Laws"
+)
 
-Set Identities
+# Apply styling for HTML or LaTeX outputs
+if (knitr::is_latex_output()) {
+  tab %>% kable_styling(
+    latex_options = c("striped", "hold_position"),
+    font_size = 9,
+    full_width = FALSE
+  ) %>%
+    row_spec(0, bold = TRUE) %>%
+    column_spec(1, width = "3cm") %>%
+    column_spec(4, width = "6cm")
+} else {
+  tab %>% kable_styling(
+    bootstrap_options = c("striped", "hover"),
+    full_width = FALSE,
+    position = "center",
+    font_size = 90
+  )
+}
+```
+
 <!-- end of table panel  -->
 :::
-
----
 
 <br>
 

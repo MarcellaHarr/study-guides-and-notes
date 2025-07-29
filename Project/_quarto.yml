@@ -22,6 +22,7 @@ bibliography: references.bib
 
 format:
   html:
+    html-math-method: mathjax
     highlight-style: nord
     theme:
       light: lux

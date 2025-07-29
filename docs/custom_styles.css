@@ -1,3 +1,29 @@
+/* Responsive Table Styling */
+.scroll-table {
+  overflow-x: auto;
+  padding-bottom: 1em;
+}
+
+/* Limit table width inside content column */
+#tbl-set-laws table,
+#tbl-operations table {
+  max-width: 100%;
+  table-layout: fixed;
+  font-size: 90%;
+  word-break: break-word;
+}
+
+#tbl-set-laws th, #tbl-set-laws td,
+#tbl-operations th, #tbl-operations td {
+  white-space: normal;
+}
+
+/* Improve rendering of long MathJax content */
+.kable_table td span {
+  display: block;
+  overflow-wrap: anywhere;
+}
+
 /* Inner Scrollbar */
 .sidebar.margin-sidebar {
   scroll-behavior: smooth;
