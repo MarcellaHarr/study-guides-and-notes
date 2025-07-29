@@ -2,6 +2,8 @@
 .scroll-table {
   overflow-x: auto;
   padding-bottom: 1em;
+  word-break: break-word;
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
 }
 
 /* Limit table width inside content column */
@@ -22,6 +24,15 @@
 .kable_table td span {
   display: block;
   overflow-wrap: anywhere;
+  white-space: normal;
+}
+
+.kable_table td span.MathJax {
+  white-space: normal !important;
+  overflow-wrap: break-word !important;
+  word-break: break-word !important;
+  display: block !important;
+  max-width: 100% !important;
 }
 
 /* Inner Scrollbar */

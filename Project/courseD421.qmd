@@ -531,7 +531,7 @@ divisible by their `**least common multiple (LCM)**`.
 - **LCM(1, 2, 3, 4, 5) = 60**
 
 ::: {.text-center}
-```{markdown exaLCM}
+```{text exaLCM}
   A₁      A₂        A₃        A₄        A₅
          / \       / \       / \       / \
  none   1   2     1   3     2   2     1   5
@@ -612,7 +612,7 @@ multiples of 2 to 5 from 1 to 20, by asking, "Is it a multiple of 2, 3, 4, or 5?
 Now, combine all the unique elements from all five sets — but since $A_1$ already 
 includes everything from 1 to 20, the union is just:
 
-```{markdown exbMultiples}
+```{text exbMultiples}
   2           3           4           5
  /|\         /|\         /|\         /|\
 2 4 6      3 6 9      4 8 12      5 10 15
@@ -849,7 +849,7 @@ Which is the set of all even integers.
 
 ```{r}
 #| label: tbl-operations
-#| tbl-cap: "Set Operations "
+#| tbl-cap: "Section 1.8 Summary: Set Operations"
 #| echo: false
 
 # Create a data frame for set operations
@@ -876,8 +876,7 @@ opps <- data.frame(
 # Render the table
 oppTbl <- kbl(
   opps, escape = FALSE, booktabs = TRUE,
-  col.names = c("Operation", "Notation", "Description"),
-  caption = "Section 1.8 Summary"
+  col.names = c("Operation", "Notation", "Description")
 )
 
 # Apply styling for HTML or LaTeX outputs
@@ -1061,7 +1060,7 @@ least one of the two sets.
 
 ```{r}
 #| label: tbl-set-laws
-#| tbl-cap: "Summary Set Identity Laws"
+#| tbl-cap: "Summary: Set Identity Laws"
 #| echo: false
 
 # Define the laws with raw LaTeX strings wrapped in \\(...\\)
@@ -1113,8 +1112,7 @@ laws <- data.frame(
 # Render the table
 tab <- kbl(
   laws, escape = FALSE, booktabs = TRUE,
-  col.names = c("Name/Law", "Identity A", "Identity B", "Description"),
-  caption = "Summary Set Identity Laws"
+  col.names = c("Name/Law", "Identity A", "Identity B", "Description")
 )
 
 # Apply styling for HTML or LaTeX outputs
@@ -1125,7 +1123,9 @@ if (knitr::is_latex_output()) {
     full_width = FALSE
   ) %>%
     row_spec(0, bold = TRUE) %>%
-    column_spec(1, width = "3cm") %>%
+    column_spec(1, width = "2cm") %>%
+    column_spec(2, width = "5cm") %>%
+    column_spec(3, width = "5cm") %>%
     column_spec(4, width = "6cm")
 } else {
   tab %>% kable_styling(
@@ -1208,9 +1208,13 @@ This is similar to `**truth tables**` in logic, allowing us to compare both side
 
 ---
 
-::: {#tbl-panel layout-ncol=1}
+::: {.lead}
 
 To prove that two sets are equal, you can use:
+
+:::
+
+::: {#tbl-panel layout-ncol=1}
 
 | Method                    | Description                                                                 |
 |---------------------------|-----------------------------------------------------------------------------|

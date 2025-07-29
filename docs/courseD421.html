@@ -20,41 +20,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -934,9 +899,9 @@ What Does \bigcap_{i=1}^5 A_i Mean?
 </ul>
 <div class="text-center">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>  A₁      A₂        A₃        A₄        A₅</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>         / \       / \       / \       / \</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a> none   1   2     1   3     2   2     1   5</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<pre class="text cell-code"><code>  A₁      A₂        A₃        A₄        A₅
+         / \       / \       / \       / \
+ none   1   2     1   3     2   2     1   5</code></pre>
 </div>
 </div>
 <p>Then multiply the prime factors, <span class="math inline">\(2 \cdot 3 \cdot 2 \cdot 5=60\)</span></p>
@@ -992,15 +957,15 @@ What Does \bigcap_{i=1}^5 A_i Mean?
 <p><strong>Union the Sets <span class="math inline">\(A_1 \cup A_2 \cup A_3 \cup A_4 \cup A_5\)</span></strong></p>
 <p>Now, combine all the unique elements from all five sets — but since <span class="math inline">\(A_1\)</span> already includes everything from 1 to 20, the union is just:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>  2           3           4           5</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a> /|\         /|\         /|\         /|\</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>2 4 6      3 6 9      4 8 12      5 10 15</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>8 10 12    12 15 18   16 20       20</span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>14 16 18                 </span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>20</span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>Excluded:</span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>  1  7  11  13  17  19</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<pre class="text cell-code"><code>  2           3           4           5
+ /|\         /|\         /|\         /|\
+2 4 6      3 6 9      4 8 12      5 10 15
+8 10 12    12 15 18   16 20       20
+14 16 18                 
+20
+
+Excluded:
+  1  7  11  13  17  19</code></pre>
 </div>
 <hr>
 <p>The common multiples combined together are: <span class="math inline">\(\{2, 3, 4, 5, 6, 8, 9, 10, 12, 14, 15, 16, 18, 20\}\)</span></p>
@@ -1162,8 +1127,8 @@ What Does \bigcap_{i=1}^5 A_i Mean?
 <hr>
 <div id="tbl-panel" class="quarto-layout-panel anchored">
 <figure class="quarto-float quarto-float-tbl figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-panel-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;2: Section 1.8 Summary
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl quarto-uncaptioned" id="tbl-panel-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;2
 </figcaption>
 <div aria-describedby="tbl-panel-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="quarto-layout-row">
@@ -1171,12 +1136,11 @@ Table&nbsp;2: Section 1.8 Summary
 <div id="tbl-operations" class="cell quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-subfloat-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-subfloat-caption quarto-subfloat-tbl" id="tbl-operations-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-(a) Set Operations
+(a) Section 1.8 Summary: Set Operations
 </figcaption>
 <div aria-describedby="tbl-operations-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
 <table class="table table-striped table-hover do-not-create-environment cell caption-top table-sm small" data-quarto-postprocess="true">
-<caption>Section 1.8 Summary</caption>
 <thead>
 <tr class="header">
 <th style="text-align: left;" data-quarto-table-cell-role="th">Operation</th>
@@ -1361,8 +1325,8 @@ If <span class="math inline">\((\, \mathbb{A} )\,\)</span> is the set of math ma
 <p><br></p>
 <div id="tbl-panel" class="quarto-layout-panel anchored">
 <figure class="quarto-float quarto-float-tbl figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-panel-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;3: Summary Set Identity Laws
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl quarto-uncaptioned" id="tbl-panel-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;3
 </figcaption>
 <div aria-describedby="tbl-panel-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="quarto-layout-row">
@@ -1370,12 +1334,11 @@ Table&nbsp;3: Summary Set Identity Laws
 <div id="tbl-set-laws" class="cell quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-subfloat-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-subfloat-caption quarto-subfloat-tbl" id="tbl-set-laws-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-(a) Summary Set Identity Laws
+(a) Summary: Set Identity Laws
 </figcaption>
 <div aria-describedby="tbl-set-laws-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
 <table class="table table-striped table-hover do-not-create-environment cell caption-top table-sm small" data-quarto-postprocess="true">
-<caption>Summary Set Identity Laws</caption>
 <thead>
 <tr class="header">
 <th style="text-align: left;" data-quarto-table-cell-role="th">Name/Law</th>
@@ -1542,17 +1505,15 @@ However, for four or more atomic sets, diagrams may become too complex and requi
 </div>
 <p><br></p>
 <hr>
+<div class="lead">
+<p>To prove that two sets are equal, you can use:</p>
+</div>
 <div id="tbl-panel" class="quarto-layout-panel anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-panel-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Table&nbsp;4: Proving Techniques <!-- end of table panel  -->
 </figcaption>
 <div aria-describedby="tbl-panel-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="quarto-layout-row">
-<div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: flex-start;">
-<p>To prove that two sets are equal, you can use:</p>
-</div>
-</div>
 <div class="quarto-layout-row">
 <div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="tbl-panel" style="flex-basis: 100.0%;justify-content: center;">
 <div id="tbl-first" class="striped hover quarto-float quarto-figure quarto-figure-center anchored">
