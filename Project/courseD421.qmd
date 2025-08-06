@@ -6,19 +6,13 @@ Discrete Math II Functions and Applications (D421)
 
 <!-- \thinspace (1/12em); \enspace; \quad; \qquad -->
 
-```{r install-table-packages, include=FALSE}
-repos <- c(CRAN = "https://cran.rstudio.com")
 
-if (!requireNamespace("knitr", quietly = TRUE)) {
-  install.packages("knitr", repos = repos)
-}
-if (!requireNamespace("magrittr", quietly = TRUE)) {
-  install.packages("magrittr", repos = repos)
-}
-if (!requireNamespace("kableExtra", quietly = TRUE)) {
-  install.packages("kableExtra", repos = repos)
-}
+```{r}
+#| label: install-table-packages
+#| include: false
+#| 
 library(knitr)
+library(rmarkdown)
 library(magrittr)
 library(kableExtra)
 ```
@@ -292,7 +286,7 @@ Cardinality of a power set
 [**Set intersection**]{.mark .vocab} is the operation that produces a set 
 containing only the elements that are common to both sets. If $A$ and $B$ 
 are sets, their intersection is the set of all elements that are members of both $\mathbb{A}$ 
-`**and**` $\mathbb{B}$. It is denoted by the symbol: $\mathbb{A} \cap \mathbb{B}$
+`and` $\mathbb{B}$. It is denoted by the symbol: $\mathbb{A} \cap \mathbb{B}$
 
 <br>
 
@@ -342,8 +336,8 @@ $\mathbb{A} \cap \mathbb{B} = \mathbb{B} \cap \mathbb{A}$
 
 [**Set union**]{.mark .vocab} is the operation that produces a set containing 
 all elements that belong to either of two sets. If $A$ and $B$ are sets, their 
-union is the set of all elements that are in $\mathbb{A}$, `**or**` $\mathbb{B}$, 
-`**or**` in both. It is denoted by the symbol: $\mathbb{A} \cup \mathbb{B}$.
+union is the set of all elements that are in $\mathbb{A}$, `or` $\mathbb{B}$, 
+`or` in both. It is denoted by the symbol: $\mathbb{A} \cup \mathbb{B}$.
 
 <br>
 
@@ -526,16 +520,14 @@ So, we need to find integers that are multiples of all these numbers at once.
 
 To satisfy all five conditions, a number must be a common multiple of all 
 five integers and to be a multiple of all five integers, a number has to be 
-divisible by their `**least common multiple (LCM)**`.
+divisible by their `least common multiple (LCM)`.
 
 - **LCM(1, 2, 3, 4, 5) = 60**
 
-::: {.text-center}
-```{text exaLCM}
-  A₁      A₂        A₃        A₄        A₅
-         / \       / \       / \       / \
- none   1   2     1   3     2   2     1   5
-```
+::: {.lead .text-center}
+$\mathbb{A}_1$      $\mathbb{A}_2$        $\mathbb{A}_3$        $\mathbb{A}_4$        $\mathbb{A}_5$
+     / \                 / \                    / \                    / \                  / \
+     none               1   2                  1   3                  2   2                1   5
 :::
 
 Then multiply the prime factors, $2 \cdot 3 \cdot 2 \cdot 5=60$
@@ -612,17 +604,17 @@ multiples of 2 to 5 from 1 to 20, by asking, "Is it a multiple of 2, 3, 4, or 5?
 Now, combine all the unique elements from all five sets — but since $A_1$ already 
 includes everything from 1 to 20, the union is just:
 
-```{text exbMultiples}
+::: {.lead .text-center}
   2           3           4           5
  /|\         /|\         /|\         /|\
-2 4 6      3 6 9      4 8 12      5 10 15
-8 10 12    12 15 18   16 20       20
+2 4 6       3 6 9       4 8 12      5 10 15
+8 10 12    12 15 18    16 20       20
 14 16 18                 
 20
 
 Excluded:
   1  7  11  13  17  19
-```
+:::
 
 ---
 
@@ -702,7 +694,7 @@ $\mathbb{A} - \mathbb{B}$
 :::
 
 [**Set difference**]{.mark .vocab} is the operation that produces a set containing 
-elements that belong to one set but `**not**` to another. If $\mathbb{A}$ 
+elements that belong to one set but `not` to another. If $\mathbb{A}$ 
 and $\mathbb{B}$ are sets, the set difference $A -B$ contains all elements that 
 are in $\mathbb{A}$ and not in $\mathbb{B}$.
 
@@ -796,7 +788,7 @@ programming.
 ## Complement Operations
 
 The [**set complement operation**]{.mark .vocab} produces a set containing all 
-elements in a universal set $(\, \mathbb{U} )\,$ that are `**not**` in a subset $(\, \mathbb{A} )\,$.
+elements in a universal set $(\, \mathbb{U} )\,$ that are `not` in a subset $(\, \mathbb{A} )\,$.
 
 It is denoted by:
 
@@ -806,7 +798,7 @@ It is denoted by:
 
   - $[\, \mathbb{A}^` = \{ x \in \mathbb{U} : x \notin \mathbb{A} \} \quad \text{or} \quad \mathbb{A}^` = \mathbb{U} - \mathbb{A}]\,$
 
-📘 Note: This operation `**requires**` a well-defined universal set $(\, \mathbb{U} )\,$ 
+📘 Note: This operation `requires` a well-defined universal set $(\, \mathbb{U} )\,$ 
 unlike union or intersection.
 
 
@@ -924,7 +916,7 @@ if(knitr::is_latex_output()) {
 ## Definition
 
 [**Combining sets**]{.mark .vocab} refers to the use of multiple set operations — such as 
-`**union**`, `**intersection**`, `**difference**`, and `**complement**` — in a single 
+`union`, `intersection`, `difference`, and `complement` — in a single 
 expression to create new sets from existing ones.
 
 These operations may be nested or sequenced to define increasingly complex 
@@ -934,11 +926,11 @@ arithmetic operations.
 
 ## Explanation
 
-- The complement operation requires a clearly defined `**universal set**` $(\, \mathbb{U} )\,$ against which the contents of a subset $(\, \mathbb{A} )\,$ are negated.
+- The complement operation requires a clearly defined `universal set` $(\, \mathbb{U} )\,$ against which the contents of a subset $(\, \mathbb{A} )\,$ are negated.
 
 - Combined operations should be evaluated by grouping parentheses first, then applying the logic of each operator.
 
-- Set expressions such as $(\, (\, \mathbb{A} \oplus \mathbb{B})\, \cup (\, \mathbb{A} \cap \mathbb{C})\, )\,$ illustrate how `**symmetric difference**`, `**union**`, and `**intersection**` interact.
+- Set expressions such as $(\, (\, \mathbb{A} \oplus \mathbb{B})\, \cup (\, \mathbb{A} \cap \mathbb{C})\, )\,$ illustrate how `symmetric difference`, `union`, and `intersection` interact.
 
   - 🧠 Tip: Just as in algebra, parentheses determine the order of evaluation. For example:
 
@@ -965,9 +957,9 @@ arithmetic operations.
 
 - $(\, (\, \mathbb{A} \oplus \mathbb{B})\, \cup (\, \mathbb{A} \cap \mathbb{C})\, )\,$ defines a new set composed of:
 
-  - Elements in $\mathbb{A}$ `**or**` $\mathbb{B}$ but `**not both**`, combined with
+  - Elements in $\mathbb{A}$ `or` $\mathbb{B}$ but `not both`, combined with
 
-  - Elements shared between $\mathbb{A}$ `**and**` $\mathbb{C}$
+  - Elements shared between $\mathbb{A}$ `and` $\mathbb{C}$
 
 
 <!-- end of panel tabset  -->
@@ -1032,7 +1024,7 @@ Then:
 
   - $(\, \mathbb{A} \cup \mathbb{B} )\,$: Students in either major  
   - $(\, \mathbb{A} \cap \mathbb{B} )\,$: Students in both majors  
-  - $(\, \mathbb{A}^` )\,$: Students who are `**not**` math majors
+  - $(\, \mathbb{A}^` )\,$: Students who are `not` math majors
 
 ---
 
@@ -1169,7 +1161,7 @@ equivalences and can often be proved using similar techniques.
 
 ---
 
-🧠 When working with two or three atomic sets, `**Venn diagrams**` help visualize relationships.  
+🧠 When working with two or three atomic sets, `Venn diagrams` help visualize relationships.  
 However, for four or more atomic sets, diagrams may become too complex and require ellipses to represent all possible regions of overlap.
 
 
@@ -1179,10 +1171,10 @@ However, for four or more atomic sets, diagrams may become too complex and requi
 
 - For each element:
 
-  - Use `**1**` to indicate inclusion in a set
-  - Use `**0**` to indicate exclusion
+  - Use `1` to indicate inclusion in a set
+  - Use `0` to indicate exclusion
 
-This is similar to `**truth tables**` in logic, allowing us to compare both sides of an identity expression.
+This is similar to `truth tables` in logic, allowing us to compare both sides of an identity expression.
 
 **Why use them:**
 
@@ -1231,28 +1223,6 @@ Proving Techniques
 ---
 
 <br>
-
-
-<!-- #### Section # -->
-<!-- *** -->
-
-<!-- ##### subtitle -->
-
-<!-- {{< video https://youtu.be/<add video ending> aspect-ratio="21x9" >}} -->
-
-<!-- <br> -->
-
-<!-- ::: {.panel-tabset} -->
-
-<!-- ## Tab Title -->
-
-<!-- end of panel tabset  -->
-<!-- ::: -->
-
-<!-- <br> -->
-
-
-
 
 ##### Exercises
 
@@ -1437,3 +1407,416 @@ $0,1,4,9,16,25,36,49,64,81$
 <br>
 
 #### Section 2:
+
+##### Section 2.2.0
+***
+
+##### cartesian product
+
+{{< video https://youtu.be/39YvGUY2aUs aspect-ratio="21x9" >}}
+
+<br>
+
+::: {.panel-tabset}
+
+## Definition
+
+The [**Cartesian product**]{.mark .vocab} is a mathematical operation that 
+returns a set of `ordered pairs` formed by combining each element of one 
+set with each element of another.
+
+For two sets $(\, \mathbb{A} )\,$ and $(\, \mathbb{B} )\,$, the Cartesian product is denoted:
+
+::: {.lead .text-center}
+$[\, \mathbb{A} \times \mathbb{B} = \{ (a, b) : a \in \mathbb{A} \ \text{and} \ b \in \mathbb{B} \} ]\,$
+:::
+
+> 🧠 Note: The order of the pair matters.  
+> $(\, (x, y) \neq (y, x) )\,$ unless $(\, x = y )\,$
+
+If both $(\, \mathbb{A} )\, and (\, \mathbb{B} )\,$ are finite, then:
+
+::: {.lead .text-center}
+$[\, |\mathbb{A} \times \mathbb{B}| = |\mathbb{A}| \cdot |\mathbb{B}| ]\,$
+:::
+
+## Explanation
+
+- Ordered pairs are written using parentheses: $(\, (x, y) )\,$, where `$(\, x )\,$` is the first element and `$(\, y )\,$` is the second.
+
+- Unlike sets $(\, \{x, y\} )\,$, which are unordered and equivalent to $(\, \{y, x\} )\,$, ordered pairs preserve position.
+
+- Two ordered pairs $(\, (x, y) )\,$ and $(\, (u, w) )\,$ are equal `only if` $(\, x = u )\,$ and $(\, y = w )\,$.
+
+- $(\, \mathbb{A} \times \mathbb{B} \neq \mathbb{B} \times \mathbb{A} )\,$ in general — the operation is `not commutative`.
+
+This structure allows for organizing related information: matching names to IDs, 
+patients to health data, or inputs to outputs.
+
+
+## Examples
+
+#### Example 1: Students and Social Security Numbers
+
+**Let:**
+
+- $\,( \mathbb{A} = \{ \text{Alice}, \text{Bob} \} )\,$
+
+- $(\, \mathbb{B} = \{111, 222\} )\,$
+
+**Then:**
+
+::: {.lead .text-center}
+$[\, \mathbb{A} \times \mathbb{B} = \{ (\text{Alice}, 111),\ (\text{Alice}, 222),\ (\text{Bob}, 111),\ (\text{Bob}, 222) \} ]\,$
+:::
+
+---
+
+#### Example 2: Patients, Heights, Weights  
+
+Imagine a triple Cartesian product:
+
+::: {.lead .text-center}
+$[\, \mathbb{P} \times \mathbb{H} \times \mathbb{W} ]\,$
+:::
+
+**Where:**
+
+- $(\, \mathbb{P} = \{ \text{John} \} )\,$
+
+- $(\, \mathbb{H} = \{ 170 \} )\,$
+
+- $(\, \mathbb{W} = \{ 70 \} )\,$
+
+**Result:**
+
+::: {.lead .text-center}
+$[\, \{ (\text{John}, 170, 70) \} ]\,$
+:::
+
+Each tuple encapsulates `related attributes` in a structured sequence.
+
+<!-- end of panel tabset  -->
+::: 
+
+<br>
+
+
+##### 2.2.1 
+***
+
+##### Finite Cartesian Product
+
+{{< video https://youtu.be/HDYy88AzjXg aspect-ratio="21x9" >}}
+
+<br>
+
+::: {.panel-tabset}
+
+## Finite Sets
+
+The [**finite Cartesian product**]{.mark .vocab} is a specific instance of the Cartesian product involving two finite sets.
+
+Given two sets $(\, \mathbb{A} )\,$ and $(\, \mathbb{B} )\,$, their Cartesian product is the set of all ordered pairs formed by combining each element of A with each element of B:
+
+::: {.lead .text-center} 
+$[\, \mathbb{A} \times \mathbb{B} = \{ (a, b) : a \in \mathbb{A} \ \text{and} \ b \in \mathbb{B} \} ]\,$ 
+:::
+
+> 💡 Cartesian products are ordered, so: $(\, (1, a) )\,$ is not the same as $(\, (a, 1) )\,$ unless the elements are equal.
+
+If both $(\, \mathbb{A} )\,$ and $(\, \mathbb{B} )\,$ are finite, then:
+
+::: {.lead .text-center} 
+$[\, |\mathbb{A} \times \mathbb{B}| = |\mathbb{A}| \cdot |\mathbb{B}| ]\,$ 
+:::
+
+
+## Explanation
+
+
+- The Cartesian product $\mathbb{A} \times \mathbb{B}$ results in a set of `ordered pairs` where the first component comes from $\mathbb{A}$ and the second from $\mathbb{B}$.
+
+- This is useful for creating `structured tables`, where each cell contains one ordered pair.
+
+- A Cartesian product of three or more sets is called an `n-fold Cartesian` `product` and creates an n-tuple: a sequence of n elements.
+
+- Ordered pairs $(\, (x, y) )\,$ follow strict rules:
+
+  - $(\, (x, y) )\,$ and $(\, (u, w) )\,$ are equal `only if` $x = u$ and $y = w$.
+  - By contrast, sets like $\{x, y\}$ are `unordered`: $\{x, y\} = \{y, x\}$.
+
+- The concept is named after **René Descartes**, who linked algebra to geometry via coordinate systems.
+
+
+
+## Examples
+
+**Example 1:** $\mathbb{A} \times \mathbb{B}$
+
+**Let:**
+
+- $\mathbb{A} = \{1,\ 2\}$
+
+- $\mathbb{B} = \{a,\ b,\ c\}$
+
+
+**To form $\mathbb{A} \times \mathbb{B}$:**
+
+- Combine each element of $\mathbb{A}$ with each from $\mathbb{B}$
+
+::: {.lead .text-center} 
+
+$[\, \mathbb{A} \times \mathbb{B} = \{ (1,a),\ (1,b),\ (1,c),\ (2,a),\ (2,b),\ (2,c) \} ]\,$ 
+
+:::
+
+*Three pairs begin with `1`, three begin with `2`.*
+
+---
+
+**Example 2:** $\mathbb{B} \times \mathbb{A}$
+
+Reverse the order:
+
+::: {.lead .text-center} 
+
+$[\, \mathbb{B} \times \mathbb{A} = \{ (a,1),\ (a,2),\ (b,1),\ (b,2),\ (c,1),\ (c,2) \} ]\,$ 
+
+:::
+
+Two pairs begin with $a$, two with $b$, two with $c$.
+
+---
+
+🧠 Tip: In many applications (like databases or matrix layouts), choosing 
+$\mathbb{A} \times \mathbb{B}$ or $\mathbb{B} \times \mathbb{A}$ affects the 
+table orientation — rows vs. columns — and determines how we interpret the 
+structure of relationships.
+
+<!-- end of panel tabset  -->
+:::
+
+<br>
+
+
+##### 2.2.2
+***
+
+##### Infinite Cartesian Product
+
+{{< video https://youtu.be/bRT5EFhNeJo aspect-ratio="21x9" >}}
+
+<br>
+
+::: {.panel-tabset}
+
+## Infinite Sets
+
+The [**infinite Cartesian product**]{.mark .vocab} is an extension of the Cartesian product to an infinite collection of sets indexed by another set.
+
+If $(\, \mathbb{I} )\,$ is any index set, and $\{\, \mathbb{X}_i \mid i \in \mathbb{I} \,\}$ is a collection of sets indexed by $\mathbb{I}$, then the infinite Cartesian product is defined by:
+
+::: {.lead .text-center} 
+$[\, \prod_{i \in \mathbb{I}} \mathbb{X}_i = \{\, f : \mathbb{I} \to \bigcup_{i \in \mathbb{I}} \mathbb{X}_i\ |\ (\forall i)(f(i) \in \mathbb{X}_i) \,\} ]\,$ 
+:::
+
+This represents the set of all functions $f$ whose domain is $\mathbb{I}$ and whose output at each index $i$ lies in the corresponding set $\mathbb{X}_i$.
+
+If $\mathbb{I}$ is finite `(say $\{ 1, 2, \ldots, n \}$)`, then this product matches the `n-fold Cartesian product`:
+
+::: {.lead .text-center} 
+$[\, f \mapsto (f(1),\ f(2),\ \ldots,\ f(n)) ]\,$ 
+:::
+
+*In the infinite case, this forms an `infinite tuple` — a function assigning one value per index.*
+
+
+## Explanation
+
+- Each function $f$ in the infinite Cartesian product *“selects”* one element from each indexed set $\mathbb{X}_i$, forming a sequence.
+
+- If all $\mathbb{X}_i$ are the same set $\mathbb{X}$, the product simplifies to: 
+
+::: {.lead .text-center} 
+$[\, \prod_{i \in \mathbb{I}} \mathbb{X} = \mathbb{X}^{\mathbb{I}} \,]$ 
+::: 
+
+which is the set of all functions from $\mathbb{I}$ to $\mathbb{X}$ — sometimes called [**Cartesian exponentiation**]{.mark .vocab}.
+
+- A familiar infinite product involves the natural numbers: 
+
+::: {.lead .text-center} 
+$[\, \prod_{n=1}^{\infty} \mathbb{R} = \mathbb{R}^{\omega} = \mathbb{R} \times \mathbb{R} \times \ldots \,]$ 
+::: 
+
+This represents all [**infinite sequences**]{.mark .vocab} of real numbers — each sequence element drawn from $\mathbb{R}$ at position $n$.
+
+- Conceptually, this creates an infinite-dimensional vector space over $\mathbb{R}$.
+
+*Infinite Cartesian products are foundational in topology, analysis, and logic — but also rely on deeper assumptions like the `axiom of choice` to ensure non-emptiness.*
+
+
+## Example
+
+Example: $\mathbb{Z} \times \mathbb{Z}$
+
+Let $\, \mathbb{Z} \,$ be the set of all integers.
+
+**Then:**
+
+::: {.lead .text-center} 
+$[\, \mathbb{Z} \times \mathbb{Z} = \{\, (x, y) \mid x \in \mathbb{Z},\ y \in \mathbb{Z} \,\} ]\,$
+:::
+
+This Cartesian product contains all [**ordered pairs**]{.mark .vocab} of 
+integers — forming an [**infinite grid**]{.mark .vocab} when visualized in 
+the xy-plane.
+
+**Sample elements:**
+
+```{r}
+#| label: example-cartesian-output
+#| echo: false
+#| eval: true
+
+print("(0, 0), (1, 0), (2, 0), (-1, 0), (-2, 0),")
+print("(0, 1), (1, 1), (2, 1), (-1, 1), (-2, 1),")
+print("(0, 2), (1, 2), (2, 2), (-1, 2), (-2, 2),")
+print("(0, -1), (1, -1), (2, -1), (-1, -1), (-2, -1),")
+print("(0, -2), (1, -2), (2, -2), (-1, -2), (-2, -2), ...")
+```
+
+This structure is commonly used in `coordinate systems`, `integer lattices`, and `discrete geometry`.
+
+
+<!-- end of panel tabset  -->
+:::
+
+<br>
+
+
+##### 2.2.5
+***
+
+##### Infinite Cartesian Product
+
+{{< video https://youtu.be/oyqsRnaZLzA&t=60s aspect-ratio="21x9" >}}
+
+<br>
+
+::: {.panel-tabset}
+
+## Same Set Cartesian Product
+
+The [Cartesian product of a set with itself]{.mark .vocab} is a special case of 
+the general Cartesian product. It describes the set of **ordered pairs**, `triples`, 
+or `n-tuples` where every component comes from the same set.
+
+Given a set $(\, \mathbb{A} )\,$, its Cartesian product with itself is denoted:
+
+- $(\, \mathbb{A} \times \mathbb{A} )\,$ or
+
+- $(\, \mathbb{A}^n )\,$ for an n-fold product
+
+::: {.lead .text-center} 
+$[\, \mathbb{A}^n = \underbrace{\mathbb{A} \times \mathbb{A} \times \cdots \times \mathbb{A}}_{n \text{ times}} \,]$
+:::
+
+This forms sequences where the order matters and every entry is drawn from the same source set.
+
+
+## Explanation
+
+- For $(\, \mathbb{A} = \{ 0,\ 1 \} )\,$, the product $\mathbb{A}^n$ represents all binary sequences of length $n$
+
+- Each element of $\mathbb{A}^n$ is an ordered n-tuple
+
+- The total number of n-tuples is: 
+
+::: {.lead .text-center} 
+$[\, |\mathbb{A}^n| = |\mathbb{A}|^n \,]$
+:::
+
+
+Examples by dimension:
+
+- $A^2 = \{ (0,0),\ (0,1),\ (1,0),\ (1,1) \}$
+
+- $A^3$ includes all combinations of three binary digits, such as $(1, 0, 1)$
+
+Another common notation:
+
+- $\mathbb{R}^n$ denotes all n-tuples of real numbers
+
+- $\mathbb{R}^2$ forms the Euclidean plane with ordered pairs $(x, y)$
+
+
+## Examples
+
+`Binary Triples`
+
+**Let:**
+
+- $\mathbb{A} = \{ 0,\ 1 \}$
+
+- **Then:**
+
+::: {.lead .text-center} 
+
+$$
+[\, \mathbb{A}^3 = \{ (0,0,0),\ (0,0,1),\ (0,1,0),\ (0,1,1),\ (1,0,0),\ 
+(1,0,1),\ (1,1,0),\ (1,1,1) \} ]\,
+$$
+
+:::
+
+*This forms the set of all binary strings of length 3.*
+
+---
+
+`Real Tuples`
+
+**Let:**
+
+- $\mathbb{A} = \mathbb{R}$
+
+- Then $\mathbb{A}^2 = \mathbb{R}^2$
+
+Each element is an ordered pair:
+
+- $(\, x, y)\,$ such that $x,\ y \in \mathbb{R}$
+
+::: {.lead .text-center}
+
+$$
+[\, \mathbb{R}^2 = \{ (x, y) : x \in \mathbb{R},\ y \in \mathbb{R} \,\} ]\,
+$$
+
+:::
+
+*This forms the standard 2D coordinate plane, used in geometry and analytic math.*
+
+<!-- end of panel tabset -->
+:::
+
+<br>
+
+
+<!-- ##### Section # -->
+<!-- *** -->
+
+<!-- ##### subtitle -->
+
+<!-- {{< video https://youtu.be/<add video ending> aspect-ratio="21x9" >}} -->
+
+<!-- <br> -->
+
+<!-- ::: {.panel-tabset} -->
+
+<!-- ### Tab Title -->
+
+<!-- end of panel tabset  -->
+<!-- ::: -->
+
+<!-- <br> -->
