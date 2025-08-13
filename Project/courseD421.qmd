@@ -1803,7 +1803,153 @@ $$
 <br>
 
 
-<!-- ##### Section # -->
+#### Section 3:
+
+<br>
+
+##### 3.1
+***
+
+##### functions
+
+{{< video https://youtu.be/BaaC0IOkfWI aspect-ratio="21x9" >}}
+
+<br>
+
+A [Function]{.mark .vocab}
+
+<br>
+
+::: {.panel-tabset}
+
+### Domain & Target
+
+
+### Arrow Diagram
+
+
+### Range
+
+<!-- end of panel tabset  -->
+:::
+
+<br>
+
+
+#### Section 4:
+
+<br>
+
+##### 4.2
+***
+
+##### composition functions
+
+{{< video https://youtu.be/qPUAkMILgSY aspect-ratio="21x9" >}}
+
+<br>
+
+A [Composition]{.mark .vocab}
+
+<br>
+
+::: {.panel-tabset}
+
+### Sub-Title
+
+<!-- end of panel tabset  -->
+:::
+
+<br>
+
+
+##### 4.2.1
+***
+
+##### composition continued
+
+{{< video https://youtu.be/1gkUKbrIssY aspect-ratio="21x9" >}}
+
+<br>
+
+A [Composition]{.mark .vocab}
+
+<br>
+
+
+##### composition associative
+
+{{< video https://youtu.be/oUw-XPLy-dc aspect-ratio="21x9" >}}
+
+<br>
+
+A [Composition Associative]{.mark .vocab}
+
+<br>
+
+
+##### composition identity function
+
+{{< video https://youtu.be/oORSfuL_5SE aspect-ratio="21x9" >}}
+
+<br>
+
+A [Composition Identity Function]{.mark .vocab}
+
+<br>
+
+
+##### 4.2.2
+***
+
+##### inverse function
+
+{{< video https://youtu.be/7iGNxkbDLvE aspect-ratio="21x9" >}}
+
+<br>
+
+A [Inverse Function]{.mark .vocab}
+
+<br>
+
+::: {.panel-tabset}
+
+### Sub-Title
+
+<!-- end of panel tabset  -->
+:::
+
+<br>
+
+
+##### 4.3
+***
+
+##### exponential functions
+
+<!-- {{< video https://youtu.be/<> aspect-ratio="21x9" >}} -->
+
+<br>
+
+A [Exponential Function]{.mark .vocab}
+
+<br>
+
+::: {.panel-tabset}
+
+### Sub-Title
+
+<!-- end of panel tabset  -->
+:::
+
+<br>
+
+
+<!-- #### Main Section #: -->
+
+<!-- <br> -->
+
+<!-- ##### # -->
 <!-- *** -->
 
 <!-- ##### subtitle -->
