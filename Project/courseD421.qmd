@@ -1835,6 +1835,24 @@ A [Function]{.mark .vocab}
 
 <br>
 
+##### 3.4.2
+***
+
+##### floor and ceiling
+
+{{< video https://youtu.be/AjHOBw50GhY aspect-ratio="21x9" >}}
+
+<br>
+
+::: {.panel-tabset}
+
+### Sub-Title
+
+<!-- end of panel tabset  -->
+:::
+
+<br>
+
 
 #### Section 4:
 
@@ -1922,16 +1940,16 @@ A [Inverse Function]{.mark .vocab}
 <br>
 
 
-##### 4.3
+##### 4.2.3
 ***
 
-##### exponential functions
+##### composition
 
-<!-- {{< video https://youtu.be/<> aspect-ratio="21x9" >}} -->
+{{< video https://youtu.be/KLBX-I0NNTU aspect-ratio="21x9" >}}
 
 <br>
 
-A [Exponential Function]{.mark .vocab}
+A [Composition Function]{.mark .vocab}
 
 <br>
 
@@ -1943,6 +1961,34 @@ A [Exponential Function]{.mark .vocab}
 :::
 
 <br>
+
+
+##### 4.2.4
+***
+
+##### arrow diagram & definitions
+
+{{< video https://youtu.be/k2ib2nxCmZE aspect-ratio="21x9" >}}
+
+<br>
+
+An [Arrow Diagram]{.mark .vocab}
+
+<br>
+
+::: {.panel-tabset}
+
+### Well-defined
+
+
+### Not Well-defined
+
+<!-- end of panel tabset  -->
+:::
+
+<br>
+
+
 
 
 <!-- #### Main Section #: -->
