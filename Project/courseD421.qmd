@@ -1989,6 +1989,117 @@ An [Arrow Diagram]{.mark .vocab}
 <br>
 
 
+##### 4.3
+***
+
+##### exponential functions
+
+{{< video https://youtu.be/hrYgafeI_40 aspect-ratio="21x9" >}}
+
+<br>
+
+An [Exponential Functions]{.mark .vocab}
+
+<br>
+
+::: {.panel-tabset}
+
+### Exponent Base
+
+
+### Exponent
+
+<!-- end of panel tabset  -->
+:::
+
+<br>
+
+
+##### 4.4
+***
+
+##### logarithmic functions
+
+{{< video https://youtu.be/eQn2BzG-6XQ aspect-ratio="21x9" >}}
+
+<br>
+
+An [Logarithm Functions]{.mark .vocab}
+
+::: {#tbl-panel layout-ncol=1 .scroll-table}
+
+```{r}
+#| label: tbl-logarithms
+#| tbl-cap: "Section 4.4 Summary: Logarithm Properties"
+#| echo: false
+
+# Create a data frame for set operations
+logProps <- data.frame( 
+  Log_Property_type = c(
+    "Log Product Rule", "Log Quotient Rule", "Log Power Rule", "Change of Base Rule"
+  ),
+  Log_Expression_denoted = c(
+    "$$ log_{b}(\\, xy )\\, = log_{b}^x + log_{b}^y $$",
+    "$$ log_{b}(\\, \\frac{x}{y} )\\, = log_{b}^x - log_{b}^y $$",
+    "$$ log_{b}(\\, x^y )\\, = ylog_{b}^x $$",
+    "$$ log_{c}^x = \\frac{log_{b}^x}{log_{b}^c} $$"
+  ),
+  Log_Description = c(
+    "The log of a product is equal to the sum of the log of the first base and the log of the second base.",
+    "The log of a quotient is equal to the difference of the logs of the numerator and denominator.",
+    "The log of a power is equal to the power times the log of the base.",
+    "The log of a new base is the log of the new base divided by the log of the old base in the new base."
+  )
+)
+
+# Render the table
+logarithmTbl <- kbl(
+  logProps, align = "cc", booktabs = TRUE, escape = TRUE,
+  col.names = c("Log Property", "Equivalent Expressions", "Discription")
+)
+
+# Apply styling for HTML or LaTeX outputs
+if(knitr::is_latex_output()) {
+  logarithmTbl %>% kable_styling(
+    latex_options = c("striped", "hold_position"),
+    font_size = 9,
+    full_width = FALSE
+  ) %>%
+    row_spec(0, bold = TRUE) %>%
+    column_spec(1, width = "2cm") %>%
+    column_spec(3, width = "6cm")
+} else {
+  logarithmTbl %>% kable_styling( 
+    bootstrap_options = c("striped", "hover"),
+    full_width = FALSE,
+    position = "center",
+    font_size = 90
+  )
+}
+```
+
+<!-- end of table panel  -->
+:::
+
+<br>
+
+::: {.panel-tabset}
+
+### Logarithm Base
+
+
+### Increasing
+
+
+### Decreasing
+
+
+<!-- end of panel tabset  -->
+:::
+
+<br>
+
+
 
 
 <!-- #### Main Section #: -->
